@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ocean: #2f5b6b;
+  --color-lime-dust: #e7e569;
+  --color-sky-aqua: #66c4dd;
+  --color-deep-turquoise: #2b96af;
+  --color-burnt-coral: #ea5c3f;
+  --color-sunset-gold: #f7b759;
+
+  --font-display: var(--font-clash-display), sans-serif;
+  --font-body: var(--font-montserrat), sans-serif;
+}
+
+body {
+  @apply bg-white text-ocean;
+  font-family: var(--font-body);
+}
