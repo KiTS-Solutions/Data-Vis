@@ -56,3 +56,55 @@ def test_parse_workbook_meta_fields(tmp_path):
     assert result["meta"]["client"] == "Stories"
     assert result["meta"]["own_brand"] == "Stories"
     assert result["meta"]["generated_from"] == xlsx_path
+
+
+def test_parse_workbook_different_competitor_count(tmp_path):
+    """Test that brand column count is derived from config, not hardcoded to 5."""
+    wb = openpyxl.Workbook()
+    ws = wb.active
+    # 2 competitors = 3 brand columns total (1 own + 2 competitors)
+    ws.append(["Products Competitors", "Stories ", "Espresso Lab", "Dunkin Donuts", "Average", "Difference"])
+    ws.append(["Black Coffee", None, None, None, None, None])
+    ws.append(["Americano MEDIUM", 350000, 400000, 380000, 376666, -26666])
+    path = tmp_path / "sample_2competitors.xlsx"
+    wb.save(path)
+
+    config = {
+        "client": "Stories",
+        "report_date": "2026-03-01",
+        "currency": "LBP",
+        "fx_usd_rate": 89600,
+        "fx_rate_date": "2026-07-20",
+        "fx_source": "test",
+        "own_brand": "Stories",
+        "competitors": ["Espresso Lab", "Dunkin Donuts"],  # Only 2 competitors
+    }
+
+    result = parse_workbook(str(path), config)
+    americano = [r for r in result["records"] if r["product"] == "Americano MEDIUM"]
+    assert len(americano) == 3
+    assert {r["brand"] for r in americano} == {"Stories", "Espresso Lab", "Dunkin Donuts"}
+
+
+def test_parse_workbook_config_mismatch_raises_error(tmp_path):
+    """Test that mismatched config and header brands raise ValueError."""
+    xlsx_path = _build_workbook(tmp_path)
+
+    # Config with a competitor not in the header
+    bad_config = {
+        "client": "Stories",
+        "report_date": "2026-03-01",
+        "currency": "LBP",
+        "fx_usd_rate": 89600,
+        "fx_rate_date": "2026-07-20",
+        "fx_source": "test",
+        "own_brand": "Stories",
+        "competitors": ["Espresso Lab", "Dunkin Donuts", "Unknown Brand", "Starbucks"],
+    }
+
+    try:
+        parse_workbook(xlsx_path, bad_config)
+        assert False, "Should have raised ValueError"
+    except ValueError as e:
+        assert "Unknown Brand" in str(e)
+        assert "do not contain expected brands from config" in str(e)

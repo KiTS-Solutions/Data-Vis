@@ -20,7 +20,15 @@ def parse_workbook(xlsx_path: str, config: dict) -> dict:
     rows = list(ws.iter_rows(min_row=1, max_row=ws.max_row, values_only=True))
 
     header = rows[0]
-    brand_columns = [_clean(h) for h in header[1:6]]
+    expected_brand_count = 1 + len(config["competitors"])
+    brand_columns = [_clean(h) for h in header[1 : 1 + expected_brand_count]]
+
+    expected_brands = {_clean(config["own_brand"]), *[_clean(c) for c in config["competitors"]]}
+    missing = expected_brands - set(brand_columns)
+    if missing:
+        raise ValueError(
+            f"Header row brand columns {brand_columns} do not contain expected brands from config: {sorted(missing)}"
+        )
 
     fx_rate = config["fx_usd_rate"]
     records = []
