@@ -111,3 +111,46 @@ def flag_outliers(products: list, threshold: float = 15.0) -> None:
         else:
             p["is_outlier"] = False
             p["outlier_direction"] = None
+
+
+import argparse
+import json
+import os
+
+
+def run_analysis(normalized_json_path: str, output_path: str) -> dict:
+    with open(normalized_json_path, "r", encoding="utf-8") as f:
+        normalized = json.load(f)
+
+    meta = normalized["meta"]
+    own_brand = meta["own_brand"]
+    competitors = meta["competitors"]
+
+    products = build_product_analytics(normalized["records"], own_brand, competitors)
+    assign_price_tiers(products)
+    flag_outliers(products)
+    categories = build_category_rollups(products)
+
+    result = {"meta": meta, "products": products, "categories": categories}
+
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(result, f, indent=2, ensure_ascii=False)
+
+    return result
+
+
+def _build_analysis_arg_parser():
+    parser = argparse.ArgumentParser(description="Analyze normalized pricing JSON into indices, tiers, and outliers.")
+    parser.add_argument("--in", dest="input_path", required=True, help="Path to the normalized JSON")
+    parser.add_argument("--out", required=True, help="Path to write the analytics JSON")
+    return parser
+
+
+def main(argv=None):
+    args = _build_analysis_arg_parser().parse_args(argv)
+    run_analysis(args.input_path, args.out)
+
+
+if __name__ == "__main__":
+    main()
