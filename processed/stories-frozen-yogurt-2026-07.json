@@ -1,0 +1,2035 @@
+{
+  "meta": {
+    "client": "Stories",
+    "report_date": "2026-07-22",
+    "currency": "LBP",
+    "fx_usd_rate": 89600,
+    "fx_rate_date": "2026-07-20",
+    "fx_source": "lira-rate.com / lbprate.com market average (parallel/market rate)",
+    "own_brand": "Stories",
+    "competitors": [
+      "Pinkberry",
+      "Cremino",
+      "Fro - U"
+    ],
+    "generated_from": "raw-data/Frozen Yogurt Pricing Comparison (1).xlsx"
+  },
+  "products": [
+    {
+      "category": "Frozen Yogurt",
+      "product": "Original Yogurt Combo SMALL",
+      "prices_lbp": {
+        "Stories": 590000,
+        "Pinkberry": 747000,
+        "Fro - U": 801000
+      },
+      "own_price_lbp": 590000,
+      "competitor_avg_lbp": 774000.0,
+      "price_index": 76.2,
+      "comparability": "medium",
+      "tier": "Core",
+      "is_outlier": true,
+      "outlier_direction": "underpriced"
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Original Yogurt Combo MEDIUM",
+      "prices_lbp": {
+        "Stories": 650000,
+        "Pinkberry": 900000,
+        "Fro - U": 981000
+      },
+      "own_price_lbp": 650000,
+      "competitor_avg_lbp": 940500.0,
+      "price_index": 69.1,
+      "comparability": "medium",
+      "tier": "Core",
+      "is_outlier": true,
+      "outlier_direction": "underpriced"
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Original Yogurt Combo LARGE",
+      "prices_lbp": {
+        "Stories": 850000,
+        "Pinkberry": 1170000,
+        "Fro - U": 1251000
+      },
+      "own_price_lbp": 850000,
+      "competitor_avg_lbp": 1210500.0,
+      "price_index": 70.2,
+      "comparability": "medium",
+      "tier": "Premium",
+      "is_outlier": true,
+      "outlier_direction": "underpriced"
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Original Yogurt SMALL",
+      "prices_lbp": {
+        "Stories": 500000,
+        "Pinkberry": 450000
+      },
+      "own_price_lbp": 500000,
+      "competitor_avg_lbp": 450000.0,
+      "price_index": 111.1,
+      "comparability": "low",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Original Yogurt MEDIUM",
+      "prices_lbp": {
+        "Stories": 550000,
+        "Pinkberry": 630000
+      },
+      "own_price_lbp": 550000,
+      "competitor_avg_lbp": 630000.0,
+      "price_index": 87.3,
+      "comparability": "low",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Original Yogurt LARGE",
+      "prices_lbp": {
+        "Stories": 750000,
+        "Pinkberry": 900000
+      },
+      "own_price_lbp": 750000,
+      "competitor_avg_lbp": 900000.0,
+      "price_index": 83.3,
+      "comparability": "low",
+      "tier": "Premium",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Blueberry Yogurt Combo SMALL",
+      "prices_lbp": {
+        "Stories": 590000
+      },
+      "own_price_lbp": 590000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Core",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Blueberry Yogurt Combo MEDIUM",
+      "prices_lbp": {
+        "Stories": 650000
+      },
+      "own_price_lbp": 650000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Core",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Blueberry Yogurt Combo LARGE",
+      "prices_lbp": {
+        "Stories": 850000
+      },
+      "own_price_lbp": 850000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Premium",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Blueberry Yogurt SMALL",
+      "prices_lbp": {
+        "Stories": 500000
+      },
+      "own_price_lbp": 500000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Blueberry Yogurt MEDIUM",
+      "prices_lbp": {
+        "Stories": 550000
+      },
+      "own_price_lbp": 550000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Blueberry Yogurt LARGE",
+      "prices_lbp": {
+        "Stories": 750000
+      },
+      "own_price_lbp": 750000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Premium",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Chocolate Yogurt Combo SMALL",
+      "prices_lbp": {
+        "Stories": 590000,
+        "Pinkberry": 747000,
+        "Fro - U": 801000
+      },
+      "own_price_lbp": 590000,
+      "competitor_avg_lbp": 774000.0,
+      "price_index": 76.2,
+      "comparability": "medium",
+      "tier": "Core",
+      "is_outlier": true,
+      "outlier_direction": "underpriced"
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Chocolate Yogurt Combo MEDIUM",
+      "prices_lbp": {
+        "Stories": 650000,
+        "Pinkberry": 900000,
+        "Fro - U": 981000
+      },
+      "own_price_lbp": 650000,
+      "competitor_avg_lbp": 940500.0,
+      "price_index": 69.1,
+      "comparability": "medium",
+      "tier": "Core",
+      "is_outlier": true,
+      "outlier_direction": "underpriced"
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Chocolate Yogurt Combo LARGE",
+      "prices_lbp": {
+        "Stories": 850000,
+        "Pinkberry": 1170000,
+        "Fro - U": 1251000
+      },
+      "own_price_lbp": 850000,
+      "competitor_avg_lbp": 1210500.0,
+      "price_index": 70.2,
+      "comparability": "medium",
+      "tier": "Premium",
+      "is_outlier": true,
+      "outlier_direction": "underpriced"
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Chocolate Yogurt SMALL",
+      "prices_lbp": {
+        "Stories": 500000,
+        "Pinkberry": 450000
+      },
+      "own_price_lbp": 500000,
+      "competitor_avg_lbp": 450000.0,
+      "price_index": 111.1,
+      "comparability": "low",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Chocolate Yogurt  MEDIUM",
+      "prices_lbp": {
+        "Stories": 550000,
+        "Pinkberry": 630000
+      },
+      "own_price_lbp": 550000,
+      "competitor_avg_lbp": 630000.0,
+      "price_index": 87.3,
+      "comparability": "low",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Chocolate Yogurt LARGE",
+      "prices_lbp": {
+        "Stories": 750000,
+        "Pinkberry": 900000
+      },
+      "own_price_lbp": 750000,
+      "competitor_avg_lbp": 900000.0,
+      "price_index": 83.3,
+      "comparability": "low",
+      "tier": "Premium",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Lotus Yogurt Combo SMALL",
+      "prices_lbp": {
+        "Stories": 590000,
+        "Pinkberry": 747000
+      },
+      "own_price_lbp": 590000,
+      "competitor_avg_lbp": 747000.0,
+      "price_index": 79.0,
+      "comparability": "low",
+      "tier": "Core",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Lotus Yogurt Combo MEDIUM",
+      "prices_lbp": {
+        "Stories": 650000,
+        "Pinkberry": 900000
+      },
+      "own_price_lbp": 650000,
+      "competitor_avg_lbp": 900000.0,
+      "price_index": 72.2,
+      "comparability": "low",
+      "tier": "Core",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Lotus Yogurt Combo LARGE",
+      "prices_lbp": {
+        "Stories": 850000,
+        "Pinkberry": 1170000
+      },
+      "own_price_lbp": 850000,
+      "competitor_avg_lbp": 1170000.0,
+      "price_index": 72.6,
+      "comparability": "low",
+      "tier": "Premium",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Lotus Yogurt SMALL",
+      "prices_lbp": {
+        "Stories": 500000,
+        "Pinkberry": 450000
+      },
+      "own_price_lbp": 500000,
+      "competitor_avg_lbp": 450000.0,
+      "price_index": 111.1,
+      "comparability": "low",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Lotus Yogurt MEDIUM",
+      "prices_lbp": {
+        "Stories": 550000,
+        "Pinkberry": 630000
+      },
+      "own_price_lbp": 550000,
+      "competitor_avg_lbp": 630000.0,
+      "price_index": 87.3,
+      "comparability": "low",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Lotus Yogurt LARGE",
+      "prices_lbp": {
+        "Stories": 750000,
+        "Pinkberry": 900000
+      },
+      "own_price_lbp": 750000,
+      "competitor_avg_lbp": 900000.0,
+      "price_index": 83.3,
+      "comparability": "low",
+      "tier": "Premium",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Mango Yogurt Combo SMALL",
+      "prices_lbp": {
+        "Stories": 590000
+      },
+      "own_price_lbp": 590000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Core",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Mango Yogurt Combo MEDIUM",
+      "prices_lbp": {
+        "Stories": 650000
+      },
+      "own_price_lbp": 650000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Core",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Mango Yogurt Combo LARGE",
+      "prices_lbp": {
+        "Stories": 850000
+      },
+      "own_price_lbp": 850000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Premium",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Mango Yogurt SMALL",
+      "prices_lbp": {
+        "Stories": 500000
+      },
+      "own_price_lbp": 500000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Mango Yogurt MEDIUM",
+      "prices_lbp": {
+        "Stories": 550000
+      },
+      "own_price_lbp": 550000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Mango Yogurt LARGE",
+      "prices_lbp": {
+        "Stories": 750000
+      },
+      "own_price_lbp": 750000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Premium",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Pomegranate Yogurt Combo SMALL",
+      "prices_lbp": {
+        "Stories": 590000
+      },
+      "own_price_lbp": 590000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Core",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Pomegranate Yogurt Combo MEDIUM",
+      "prices_lbp": {
+        "Stories": 650000
+      },
+      "own_price_lbp": 650000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Core",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Pomegranate Yogurt Combo LARGE",
+      "prices_lbp": {
+        "Stories": 850000
+      },
+      "own_price_lbp": 850000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Premium",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Pomegranate Yogurt SMALL",
+      "prices_lbp": {
+        "Stories": 500000
+      },
+      "own_price_lbp": 500000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Pomegranate Yogurt MEDIUM",
+      "prices_lbp": {
+        "Stories": 550000
+      },
+      "own_price_lbp": 550000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Pomegranate Yogurt LARGE",
+      "prices_lbp": {
+        "Stories": 750000
+      },
+      "own_price_lbp": 750000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Premium",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Passion Fruit Yogurt Combo SMALL",
+      "prices_lbp": {
+        "Pinkberry": 747000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 747000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Passion Fruit Yogurt Combo MEDIUM",
+      "prices_lbp": {
+        "Pinkberry": 900000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 900000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Passion Fruit Yogurt Combo LARGE",
+      "prices_lbp": {
+        "Pinkberry": 1170000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 1170000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Passion Fruit Yogurt SMALL",
+      "prices_lbp": {
+        "Pinkberry": 450000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 450000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Passion Fruit Yogurt MEDIUM",
+      "prices_lbp": {
+        "Pinkberry": 630000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 630000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Passion Fruit Yogurt LARGE",
+      "prices_lbp": {
+        "Pinkberry": 900000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 900000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Blackberry Yogurt Combo SMALL",
+      "prices_lbp": {
+        "Pinkberry": 747000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 747000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Blackberry Yogurt Combo MEDIUM",
+      "prices_lbp": {
+        "Pinkberry": 900000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 900000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Blackberry Yogurt Combo LARGE",
+      "prices_lbp": {
+        "Pinkberry": 1170000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 1170000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Blackberry Yogurt SMALL",
+      "prices_lbp": {
+        "Pinkberry": 450000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 450000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Blackberry Yogurt MEDIUM",
+      "prices_lbp": {
+        "Pinkberry": 630000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 630000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Blackberry Yogurt LARGE",
+      "prices_lbp": {
+        "Pinkberry": 900000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 900000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Wild Strawberry Yogurt Combo SMALL",
+      "prices_lbp": {
+        "Pinkberry": 747000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 747000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Wild Strawberry Yogurt Combo MEDIUM",
+      "prices_lbp": {
+        "Pinkberry": 900000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 900000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Wild Strawberry Yogurt Combo LARGE",
+      "prices_lbp": {
+        "Pinkberry": 1170000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 1170000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Wild Strawberry Yogurt SMALL",
+      "prices_lbp": {
+        "Pinkberry": 450000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 450000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Wild Strawberry Yogurt MEDIUM",
+      "prices_lbp": {
+        "Pinkberry": 630000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 630000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Wild Strawberry Yogurt LARGE",
+      "prices_lbp": {
+        "Pinkberry": 900000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 900000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Starwberry Yogurt Combo SMALL",
+      "prices_lbp": {
+        "Fro - U": 801000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 801000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Starwberry Yogurt Combo MEDIUM",
+      "prices_lbp": {
+        "Fro - U": 981000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 981000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Starwberry Yogurt Combo LARGE",
+      "prices_lbp": {
+        "Fro - U": 1252000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 1252000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Speculoos Yogurt Combo SMALL",
+      "prices_lbp": {
+        "Fro - U": 801000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 801000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Speculoos Yogurt Combo MEDIUM",
+      "prices_lbp": {
+        "Fro - U": 981000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 981000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Speculoos Yogurt Combo LARGE",
+      "prices_lbp": {
+        "Fro - U": 1260000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 1260000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Vanilla Yogurt Combo SMALL",
+      "prices_lbp": {
+        "Fro - U": 801000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 801000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Vanilla Yogurt Combo MEDIUM",
+      "prices_lbp": {
+        "Fro - U": 981000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 981000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Vanilla Yogurt Combo LARGE",
+      "prices_lbp": {
+        "Fro - U": 1251000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 1251000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Take Me Home Frozen Yogurt",
+      "prices_lbp": {
+        "Pinkberry": 1665000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 1665000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Blueberries",
+      "prices_lbp": {
+        "Stories": 120000,
+        "Pinkberry": 90000,
+        "Fro - U": 153000
+      },
+      "own_price_lbp": 120000,
+      "competitor_avg_lbp": 121500.0,
+      "price_index": 98.8,
+      "comparability": "medium",
+      "tier": "Core",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Brownies",
+      "prices_lbp": {
+        "Stories": 100000,
+        "Pinkberry": 90000,
+        "Fro - U": 90000
+      },
+      "own_price_lbp": 100000,
+      "competitor_avg_lbp": 90000.0,
+      "price_index": 111.1,
+      "comparability": "medium",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Chocolate Chips",
+      "prices_lbp": {
+        "Stories": 120000,
+        "Pinkberry": 90000,
+        "Fro - U": 90000
+      },
+      "own_price_lbp": 120000,
+      "competitor_avg_lbp": 90000.0,
+      "price_index": 133.3,
+      "comparability": "medium",
+      "tier": "Core",
+      "is_outlier": true,
+      "outlier_direction": "overpriced"
+    },
+    {
+      "category": "Toppings",
+      "product": "Granolla",
+      "prices_lbp": {
+        "Stories": 100000
+      },
+      "own_price_lbp": 100000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Gummy Bears",
+      "prices_lbp": {
+        "Stories": 100000,
+        "Pinkberry": 90000,
+        "Fro - U": 90000
+      },
+      "own_price_lbp": 100000,
+      "competitor_avg_lbp": 90000.0,
+      "price_index": 111.1,
+      "comparability": "medium",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Honey",
+      "prices_lbp": {
+        "Stories": 120000,
+        "Pinkberry": 90000
+      },
+      "own_price_lbp": 120000,
+      "competitor_avg_lbp": 90000.0,
+      "price_index": 133.3,
+      "comparability": "low",
+      "tier": "Core",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Lotus Biscuits",
+      "prices_lbp": {
+        "Stories": 100000
+      },
+      "own_price_lbp": 100000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Mango",
+      "prices_lbp": {
+        "Stories": 120000,
+        "Fro - U": 153000
+      },
+      "own_price_lbp": 120000,
+      "competitor_avg_lbp": 153000.0,
+      "price_index": 78.4,
+      "comparability": "low",
+      "tier": "Core",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Marshmallow",
+      "prices_lbp": {
+        "Stories": 100000,
+        "Pinkberry": 90000,
+        "Fro - U": 90000
+      },
+      "own_price_lbp": 100000,
+      "competitor_avg_lbp": 90000.0,
+      "price_index": 111.1,
+      "comparability": "medium",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Mixed Nuts",
+      "prices_lbp": {
+        "Stories": 100000
+      },
+      "own_price_lbp": 100000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Oats",
+      "prices_lbp": {
+        "Stories": 100000
+      },
+      "own_price_lbp": 100000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Oreo",
+      "prices_lbp": {
+        "Stories": 100000
+      },
+      "own_price_lbp": 100000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Pineapple",
+      "prices_lbp": {
+        "Stories": 120000,
+        "Pinkberry": 90000,
+        "Fro - U": 153000
+      },
+      "own_price_lbp": 120000,
+      "competitor_avg_lbp": 121500.0,
+      "price_index": 98.8,
+      "comparability": "medium",
+      "tier": "Core",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Sprinkles",
+      "prices_lbp": {
+        "Stories": 100000,
+        "Pinkberry": 90000,
+        "Fro - U": 90000
+      },
+      "own_price_lbp": 100000,
+      "competitor_avg_lbp": 90000.0,
+      "price_index": 111.1,
+      "comparability": "medium",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Strawberry",
+      "prices_lbp": {
+        "Stories": 120000,
+        "Pinkberry": 90000,
+        "Fro - U": 90000
+      },
+      "own_price_lbp": 120000,
+      "competitor_avg_lbp": 90000.0,
+      "price_index": 133.3,
+      "comparability": "medium",
+      "tier": "Core",
+      "is_outlier": true,
+      "outlier_direction": "overpriced"
+    },
+    {
+      "category": "Toppings",
+      "product": "Wafer Roll",
+      "prices_lbp": {
+        "Stories": 100000,
+        "Pinkberry": 90000
+      },
+      "own_price_lbp": 100000,
+      "competitor_avg_lbp": 90000.0,
+      "price_index": 111.1,
+      "comparability": "low",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Chocolate Crunch",
+      "prices_lbp": {
+        "Stories": 170000,
+        "Pinkberry": 153000
+      },
+      "own_price_lbp": 170000,
+      "competitor_avg_lbp": 153000.0,
+      "price_index": 111.1,
+      "comparability": "low",
+      "tier": "Premium",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Chocolate Quella",
+      "prices_lbp": {
+        "Stories": 170000
+      },
+      "own_price_lbp": 170000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Premium",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Chocolate Quella Crunch",
+      "prices_lbp": {
+        "Stories": 170000
+      },
+      "own_price_lbp": 170000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Premium",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Crumble Lemon",
+      "prices_lbp": {
+        "Stories": 170000
+      },
+      "own_price_lbp": 170000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Premium",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Crumble Pistachio",
+      "prices_lbp": {
+        "Stories": 170000
+      },
+      "own_price_lbp": 170000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Premium",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Crumble Red Berries",
+      "prices_lbp": {
+        "Stories": 170000
+      },
+      "own_price_lbp": 170000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Premium",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Nutella",
+      "prices_lbp": {
+        "Stories": 150000,
+        "Pinkberry": 153000,
+        "Fro - U": 90000
+      },
+      "own_price_lbp": 150000,
+      "competitor_avg_lbp": 121500.0,
+      "price_index": 123.5,
+      "comparability": "medium",
+      "tier": "Core",
+      "is_outlier": true,
+      "outlier_direction": "overpriced"
+    },
+    {
+      "category": "Toppings",
+      "product": "Pistachio Crunch",
+      "prices_lbp": {
+        "Stories": 170000,
+        "Pinkberry": 153000,
+        "Fro - U": 153000
+      },
+      "own_price_lbp": 170000,
+      "competitor_avg_lbp": 153000.0,
+      "price_index": 111.1,
+      "comparability": "medium",
+      "tier": "Premium",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Toasted Pistachio",
+      "prices_lbp": {
+        "Pinkberry": 90000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 90000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Quella Pistachio",
+      "prices_lbp": {
+        "Stories": 170000
+      },
+      "own_price_lbp": 170000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Premium",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Variegato Wafer",
+      "prices_lbp": {
+        "Stories": 150000
+      },
+      "own_price_lbp": 150000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Core",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Variegato Wafer Pistachio",
+      "prices_lbp": {
+        "Stories": 170000
+      },
+      "own_price_lbp": 170000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Premium",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Raspberry",
+      "prices_lbp": {
+        "Fro - U": 153000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 153000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Reese's",
+      "prices_lbp": {
+        "Fro - U": 153000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 153000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Goji Berries",
+      "prices_lbp": {
+        "Fro - U": 153000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 153000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Blackberry",
+      "prices_lbp": {
+        "Fro - U": 153000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 153000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Pomegranate",
+      "prices_lbp": {
+        "Pinkberry": 90000,
+        "Fro - U": 153000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 121500.0,
+      "price_index": null,
+      "comparability": "medium",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Feuilletine",
+      "prices_lbp": {
+        "Fro - U": 90000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 90000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Speculoos Crumbs",
+      "prices_lbp": {
+        "Fro - U": 90000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 90000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Cookie Crumbs",
+      "prices_lbp": {
+        "Fro - U": 90000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 90000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Crispy Cereal Balls",
+      "prices_lbp": {
+        "Fro - U": 90000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 90000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Sour Gums",
+      "prices_lbp": {
+        "Fro - U": 90000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 90000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Fruity Pebbles",
+      "prices_lbp": {
+        "Pinkberry": 90000,
+        "Fro - U": 90000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 90000.0,
+      "price_index": null,
+      "comparability": "medium",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Cookie Dough",
+      "prices_lbp": {
+        "Fro - U": 90000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 90000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Rose Loukoum",
+      "prices_lbp": {
+        "Fro - U": 90000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 90000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Kinder Style Spread",
+      "prices_lbp": {
+        "Fro - U": 90000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 90000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Nociolla Sugar Free",
+      "prices_lbp": {
+        "Fro - U": 90000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 90000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Pistachio Sugar Free",
+      "prices_lbp": {
+        "Fro - U": 90000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 90000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Pistachio Kunafa",
+      "prices_lbp": {
+        "Fro - U": 90000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 90000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Speculoos Spread",
+      "prices_lbp": {
+        "Fro - U": 90000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 90000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "White Chocolate Matcha Spread",
+      "prices_lbp": {
+        "Fro - U": 90000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 90000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Cones",
+      "prices_lbp": {
+        "Fro - U": 90000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 90000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Kiwi",
+      "prices_lbp": {
+        "Pinkberry": 90000,
+        "Fro - U": 90000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 90000.0,
+      "price_index": null,
+      "comparability": "medium",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Natural Honey",
+      "prices_lbp": {
+        "Fro - U": 90000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 90000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Caramel Sauce",
+      "prices_lbp": {
+        "Pinkberry": 90000,
+        "Fro - U": 90000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 90000.0,
+      "price_index": null,
+      "comparability": "medium",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Chocolate Sauce",
+      "prices_lbp": {
+        "Pinkberry": 90000,
+        "Fro - U": 90000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 90000.0,
+      "price_index": null,
+      "comparability": "medium",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Stawberry Sauce",
+      "prices_lbp": {
+        "Fro - U": 90000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 90000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Raspberry Sauce",
+      "prices_lbp": {
+        "Fro - U": 90000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 90000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Carob Molasses",
+      "prices_lbp": {
+        "Fro - U": 90000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 90000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Chia Seeds",
+      "prices_lbp": {
+        "Fro - U": 90000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 90000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Sunflowers Seeds",
+      "prices_lbp": {
+        "Fro - U": 90000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 90000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Pumpkin Seeds",
+      "prices_lbp": {
+        "Fro - U": 90000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 90000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Flax Seeds",
+      "prices_lbp": {
+        "Fro - U": 90000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 90000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Coconut",
+      "prices_lbp": {
+        "Pinkberry": 90000,
+        "Fro - U": 90000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 90000.0,
+      "price_index": null,
+      "comparability": "medium",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Peanut Butter",
+      "prices_lbp": {
+        "Fro - U": 90000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 90000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Honey Granola Gluten Free",
+      "prices_lbp": {
+        "Pinkberry": 90000,
+        "Fro - U": 90000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 90000.0,
+      "price_index": null,
+      "comparability": "medium",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Raisins",
+      "prices_lbp": {
+        "Fro - U": 90000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 90000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Cranberries",
+      "prices_lbp": {
+        "Fro - U": 90000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 90000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Almonds",
+      "prices_lbp": {
+        "Fro - U": 90000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 90000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Walnuts",
+      "prices_lbp": {
+        "Fro - U": 90000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 90000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Dates",
+      "prices_lbp": {
+        "Fro - U": 90000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 90000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Biscoff Spread",
+      "prices_lbp": {
+        "Pinkberry": 153000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 153000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Peanut Butter Crunch",
+      "prices_lbp": {
+        "Pinkberry": 153000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 153000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Lemon Crunch",
+      "prices_lbp": {
+        "Pinkberry": 153000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 153000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Banana",
+      "prices_lbp": {
+        "Pinkberry": 90000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 90000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Mini Gems",
+      "prices_lbp": {
+        "Pinkberry": 90000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 90000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Biscoff Cookie",
+      "prices_lbp": {
+        "Pinkberry": 90000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 90000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Cookies and Cream",
+      "prices_lbp": {
+        "Pinkberry": 90000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 90000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Toppings",
+      "product": "Crispy Crepes",
+      "prices_lbp": {
+        "Pinkberry": 90000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 90000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    }
+  ],
+  "categories": [
+    {
+      "category": "Frozen Yogurt",
+      "product_count": 64,
+      "countable_product_count": 6,
+      "avg_price_index": 71.8
+    },
+    {
+      "category": "Toppings",
+      "product_count": 75,
+      "countable_product_count": 10,
+      "avg_price_index": 114.3
+    }
+  ],
+  "data_quality_warnings": []
+}

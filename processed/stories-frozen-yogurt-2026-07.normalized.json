@@ -1,0 +1,1377 @@
+{
+  "meta": {
+    "client": "Stories",
+    "report_date": "2026-07-22",
+    "currency": "LBP",
+    "fx_usd_rate": 89600,
+    "fx_rate_date": "2026-07-20",
+    "fx_source": "lira-rate.com / lbprate.com market average (parallel/market rate)",
+    "own_brand": "Stories",
+    "competitors": [
+      "Pinkberry",
+      "Cremino",
+      "Fro - U"
+    ],
+    "generated_from": "raw-data/Frozen Yogurt Pricing Comparison (1).xlsx"
+  },
+  "records": [
+    {
+      "category": "Frozen Yogurt",
+      "product": "Original Yogurt Combo SMALL",
+      "brand": "Stories",
+      "price_lbp": 590000,
+      "price_usd": 6.58
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Original Yogurt Combo SMALL",
+      "brand": "Pinkberry",
+      "price_lbp": 747000,
+      "price_usd": 8.34
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Original Yogurt Combo SMALL",
+      "brand": "Fro - U",
+      "price_lbp": 801000,
+      "price_usd": 8.94
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Original Yogurt Combo MEDIUM",
+      "brand": "Stories",
+      "price_lbp": 650000,
+      "price_usd": 7.25
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Original Yogurt Combo MEDIUM",
+      "brand": "Pinkberry",
+      "price_lbp": 900000,
+      "price_usd": 10.04
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Original Yogurt Combo MEDIUM",
+      "brand": "Fro - U",
+      "price_lbp": 981000,
+      "price_usd": 10.95
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Original Yogurt Combo LARGE",
+      "brand": "Stories",
+      "price_lbp": 850000,
+      "price_usd": 9.49
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Original Yogurt Combo LARGE",
+      "brand": "Pinkberry",
+      "price_lbp": 1170000,
+      "price_usd": 13.06
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Original Yogurt Combo LARGE",
+      "brand": "Fro - U",
+      "price_lbp": 1251000,
+      "price_usd": 13.96
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Original Yogurt SMALL",
+      "brand": "Stories",
+      "price_lbp": 500000,
+      "price_usd": 5.58
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Original Yogurt SMALL",
+      "brand": "Pinkberry",
+      "price_lbp": 450000,
+      "price_usd": 5.02
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Original Yogurt MEDIUM",
+      "brand": "Stories",
+      "price_lbp": 550000,
+      "price_usd": 6.14
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Original Yogurt MEDIUM",
+      "brand": "Pinkberry",
+      "price_lbp": 630000,
+      "price_usd": 7.03
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Original Yogurt LARGE",
+      "brand": "Stories",
+      "price_lbp": 750000,
+      "price_usd": 8.37
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Original Yogurt LARGE",
+      "brand": "Pinkberry",
+      "price_lbp": 900000,
+      "price_usd": 10.04
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Blueberry Yogurt Combo SMALL",
+      "brand": "Stories",
+      "price_lbp": 590000,
+      "price_usd": 6.58
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Blueberry Yogurt Combo MEDIUM",
+      "brand": "Stories",
+      "price_lbp": 650000,
+      "price_usd": 7.25
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Blueberry Yogurt Combo LARGE",
+      "brand": "Stories",
+      "price_lbp": 850000,
+      "price_usd": 9.49
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Blueberry Yogurt SMALL",
+      "brand": "Stories",
+      "price_lbp": 500000,
+      "price_usd": 5.58
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Blueberry Yogurt MEDIUM",
+      "brand": "Stories",
+      "price_lbp": 550000,
+      "price_usd": 6.14
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Blueberry Yogurt LARGE",
+      "brand": "Stories",
+      "price_lbp": 750000,
+      "price_usd": 8.37
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Chocolate Yogurt Combo SMALL",
+      "brand": "Stories",
+      "price_lbp": 590000,
+      "price_usd": 6.58
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Chocolate Yogurt Combo SMALL",
+      "brand": "Pinkberry",
+      "price_lbp": 747000,
+      "price_usd": 8.34
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Chocolate Yogurt Combo SMALL",
+      "brand": "Fro - U",
+      "price_lbp": 801000,
+      "price_usd": 8.94
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Chocolate Yogurt Combo MEDIUM",
+      "brand": "Stories",
+      "price_lbp": 650000,
+      "price_usd": 7.25
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Chocolate Yogurt Combo MEDIUM",
+      "brand": "Pinkberry",
+      "price_lbp": 900000,
+      "price_usd": 10.04
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Chocolate Yogurt Combo MEDIUM",
+      "brand": "Fro - U",
+      "price_lbp": 981000,
+      "price_usd": 10.95
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Chocolate Yogurt Combo LARGE",
+      "brand": "Stories",
+      "price_lbp": 850000,
+      "price_usd": 9.49
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Chocolate Yogurt Combo LARGE",
+      "brand": "Pinkberry",
+      "price_lbp": 1170000,
+      "price_usd": 13.06
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Chocolate Yogurt Combo LARGE",
+      "brand": "Fro - U",
+      "price_lbp": 1251000,
+      "price_usd": 13.96
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Chocolate Yogurt SMALL",
+      "brand": "Stories",
+      "price_lbp": 500000,
+      "price_usd": 5.58
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Chocolate Yogurt SMALL",
+      "brand": "Pinkberry",
+      "price_lbp": 450000,
+      "price_usd": 5.02
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Chocolate Yogurt  MEDIUM",
+      "brand": "Stories",
+      "price_lbp": 550000,
+      "price_usd": 6.14
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Chocolate Yogurt  MEDIUM",
+      "brand": "Pinkberry",
+      "price_lbp": 630000,
+      "price_usd": 7.03
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Chocolate Yogurt LARGE",
+      "brand": "Stories",
+      "price_lbp": 750000,
+      "price_usd": 8.37
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Chocolate Yogurt LARGE",
+      "brand": "Pinkberry",
+      "price_lbp": 900000,
+      "price_usd": 10.04
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Lotus Yogurt Combo SMALL",
+      "brand": "Stories",
+      "price_lbp": 590000,
+      "price_usd": 6.58
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Lotus Yogurt Combo SMALL",
+      "brand": "Pinkberry",
+      "price_lbp": 747000,
+      "price_usd": 8.34
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Lotus Yogurt Combo MEDIUM",
+      "brand": "Stories",
+      "price_lbp": 650000,
+      "price_usd": 7.25
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Lotus Yogurt Combo MEDIUM",
+      "brand": "Pinkberry",
+      "price_lbp": 900000,
+      "price_usd": 10.04
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Lotus Yogurt Combo LARGE",
+      "brand": "Stories",
+      "price_lbp": 850000,
+      "price_usd": 9.49
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Lotus Yogurt Combo LARGE",
+      "brand": "Pinkberry",
+      "price_lbp": 1170000,
+      "price_usd": 13.06
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Lotus Yogurt SMALL",
+      "brand": "Stories",
+      "price_lbp": 500000,
+      "price_usd": 5.58
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Lotus Yogurt SMALL",
+      "brand": "Pinkberry",
+      "price_lbp": 450000,
+      "price_usd": 5.02
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Lotus Yogurt MEDIUM",
+      "brand": "Stories",
+      "price_lbp": 550000,
+      "price_usd": 6.14
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Lotus Yogurt MEDIUM",
+      "brand": "Pinkberry",
+      "price_lbp": 630000,
+      "price_usd": 7.03
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Lotus Yogurt LARGE",
+      "brand": "Stories",
+      "price_lbp": 750000,
+      "price_usd": 8.37
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Lotus Yogurt LARGE",
+      "brand": "Pinkberry",
+      "price_lbp": 900000,
+      "price_usd": 10.04
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Mango Yogurt Combo SMALL",
+      "brand": "Stories",
+      "price_lbp": 590000,
+      "price_usd": 6.58
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Mango Yogurt Combo MEDIUM",
+      "brand": "Stories",
+      "price_lbp": 650000,
+      "price_usd": 7.25
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Mango Yogurt Combo LARGE",
+      "brand": "Stories",
+      "price_lbp": 850000,
+      "price_usd": 9.49
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Mango Yogurt SMALL",
+      "brand": "Stories",
+      "price_lbp": 500000,
+      "price_usd": 5.58
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Mango Yogurt MEDIUM",
+      "brand": "Stories",
+      "price_lbp": 550000,
+      "price_usd": 6.14
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Mango Yogurt LARGE",
+      "brand": "Stories",
+      "price_lbp": 750000,
+      "price_usd": 8.37
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Pomegranate Yogurt Combo SMALL",
+      "brand": "Stories",
+      "price_lbp": 590000,
+      "price_usd": 6.58
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Pomegranate Yogurt Combo MEDIUM",
+      "brand": "Stories",
+      "price_lbp": 650000,
+      "price_usd": 7.25
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Pomegranate Yogurt Combo LARGE",
+      "brand": "Stories",
+      "price_lbp": 850000,
+      "price_usd": 9.49
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Pomegranate Yogurt SMALL",
+      "brand": "Stories",
+      "price_lbp": 500000,
+      "price_usd": 5.58
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Pomegranate Yogurt MEDIUM",
+      "brand": "Stories",
+      "price_lbp": 550000,
+      "price_usd": 6.14
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Pomegranate Yogurt LARGE",
+      "brand": "Stories",
+      "price_lbp": 750000,
+      "price_usd": 8.37
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Passion Fruit Yogurt Combo SMALL",
+      "brand": "Pinkberry",
+      "price_lbp": 747000,
+      "price_usd": 8.34
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Passion Fruit Yogurt Combo MEDIUM",
+      "brand": "Pinkberry",
+      "price_lbp": 900000,
+      "price_usd": 10.04
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Passion Fruit Yogurt Combo LARGE",
+      "brand": "Pinkberry",
+      "price_lbp": 1170000,
+      "price_usd": 13.06
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Passion Fruit Yogurt SMALL",
+      "brand": "Pinkberry",
+      "price_lbp": 450000,
+      "price_usd": 5.02
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Passion Fruit Yogurt MEDIUM",
+      "brand": "Pinkberry",
+      "price_lbp": 630000,
+      "price_usd": 7.03
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Passion Fruit Yogurt LARGE",
+      "brand": "Pinkberry",
+      "price_lbp": 900000,
+      "price_usd": 10.04
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Blackberry Yogurt Combo SMALL",
+      "brand": "Pinkberry",
+      "price_lbp": 747000,
+      "price_usd": 8.34
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Blackberry Yogurt Combo MEDIUM",
+      "brand": "Pinkberry",
+      "price_lbp": 900000,
+      "price_usd": 10.04
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Blackberry Yogurt Combo LARGE",
+      "brand": "Pinkberry",
+      "price_lbp": 1170000,
+      "price_usd": 13.06
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Blackberry Yogurt SMALL",
+      "brand": "Pinkberry",
+      "price_lbp": 450000,
+      "price_usd": 5.02
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Blackberry Yogurt MEDIUM",
+      "brand": "Pinkberry",
+      "price_lbp": 630000,
+      "price_usd": 7.03
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Blackberry Yogurt LARGE",
+      "brand": "Pinkberry",
+      "price_lbp": 900000,
+      "price_usd": 10.04
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Wild Strawberry Yogurt Combo SMALL",
+      "brand": "Pinkberry",
+      "price_lbp": 747000,
+      "price_usd": 8.34
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Wild Strawberry Yogurt Combo MEDIUM",
+      "brand": "Pinkberry",
+      "price_lbp": 900000,
+      "price_usd": 10.04
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Wild Strawberry Yogurt Combo LARGE",
+      "brand": "Pinkberry",
+      "price_lbp": 1170000,
+      "price_usd": 13.06
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Wild Strawberry Yogurt SMALL",
+      "brand": "Pinkberry",
+      "price_lbp": 450000,
+      "price_usd": 5.02
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Wild Strawberry Yogurt MEDIUM",
+      "brand": "Pinkberry",
+      "price_lbp": 630000,
+      "price_usd": 7.03
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Wild Strawberry Yogurt LARGE",
+      "brand": "Pinkberry",
+      "price_lbp": 900000,
+      "price_usd": 10.04
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Starwberry Yogurt Combo SMALL",
+      "brand": "Fro - U",
+      "price_lbp": 801000,
+      "price_usd": 8.94
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Starwberry Yogurt Combo MEDIUM",
+      "brand": "Fro - U",
+      "price_lbp": 981000,
+      "price_usd": 10.95
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Starwberry Yogurt Combo LARGE",
+      "brand": "Fro - U",
+      "price_lbp": 1252000,
+      "price_usd": 13.97
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Speculoos Yogurt Combo SMALL",
+      "brand": "Fro - U",
+      "price_lbp": 801000,
+      "price_usd": 8.94
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Speculoos Yogurt Combo MEDIUM",
+      "brand": "Fro - U",
+      "price_lbp": 981000,
+      "price_usd": 10.95
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Speculoos Yogurt Combo LARGE",
+      "brand": "Fro - U",
+      "price_lbp": 1260000,
+      "price_usd": 14.06
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Vanilla Yogurt Combo SMALL",
+      "brand": "Fro - U",
+      "price_lbp": 801000,
+      "price_usd": 8.94
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Vanilla Yogurt Combo MEDIUM",
+      "brand": "Fro - U",
+      "price_lbp": 981000,
+      "price_usd": 10.95
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Vanilla Yogurt Combo LARGE",
+      "brand": "Fro - U",
+      "price_lbp": 1251000,
+      "price_usd": 13.96
+    },
+    {
+      "category": "Frozen Yogurt",
+      "product": "Take Me Home Frozen Yogurt",
+      "brand": "Pinkberry",
+      "price_lbp": 1665000,
+      "price_usd": 18.58
+    },
+    {
+      "category": "Toppings",
+      "product": "Blueberries",
+      "brand": "Stories",
+      "price_lbp": 120000,
+      "price_usd": 1.34
+    },
+    {
+      "category": "Toppings",
+      "product": "Blueberries",
+      "brand": "Pinkberry",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Blueberries",
+      "brand": "Fro - U",
+      "price_lbp": 153000,
+      "price_usd": 1.71
+    },
+    {
+      "category": "Toppings",
+      "product": "Brownies",
+      "brand": "Stories",
+      "price_lbp": 100000,
+      "price_usd": 1.12
+    },
+    {
+      "category": "Toppings",
+      "product": "Brownies",
+      "brand": "Pinkberry",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Brownies",
+      "brand": "Fro - U",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Chocolate Chips",
+      "brand": "Stories",
+      "price_lbp": 120000,
+      "price_usd": 1.34
+    },
+    {
+      "category": "Toppings",
+      "product": "Chocolate Chips",
+      "brand": "Pinkberry",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Chocolate Chips",
+      "brand": "Fro - U",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Granolla",
+      "brand": "Stories",
+      "price_lbp": 100000,
+      "price_usd": 1.12
+    },
+    {
+      "category": "Toppings",
+      "product": "Gummy Bears",
+      "brand": "Stories",
+      "price_lbp": 100000,
+      "price_usd": 1.12
+    },
+    {
+      "category": "Toppings",
+      "product": "Gummy Bears",
+      "brand": "Pinkberry",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Gummy Bears",
+      "brand": "Fro - U",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Honey",
+      "brand": "Stories",
+      "price_lbp": 120000,
+      "price_usd": 1.34
+    },
+    {
+      "category": "Toppings",
+      "product": "Honey",
+      "brand": "Pinkberry",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Lotus Biscuits",
+      "brand": "Stories",
+      "price_lbp": 100000,
+      "price_usd": 1.12
+    },
+    {
+      "category": "Toppings",
+      "product": "Mango",
+      "brand": "Stories",
+      "price_lbp": 120000,
+      "price_usd": 1.34
+    },
+    {
+      "category": "Toppings",
+      "product": "Mango",
+      "brand": "Fro - U",
+      "price_lbp": 153000,
+      "price_usd": 1.71
+    },
+    {
+      "category": "Toppings",
+      "product": "Marshmallow",
+      "brand": "Stories",
+      "price_lbp": 100000,
+      "price_usd": 1.12
+    },
+    {
+      "category": "Toppings",
+      "product": "Marshmallow",
+      "brand": "Pinkberry",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Marshmallow",
+      "brand": "Fro - U",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Mixed Nuts",
+      "brand": "Stories",
+      "price_lbp": 100000,
+      "price_usd": 1.12
+    },
+    {
+      "category": "Toppings",
+      "product": "Oats",
+      "brand": "Stories",
+      "price_lbp": 100000,
+      "price_usd": 1.12
+    },
+    {
+      "category": "Toppings",
+      "product": "Oreo",
+      "brand": "Stories",
+      "price_lbp": 100000,
+      "price_usd": 1.12
+    },
+    {
+      "category": "Toppings",
+      "product": "Pineapple",
+      "brand": "Stories",
+      "price_lbp": 120000,
+      "price_usd": 1.34
+    },
+    {
+      "category": "Toppings",
+      "product": "Pineapple",
+      "brand": "Pinkberry",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Pineapple",
+      "brand": "Fro - U",
+      "price_lbp": 153000,
+      "price_usd": 1.71
+    },
+    {
+      "category": "Toppings",
+      "product": "Sprinkles",
+      "brand": "Stories",
+      "price_lbp": 100000,
+      "price_usd": 1.12
+    },
+    {
+      "category": "Toppings",
+      "product": "Sprinkles",
+      "brand": "Pinkberry",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Sprinkles",
+      "brand": "Fro - U",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Strawberry",
+      "brand": "Stories",
+      "price_lbp": 120000,
+      "price_usd": 1.34
+    },
+    {
+      "category": "Toppings",
+      "product": "Strawberry",
+      "brand": "Pinkberry",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Strawberry",
+      "brand": "Fro - U",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Wafer Roll",
+      "brand": "Stories",
+      "price_lbp": 100000,
+      "price_usd": 1.12
+    },
+    {
+      "category": "Toppings",
+      "product": "Wafer Roll",
+      "brand": "Pinkberry",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Chocolate Crunch",
+      "brand": "Stories",
+      "price_lbp": 170000,
+      "price_usd": 1.9
+    },
+    {
+      "category": "Toppings",
+      "product": "Chocolate Crunch",
+      "brand": "Pinkberry",
+      "price_lbp": 153000,
+      "price_usd": 1.71
+    },
+    {
+      "category": "Toppings",
+      "product": "Chocolate Quella",
+      "brand": "Stories",
+      "price_lbp": 170000,
+      "price_usd": 1.9
+    },
+    {
+      "category": "Toppings",
+      "product": "Chocolate Quella Crunch",
+      "brand": "Stories",
+      "price_lbp": 170000,
+      "price_usd": 1.9
+    },
+    {
+      "category": "Toppings",
+      "product": "Crumble Lemon",
+      "brand": "Stories",
+      "price_lbp": 170000,
+      "price_usd": 1.9
+    },
+    {
+      "category": "Toppings",
+      "product": "Crumble Pistachio",
+      "brand": "Stories",
+      "price_lbp": 170000,
+      "price_usd": 1.9
+    },
+    {
+      "category": "Toppings",
+      "product": "Crumble Red Berries",
+      "brand": "Stories",
+      "price_lbp": 170000,
+      "price_usd": 1.9
+    },
+    {
+      "category": "Toppings",
+      "product": "Nutella",
+      "brand": "Stories",
+      "price_lbp": 150000,
+      "price_usd": 1.67
+    },
+    {
+      "category": "Toppings",
+      "product": "Nutella",
+      "brand": "Pinkberry",
+      "price_lbp": 153000,
+      "price_usd": 1.71
+    },
+    {
+      "category": "Toppings",
+      "product": "Nutella",
+      "brand": "Fro - U",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Pistachio Crunch",
+      "brand": "Stories",
+      "price_lbp": 170000,
+      "price_usd": 1.9
+    },
+    {
+      "category": "Toppings",
+      "product": "Pistachio Crunch",
+      "brand": "Pinkberry",
+      "price_lbp": 153000,
+      "price_usd": 1.71
+    },
+    {
+      "category": "Toppings",
+      "product": "Pistachio Crunch",
+      "brand": "Fro - U",
+      "price_lbp": 153000,
+      "price_usd": 1.71
+    },
+    {
+      "category": "Toppings",
+      "product": "Toasted Pistachio",
+      "brand": "Pinkberry",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Quella Pistachio",
+      "brand": "Stories",
+      "price_lbp": 170000,
+      "price_usd": 1.9
+    },
+    {
+      "category": "Toppings",
+      "product": "Variegato Wafer",
+      "brand": "Stories",
+      "price_lbp": 150000,
+      "price_usd": 1.67
+    },
+    {
+      "category": "Toppings",
+      "product": "Variegato Wafer Pistachio",
+      "brand": "Stories",
+      "price_lbp": 170000,
+      "price_usd": 1.9
+    },
+    {
+      "category": "Toppings",
+      "product": "Raspberry",
+      "brand": "Fro - U",
+      "price_lbp": 153000,
+      "price_usd": 1.71
+    },
+    {
+      "category": "Toppings",
+      "product": "Reese's",
+      "brand": "Fro - U",
+      "price_lbp": 153000,
+      "price_usd": 1.71
+    },
+    {
+      "category": "Toppings",
+      "product": "Goji Berries",
+      "brand": "Fro - U",
+      "price_lbp": 153000,
+      "price_usd": 1.71
+    },
+    {
+      "category": "Toppings",
+      "product": "Blackberry",
+      "brand": "Fro - U",
+      "price_lbp": 153000,
+      "price_usd": 1.71
+    },
+    {
+      "category": "Toppings",
+      "product": "Pomegranate",
+      "brand": "Pinkberry",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Pomegranate",
+      "brand": "Fro - U",
+      "price_lbp": 153000,
+      "price_usd": 1.71
+    },
+    {
+      "category": "Toppings",
+      "product": "Feuilletine",
+      "brand": "Fro - U",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Speculoos Crumbs",
+      "brand": "Fro - U",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Cookie Crumbs",
+      "brand": "Fro - U",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Crispy Cereal Balls",
+      "brand": "Fro - U",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Sour Gums",
+      "brand": "Fro - U",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Fruity Pebbles",
+      "brand": "Pinkberry",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Fruity Pebbles",
+      "brand": "Fro - U",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Cookie Dough",
+      "brand": "Fro - U",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Rose Loukoum",
+      "brand": "Fro - U",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Kinder Style Spread",
+      "brand": "Fro - U",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Nociolla Sugar Free",
+      "brand": "Fro - U",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Pistachio Sugar Free",
+      "brand": "Fro - U",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Pistachio Kunafa",
+      "brand": "Fro - U",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Speculoos Spread",
+      "brand": "Fro - U",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "White Chocolate Matcha Spread",
+      "brand": "Fro - U",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Cones",
+      "brand": "Fro - U",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Kiwi",
+      "brand": "Pinkberry",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Kiwi",
+      "brand": "Fro - U",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Natural Honey",
+      "brand": "Fro - U",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Caramel Sauce",
+      "brand": "Pinkberry",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Caramel Sauce",
+      "brand": "Fro - U",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Chocolate Sauce",
+      "brand": "Pinkberry",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Chocolate Sauce",
+      "brand": "Fro - U",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Stawberry Sauce",
+      "brand": "Fro - U",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Raspberry Sauce",
+      "brand": "Fro - U",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Carob Molasses",
+      "brand": "Fro - U",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Chia Seeds",
+      "brand": "Fro - U",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Sunflowers Seeds",
+      "brand": "Fro - U",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Pumpkin Seeds",
+      "brand": "Fro - U",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Flax Seeds",
+      "brand": "Fro - U",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Coconut",
+      "brand": "Pinkberry",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Coconut",
+      "brand": "Fro - U",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Peanut Butter",
+      "brand": "Fro - U",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Honey Granola Gluten Free",
+      "brand": "Pinkberry",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Honey Granola Gluten Free",
+      "brand": "Fro - U",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Raisins",
+      "brand": "Fro - U",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Cranberries",
+      "brand": "Fro - U",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Almonds",
+      "brand": "Fro - U",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Walnuts",
+      "brand": "Fro - U",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Dates",
+      "brand": "Fro - U",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Biscoff Spread",
+      "brand": "Pinkberry",
+      "price_lbp": 153000,
+      "price_usd": 1.71
+    },
+    {
+      "category": "Toppings",
+      "product": "Peanut Butter Crunch",
+      "brand": "Pinkberry",
+      "price_lbp": 153000,
+      "price_usd": 1.71
+    },
+    {
+      "category": "Toppings",
+      "product": "Lemon Crunch",
+      "brand": "Pinkberry",
+      "price_lbp": 153000,
+      "price_usd": 1.71
+    },
+    {
+      "category": "Toppings",
+      "product": "Banana",
+      "brand": "Pinkberry",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Mini Gems",
+      "brand": "Pinkberry",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Biscoff Cookie",
+      "brand": "Pinkberry",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Cookies and Cream",
+      "brand": "Pinkberry",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    },
+    {
+      "category": "Toppings",
+      "product": "Crispy Crepes",
+      "brand": "Pinkberry",
+      "price_lbp": 90000,
+      "price_usd": 1.0
+    }
+  ]
+}
