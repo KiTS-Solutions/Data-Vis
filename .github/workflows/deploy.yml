@@ -28,16 +28,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Regenerate processed data
-        env:
-          PYTHONPATH: scripts
-        run: |
-          python -m pricing_pipeline.parse_pricing \
-            --xlsx "raw-data/Product Pricing Comparison March 2026 (1).xlsx" \
-            --config sources/stories-pricing-2026-03.json \
-            --out processed/stories-pricing-2026-03.normalized.json
-          python -m pricing_pipeline.analyze_pricing \
-            --in processed/stories-pricing-2026-03.normalized.json \
-            --out processed/stories-pricing-2026-03.json
+        run: bash scripts/build_reports.sh
 
       - uses: actions/setup-node@v4
         with:
