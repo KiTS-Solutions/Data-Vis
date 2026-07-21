@@ -1,47 +1,39 @@
-import type { SummaryKpis } from "@/lib/analytics/summary";
+import type { ReportScorecard } from "@/lib/analytics/scorecard";
+import { buildHeadline } from "@/lib/analytics/scorecard";
+import { formatDualCurrency } from "@/lib/format/currency";
 
-export function ExecutiveSummary({ kpis }: { kpis: SummaryKpis }) {
-  const topOver = kpis.topOverIndexed[0];
-  const topUnder = kpis.topUnderIndexed[0];
-
+export function ExecutiveSummary({ scorecards, fxRate }: { scorecards: ReportScorecard[]; fxRate: number }) {
   return (
-    <section aria-label="Executive Summary" className="grid grid-cols-2 gap-x-6 gap-y-6 md:grid-cols-3">
-      <KpiTile
-        label="Overall Price Index"
-        value={kpis.overallAvgIndex !== null ? `${kpis.overallAvgIndex}` : "—"}
-        sublabel="unweighted avg. across categories; 100 = at par"
-      />
-      <KpiTile label="Items Benchmarked" value={String(kpis.itemsBenchmarked)} sublabel="menu items priced by Stories" />
-      <KpiTile
-        label="Repricing Candidates"
-        value={String(kpis.repricingCandidates)}
-        sublabel="priced 15%+ above market"
-      />
-      <KpiTile
-        label="Trade-Up Opportunities"
-        value={String(kpis.tradeUpOpportunities)}
-        sublabel="priced 15%+ below market"
-      />
-      <KpiTile
-        label="Most Above Market"
-        value={topOver ? `${topOver.avg_price_index}` : "—"}
-        sublabel={topOver ? topOver.category : "no category data"}
-      />
-      <KpiTile
-        label="Most Below Market"
-        value={topUnder ? `${topUnder.avg_price_index}` : "—"}
-        sublabel={topUnder ? topUnder.category : "no category data"}
-      />
+    <section aria-label="Executive Summary" className="space-y-6">
+      <p className="font-display text-2xl text-ocean">{buildHeadline(scorecards)}</p>
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {scorecards.map((s) => (
+          <ScorecardTile key={s.reportLabel} scorecard={s} fxRate={fxRate} />
+        ))}
+      </div>
     </section>
   );
 }
 
-function KpiTile({ label, value, sublabel }: { label: string; value: string; sublabel: string }) {
+function ScorecardTile({ scorecard, fxRate }: { scorecard: ReportScorecard; fxRate: number }) {
+  const direction = scorecard.avgGapLbp === null
+    ? null
+    : scorecard.avgGapLbp > 0
+      ? "above market"
+      : scorecard.avgGapLbp < 0
+        ? "below market"
+        : "at par";
+  const gapLabel = scorecard.avgGapLbp === null ? "—" : formatDualCurrency(Math.abs(scorecard.avgGapLbp), fxRate);
+
   return (
     <div className="border-t-2 border-ocean/15 pt-3">
-      <p className="text-sm text-ocean-muted">{label}</p>
-      <p className="font-display text-4xl text-ocean">{value}</p>
-      <p className="mt-0.5 text-xs text-ocean-muted">{sublabel}</p>
+      <p className="font-display text-lg text-ocean">{scorecard.reportLabel}</p>
+      <p className="mt-1 text-sm text-ocean-muted">{scorecard.itemCount} items benchmarked</p>
+      <p className="mt-2 font-display text-2xl text-ocean">{gapLabel}</p>
+      <p className="text-xs text-ocean-muted">average gap vs. market{direction ? ` — ${direction}` : ""}</p>
+      <p className="mt-2 text-xs text-ocean-muted">
+        {scorecard.overpricedCount} above market · {scorecard.underpricedCount} below market
+      </p>
     </div>
   );
 }
