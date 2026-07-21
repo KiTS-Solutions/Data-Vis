@@ -3,30 +3,34 @@ import { describe, it, expect } from "vitest";
 import { ExecutiveSummary } from "./ExecutiveSummary";
 
 describe("ExecutiveSummary", () => {
-  it("renders the six KPI tiles with real dataset-derived data, no coverage tile", () => {
+  it("renders a plain-language headline and one scorecard tile per report", () => {
     render(
       <ExecutiveSummary
-        kpis={{
-          overallAvgIndex: 97.5,
-          itemsBenchmarked: 306,
-          repricingCandidates: 12,
-          tradeUpOpportunities: 7,
-          topOverIndexed: [{ category: "Sandwiches", product_count: 10, countable_product_count: 8, avg_price_index: 134 }],
-          topUnderIndexed: [{ category: "Tea", product_count: 5, countable_product_count: 4, avg_price_index: 72 }],
-        }}
+        fxRate={89600}
+        scorecards={[
+          { reportLabel: "Main Menu", itemCount: 120, avgGapLbp: 45000, overpricedCount: 8, underpricedCount: 3 },
+          { reportLabel: "Frozen Yogurt Bar", itemCount: 30, avgGapLbp: -20000, overpricedCount: 1, underpricedCount: 5 },
+        ]}
       />
     );
 
-    expect(screen.getByText("97.5")).toBeInTheDocument();
-    expect(screen.getByText("306")).toBeInTheDocument();
-    expect(screen.getByText("Repricing Candidates")).toBeInTheDocument();
-    expect(screen.getByText("12")).toBeInTheDocument();
-    expect(screen.getByText("Trade-Up Opportunities")).toBeInTheDocument();
-    expect(screen.getByText("7")).toBeInTheDocument();
-    expect(screen.getByText("134")).toBeInTheDocument();
-    expect(screen.getByText("Sandwiches")).toBeInTheDocument();
-    expect(screen.getByText("72")).toBeInTheDocument();
-    expect(screen.getByText("Tea")).toBeInTheDocument();
-    expect(screen.queryByText(/Coverage/)).not.toBeInTheDocument();
+    expect(screen.getByText("Priced above market in Main Menu; below market in Frozen Yogurt Bar.")).toBeInTheDocument();
+    expect(screen.getByText("Main Menu")).toBeInTheDocument();
+    expect(screen.getByText("120 items benchmarked")).toBeInTheDocument();
+    expect(screen.getByText("Frozen Yogurt Bar")).toBeInTheDocument();
+    expect(screen.getByText("30 items benchmarked")).toBeInTheDocument();
+    expect(screen.getByText("20,000 LBP ($0.22)")).toBeInTheDocument();
+    expect(screen.getByText(/average gap vs\. market — below market/)).toBeInTheDocument();
+    expect(screen.getByText("8 above market · 3 below market")).toBeInTheDocument();
+  });
+
+  it("shows an em-dash when a report has no comparable priced items", () => {
+    render(
+      <ExecutiveSummary
+        fxRate={89600}
+        scorecards={[{ reportLabel: "Empty Group", itemCount: 0, avgGapLbp: null, overpricedCount: 0, underpricedCount: 0 }]}
+      />
+    );
+    expect(screen.getByText("—")).toBeInTheDocument();
   });
 });

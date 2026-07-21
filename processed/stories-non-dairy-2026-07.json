@@ -1,0 +1,1544 @@
+{
+  "meta": {
+    "client": "Stories",
+    "report_date": "2026-07-22",
+    "currency": "LBP",
+    "fx_usd_rate": 89600,
+    "fx_rate_date": "2026-07-20",
+    "fx_source": "lira-rate.com / lbprate.com market average (parallel/market rate)",
+    "own_brand": "Stories",
+    "competitors": [
+      "Espresso Lab",
+      "Dunkin Donuts",
+      "Joe & the Juice",
+      "Starbucks"
+    ],
+    "generated_from": "raw-data/Non Dairy Product Pricing Comparison (1) (1).xlsx"
+  },
+  "products": [
+    {
+      "category": "Mixed Hot Beverages",
+      "product": "Cappuccino SMALL",
+      "prices_lbp": {
+        "Stories": 500000,
+        "Dunkin Donuts": 486000
+      },
+      "own_price_lbp": 500000,
+      "competitor_avg_lbp": 486000.0,
+      "price_index": 102.9,
+      "comparability": "low",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Hot Beverages",
+      "product": "Cappuccino MEDIUM",
+      "prices_lbp": {
+        "Stories": 600000,
+        "Espresso Lab": 650000,
+        "Dunkin Donuts": 576000,
+        "Joe & the Juice": 554900,
+        "Starbucks": 550000
+      },
+      "own_price_lbp": 600000,
+      "competitor_avg_lbp": 582725.0,
+      "price_index": 103.0,
+      "comparability": "high",
+      "tier": "Core",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Hot Beverages",
+      "product": "Cappuccino LARGE",
+      "prices_lbp": {
+        "Stories": 750000,
+        "Espresso Lab": 750000,
+        "Dunkin Donuts": 756000,
+        "Joe & the Juice": 599650,
+        "Starbucks": 600000
+      },
+      "own_price_lbp": 750000,
+      "competitor_avg_lbp": 676412.5,
+      "price_index": 110.9,
+      "comparability": "high",
+      "tier": "Premium",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Hot Beverages",
+      "product": "Mocha SMALL",
+      "prices_lbp": {
+        "Stories": 550000,
+        "Starbucks": 550000
+      },
+      "own_price_lbp": 550000,
+      "competitor_avg_lbp": 550000.0,
+      "price_index": 100.0,
+      "comparability": "low",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Hot Beverages",
+      "product": "Mocha MEDIUM",
+      "prices_lbp": {
+        "Stories": 700000,
+        "Espresso Lab": 800000,
+        "Joe & the Juice": 608600,
+        "Starbucks": 600000
+      },
+      "own_price_lbp": 700000,
+      "competitor_avg_lbp": 669533.33,
+      "price_index": 104.6,
+      "comparability": "high",
+      "tier": "Core",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Hot Beverages",
+      "product": "Mocha LARGE",
+      "prices_lbp": {
+        "Stories": 800000,
+        "Espresso Lab": 950000,
+        "Joe & the Juice": 662300,
+        "Starbucks": 650000
+      },
+      "own_price_lbp": 800000,
+      "competitor_avg_lbp": 754100.0,
+      "price_index": 106.1,
+      "comparability": "high",
+      "tier": "Premium",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Hot Beverages",
+      "product": "White Mocha SMALL",
+      "prices_lbp": {
+        "Stories": 550000,
+        "Dunkin Donuts": 576000,
+        "Starbucks": 550000
+      },
+      "own_price_lbp": 550000,
+      "competitor_avg_lbp": 563000.0,
+      "price_index": 97.7,
+      "comparability": "medium",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Hot Beverages",
+      "product": "White Mocha MEDIUM",
+      "prices_lbp": {
+        "Stories": 700000,
+        "Espresso Lab": 800000,
+        "Dunkin Donuts": 666000,
+        "Starbucks": 600000
+      },
+      "own_price_lbp": 700000,
+      "competitor_avg_lbp": 688666.67,
+      "price_index": 101.6,
+      "comparability": "high",
+      "tier": "Core",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Hot Beverages",
+      "product": "White Mocha LARGE",
+      "prices_lbp": {
+        "Stories": 800000,
+        "Espresso Lab": 950000,
+        "Starbucks": 650000
+      },
+      "own_price_lbp": 800000,
+      "competitor_avg_lbp": 800000.0,
+      "price_index": 100.0,
+      "comparability": "medium",
+      "tier": "Premium",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Hot Beverages",
+      "product": "Matcha Latte SMALL",
+      "prices_lbp": {
+        "Stories": 550000
+      },
+      "own_price_lbp": 550000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Hot Beverages",
+      "product": "Matcha Latte MEDIUM",
+      "prices_lbp": {
+        "Stories": 650000,
+        "Espresso Lab": 750000,
+        "Joe & the Juice": 689150,
+        "Starbucks": 600000
+      },
+      "own_price_lbp": 650000,
+      "competitor_avg_lbp": 679716.67,
+      "price_index": 95.6,
+      "comparability": "high",
+      "tier": "Core",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Hot Beverages",
+      "product": "Matcha Latte LARGE",
+      "prices_lbp": {
+        "Stories": 750000,
+        "Espresso Lab": 800000,
+        "Dunkin Donuts": 576000,
+        "Joe & the Juice": 733900,
+        "Starbucks": 700000
+      },
+      "own_price_lbp": 750000,
+      "competitor_avg_lbp": 702475.0,
+      "price_index": 106.8,
+      "comparability": "high",
+      "tier": "Premium",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Hot Beverages",
+      "product": "Hot Double Shot SMALL",
+      "prices_lbp": {
+        "Stories": 550000
+      },
+      "own_price_lbp": 550000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Hot Beverages",
+      "product": "Hot Double Shot MEDIUM",
+      "prices_lbp": {
+        "Stories": 650000
+      },
+      "own_price_lbp": 650000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Core",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Hot Beverages",
+      "product": "Hot Double Shot LARGE",
+      "prices_lbp": {
+        "Stories": 800000
+      },
+      "own_price_lbp": 800000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Premium",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Hot Beverages",
+      "product": "Flat White SMALL",
+      "prices_lbp": {
+        "Stories": 550000,
+        "Espresso Lab": 550000,
+        "Joe & the Juice": 519100
+      },
+      "own_price_lbp": 550000,
+      "competitor_avg_lbp": 534550.0,
+      "price_index": 102.9,
+      "comparability": "medium",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Hot Beverages",
+      "product": "Salted Caramel Latte SMALL",
+      "prices_lbp": {
+        "Stories": 550000
+      },
+      "own_price_lbp": 550000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Hot Beverages",
+      "product": "Salted Caramel Latte MEDIUM",
+      "prices_lbp": {
+        "Stories": 700000,
+        "Espresso Lab": 800000,
+        "Joe & the Juice": 662300
+      },
+      "own_price_lbp": 700000,
+      "competitor_avg_lbp": 731150.0,
+      "price_index": 95.7,
+      "comparability": "medium",
+      "tier": "Core",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Hot Beverages",
+      "product": "Salted Caramel Latte LARGE",
+      "prices_lbp": {
+        "Stories": 850000,
+        "Espresso Lab": 900000,
+        "Joe & the Juice": 698100
+      },
+      "own_price_lbp": 850000,
+      "competitor_avg_lbp": 799050.0,
+      "price_index": 106.4,
+      "comparability": "medium",
+      "tier": "Premium",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Hot Beverages",
+      "product": "Caramel Macchiato SMALL",
+      "prices_lbp": {
+        "Stories": 550000,
+        "Starbucks": 600000
+      },
+      "own_price_lbp": 550000,
+      "competitor_avg_lbp": 600000.0,
+      "price_index": 91.7,
+      "comparability": "low",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Hot Beverages",
+      "product": "Caramel Macchiato MEDIUM",
+      "prices_lbp": {
+        "Stories": 650000,
+        "Starbucks": 650000
+      },
+      "own_price_lbp": 650000,
+      "competitor_avg_lbp": 650000.0,
+      "price_index": 100.0,
+      "comparability": "low",
+      "tier": "Core",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Hot Beverages",
+      "product": "Caramel Macchiato LARGE",
+      "prices_lbp": {
+        "Stories": 800000,
+        "Starbucks": 700000
+      },
+      "own_price_lbp": 800000,
+      "competitor_avg_lbp": 700000.0,
+      "price_index": 114.3,
+      "comparability": "low",
+      "tier": "Premium",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Hot Beverages",
+      "product": "Latte SMALL",
+      "prices_lbp": {
+        "Stories": 500000,
+        "Dunkin Donuts": 486000,
+        "Starbucks": 500000
+      },
+      "own_price_lbp": 500000,
+      "competitor_avg_lbp": 493000.0,
+      "price_index": 101.4,
+      "comparability": "medium",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Hot Beverages",
+      "product": "Latte MEDIUM",
+      "prices_lbp": {
+        "Stories": 600000,
+        "Espresso Lab": 650000,
+        "Dunkin Donuts": 576000,
+        "Joe & the Juice": 554900,
+        "Starbucks": 550000
+      },
+      "own_price_lbp": 600000,
+      "competitor_avg_lbp": 582725.0,
+      "price_index": 103.0,
+      "comparability": "high",
+      "tier": "Core",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Hot Beverages",
+      "product": "Latte LARGE",
+      "prices_lbp": {
+        "Stories": 750000,
+        "Espresso Lab": 750000,
+        "Dunkin Donuts": 666000,
+        "Joe & the Juice": 599650,
+        "Starbucks": 600000
+      },
+      "own_price_lbp": 750000,
+      "competitor_avg_lbp": 653912.5,
+      "price_index": 114.7,
+      "comparability": "high",
+      "tier": "Premium",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Hot Beverages",
+      "product": "Toffee Nut Latte SMALL",
+      "prices_lbp": {
+        "Stories": 550000
+      },
+      "own_price_lbp": 550000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Hot Beverages",
+      "product": "Toffee Nut Latte MEDIUM",
+      "prices_lbp": {
+        "Stories": 650000
+      },
+      "own_price_lbp": 650000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Core",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Hot Beverages",
+      "product": "Toffee Nut Latte LARGE",
+      "prices_lbp": {
+        "Stories": 800000
+      },
+      "own_price_lbp": 800000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Premium",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Hot Beverages",
+      "product": "Hot Chocolate SMALL",
+      "prices_lbp": {
+        "Stories": 550000,
+        "Dunkin Donuts": 486000,
+        "Starbucks": 550000
+      },
+      "own_price_lbp": 550000,
+      "competitor_avg_lbp": 518000.0,
+      "price_index": 106.2,
+      "comparability": "medium",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Hot Beverages",
+      "product": "Hot Chocolate MEDIUM",
+      "prices_lbp": {
+        "Stories": 650000,
+        "Dunkin Donuts": 576000,
+        "Joe & the Juice": 554900,
+        "Starbucks": 600000
+      },
+      "own_price_lbp": 650000,
+      "competitor_avg_lbp": 576966.67,
+      "price_index": 112.7,
+      "comparability": "high",
+      "tier": "Core",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Hot Beverages",
+      "product": "Hot Chocolate LARGE",
+      "prices_lbp": {
+        "Stories": 800000,
+        "Dunkin Donuts": 666000,
+        "Joe & the Juice": 608600,
+        "Starbucks": 650000
+      },
+      "own_price_lbp": 800000,
+      "competitor_avg_lbp": 641533.33,
+      "price_index": 124.7,
+      "comparability": "high",
+      "tier": "Premium",
+      "is_outlier": true,
+      "outlier_direction": "overpriced"
+    },
+    {
+      "category": "Blended Drinks",
+      "product": "Espresso Frap SMALL",
+      "prices_lbp": {
+        "Stories": 500000
+      },
+      "own_price_lbp": 500000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Blended Drinks",
+      "product": "Espresso Frap MEDIUM",
+      "prices_lbp": {
+        "Stories": 600000
+      },
+      "own_price_lbp": 600000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Core",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Blended Drinks",
+      "product": "Espresso Frap LARGE",
+      "prices_lbp": {
+        "Stories": 700000
+      },
+      "own_price_lbp": 700000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Core",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Blended Drinks",
+      "product": "Matcha Cream Frap SMALL",
+      "prices_lbp": {
+        "Stories": 550000
+      },
+      "own_price_lbp": 550000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Blended Drinks",
+      "product": "Matcha Cream Frap MEDIUM",
+      "prices_lbp": {
+        "Stories": 700000
+      },
+      "own_price_lbp": 700000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Core",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Blended Drinks",
+      "product": "Matcha Cream Frap LARGE",
+      "prices_lbp": {
+        "Stories": 800000
+      },
+      "own_price_lbp": 800000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Premium",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Blended Drinks",
+      "product": "Vanilla Cream Frap SMALL",
+      "prices_lbp": {
+        "Stories": 550000
+      },
+      "own_price_lbp": 550000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Blended Drinks",
+      "product": "Vanilla Cream Frap MEDIUM",
+      "prices_lbp": {
+        "Stories": 700000,
+        "Starbucks": 650000
+      },
+      "own_price_lbp": 700000,
+      "competitor_avg_lbp": 650000.0,
+      "price_index": 107.7,
+      "comparability": "low",
+      "tier": "Core",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Blended Drinks",
+      "product": "Vanilla Cream Frap LARGE",
+      "prices_lbp": {
+        "Stories": 800000,
+        "Starbucks": 750000
+      },
+      "own_price_lbp": 800000,
+      "competitor_avg_lbp": 750000.0,
+      "price_index": 106.7,
+      "comparability": "low",
+      "tier": "Premium",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Blended Drinks",
+      "product": "Caramel Cream Frap SMALL",
+      "prices_lbp": {
+        "Stories": 550000
+      },
+      "own_price_lbp": 550000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Blended Drinks",
+      "product": "Caramel Cream Frap MEDIUM",
+      "prices_lbp": {
+        "Stories": 700000,
+        "Espresso Lab": 650000,
+        "Dunkin Donuts": 801000,
+        "Starbucks": 650000
+      },
+      "own_price_lbp": 700000,
+      "competitor_avg_lbp": 700333.33,
+      "price_index": 100.0,
+      "comparability": "high",
+      "tier": "Core",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Blended Drinks",
+      "product": "Caramel Cream Frap LARGE",
+      "prices_lbp": {
+        "Stories": 800000,
+        "Espresso Lab": 750000,
+        "Starbucks": 750000
+      },
+      "own_price_lbp": 800000,
+      "competitor_avg_lbp": 750000.0,
+      "price_index": 106.7,
+      "comparability": "medium",
+      "tier": "Premium",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Blended Drinks",
+      "product": "Chocolate Cream Frap",
+      "prices_lbp": {
+        "Stories": 800000,
+        "Dunkin Donuts": 801000
+      },
+      "own_price_lbp": 800000,
+      "competitor_avg_lbp": 801000.0,
+      "price_index": 99.9,
+      "comparability": "low",
+      "tier": "Premium",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Blended Drinks",
+      "product": "White Mocha Cream Frap SMALL",
+      "prices_lbp": {
+        "Stories": 550000
+      },
+      "own_price_lbp": 550000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Blended Drinks",
+      "product": "White Mocha Cream Frap MEDIUM",
+      "prices_lbp": {
+        "Stories": 700000,
+        "Starbucks": 650000
+      },
+      "own_price_lbp": 700000,
+      "competitor_avg_lbp": 650000.0,
+      "price_index": 107.7,
+      "comparability": "low",
+      "tier": "Core",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Blended Drinks",
+      "product": "White Mocha Cream Frap LARGE",
+      "prices_lbp": {
+        "Stories": 800000,
+        "Espresso Lab": 900000,
+        "Starbucks": 750000
+      },
+      "own_price_lbp": 800000,
+      "competitor_avg_lbp": 825000.0,
+      "price_index": 97.0,
+      "comparability": "medium",
+      "tier": "Premium",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Blended Drinks",
+      "product": "Hazelnut Coffee Frap SMALL",
+      "prices_lbp": {
+        "Stories": 550000
+      },
+      "own_price_lbp": 550000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Blended Drinks",
+      "product": "Hazelnut Coffee Frap MEDIUM",
+      "prices_lbp": {
+        "Stories": 700000
+      },
+      "own_price_lbp": 700000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Core",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Blended Drinks",
+      "product": "Hazelnut Coffee Frap LARGE",
+      "prices_lbp": {
+        "Stories": 800000
+      },
+      "own_price_lbp": 800000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Premium",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Blended Drinks",
+      "product": "Coffee Frap SMALL",
+      "prices_lbp": {
+        "Stories": 500000
+      },
+      "own_price_lbp": 500000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Blended Drinks",
+      "product": "Coffee Frap MEDIUM",
+      "prices_lbp": {
+        "Stories": 600000,
+        "Espresso Lab": 650000,
+        "Starbucks": 550000
+      },
+      "own_price_lbp": 600000,
+      "competitor_avg_lbp": 600000.0,
+      "price_index": 100.0,
+      "comparability": "medium",
+      "tier": "Core",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Blended Drinks",
+      "product": "Coffee Frap LARGE",
+      "prices_lbp": {
+        "Stories": 700000,
+        "Espresso Lab": 750000,
+        "Starbucks": 650000
+      },
+      "own_price_lbp": 700000,
+      "competitor_avg_lbp": 700000.0,
+      "price_index": 100.0,
+      "comparability": "medium",
+      "tier": "Core",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Blended Drinks",
+      "product": "Strawberry Cream Frap SMALL",
+      "prices_lbp": {
+        "Stories": 550000
+      },
+      "own_price_lbp": 550000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Blended Drinks",
+      "product": "Strawberry Cream Frap MEDIUM",
+      "prices_lbp": {
+        "Stories": 700000,
+        "Espresso Lab": 600000,
+        "Starbucks": 650000
+      },
+      "own_price_lbp": 700000,
+      "competitor_avg_lbp": 625000.0,
+      "price_index": 112.0,
+      "comparability": "medium",
+      "tier": "Core",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Blended Drinks",
+      "product": "Strawberry Cream Frap LARGE",
+      "prices_lbp": {
+        "Stories": 800000,
+        "Espresso Lab": 650000,
+        "Starbucks": 750000
+      },
+      "own_price_lbp": 800000,
+      "competitor_avg_lbp": 700000.0,
+      "price_index": 114.3,
+      "comparability": "medium",
+      "tier": "Premium",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Blended Drinks",
+      "product": "Toffee Nut Frap SMALL",
+      "prices_lbp": {
+        "Stories": 550000
+      },
+      "own_price_lbp": 550000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Blended Drinks",
+      "product": "Toffee Nut Frap MEDIUM",
+      "prices_lbp": {
+        "Stories": 700000
+      },
+      "own_price_lbp": 700000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Core",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Blended Drinks",
+      "product": "Toffee Nut Frap LARGE",
+      "prices_lbp": {
+        "Stories": 800000
+      },
+      "own_price_lbp": 800000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Premium",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Blended Drinks",
+      "product": "Salted Caramel Cream SMALL",
+      "prices_lbp": {
+        "Stories": 550000
+      },
+      "own_price_lbp": 550000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Blended Drinks",
+      "product": "Salted Caramel Cream MEDIUM",
+      "prices_lbp": {
+        "Stories": 700000,
+        "Joe & the Juice": 662300
+      },
+      "own_price_lbp": 700000,
+      "competitor_avg_lbp": 662300.0,
+      "price_index": 105.7,
+      "comparability": "low",
+      "tier": "Core",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Blended Drinks",
+      "product": "Salted Caramel Cream LARGE",
+      "prices_lbp": {
+        "Stories": 800000,
+        "Joe & the Juice": 698100
+      },
+      "own_price_lbp": 800000,
+      "competitor_avg_lbp": 698100.0,
+      "price_index": 114.6,
+      "comparability": "low",
+      "tier": "Premium",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Blended Drinks",
+      "product": "Spanish Latte SMALL",
+      "prices_lbp": {
+        "Stories": 600000,
+        "Joe & the Juice": 733900
+      },
+      "own_price_lbp": 600000,
+      "competitor_avg_lbp": 733900.0,
+      "price_index": 81.8,
+      "comparability": "low",
+      "tier": "Core",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Blended Drinks",
+      "product": "Spanish Latte MEDIUM",
+      "prices_lbp": {
+        "Stories": 750000,
+        "Espresso Lab": 850000,
+        "Dunkin Donuts": 576000,
+        "Joe & the Juice": 778650
+      },
+      "own_price_lbp": 750000,
+      "competitor_avg_lbp": 734883.33,
+      "price_index": 102.1,
+      "comparability": "high",
+      "tier": "Core",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Cold Beverages",
+      "product": "Iced Latte SMALL",
+      "prices_lbp": {
+        "Stories": 500000,
+        "Dunkin Donuts": 486000
+      },
+      "own_price_lbp": 500000,
+      "competitor_avg_lbp": 486000.0,
+      "price_index": 102.9,
+      "comparability": "low",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Cold Beverages",
+      "product": "Iced Latte MEDIUM",
+      "prices_lbp": {
+        "Stories": 650000,
+        "Espresso Lab": 750000,
+        "Dunkin Donuts": 621000,
+        "Joe & the Juice": 554900,
+        "Starbucks": 500000
+      },
+      "own_price_lbp": 650000,
+      "competitor_avg_lbp": 606475.0,
+      "price_index": 107.2,
+      "comparability": "high",
+      "tier": "Core",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Cold Beverages",
+      "product": "Iced Latte LARGE",
+      "prices_lbp": {
+        "Stories": 700000,
+        "Espresso Lab": 850000,
+        "Dunkin Donuts": 711000,
+        "Joe & the Juice": 599650,
+        "Starbucks": 600000
+      },
+      "own_price_lbp": 700000,
+      "competitor_avg_lbp": 690162.5,
+      "price_index": 101.4,
+      "comparability": "high",
+      "tier": "Core",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Cold Beverages",
+      "product": "Iced Spanish Latte SMALL",
+      "prices_lbp": {
+        "Stories": 550000,
+        "Joe & the Juice": 733900,
+        "Starbucks": 550000
+      },
+      "own_price_lbp": 550000,
+      "competitor_avg_lbp": 641950.0,
+      "price_index": 85.7,
+      "comparability": "medium",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Cold Beverages",
+      "product": "Iced Spanish Latte MEDIUM",
+      "prices_lbp": {
+        "Stories": 750000,
+        "Dunkin Donuts": 666000,
+        "Joe & the Juice": 778650,
+        "Starbucks": 650000
+      },
+      "own_price_lbp": 750000,
+      "competitor_avg_lbp": 698216.67,
+      "price_index": 107.4,
+      "comparability": "high",
+      "tier": "Core",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Cold Beverages",
+      "product": "Iced Double Shot Toffee Nut SMALL",
+      "prices_lbp": {
+        "Stories": 550000
+      },
+      "own_price_lbp": 550000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Cold Beverages",
+      "product": "Iced Double Shot Toffee Nut MEDIUM",
+      "prices_lbp": {
+        "Stories": 700000
+      },
+      "own_price_lbp": 700000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Core",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Cold Beverages",
+      "product": "Iced Double Shot Toffee Nut LARGE",
+      "prices_lbp": {
+        "Stories": 800000
+      },
+      "own_price_lbp": 800000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Premium",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Cold Beverages",
+      "product": "Iced Toffee Nut Latte SMALL",
+      "prices_lbp": {
+        "Stories": 550000
+      },
+      "own_price_lbp": 550000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Cold Beverages",
+      "product": "Iced Toffee Nut Latte MEDIUM",
+      "prices_lbp": {
+        "Stories": 700000
+      },
+      "own_price_lbp": 700000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Core",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Cold Beverages",
+      "product": "Iced Toffee Nut Latte LARGE",
+      "prices_lbp": {
+        "Stories": 800000
+      },
+      "own_price_lbp": 800000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Premium",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Cold Beverages",
+      "product": "Iced Salted Caramel Latte SMALL",
+      "prices_lbp": {
+        "Stories": 550000
+      },
+      "own_price_lbp": 550000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Cold Beverages",
+      "product": "Iced Salted Caramel Latte MEDIUM",
+      "prices_lbp": {
+        "Stories": 700000,
+        "Espresso Lab": 800000,
+        "Joe & the Juice": 662300
+      },
+      "own_price_lbp": 700000,
+      "competitor_avg_lbp": 731150.0,
+      "price_index": 95.7,
+      "comparability": "medium",
+      "tier": "Core",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Cold Beverages",
+      "product": "Iced Salted Caramel Latte LARGE",
+      "prices_lbp": {
+        "Stories": 800000,
+        "Espresso Lab": 900000,
+        "Joe & the Juice": 698100
+      },
+      "own_price_lbp": 800000,
+      "competitor_avg_lbp": 799050.0,
+      "price_index": 100.1,
+      "comparability": "medium",
+      "tier": "Premium",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Cold Beverages",
+      "product": "Iced White Mocha SMALL",
+      "prices_lbp": {
+        "Stories": 550000,
+        "Dunkin Donuts": 666000
+      },
+      "own_price_lbp": 550000,
+      "competitor_avg_lbp": 666000.0,
+      "price_index": 82.6,
+      "comparability": "low",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Cold Beverages",
+      "product": "Iced White Mocha MEDIUM",
+      "prices_lbp": {
+        "Stories": 700000,
+        "Espresso Lab": 800000,
+        "Dunkin Donuts": 756000,
+        "Starbucks": 550000
+      },
+      "own_price_lbp": 700000,
+      "competitor_avg_lbp": 702000.0,
+      "price_index": 99.7,
+      "comparability": "high",
+      "tier": "Core",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Cold Beverages",
+      "product": "Iced White Mocha LARGE",
+      "prices_lbp": {
+        "Stories": 800000,
+        "Espresso Lab": 900000,
+        "Dunkin Donuts": 846000,
+        "Starbucks": 650000
+      },
+      "own_price_lbp": 800000,
+      "competitor_avg_lbp": 798666.67,
+      "price_index": 100.2,
+      "comparability": "high",
+      "tier": "Premium",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Cold Beverages",
+      "product": "Iced Caramel Macchiato SMALL",
+      "prices_lbp": {
+        "Stories": 550000
+      },
+      "own_price_lbp": 550000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Cold Beverages",
+      "product": "Iced Caramel Macchiato MEDIUM",
+      "prices_lbp": {
+        "Stories": 700000
+      },
+      "own_price_lbp": 700000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Core",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Cold Beverages",
+      "product": "Iced Caramel Macchiato LARGE",
+      "prices_lbp": {
+        "Stories": 850000
+      },
+      "own_price_lbp": 850000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Premium",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Cold Beverages",
+      "product": "Iced Mocha SMALL",
+      "prices_lbp": {
+        "Stories": 550000
+      },
+      "own_price_lbp": 550000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Cold Beverages",
+      "product": "Iced Mocha MEDIUM",
+      "prices_lbp": {
+        "Stories": 700000,
+        "Joe & the Juice": 608600
+      },
+      "own_price_lbp": 700000,
+      "competitor_avg_lbp": 608600.0,
+      "price_index": 115.0,
+      "comparability": "low",
+      "tier": "Core",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Cold Beverages",
+      "product": "Iced Mocha LARGE",
+      "prices_lbp": {
+        "Stories": 800000,
+        "Joe & the Juice": 662300
+      },
+      "own_price_lbp": 800000,
+      "competitor_avg_lbp": 662300.0,
+      "price_index": 120.8,
+      "comparability": "low",
+      "tier": "Premium",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Cold Beverages",
+      "product": "Double Shot Shaken SMALL",
+      "prices_lbp": {
+        "Stories": 550000
+      },
+      "own_price_lbp": 550000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Cold Beverages",
+      "product": "Double Shot Shaken MEDIUM",
+      "prices_lbp": {
+        "Stories": 700000
+      },
+      "own_price_lbp": 700000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Core",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Cold Beverages",
+      "product": "Double Shot Shaken LARGE",
+      "prices_lbp": {
+        "Stories": 800000
+      },
+      "own_price_lbp": 800000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Premium",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Cold Beverages",
+      "product": "Steamed Milk SMALL",
+      "prices_lbp": {
+        "Stories": 400000
+      },
+      "own_price_lbp": 400000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Cold Beverages",
+      "product": "Steamed Milk MEDIUM",
+      "prices_lbp": {
+        "Stories": 500000
+      },
+      "own_price_lbp": 500000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Cold Beverages",
+      "product": "Steamed Milk LARGE",
+      "prices_lbp": {
+        "Stories": 600000
+      },
+      "own_price_lbp": 600000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Core",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Signature",
+      "product": "Signature Iced Chocolate SMALL",
+      "prices_lbp": {
+        "Stories": 550000,
+        "Starbucks": 550000
+      },
+      "own_price_lbp": 550000,
+      "competitor_avg_lbp": 550000.0,
+      "price_index": 100.0,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Signature",
+      "product": "Signature Iced Chocolate MEDIUM",
+      "prices_lbp": {
+        "Stories": 700000,
+        "Espresso Lab": 650000,
+        "Starbucks": 600000
+      },
+      "own_price_lbp": 700000,
+      "competitor_avg_lbp": 625000.0,
+      "price_index": 112.0,
+      "comparability": "medium",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Signature",
+      "product": "Signature Iced Chocolate LARGE",
+      "prices_lbp": {
+        "Stories": 800000,
+        "Espresso Lab": 750000,
+        "Starbucks": 650000
+      },
+      "own_price_lbp": 800000,
+      "competitor_avg_lbp": 700000.0,
+      "price_index": 114.3,
+      "comparability": "medium",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Protein Shakes",
+      "product": "Strawberry Protein Shake MEDIUM",
+      "prices_lbp": {
+        "Stories": 750000
+      },
+      "own_price_lbp": 750000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    }
+  ],
+  "categories": [
+    {
+      "category": "Mixed Hot Beverages",
+      "product_count": 31,
+      "countable_product_count": 18,
+      "avg_price_index": 105.2
+    },
+    {
+      "category": "Blended Drinks",
+      "product_count": 33,
+      "countable_product_count": 8,
+      "avg_price_index": 104.0
+    },
+    {
+      "category": "Mixed Cold Beverages",
+      "product_count": 29,
+      "countable_product_count": 8,
+      "avg_price_index": 99.7
+    },
+    {
+      "category": "Signature",
+      "product_count": 3,
+      "countable_product_count": 2,
+      "avg_price_index": 113.2
+    },
+    {
+      "category": "Protein Shakes",
+      "product_count": 1,
+      "countable_product_count": 0,
+      "avg_price_index": null
+    }
+  ],
+  "data_quality_warnings": [
+    {
+      "category": "Blended Drinks",
+      "product": "Chocolate Cream Frap",
+      "brand": "Stories",
+      "conflicting_prices_lbp": [
+        550000,
+        700000
+      ]
+    },
+    {
+      "category": "Blended Drinks",
+      "product": "Chocolate Cream Frap",
+      "brand": "Stories",
+      "conflicting_prices_lbp": [
+        700000,
+        800000
+      ]
+    }
+  ]
+}
