@@ -15,7 +15,7 @@ import {
 } from "recharts";
 import type { CategoryPriceMapRow } from "@/lib/analytics/positioningMap";
 import { filterCategoryPriceMap } from "@/lib/analytics/positioningMap";
-import { BRAND_COLORS, CONTEXT_COLOR } from "@/lib/theme/colors";
+import { BRAND_COLORS, CHART_COLORS, CONTEXT_COLOR } from "@/lib/theme/colors";
 import { formatDualCurrency } from "@/lib/format/currency";
 
 interface PricePoint {
@@ -93,6 +93,10 @@ export function CategoryPriceMap({
       return { category: r.category, y1: idx - 0.32, y2: idx + 0.32, x1: r.competitorMinLbp!, x2: r.competitorMaxLbp! };
     });
 
+  const competitorBrands = Array.from(
+    new Set(rows.flatMap((r) => r.brands.map((b) => b.brand)).filter((b) => b !== ownBrand))
+  );
+
   return (
     <div>
       <div className="mb-3 flex flex-wrap items-center gap-3">
@@ -113,8 +117,10 @@ export function CategoryPriceMap({
           ))}
         </select>
         <div className="ml-auto flex flex-wrap items-center gap-4 text-xs text-ocean/70">
-          <LegendChip color={BRAND_COLORS.stories} label={`${ownBrand} — client`} bold />
-          <LegendChip color={CONTEXT_COLOR} label="Competitor brands" />
+          <LegendChip color={BRAND_COLORS.stories} label={ownBrand} bold />
+          {competitorBrands.map((b) => (
+            <LegendChip key={b} color={CHART_COLORS[b] ?? CONTEXT_COLOR} label={b} />
+          ))}
           <span className="flex items-center gap-1">
             <span className="inline-block h-2 w-4 rounded-sm bg-ocean/10" />
             Competitor price range
@@ -162,7 +168,7 @@ export function CategoryPriceMap({
               {points.map((p, i) => (
                 <Cell
                   key={`${p.category}-${p.brand}-${i}`}
-                  fill={p.isOwnBrand ? BRAND_COLORS.stories : CONTEXT_COLOR}
+                  fill={p.isOwnBrand ? BRAND_COLORS.stories : CHART_COLORS[p.brand] ?? CONTEXT_COLOR}
                   stroke={p.isOwnBrand ? "#1a1a1a" : "none"}
                   strokeWidth={p.isOwnBrand ? 1.5 : 0}
                   r={p.isOwnBrand ? 7 : 5}

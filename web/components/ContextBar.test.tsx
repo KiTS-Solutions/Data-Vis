@@ -3,7 +3,7 @@ import { describe, it, expect } from "vitest";
 import { ContextBar } from "./ContextBar";
 
 describe("ContextBar", () => {
-  it("shows client, period, FX rate with source, and a coverage caveat", () => {
+  it("shows client, an unambiguous period, and FX rate with source", () => {
     render(
       <ContextBar
         meta={{
@@ -16,13 +16,13 @@ describe("ContextBar", () => {
           own_brand: "Stories",
           competitors: ["Espresso Lab", "Dunkin Donuts", "Joe & the Juice", "Starbucks"],
         }}
-        coveragePct={62.3}
       />
     );
 
     expect(screen.getByText(/Stories/)).toBeInTheDocument();
+    expect(screen.getByText(/March 2026/)).toBeInTheDocument();
+    expect(screen.queryByText(/2026-03-01/)).not.toBeInTheDocument();
     expect(screen.getByText(/89,600 LBP\/USD/)).toBeInTheDocument();
     expect(screen.getByText(/lira-rate.com/)).toBeInTheDocument();
-    expect(screen.getByText(/62.3% of line items/)).toBeInTheDocument();
   });
 });

@@ -189,10 +189,7 @@ export function DataExplorer({
                         <div className="flex flex-wrap gap-4">
                           {Object.entries(p.prices_lbp).map(([brand, price]) => (
                             <div key={brand} className={brand === ownBrand ? "font-semibold" : ""}>
-                              <p className="text-xs text-ocean/50">
-                                {brand}
-                                {brand === ownBrand ? " (client)" : ""}
-                              </p>
+                              <p className="text-xs text-ocean/50">{brand}</p>
                               <p style={{ color: brand === ownBrand ? BRAND_COLORS.stories : undefined }}>
                                 {formatDualCurrency(price, fxRate)}
                               </p>

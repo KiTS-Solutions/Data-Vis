@@ -7,8 +7,22 @@ describe("CategoryPositioning", () => {
     render(
       <CategoryPositioning
         rows={[
-          { category: "Hot", avgIndex: 120, deviation: 20, direction: "above" },
-          { category: "Cold", avgIndex: 85, deviation: -15, direction: "below" },
+          {
+            category: "Hot",
+            avgIndex: 120,
+            deviation: 20,
+            direction: "above",
+            countableProductCount: 5,
+            totalProductCount: 6,
+          },
+          {
+            category: "Cold",
+            avgIndex: 85,
+            deviation: -15,
+            direction: "below",
+            countableProductCount: 3,
+            totalProductCount: 3,
+          },
         ]}
       />
     );

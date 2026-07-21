@@ -1,5 +1,6 @@
 import { loadReport } from "@/lib/data/loadReport";
 import { withBasePath } from "@/lib/basePath";
+import { formatReportPeriod } from "@/lib/format/date";
 import { computeSummaryKpis } from "@/lib/analytics/summary";
 import { prepareCategoryPositioning } from "@/lib/analytics/categoryPositioning";
 import { groupOutlierFindings } from "@/lib/analytics/findings";
@@ -44,11 +45,15 @@ export default function Home() {
         </div>
       </div>
 
-      <ContextBar meta={report.meta} coveragePct={kpis.coveragePct} />
+      <ContextBar meta={report.meta} />
 
       <main className="mx-auto max-w-6xl px-6">
         <Section title="Executive Summary" first>
           <ExecutiveSummary kpis={kpis} />
+        </Section>
+
+        <Section title="Methodology & Data Sources">
+          <Methodology meta={report.meta} warnings={report.data_quality_warnings} />
         </Section>
 
         <Section title="Competitive Landscape at a Glance">
@@ -58,10 +63,6 @@ export default function Home() {
             peers, violet = priced below, gray = no data. {report.meta.client}&apos;s column is outlined.
           </p>
           <CategoryBrandHeatmap rows={heatmapRows} brands={allBrands} ownBrand={report.meta.own_brand} />
-        </Section>
-
-        <Section title="Methodology & Data Sources">
-          <Methodology meta={report.meta} warnings={report.data_quality_warnings} />
         </Section>
 
         <Section title="Category Positioning">
@@ -75,10 +76,10 @@ export default function Home() {
 
         <Section title="Price Positioning Map">
           <p className="mb-5 max-w-2xl text-sm text-ocean/60">
-            Every brand&apos;s average price per category. {report.meta.client} is shown in Ocean; competitor
-            brands sit in gray, with a shaded band marking their price range — where {report.meta.client}&apos;s
-            dot falls inside, at the edge, or outside that band is the read. Filter to a single category for a
-            closer look.
+            Every brand&apos;s average price per category. {report.meta.client} is shown in Ocean with a bold
+            outline; each competitor has its own color (see legend). The shaded band marks the competitor price
+            range — where {report.meta.client}&apos;s dot falls inside, at the edge, or outside that band is the
+            read. Filter to a single category for a closer look.
           </p>
           <CategoryPriceMap rows={priceMapRows} fxRate={report.meta.fx_usd_rate} ownBrand={report.meta.own_brand} />
         </Section>
@@ -100,7 +101,8 @@ export default function Home() {
         <div className="mx-auto max-w-6xl">
           <p>Confidential — prepared for {report.meta.client} by Ru&apos;ya 360. Not for external distribution.</p>
           <p className="mt-1">
-            Report period: {report.meta.report_date} · Source: {report.meta.generated_from ?? "internal pricing data"}.
+            Report period: {formatReportPeriod(report.meta.report_date)} · Source:{" "}
+            {report.meta.generated_from ?? "internal pricing data"}.
           </p>
         </div>
       </footer>

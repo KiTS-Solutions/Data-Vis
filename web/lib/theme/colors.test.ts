@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { BRAND_COLORS, COMPETITOR_COLORS, SEMANTIC_COLORS, CONTEXT_COLOR } from "./colors";
+import { BRAND_COLORS, COMPETITOR_COLORS, SEMANTIC_COLORS, CONTEXT_COLOR, CHART_COLORS } from "./colors";
 
 describe("theme colors", () => {
   it("assigns Stories to Ocean", () => {
@@ -22,5 +22,15 @@ describe("theme colors", () => {
   it("keeps the emphasis context color distinct from Stories' brand color", () => {
     expect(CONTEXT_COLOR).not.toBe(BRAND_COLORS.stories);
     expect(CONTEXT_COLOR).toMatch(/^#[0-9a-f]{6}$/i);
+  });
+
+  it("gives each of the four competitors a distinct, validated chart color, none matching Stories", () => {
+    const names = ["Espresso Lab", "Dunkin Donuts", "Joe & the Juice", "Starbucks"];
+    const colors = names.map((n) => CHART_COLORS[n]);
+    expect(new Set(colors).size).toBe(4);
+    colors.forEach((c) => {
+      expect(c).toMatch(/^#[0-9a-f]{6}$/i);
+      expect(c).not.toBe(BRAND_COLORS.stories);
+    });
   });
 });

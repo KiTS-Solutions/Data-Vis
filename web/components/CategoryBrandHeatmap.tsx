@@ -31,7 +31,7 @@ export function CategoryBrandHeatmap({ rows, brands, ownBrand }: { rows: Heatmap
                   key={b}
                   className={`p-1 text-center font-normal ${b === ownBrand ? "font-semibold text-ocean" : "text-ocean/50"}`}
                 >
-                  {b === ownBrand ? `${b} (client)` : b}
+                  {b}
                 </th>
               ))}
             </tr>

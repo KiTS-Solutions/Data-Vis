@@ -5,6 +5,8 @@ export interface CategoryPositioningRow {
   avgIndex: number;
   deviation: number;
   direction: "above" | "below" | "at-par";
+  countableProductCount: number;
+  totalProductCount: number;
 }
 
 export function prepareCategoryPositioning(categories: CategoryRollup[]): CategoryPositioningRow[] {
@@ -14,7 +16,14 @@ export function prepareCategoryPositioning(categories: CategoryRollup[]): Catego
       const deviation = Math.round((c.avg_price_index - 100) * 10) / 10;
       const direction: CategoryPositioningRow["direction"] =
         deviation > 0.5 ? "above" : deviation < -0.5 ? "below" : "at-par";
-      return { category: c.category, avgIndex: c.avg_price_index, deviation, direction };
+      return {
+        category: c.category,
+        avgIndex: c.avg_price_index,
+        deviation,
+        direction,
+        countableProductCount: c.countable_product_count,
+        totalProductCount: c.product_count,
+      };
     })
     .sort((a, b) => b.deviation - a.deviation);
 }

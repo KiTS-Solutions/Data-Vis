@@ -24,7 +24,7 @@ describe("CategoryPriceMap", () => {
 
     expect(screen.getByTestId("category-price-map")).toBeInTheDocument();
     expect(screen.getByLabelText("Category")).toBeInTheDocument();
-    expect(screen.getByText("Stories — client")).toBeInTheDocument();
-    expect(screen.getByText("Competitor brands")).toBeInTheDocument();
+    expect(screen.getByText("Stories")).toBeInTheDocument();
+    expect(screen.getByText("Espresso Lab")).toBeInTheDocument();
   });
 });

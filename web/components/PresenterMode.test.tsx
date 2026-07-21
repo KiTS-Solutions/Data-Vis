@@ -34,12 +34,12 @@ describe("Presenter mode", () => {
       </PresenterModeProvider>
     );
 
-    expect(screen.getByText("Repricing Candidates (Overpriced)")).toBeInTheDocument();
+    expect(screen.getByText(/Repricing Candidates/)).toBeInTheDocument();
 
     await user.click(screen.getByRole("button", { name: "Hide Recommendations" }));
-    expect(screen.queryByText("Repricing Candidates (Overpriced)")).not.toBeInTheDocument();
+    expect(screen.queryByText(/Repricing Candidates/)).not.toBeInTheDocument();
 
     await user.click(screen.getByRole("button", { name: "Show Recommendations" }));
-    expect(screen.getByText("Repricing Candidates (Overpriced)")).toBeInTheDocument();
+    expect(screen.getByText(/Repricing Candidates/)).toBeInTheDocument();
   });
 });

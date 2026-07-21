@@ -14,12 +14,21 @@ describe("prepareCategoryPositioning", () => {
     const rows = prepareCategoryPositioning(categories);
 
     expect(rows).toHaveLength(3);
-    expect(rows[0]).toEqual({ category: "Hot", avgIndex: 120, deviation: 20, direction: "above" });
+    expect(rows[0]).toEqual({
+      category: "Hot",
+      avgIndex: 120,
+      deviation: 20,
+      direction: "above",
+      countableProductCount: 5,
+      totalProductCount: 5,
+    });
     expect(rows.find((r) => r.category === "Cold")).toEqual({
       category: "Cold",
       avgIndex: 85,
       deviation: -15,
       direction: "below",
+      countableProductCount: 3,
+      totalProductCount: 3,
     });
     expect(rows.find((r) => r.category === "AtPar")?.direction).toBe("at-par");
   });

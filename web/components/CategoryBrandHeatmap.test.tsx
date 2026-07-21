@@ -22,7 +22,7 @@ describe("CategoryBrandHeatmap", () => {
 
     expect(screen.getByTestId("category-brand-heatmap")).toBeInTheDocument();
     expect(screen.getByText("Hot")).toBeInTheDocument();
-    expect(screen.getByText("Stories (client)")).toBeInTheDocument();
+    expect(screen.getByText("Stories")).toBeInTheDocument();
     expect(screen.getByText("92")).toBeInTheDocument();
     expect(screen.getByText("108")).toBeInTheDocument();
   });

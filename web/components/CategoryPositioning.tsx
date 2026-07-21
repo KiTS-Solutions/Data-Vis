@@ -5,6 +5,8 @@ import {
   BarChart,
   CartesianGrid,
   Cell,
+  Label,
+  LabelList,
   ReferenceLine,
   ResponsiveContainer,
   Tooltip,
@@ -14,22 +16,49 @@ import {
 import type { CategoryPositioningRow } from "@/lib/analytics/categoryPositioning";
 import { SEMANTIC_COLORS } from "@/lib/theme/colors";
 
+function formatDeviation(v: number): string {
+  return `${v > 0 ? "+" : ""}${v}`;
+}
+
 export function CategoryPositioning({ rows }: { rows: CategoryPositioningRow[] }) {
+  const rowHeight = 26;
+  const chartHeight = Math.max(320, rows.length * rowHeight + 60);
+
   return (
-    <div className="h-[600px] w-full" aria-label="Category Positioning" data-testid="category-positioning">
+    <div style={{ height: chartHeight }} className="w-full" aria-label="Category Positioning" data-testid="category-positioning">
       <ResponsiveContainer width="100%" height="100%">
-        <BarChart data={rows} layout="vertical" margin={{ left: 120, right: 24 }}>
-          <CartesianGrid strokeDasharray="3 3" />
-          <XAxis type="number" tickFormatter={(v: number) => `${v > 0 ? "+" : ""}${v}`} />
-          <YAxis type="category" dataKey="category" width={160} />
+        <BarChart data={rows} layout="vertical" margin={{ left: 130, right: 40, top: 8, bottom: 24 }}>
+          <CartesianGrid strokeDasharray="3 3" horizontal={false} />
+          <XAxis type="number" tickFormatter={formatDeviation}>
+            <Label value="Deviation from market average (index points)" position="bottom" offset={0} style={{ fontSize: 12, fill: "#2f5b6b99" }} />
+          </XAxis>
+          <YAxis type="category" dataKey="category" width={160} tick={{ fontSize: 12 }} />
           <ReferenceLine x={0} stroke="#2f5b6b" />
-          <Tooltip formatter={(value) => {
-            if (typeof value === "number") {
-              return [`${value > 0 ? "+" : ""}${value} pts`, "vs. market"];
-            }
-            return value;
-          }} />
+          <Tooltip
+            content={({ active, payload }) => {
+              if (!active || !payload || payload.length === 0) return null;
+              const row = payload[0].payload as CategoryPositioningRow;
+              return (
+                <div className="rounded-md border border-ocean/10 bg-white px-3 py-2 text-sm shadow-md">
+                  <p className="font-semibold text-ocean">{row.category}</p>
+                  <p className="text-ocean/70">
+                    {formatDeviation(row.deviation)} pts vs. market (index {row.avgIndex})
+                  </p>
+                  <p className="text-xs text-ocean/40">
+                    Based on {row.countableProductCount} of {row.totalProductCount} products with reliable
+                    competitor data
+                  </p>
+                </div>
+              );
+            }}
+          />
           <Bar dataKey="deviation">
+            <LabelList
+              dataKey="deviation"
+              position="right"
+              formatter={(v) => (typeof v === "number" ? formatDeviation(v) : "")}
+              style={{ fontSize: 11, fill: "#2f5b6b" }}
+            />
             {rows.map((row) => (
               <Cell
                 key={row.category}
