@@ -30,3 +30,14 @@ export PYTHONPATH=scripts
 "${PYTHON:-python3}" -m pricing_pipeline.analyze_pricing \
   --in processed/stories-non-dairy-2026-07.normalized.json \
   --out processed/stories-non-dairy-2026-07.json
+
+# Salads — competitors Wooden Bakery/Zaatar w Zeit/Casper & Gambini/The
+# Koozspace. Gap-analysis items (competitor salads not on Stories' menu)
+# folded into the same SALADS category via category_aliases.
+"${PYTHON:-python3}" -m pricing_pipeline.parse_pricing \
+  --xlsx "raw-data/Salads_Pricing_Comparison.xlsx" \
+  --config sources/stories-salads-2026-07.json \
+  --out processed/stories-salads-2026-07.normalized.json
+"${PYTHON:-python3}" -m pricing_pipeline.analyze_pricing \
+  --in processed/stories-salads-2026-07.normalized.json \
+  --out processed/stories-salads-2026-07.json

@@ -17,7 +17,6 @@ import { PresenterModeProvider } from "@/lib/presenter/PresenterModeContext";
 const PENDING_CATEGORIES = [
   "Milkshakes",
   "Protein Shakes",
-  "Salads",
   "Sandwiches",
   "Pizza",
   "Wraps",
@@ -42,6 +41,7 @@ export default function Home() {
   const mainReport = loadReport("stories-pricing-2026-03");
   const frozenYogurtReport = loadReport("stories-frozen-yogurt-2026-07");
   const nonDairyReport = loadReport("stories-non-dairy-2026-07");
+  const saladsReport = loadReport("stories-salads-2026-07");
 
   const drinksReport = filterReportByCategories(mainReport, DRINKS_CATEGORIES);
   const bakeryReport = filterReportByCategories(mainReport, BAKERY_CATEGORIES);
@@ -53,6 +53,7 @@ export default function Home() {
     computeReportScorecard(shakesReport, "Shakes"),
     computeReportScorecard(frozenYogurtReport, "Frozen Yogurt Bar"),
     computeReportScorecard(nonDairyReport, "Non-Dairy Menu"),
+    computeReportScorecard(saladsReport, "Salads"),
   ];
 
   return (
@@ -100,6 +101,7 @@ export default function Home() {
         <ReportSection title="Shakes" report={shakesReport} />
         <ReportSection title="Frozen Yogurt Bar" report={frozenYogurtReport} />
         <ReportSection title="Non-Dairy Menu" report={nonDairyReport} />
+        <ReportSection title="Salads" report={saladsReport} />
 
         <Section title="Categories In Progress" last>
           <Explain>

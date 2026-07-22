@@ -1,0 +1,13 @@
+{
+  "client": "Stories",
+  "report_date": "2026-07-22",
+  "currency": "LBP",
+  "fx_usd_rate": 89600,
+  "fx_rate_date": "2026-07-20",
+  "fx_source": "lira-rate.com / lbprate.com market average (parallel/market rate)",
+  "own_brand": "Stories",
+  "competitors": ["Wooden Bakery", "Zaatar w Zeit", "Casper & Gambini", "The Koozspace"],
+  "category_aliases": {
+    "COMPETITOR ITEMS NOT ON STORIES MENU (gap analysis - Stories left blank)": "SALADS"
+  }
+}

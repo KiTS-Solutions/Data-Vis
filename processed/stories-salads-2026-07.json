@@ -1,0 +1,615 @@
+{
+  "meta": {
+    "client": "Stories",
+    "report_date": "2026-07-22",
+    "currency": "LBP",
+    "fx_usd_rate": 89600,
+    "fx_rate_date": "2026-07-20",
+    "fx_source": "lira-rate.com / lbprate.com market average (parallel/market rate)",
+    "own_brand": "Stories",
+    "competitors": [
+      "Wooden Bakery",
+      "Zaatar w Zeit",
+      "Casper & Gambini",
+      "The Koozspace"
+    ],
+    "generated_from": "raw-data/Salads_Pricing_Comparison.xlsx"
+  },
+  "products": [
+    {
+      "category": "SALADS",
+      "product": "SALAD BAR 1 VISIT",
+      "prices_lbp": {
+        "Stories": 1200000
+      },
+      "own_price_lbp": 1200000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Premium",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "SALADS",
+      "product": "ASIAN SALAD (GRAB&GO)",
+      "prices_lbp": {
+        "Stories": 750000
+      },
+      "own_price_lbp": 750000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "SALADS",
+      "product": "GREEK SALAD (GRAB&GO)",
+      "prices_lbp": {
+        "Stories": 750000,
+        "The Koozspace": 896000
+      },
+      "own_price_lbp": 750000,
+      "competitor_avg_lbp": 896000.0,
+      "price_index": 83.7,
+      "comparability": "low",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "SALADS",
+      "product": "QUINOA SALAD (GRAB&GO)",
+      "prices_lbp": {
+        "Stories": 800000
+      },
+      "own_price_lbp": 800000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Core",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "SALADS",
+      "product": "TUNA PASTA SALAD (GRAB&GO)",
+      "prices_lbp": {
+        "Stories": 850000,
+        "Wooden Bakery": 716800,
+        "Zaatar w Zeit": 806400,
+        "The Koozspace": 1075200
+      },
+      "own_price_lbp": 850000,
+      "competitor_avg_lbp": 866133.33,
+      "price_index": 98.1,
+      "comparability": "high",
+      "tier": "Core",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "SALADS",
+      "product": "CAESAR SALAD (GRAB&GO)",
+      "prices_lbp": {
+        "Stories": 750000,
+        "Wooden Bakery": 537600,
+        "Zaatar w Zeit": 358400,
+        "Casper & Gambini": 716800
+      },
+      "own_price_lbp": 750000,
+      "competitor_avg_lbp": 537600.0,
+      "price_index": 139.5,
+      "comparability": "high",
+      "tier": "Value",
+      "is_outlier": true,
+      "outlier_direction": "overpriced"
+    },
+    {
+      "category": "SALADS",
+      "product": "CHICKEN CAESAR SALAD (GRAB&GO)",
+      "prices_lbp": {
+        "Stories": 900000,
+        "Wooden Bakery": 806400,
+        "Zaatar w Zeit": 627200,
+        "The Koozspace": 985600
+      },
+      "own_price_lbp": 900000,
+      "competitor_avg_lbp": 806400.0,
+      "price_index": 111.6,
+      "comparability": "high",
+      "tier": "Premium",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "SALADS",
+      "product": "CHICKEN VERDE SALAD (GRAB&GO)",
+      "prices_lbp": {
+        "Stories": 850000
+      },
+      "own_price_lbp": 850000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Core",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "SALADS",
+      "product": "MEXICAN FIESTA SALAD (GRAB&GO)",
+      "prices_lbp": {
+        "Stories": 900000,
+        "Casper & Gambini": 806400
+      },
+      "own_price_lbp": 900000,
+      "competitor_avg_lbp": 806400.0,
+      "price_index": 111.6,
+      "comparability": "low",
+      "tier": "Premium",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "SALADS",
+      "product": "PASTA PESTO SALAD (GRAB&GO)",
+      "prices_lbp": {
+        "Stories": 900000,
+        "Wooden Bakery": 896000
+      },
+      "own_price_lbp": 900000,
+      "competitor_avg_lbp": 896000.0,
+      "price_index": 100.4,
+      "comparability": "low",
+      "tier": "Premium",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "SALADS",
+      "product": "ASIAN BOWL",
+      "prices_lbp": {
+        "Casper & Gambini": 851200
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 851200.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "SALADS",
+      "product": "ASIAN SESAME CHICKEN",
+      "prices_lbp": {
+        "Casper & Gambini": 940800
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 940800.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "SALADS",
+      "product": "BALSAMIC CHICKEN",
+      "prices_lbp": {
+        "Zaatar w Zeit": 716800
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 716800.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "SALADS",
+      "product": "CHEF SALAD",
+      "prices_lbp": {
+        "The Koozspace": 1075200
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 1075200.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "SALADS",
+      "product": "CHICKEN AVOCADO",
+      "prices_lbp": {
+        "Zaatar w Zeit": 806400
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 806400.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "SALADS",
+      "product": "CHICKEN KALE",
+      "prices_lbp": {
+        "Zaatar w Zeit": 716800
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 716800.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "SALADS",
+      "product": "CHICKEN KALE SALAD",
+      "prices_lbp": {
+        "The Koozspace": 1164800
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 1164800.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "SALADS",
+      "product": "CRAB CRUNCH",
+      "prices_lbp": {
+        "Wooden Bakery": 627200
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 627200.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "SALADS",
+      "product": "CRAB SALAD",
+      "prices_lbp": {
+        "The Koozspace": 806400
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 806400.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "SALADS",
+      "product": "GARDEN",
+      "prices_lbp": {
+        "Casper & Gambini": 761600
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 761600.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "SALADS",
+      "product": "GOAT CHEESE KALE SALAD",
+      "prices_lbp": {
+        "The Koozspace": 1344000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 1344000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "SALADS",
+      "product": "GOAT CHEESE SALAD",
+      "prices_lbp": {
+        "Casper & Gambini": 851200
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 851200.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "SALADS",
+      "product": "GREEK ORZO",
+      "prices_lbp": {
+        "Wooden Bakery": 672000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 672000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "SALADS",
+      "product": "GREEN SALAD",
+      "prices_lbp": {
+        "The Koozspace": 627200
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 627200.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "SALADS",
+      "product": "GRILLED FRESH SALMON",
+      "prices_lbp": {
+        "Casper & Gambini": 1075200
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 1075200.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "SALADS",
+      "product": "HALLOUMI GARDEN",
+      "prices_lbp": {
+        "Zaatar w Zeit": 716800
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 716800.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "SALADS",
+      "product": "KALE & QUINOA FETA",
+      "prices_lbp": {
+        "Zaatar w Zeit": 716800
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 716800.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "SALADS",
+      "product": "KALE QUINOA CHICKEN",
+      "prices_lbp": {
+        "Wooden Bakery": 896000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 896000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "SALADS",
+      "product": "KALE QUINOA HALLOUMI",
+      "prices_lbp": {
+        "Wooden Bakery": 716800
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 716800.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "SALADS",
+      "product": "LEBANESE ORIENTAL",
+      "prices_lbp": {
+        "Zaatar w Zeit": 448000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 448000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "SALADS",
+      "product": "LIGHT CRAB",
+      "prices_lbp": {
+        "Casper & Gambini": 896000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 896000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "SALADS",
+      "product": "PASTA CHICKEN",
+      "prices_lbp": {
+        "Zaatar w Zeit": 806400
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 806400.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "SALADS",
+      "product": "QUINOA & KALE",
+      "prices_lbp": {
+        "Casper & Gambini": 896000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 896000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "SALADS",
+      "product": "QUINOA HALLOUMI",
+      "prices_lbp": {
+        "Zaatar w Zeit": 716800
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 716800.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "SALADS",
+      "product": "QUINOA TABBOULEH",
+      "prices_lbp": {
+        "Zaatar w Zeit": 448000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 448000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "SALADS",
+      "product": "ROCCA SALAD",
+      "prices_lbp": {
+        "The Koozspace": 716800
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 716800.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "SALADS",
+      "product": "SHAWARMA FUSION",
+      "prices_lbp": {
+        "Zaatar w Zeit": 716800
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 716800.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "SALADS",
+      "product": "THE PROTEIN CLUB",
+      "prices_lbp": {
+        "Wooden Bakery": 985600
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 985600.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "SALADS",
+      "product": "TUNA POTATO",
+      "prices_lbp": {
+        "Casper & Gambini": 851200
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 851200.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "SALADS",
+      "product": "Z FATTOUSH",
+      "prices_lbp": {
+        "Zaatar w Zeit": 448000
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 448000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "SALADS",
+      "product": "ZOOZA",
+      "prices_lbp": {
+        "Zaatar w Zeit": 806400
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 806400.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    }
+  ],
+  "categories": [
+    {
+      "category": "SALADS",
+      "product_count": 41,
+      "countable_product_count": 3,
+      "avg_price_index": 116.4
+    }
+  ],
+  "data_quality_warnings": []
+}

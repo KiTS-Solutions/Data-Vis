@@ -58,6 +58,7 @@ def parse_workbook(xlsx_path: str, config: dict) -> dict:
         )
 
     dropped_categories = {_clean(c) for c in config.get("dropped_categories", [])}
+    category_aliases = {_clean(k): _clean(v) for k, v in config.get("category_aliases", {}).items()}
 
     fx_rate = config["fx_usd_rate"]
     records = []
@@ -69,7 +70,7 @@ def parse_workbook(xlsx_path: str, config: dict) -> dict:
             continue
 
         if is_category_header_row(row):
-            current_category = product
+            current_category = category_aliases.get(product, product)
             continue
 
         if current_category in dropped_categories:

@@ -218,3 +218,25 @@ def test_parse_workbook_applies_brand_aliases(tmp_path):
     assert brands == {"Stories", "Espresso Lab", "Dunkin Donuts", "Joe & the Juice", "Starbucks"}
     cappuccino_stories = [r for r in result["records"] if r["product"] == "Cappuccino MEDIUM" and r["brand"] == "Stories"]
     assert cappuccino_stories[0]["price_lbp"] == 600000
+
+
+def test_parse_workbook_applies_category_aliases(tmp_path):
+    wb = openpyxl.Workbook()
+    ws = wb.active
+    ws.append(["Products Competitors", "Stories ", "Espresso Lab", "Dunkin Donuts",
+               "Joe & the Juice", "Starbucks ", "Average", "Difference"])
+    ws.append(["SALADS", None, None, None, None, None, None, None])
+    ws.append(["Caesar Salad", 750000, "-", "-", "-", "-", 750000, 0])
+    ws.append(["Gap analysis items not on Stories menu", None, None, None, None, None, None, None])
+    ws.append(["Crab Salad", "-", "-", "-", "-", 806400, 806400, "-"])
+    path = tmp_path / "sample_category_alias.xlsx"
+    wb.save(path)
+
+    config = _config()
+    config["category_aliases"] = {"Gap analysis items not on Stories menu": "SALADS"}
+
+    result = parse_workbook(str(path), config)
+
+    categories = {r["category"] for r in result["records"]}
+    assert categories == {"SALADS"}
+    assert any(r["product"] == "Crab Salad" for r in result["records"])
