@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import type { PricingReport } from "@/lib/data/types";
 import { prepareCategoryPositioning } from "@/lib/analytics/categoryPositioning";
 import { groupOutlierFindings } from "@/lib/analytics/findings";
@@ -11,7 +12,18 @@ import { DataExplorer } from "@/components/DataExplorer";
 import { Section } from "@/components/Section";
 import { Explain } from "@/components/Explain";
 
-export function ReportSection({ title, report }: { title: string; report: PricingReport }) {
+export function ReportSection({
+  title,
+  report,
+  extra,
+}: {
+  title: string;
+  report: PricingReport;
+  /** Optional extra Section(s), rendered after Price Positioning Map and
+   * before Full Data Explorer — for report-specific content that doesn't
+   * apply to every category-group (e.g. Frozen Yogurt Bar's cup-size table). */
+  extra?: ReactNode;
+}) {
   const positioningRows = prepareCategoryPositioning(report.categories);
   const findings = groupOutlierFindings(report.products);
   const priceMapRows = buildCategoryPriceMap(report.products, report.meta.own_brand);
@@ -58,6 +70,8 @@ export function ReportSection({ title, report }: { title: string; report: Pricin
         </Explain>
         <CategoryPriceMap rows={priceMapRows} fxRate={report.meta.fx_usd_rate} ownBrand={report.meta.own_brand} />
       </Section>
+
+      {extra}
 
       <Section title="Full Data Explorer" level={3}>
         <Explain>

@@ -14,6 +14,7 @@ import {
 } from "@/lib/analytics/explorer";
 import { formatDualCurrency } from "@/lib/format/currency";
 import { BRAND_COLORS, SEMANTIC_COLORS } from "@/lib/theme/colors";
+import { IndexDeviationBadge } from "@/components/IndexDeviationBadge";
 
 const PAGE_SIZE = 25;
 
@@ -270,6 +271,7 @@ function IndexBar({ value, comparability }: { value: number | null; comparabilit
         {Math.round(value)}
         {!isReliable && "*"}
       </span>
+      <IndexDeviationBadge value={isReliable ? value : null} className="w-11" />
       <div className="relative h-2 w-16 rounded-sm bg-ocean/10">
         <div className="absolute left-1/2 top-0 h-full w-px bg-ocean/30" />
         <div

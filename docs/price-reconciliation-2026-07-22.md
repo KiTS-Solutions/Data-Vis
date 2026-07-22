@@ -2,6 +2,7 @@
 
 **Date:** 2026-07-22
 **Status:** APPLIED 2026-07-22. Management confirmed the official POS file (`raw-data/officially provided Menu Stories prices.xlsx`) is authoritative. All 34 corrections below were applied directly to the two raw source Excel files (`Product Pricing Comparison March 2026 (1).xlsx` and `Frozen Yogurt Pricing Comparison (1).xlsx`), matched on **category + exact product name** (not name alone — an earlier draft of this correction incorrectly matched "Chocolate Chips" by name only and corrupted an unrelated Add-Ons item; caught and fixed before saving). One item from §1 (Quinoa Salad) needed no correction — the new dedicated Salads source file already has the official 800,000 price. §2 (systematic mismatch) was a false positive, already resolved — no action needed.
+**Re-applied 2026-07-22 (later same day):** the client sent a fresh, updated `Frozen Yogurt Pricing Comparison (1).xlsx` (adding real Cremino prices and the cup-size table) that reverted the 16 Toppings prices back to their original, incorrect values — since it wasn't derived from our corrected copy. Re-applied all 16 Toppings corrections to the new file. Worth flagging to the client: their working copy of this file doesn't have the correction baked in, so any future re-send of this file will need the same 16 items re-applied again unless they update their own source.
 
 ### What was corrected (34 items, both source files)
 

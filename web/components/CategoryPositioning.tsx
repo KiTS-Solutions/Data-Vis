@@ -15,6 +15,7 @@ import {
 } from "recharts";
 import type { CategoryPositioningRow } from "@/lib/analytics/categoryPositioning";
 import { SEMANTIC_COLORS } from "@/lib/theme/colors";
+import { IndexDeviationBadge } from "@/components/IndexDeviationBadge";
 
 function formatDeviation(v: number): string {
   return `${v > 0 ? "+" : ""}${v}`;
@@ -49,7 +50,8 @@ export function CategoryPositioning({ rows }: { rows: CategoryPositioningRow[] }
                   <div className="rounded-md border border-ocean/10 bg-white px-3 py-2 text-sm shadow-md">
                     <p className="font-semibold text-ocean">{row.category}</p>
                     <p className="text-ocean-muted">
-                      {formatDeviation(row.deviation)} pts vs. market (index {row.avgIndex})
+                      {formatDeviation(row.deviation)} pts vs. market (index {row.avgIndex}{" "}
+                      <IndexDeviationBadge value={row.avgIndex} />)
                     </p>
                     <p className="text-xs text-ocean-muted">
                       Based on {row.countableProductCount} of {row.totalProductCount} products with reliable

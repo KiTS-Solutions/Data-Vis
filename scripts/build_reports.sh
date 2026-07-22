@@ -21,6 +21,13 @@ export PYTHONPATH=scripts
   --in processed/stories-frozen-yogurt-2026-07.normalized.json \
   --out processed/stories-frozen-yogurt-2026-07.json
 
+# Cup-size (ounces) comparison side-table on the same Frozen Yogurt sheet —
+# not a price, feeds a dedicated chart rather than the price analytics.
+"${PYTHON:-python3}" -m pricing_pipeline.parse_cup_sizes \
+  --xlsx "raw-data/Frozen Yogurt Pricing Comparison (1).xlsx" \
+  --config sources/stories-frozen-yogurt-2026-07.json \
+  --out processed/stories-frozen-yogurt-cup-sizes-2026-07.json
+
 # Non-Dairy Menu — Mixed Hot/Cold Beverages, Blended Drinks, Signature, Protein
 # Shakes (non-dairy-alternative versions), standard 4 competitors.
 "${PYTHON:-python3}" -m pricing_pipeline.parse_pricing \

@@ -4,6 +4,7 @@ import { usePresenterMode } from "@/lib/presenter/PresenterModeContext";
 import type { FindingsGroups } from "@/lib/analytics/findings";
 import type { ProductAnalytics } from "@/lib/data/types";
 import { formatDualCurrency, formatLbp } from "@/lib/format/currency";
+import { IndexDeviationBadge } from "@/components/IndexDeviationBadge";
 
 const MAX_SHOWN = 8;
 
@@ -98,7 +99,7 @@ function FindingsList({
                 </span>
                 <span className="whitespace-nowrap text-ocean-muted">
                   {item.own_price_lbp !== null ? formatDualCurrency(item.own_price_lbp, fxRate) : "—"} · index{" "}
-                  {item.price_index}
+                  {item.price_index} <IndexDeviationBadge value={item.price_index} />
                 </span>
               </div>
               <p className="mt-0.5 text-xs text-ocean-muted">{recommendation(item)}</p>

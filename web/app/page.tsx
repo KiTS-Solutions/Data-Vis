@@ -1,4 +1,4 @@
-import { loadReport } from "@/lib/data/loadReport";
+import { loadReport, loadCupSizeTable } from "@/lib/data/loadReport";
 import { filterReportByCategories } from "@/lib/data/filterReport";
 import { withBasePath } from "@/lib/basePath";
 import { formatReportPeriod } from "@/lib/format/date";
@@ -7,6 +7,7 @@ import { computeReportScorecard } from "@/lib/analytics/scorecard";
 import { ExecutiveSummary } from "@/components/ExecutiveSummary";
 import { ReportSection } from "@/components/ReportSection";
 import { CategoriesInProgress } from "@/components/CategoriesInProgress";
+import { CupSizeComparison } from "@/components/CupSizeComparison";
 import { Explain } from "@/components/Explain";
 import { PresenterModeToggle } from "@/components/PresenterModeToggle";
 import { ContextBar } from "@/components/ContextBar";
@@ -45,6 +46,7 @@ export default function Home() {
   const saladsReport = loadReport("stories-salads-2026-07");
   const platDuJourReport = loadReport("stories-plat-du-jour-2026-07");
   const sandwichesReport = loadReport("stories-sandwiches-2026-07");
+  const cupSizeTable = loadCupSizeTable("stories-frozen-yogurt-cup-sizes-2026-07");
 
   const drinksReport = filterReportByCategories(mainReport, DRINKS_CATEGORIES);
   const bakeryReport = filterReportByCategories(mainReport, BAKERY_CATEGORIES);
@@ -101,7 +103,21 @@ export default function Home() {
 
         <ReportSection title="Drinks" report={drinksReport} />
         <ReportSection title="Bakery" report={bakeryReport} />
-        <ReportSection title="Frozen Yogurt Bar" report={frozenYogurtReport} />
+        <ReportSection
+          title="Frozen Yogurt Bar"
+          report={frozenYogurtReport}
+          extra={
+            <Section title="Cup Size Comparison (oz)" level={3}>
+              <Explain>
+                <p className="mb-5 max-w-2xl text-sm text-ocean-muted">
+                  Serving size in ounces per cup tier, {frozenYogurtReport.meta.client} vs. each competitor —
+                  a physical-portion comparison, separate from price.
+                </p>
+              </Explain>
+              <CupSizeComparison table={cupSizeTable} ownBrand={frozenYogurtReport.meta.own_brand} />
+            </Section>
+          }
+        />
         <ReportSection title="Non-Dairy Menu" report={nonDairyReport} />
         <ReportSection title="Salads" report={saladsReport} />
         <ReportSection title="Plat Du Jour" report={platDuJourReport} />

@@ -3,7 +3,7 @@
     "client": "Stories",
     "report_date": "2026-07-22",
     "currency": "LBP",
-    "fx_usd_rate": 89600,
+    "fx_usd_rate": 89500,
     "fx_rate_date": "2026-07-20",
     "fx_source": "lira-rate.com / lbprate.com market average (parallel/market rate)",
     "own_brand": "Stories",
@@ -21,15 +21,16 @@
       "prices_lbp": {
         "Stories": 590000,
         "Pinkberry": 747000,
+        "Cremino": 513000,
         "Fro - U": 801000
       },
       "own_price_lbp": 590000,
-      "competitor_avg_lbp": 774000.0,
-      "price_index": 76.2,
-      "comparability": "medium",
+      "competitor_avg_lbp": 687000.0,
+      "price_index": 85.9,
+      "comparability": "high",
       "tier": "Core",
-      "is_outlier": true,
-      "outlier_direction": "underpriced"
+      "is_outlier": false,
+      "outlier_direction": null
     },
     {
       "category": "Frozen Yogurt",
@@ -37,12 +38,13 @@
       "prices_lbp": {
         "Stories": 650000,
         "Pinkberry": 900000,
+        "Cremino": 585000,
         "Fro - U": 981000
       },
       "own_price_lbp": 650000,
-      "competitor_avg_lbp": 940500.0,
-      "price_index": 69.1,
-      "comparability": "medium",
+      "competitor_avg_lbp": 822000.0,
+      "price_index": 79.1,
+      "comparability": "high",
       "tier": "Core",
       "is_outlier": true,
       "outlier_direction": "underpriced"
@@ -53,12 +55,13 @@
       "prices_lbp": {
         "Stories": 850000,
         "Pinkberry": 1170000,
+        "Cremino": 900000,
         "Fro - U": 1251000
       },
       "own_price_lbp": 850000,
-      "competitor_avg_lbp": 1210500.0,
-      "price_index": 70.2,
-      "comparability": "medium",
+      "competitor_avg_lbp": 1107000.0,
+      "price_index": 76.8,
+      "comparability": "high",
       "tier": "Premium",
       "is_outlier": true,
       "outlier_direction": "underpriced"
@@ -68,15 +71,16 @@
       "product": "Original Yogurt SMALL",
       "prices_lbp": {
         "Stories": 500000,
-        "Pinkberry": 450000
+        "Pinkberry": 450000,
+        "Cremino": 360000
       },
       "own_price_lbp": 500000,
-      "competitor_avg_lbp": 450000.0,
-      "price_index": 111.1,
-      "comparability": "low",
+      "competitor_avg_lbp": 405000.0,
+      "price_index": 123.5,
+      "comparability": "medium",
       "tier": "Value",
-      "is_outlier": false,
-      "outlier_direction": null
+      "is_outlier": true,
+      "outlier_direction": "overpriced"
     },
     {
       "category": "Frozen Yogurt",
@@ -98,12 +102,13 @@
       "product": "Original Yogurt LARGE",
       "prices_lbp": {
         "Stories": 750000,
-        "Pinkberry": 900000
+        "Pinkberry": 900000,
+        "Cremino": 585000
       },
       "own_price_lbp": 750000,
-      "competitor_avg_lbp": 900000.0,
-      "price_index": 83.3,
-      "comparability": "low",
+      "competitor_avg_lbp": 742500.0,
+      "price_index": 101.0,
+      "comparability": "medium",
       "tier": "Premium",
       "is_outlier": false,
       "outlier_direction": null
@@ -112,11 +117,12 @@
       "category": "Frozen Yogurt",
       "product": "Blueberry Yogurt Combo SMALL",
       "prices_lbp": {
-        "Stories": 590000
+        "Stories": 590000,
+        "Cremino": 513000
       },
       "own_price_lbp": 590000,
-      "competitor_avg_lbp": null,
-      "price_index": null,
+      "competitor_avg_lbp": 513000.0,
+      "price_index": 115.0,
       "comparability": "low",
       "tier": "Core",
       "is_outlier": false,
@@ -126,11 +132,12 @@
       "category": "Frozen Yogurt",
       "product": "Blueberry Yogurt Combo MEDIUM",
       "prices_lbp": {
-        "Stories": 650000
+        "Stories": 650000,
+        "Cremino": 585000
       },
       "own_price_lbp": 650000,
-      "competitor_avg_lbp": null,
-      "price_index": null,
+      "competitor_avg_lbp": 585000.0,
+      "price_index": 111.1,
       "comparability": "low",
       "tier": "Core",
       "is_outlier": false,
@@ -140,11 +147,12 @@
       "category": "Frozen Yogurt",
       "product": "Blueberry Yogurt Combo LARGE",
       "prices_lbp": {
-        "Stories": 850000
+        "Stories": 850000,
+        "Cremino": 900000
       },
       "own_price_lbp": 850000,
-      "competitor_avg_lbp": null,
-      "price_index": null,
+      "competitor_avg_lbp": 900000.0,
+      "price_index": 94.4,
       "comparability": "low",
       "tier": "Premium",
       "is_outlier": false,
@@ -154,11 +162,12 @@
       "category": "Frozen Yogurt",
       "product": "Blueberry Yogurt SMALL",
       "prices_lbp": {
-        "Stories": 500000
+        "Stories": 500000,
+        "Cremino": 360000
       },
       "own_price_lbp": 500000,
-      "competitor_avg_lbp": null,
-      "price_index": null,
+      "competitor_avg_lbp": 360000.0,
+      "price_index": 138.9,
       "comparability": "low",
       "tier": "Value",
       "is_outlier": false,
@@ -182,11 +191,12 @@
       "category": "Frozen Yogurt",
       "product": "Blueberry Yogurt LARGE",
       "prices_lbp": {
-        "Stories": 750000
+        "Stories": 750000,
+        "Cremino": 585000
       },
       "own_price_lbp": 750000,
-      "competitor_avg_lbp": null,
-      "price_index": null,
+      "competitor_avg_lbp": 585000.0,
+      "price_index": 128.2,
       "comparability": "low",
       "tier": "Premium",
       "is_outlier": false,
@@ -869,10 +879,10 @@
       "category": "Frozen Yogurt",
       "product": "Speculoos Yogurt Combo LARGE",
       "prices_lbp": {
-        "Fro - U": 1260000
+        "Fro - U": 1251000
       },
       "own_price_lbp": null,
-      "competitor_avg_lbp": 1260000.0,
+      "competitor_avg_lbp": 1251000.0,
       "price_index": null,
       "comparability": "low",
       "tier": null,
@@ -2021,8 +2031,8 @@
     {
       "category": "Frozen Yogurt",
       "product_count": 64,
-      "countable_product_count": 6,
-      "avg_price_index": 71.8
+      "countable_product_count": 8,
+      "avg_price_index": 85.2
     },
     {
       "category": "Toppings",

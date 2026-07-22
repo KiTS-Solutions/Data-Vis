@@ -1,5 +1,6 @@
 import type { HeatmapCell, HeatmapRow } from "@/lib/analytics/heatmap";
 import { heatmapBin } from "@/lib/analytics/heatmap";
+import { IndexDeviationBadge } from "@/components/IndexDeviationBadge";
 
 const BIN_STYLES: Record<string, { bg: string; text: string }> = {
   "strong-below": { bg: "#6d28d9", text: "#ffffff" },
@@ -20,8 +21,15 @@ function cellTitle(cell: HeatmapCell, category: string): string {
   return `${cell.brand} — ${category}: no priced item in this category`;
 }
 
-function cellContent(cell: HeatmapCell): string {
-  if (cell.status === "priced" && cell.indexValue !== null) return String(Math.round(cell.indexValue));
+function cellContent(cell: HeatmapCell) {
+  if (cell.status === "priced" && cell.indexValue !== null) {
+    return (
+      <span className="flex flex-col items-center leading-tight">
+        <span>{Math.round(cell.indexValue)}</span>
+        <IndexDeviationBadge value={cell.indexValue} inheritColor />
+      </span>
+    );
+  }
   if (cell.status === "no-peer" && cell.avgPriceLbp !== null) return `${Math.round(cell.avgPriceLbp / 1000)}k`;
   return "—";
 }

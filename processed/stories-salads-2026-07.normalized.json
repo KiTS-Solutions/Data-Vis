@@ -3,7 +3,7 @@
     "client": "Stories",
     "report_date": "2026-07-22",
     "currency": "LBP",
-    "fx_usd_rate": 89600,
+    "fx_usd_rate": 89500,
     "fx_rate_date": "2026-07-20",
     "fx_source": "lira-rate.com / lbprate.com market average (parallel/market rate)",
     "own_brand": "Stories",
@@ -21,77 +21,77 @@
       "product": "SALAD BAR 1 VISIT",
       "brand": "Stories",
       "price_lbp": 1200000,
-      "price_usd": 13.39
+      "price_usd": 13.41
     },
     {
       "category": "SALADS",
       "product": "ASIAN SALAD (GRAB&GO)",
       "brand": "Stories",
       "price_lbp": 750000,
-      "price_usd": 8.37
+      "price_usd": 8.38
     },
     {
       "category": "SALADS",
       "product": "GREEK SALAD (GRAB&GO)",
       "brand": "Stories",
       "price_lbp": 750000,
-      "price_usd": 8.37
+      "price_usd": 8.38
     },
     {
       "category": "SALADS",
       "product": "GREEK SALAD (GRAB&GO)",
       "brand": "The Koozspace",
       "price_lbp": 896000,
-      "price_usd": 10.0
+      "price_usd": 10.01
     },
     {
       "category": "SALADS",
       "product": "QUINOA SALAD (GRAB&GO)",
       "brand": "Stories",
       "price_lbp": 800000,
-      "price_usd": 8.93
+      "price_usd": 8.94
     },
     {
       "category": "SALADS",
       "product": "TUNA PASTA SALAD (GRAB&GO)",
       "brand": "Stories",
       "price_lbp": 850000,
-      "price_usd": 9.49
+      "price_usd": 9.5
     },
     {
       "category": "SALADS",
       "product": "TUNA PASTA SALAD (GRAB&GO)",
       "brand": "Wooden Bakery",
       "price_lbp": 716800,
-      "price_usd": 8.0
+      "price_usd": 8.01
     },
     {
       "category": "SALADS",
       "product": "TUNA PASTA SALAD (GRAB&GO)",
       "brand": "Zaatar w Zeit",
       "price_lbp": 806400,
-      "price_usd": 9.0
+      "price_usd": 9.01
     },
     {
       "category": "SALADS",
       "product": "TUNA PASTA SALAD (GRAB&GO)",
       "brand": "The Koozspace",
       "price_lbp": 1075200,
-      "price_usd": 12.0
+      "price_usd": 12.01
     },
     {
       "category": "SALADS",
       "product": "CAESAR SALAD (GRAB&GO)",
       "brand": "Stories",
       "price_lbp": 750000,
-      "price_usd": 8.37
+      "price_usd": 8.38
     },
     {
       "category": "SALADS",
       "product": "CAESAR SALAD (GRAB&GO)",
       "brand": "Wooden Bakery",
       "price_lbp": 537600,
-      "price_usd": 6.0
+      "price_usd": 6.01
     },
     {
       "category": "SALADS",
@@ -105,287 +105,287 @@
       "product": "CAESAR SALAD (GRAB&GO)",
       "brand": "Casper & Gambini",
       "price_lbp": 716800,
-      "price_usd": 8.0
+      "price_usd": 8.01
     },
     {
       "category": "SALADS",
       "product": "CHICKEN CAESAR SALAD (GRAB&GO)",
       "brand": "Stories",
       "price_lbp": 900000,
-      "price_usd": 10.04
+      "price_usd": 10.06
     },
     {
       "category": "SALADS",
       "product": "CHICKEN CAESAR SALAD (GRAB&GO)",
       "brand": "Wooden Bakery",
       "price_lbp": 806400,
-      "price_usd": 9.0
+      "price_usd": 9.01
     },
     {
       "category": "SALADS",
       "product": "CHICKEN CAESAR SALAD (GRAB&GO)",
       "brand": "Zaatar w Zeit",
       "price_lbp": 627200,
-      "price_usd": 7.0
+      "price_usd": 7.01
     },
     {
       "category": "SALADS",
       "product": "CHICKEN CAESAR SALAD (GRAB&GO)",
       "brand": "The Koozspace",
       "price_lbp": 985600,
-      "price_usd": 11.0
+      "price_usd": 11.01
     },
     {
       "category": "SALADS",
       "product": "CHICKEN VERDE SALAD (GRAB&GO)",
       "brand": "Stories",
       "price_lbp": 850000,
-      "price_usd": 9.49
+      "price_usd": 9.5
     },
     {
       "category": "SALADS",
       "product": "MEXICAN FIESTA SALAD (GRAB&GO)",
       "brand": "Stories",
       "price_lbp": 900000,
-      "price_usd": 10.04
+      "price_usd": 10.06
     },
     {
       "category": "SALADS",
       "product": "MEXICAN FIESTA SALAD (GRAB&GO)",
       "brand": "Casper & Gambini",
       "price_lbp": 806400,
-      "price_usd": 9.0
+      "price_usd": 9.01
     },
     {
       "category": "SALADS",
       "product": "PASTA PESTO SALAD (GRAB&GO)",
       "brand": "Stories",
       "price_lbp": 900000,
-      "price_usd": 10.04
+      "price_usd": 10.06
     },
     {
       "category": "SALADS",
       "product": "PASTA PESTO SALAD (GRAB&GO)",
       "brand": "Wooden Bakery",
       "price_lbp": 896000,
-      "price_usd": 10.0
+      "price_usd": 10.01
     },
     {
       "category": "SALADS",
       "product": "ASIAN BOWL",
       "brand": "Casper & Gambini",
       "price_lbp": 851200,
-      "price_usd": 9.5
+      "price_usd": 9.51
     },
     {
       "category": "SALADS",
       "product": "ASIAN SESAME CHICKEN",
       "brand": "Casper & Gambini",
       "price_lbp": 940800,
-      "price_usd": 10.5
+      "price_usd": 10.51
     },
     {
       "category": "SALADS",
       "product": "BALSAMIC CHICKEN",
       "brand": "Zaatar w Zeit",
       "price_lbp": 716800,
-      "price_usd": 8.0
+      "price_usd": 8.01
     },
     {
       "category": "SALADS",
       "product": "CHEF SALAD",
       "brand": "The Koozspace",
       "price_lbp": 1075200,
-      "price_usd": 12.0
+      "price_usd": 12.01
     },
     {
       "category": "SALADS",
       "product": "CHICKEN AVOCADO",
       "brand": "Zaatar w Zeit",
       "price_lbp": 806400,
-      "price_usd": 9.0
+      "price_usd": 9.01
     },
     {
       "category": "SALADS",
       "product": "CHICKEN KALE",
       "brand": "Zaatar w Zeit",
       "price_lbp": 716800,
-      "price_usd": 8.0
+      "price_usd": 8.01
     },
     {
       "category": "SALADS",
       "product": "CHICKEN KALE SALAD",
       "brand": "The Koozspace",
       "price_lbp": 1164800,
-      "price_usd": 13.0
+      "price_usd": 13.01
     },
     {
       "category": "SALADS",
       "product": "CRAB CRUNCH",
       "brand": "Wooden Bakery",
       "price_lbp": 627200,
-      "price_usd": 7.0
+      "price_usd": 7.01
     },
     {
       "category": "SALADS",
       "product": "CRAB SALAD",
       "brand": "The Koozspace",
       "price_lbp": 806400,
-      "price_usd": 9.0
+      "price_usd": 9.01
     },
     {
       "category": "SALADS",
       "product": "GARDEN",
       "brand": "Casper & Gambini",
       "price_lbp": 761600,
-      "price_usd": 8.5
+      "price_usd": 8.51
     },
     {
       "category": "SALADS",
       "product": "GOAT CHEESE KALE SALAD",
       "brand": "The Koozspace",
       "price_lbp": 1344000,
-      "price_usd": 15.0
+      "price_usd": 15.02
     },
     {
       "category": "SALADS",
       "product": "GOAT CHEESE SALAD",
       "brand": "Casper & Gambini",
       "price_lbp": 851200,
-      "price_usd": 9.5
+      "price_usd": 9.51
     },
     {
       "category": "SALADS",
       "product": "GREEK ORZO",
       "brand": "Wooden Bakery",
       "price_lbp": 672000,
-      "price_usd": 7.5
+      "price_usd": 7.51
     },
     {
       "category": "SALADS",
       "product": "GREEN SALAD",
       "brand": "The Koozspace",
       "price_lbp": 627200,
-      "price_usd": 7.0
+      "price_usd": 7.01
     },
     {
       "category": "SALADS",
       "product": "GRILLED FRESH SALMON",
       "brand": "Casper & Gambini",
       "price_lbp": 1075200,
-      "price_usd": 12.0
+      "price_usd": 12.01
     },
     {
       "category": "SALADS",
       "product": "HALLOUMI GARDEN",
       "brand": "Zaatar w Zeit",
       "price_lbp": 716800,
-      "price_usd": 8.0
+      "price_usd": 8.01
     },
     {
       "category": "SALADS",
       "product": "KALE & QUINOA FETA",
       "brand": "Zaatar w Zeit",
       "price_lbp": 716800,
-      "price_usd": 8.0
+      "price_usd": 8.01
     },
     {
       "category": "SALADS",
       "product": "KALE QUINOA CHICKEN",
       "brand": "Wooden Bakery",
       "price_lbp": 896000,
-      "price_usd": 10.0
+      "price_usd": 10.01
     },
     {
       "category": "SALADS",
       "product": "KALE QUINOA HALLOUMI",
       "brand": "Wooden Bakery",
       "price_lbp": 716800,
-      "price_usd": 8.0
+      "price_usd": 8.01
     },
     {
       "category": "SALADS",
       "product": "LEBANESE ORIENTAL",
       "brand": "Zaatar w Zeit",
       "price_lbp": 448000,
-      "price_usd": 5.0
+      "price_usd": 5.01
     },
     {
       "category": "SALADS",
       "product": "LIGHT CRAB",
       "brand": "Casper & Gambini",
       "price_lbp": 896000,
-      "price_usd": 10.0
+      "price_usd": 10.01
     },
     {
       "category": "SALADS",
       "product": "PASTA CHICKEN",
       "brand": "Zaatar w Zeit",
       "price_lbp": 806400,
-      "price_usd": 9.0
+      "price_usd": 9.01
     },
     {
       "category": "SALADS",
       "product": "QUINOA & KALE",
       "brand": "Casper & Gambini",
       "price_lbp": 896000,
-      "price_usd": 10.0
+      "price_usd": 10.01
     },
     {
       "category": "SALADS",
       "product": "QUINOA HALLOUMI",
       "brand": "Zaatar w Zeit",
       "price_lbp": 716800,
-      "price_usd": 8.0
+      "price_usd": 8.01
     },
     {
       "category": "SALADS",
       "product": "QUINOA TABBOULEH",
       "brand": "Zaatar w Zeit",
       "price_lbp": 448000,
-      "price_usd": 5.0
+      "price_usd": 5.01
     },
     {
       "category": "SALADS",
       "product": "ROCCA SALAD",
       "brand": "The Koozspace",
       "price_lbp": 716800,
-      "price_usd": 8.0
+      "price_usd": 8.01
     },
     {
       "category": "SALADS",
       "product": "SHAWARMA FUSION",
       "brand": "Zaatar w Zeit",
       "price_lbp": 716800,
-      "price_usd": 8.0
+      "price_usd": 8.01
     },
     {
       "category": "SALADS",
       "product": "THE PROTEIN CLUB",
       "brand": "Wooden Bakery",
       "price_lbp": 985600,
-      "price_usd": 11.0
+      "price_usd": 11.01
     },
     {
       "category": "SALADS",
       "product": "TUNA POTATO",
       "brand": "Casper & Gambini",
       "price_lbp": 851200,
-      "price_usd": 9.5
+      "price_usd": 9.51
     },
     {
       "category": "SALADS",
       "product": "Z FATTOUSH",
       "brand": "Zaatar w Zeit",
       "price_lbp": 448000,
-      "price_usd": 5.0
+      "price_usd": 5.01
     },
     {
       "category": "SALADS",
       "product": "ZOOZA",
       "brand": "Zaatar w Zeit",
       "price_lbp": 806400,
-      "price_usd": 9.0
+      "price_usd": 9.01
     }
   ]
 }

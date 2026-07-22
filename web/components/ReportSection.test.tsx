@@ -77,4 +77,26 @@ describe("ReportSection", () => {
     expect(screen.getByRole("heading", { level: 3, name: "Competitive Landscape at a Glance" })).toBeInTheDocument();
     expect(screen.getByTestId("category-brand-heatmap")).toBeInTheDocument();
   });
+
+  it("renders extra content between Price Positioning Map and Full Data Explorer when provided", () => {
+    render(
+      <PresenterModeProvider>
+        <ReportSection
+          title="Frozen Yogurt Bar"
+          report={buildReport()}
+          extra={<div data-testid="cup-size-slot">Cup sizes</div>}
+        />
+      </PresenterModeProvider>
+    );
+    expect(screen.getByTestId("cup-size-slot")).toBeInTheDocument();
+  });
+
+  it("renders nothing extra when the extra prop is omitted", () => {
+    render(
+      <PresenterModeProvider>
+        <ReportSection title="Frozen Yogurt Bar" report={buildReport()} />
+      </PresenterModeProvider>
+    );
+    expect(screen.queryByTestId("cup-size-slot")).not.toBeInTheDocument();
+  });
 });

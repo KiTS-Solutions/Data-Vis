@@ -3,7 +3,7 @@
     "client": "Stories",
     "report_date": "2026-07-20",
     "currency": "LBP",
-    "fx_usd_rate": 89600,
+    "fx_usd_rate": 89500,
     "fx_rate_date": "2026-07-20",
     "fx_source": "lira-rate.com / lbprate.com market average (parallel/market rate)",
     "own_brand": "Stories",
@@ -20,7 +20,7 @@
       "product": "Turkey & Cheese (White)",
       "brand": "Pain d'Or",
       "price_lbp": 712000,
-      "price_usd": 7.95
+      "price_usd": 7.96
     },
     {
       "category": "Sandwiches",
@@ -34,21 +34,21 @@
       "product": "Turkey & Cheese (White)",
       "brand": "Stories",
       "price_lbp": 650000,
-      "price_usd": 7.25
+      "price_usd": 7.26
     },
     {
       "category": "Sandwiches",
       "product": "Turkey & Cheese (White)",
       "brand": "Wooden Bakery",
       "price_lbp": 605000,
-      "price_usd": 6.75
+      "price_usd": 6.76
     },
     {
       "category": "Sandwiches",
       "product": "Turkey & Cheese (Whole Wheat)",
       "brand": "Pain d'Or",
       "price_lbp": 725000,
-      "price_usd": 8.09
+      "price_usd": 8.1
     },
     {
       "category": "Sandwiches",
@@ -62,21 +62,21 @@
       "product": "Turkey & Cheese (Whole Wheat)",
       "brand": "Stories",
       "price_lbp": 700000,
-      "price_usd": 7.81
+      "price_usd": 7.82
     },
     {
       "category": "Sandwiches",
       "product": "Turkey & Cheese (Whole Wheat)",
       "brand": "Wooden Bakery",
       "price_lbp": 630000,
-      "price_usd": 7.03
+      "price_usd": 7.04
     },
     {
       "category": "Sandwiches",
       "product": "Halloum (White)",
       "brand": "Pain d'Or",
       "price_lbp": 534000,
-      "price_usd": 5.96
+      "price_usd": 5.97
     },
     {
       "category": "Sandwiches",
@@ -90,7 +90,7 @@
       "product": "Halloum (White)",
       "brand": "Stories",
       "price_lbp": 550000,
-      "price_usd": 6.14
+      "price_usd": 6.15
     },
     {
       "category": "Sandwiches",
@@ -104,7 +104,7 @@
       "product": "Halloum (Whole Wheat)",
       "brand": "Pain d'Or",
       "price_lbp": 547000,
-      "price_usd": 6.1
+      "price_usd": 6.11
     },
     {
       "category": "Sandwiches",
@@ -125,14 +125,14 @@
       "product": "Halloum (Whole Wheat)",
       "brand": "Wooden Bakery",
       "price_lbp": 495000,
-      "price_usd": 5.52
+      "price_usd": 5.53
     },
     {
       "category": "Sandwiches",
       "product": "Tuna (White)",
       "brand": "Pain d'Or",
       "price_lbp": 623000,
-      "price_usd": 6.95
+      "price_usd": 6.96
     },
     {
       "category": "Sandwiches",
@@ -153,14 +153,14 @@
       "product": "Tuna (White)",
       "brand": "Wooden Bakery",
       "price_lbp": 675000,
-      "price_usd": 7.53
+      "price_usd": 7.54
     },
     {
       "category": "Sandwiches",
       "product": "Tuna (Whole Wheat)",
       "brand": "Pain d'Or",
       "price_lbp": 636000,
-      "price_usd": 7.1
+      "price_usd": 7.11
     },
     {
       "category": "Sandwiches",
@@ -174,21 +174,21 @@
       "product": "Tuna (Whole Wheat)",
       "brand": "Stories",
       "price_lbp": 650000,
-      "price_usd": 7.25
+      "price_usd": 7.26
     },
     {
       "category": "Sandwiches",
       "product": "Tuna (Whole Wheat)",
       "brand": "Wooden Bakery",
       "price_lbp": 695000,
-      "price_usd": 7.76
+      "price_usd": 7.77
     },
     {
       "category": "Sandwiches",
       "product": "Labneh (White)",
       "brand": "Pain d'Or",
       "price_lbp": 356000,
-      "price_usd": 3.97
+      "price_usd": 3.98
     },
     {
       "category": "Sandwiches",
@@ -202,14 +202,14 @@
       "product": "Labneh (White)",
       "brand": "Stories",
       "price_lbp": 500000,
-      "price_usd": 5.58
+      "price_usd": 5.59
     },
     {
       "category": "Sandwiches",
       "product": "Labneh (White)",
       "brand": "Wooden Bakery",
       "price_lbp": 340000,
-      "price_usd": 3.79
+      "price_usd": 3.8
     },
     {
       "category": "Sandwiches",
@@ -230,7 +230,7 @@
       "product": "Labneh (Whole Wheat)",
       "brand": "Stories",
       "price_lbp": 550000,
-      "price_usd": 6.14
+      "price_usd": 6.15
     },
     {
       "category": "Sandwiches",
