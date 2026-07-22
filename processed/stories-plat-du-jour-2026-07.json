@@ -1,0 +1,300 @@
+{
+  "meta": {
+    "client": "Stories",
+    "report_date": "2026-07-22",
+    "currency": "LBP",
+    "fx_usd_rate": 89600,
+    "fx_rate_date": "2026-07-20",
+    "fx_source": "lira-rate.com / lbprate.com market average (parallel/market rate)",
+    "own_brand": "Stories",
+    "competitors": [
+      "Socrate (Beirut)",
+      "Ana Beirut",
+      "abdel Wahab",
+      "Diwan Beirut"
+    ],
+    "generated_from": "raw-data/plat-de-jour-price-comparison.xlsx"
+  },
+  "products": [
+    {
+      "category": "Plat Du Jour",
+      "product": "B.B.Q Chicken",
+      "prices_lbp": {
+        "Stories": 1050000
+      },
+      "own_price_lbp": 1050000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "Butter Chicken",
+      "prices_lbp": {
+        "Stories": 1050000,
+        "Socrate (Beirut)": 1342500
+      },
+      "own_price_lbp": 1050000,
+      "competitor_avg_lbp": 1342500.0,
+      "price_index": 78.2,
+      "comparability": "low",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "Chicken Alfredo Pasta",
+      "prices_lbp": {
+        "Stories": 1165500,
+        "Socrate (Beirut)": 1342500
+      },
+      "own_price_lbp": 1165500,
+      "competitor_avg_lbp": 1342500.0,
+      "price_index": 86.8,
+      "comparability": "low",
+      "tier": "Premium",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "Chicken Stroganoff",
+      "prices_lbp": {
+        "Stories": 1165500,
+        "Socrate (Beirut)": 1253000,
+        "abdel Wahab": 1521500
+      },
+      "own_price_lbp": 1165500,
+      "competitor_avg_lbp": 1387250.0,
+      "price_index": 84.0,
+      "comparability": "medium",
+      "tier": "Premium",
+      "is_outlier": true,
+      "outlier_direction": "underpriced"
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "Freekeh With Chicken",
+      "prices_lbp": {
+        "Stories": 1165500,
+        "Socrate (Beirut)": 1342500
+      },
+      "own_price_lbp": 1165500,
+      "competitor_avg_lbp": 1342500.0,
+      "price_index": 86.8,
+      "comparability": "low",
+      "tier": "Premium",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "Kibbeh B Laban",
+      "prices_lbp": {
+        "Stories": 1165500,
+        "Socrate (Beirut)": 1253000
+      },
+      "own_price_lbp": 1165500,
+      "competitor_avg_lbp": 1253000.0,
+      "price_index": 93.0,
+      "comparability": "low",
+      "tier": "Premium",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "Lasagna",
+      "prices_lbp": {
+        "Stories": 1165500,
+        "Socrate (Beirut)": 1253000
+      },
+      "own_price_lbp": 1165500,
+      "competitor_avg_lbp": 1253000.0,
+      "price_index": 93.0,
+      "comparability": "low",
+      "tier": "Premium",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "Oriental Rice",
+      "prices_lbp": {
+        "Stories": 1165500,
+        "Socrate (Beirut)": 1342500,
+        "abdel Wahab": 1521500
+      },
+      "own_price_lbp": 1165500,
+      "competitor_avg_lbp": 1432000.0,
+      "price_index": 81.4,
+      "comparability": "medium",
+      "tier": "Premium",
+      "is_outlier": true,
+      "outlier_direction": "underpriced"
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "Potato Souffle",
+      "prices_lbp": {
+        "Stories": 1050000,
+        "abdel Wahab": 1432000,
+        "Diwan Beirut": 1700500
+      },
+      "own_price_lbp": 1050000,
+      "competitor_avg_lbp": 1566250.0,
+      "price_index": 67.0,
+      "comparability": "medium",
+      "tier": "Value",
+      "is_outlier": true,
+      "outlier_direction": "underpriced"
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "Roasted Chicken",
+      "prices_lbp": {
+        "Stories": 1165500,
+        "Socrate (Beirut)": 1253000
+      },
+      "own_price_lbp": 1165500,
+      "competitor_avg_lbp": 1253000.0,
+      "price_index": 93.0,
+      "comparability": "low",
+      "tier": "Premium",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "Shish Barak",
+      "prices_lbp": {
+        "Stories": 1165500,
+        "Socrate (Beirut)": 1074000,
+        "Ana Beirut": 1790000,
+        "abdel Wahab": 1521500,
+        "Diwan Beirut": 1700500
+      },
+      "own_price_lbp": 1165500,
+      "competitor_avg_lbp": 1521500.0,
+      "price_index": 76.6,
+      "comparability": "high",
+      "tier": "Premium",
+      "is_outlier": true,
+      "outlier_direction": "underpriced"
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "Spaghetti Bolognese",
+      "prices_lbp": {
+        "Stories": 1165500,
+        "Socrate (Beirut)": 1253000,
+        "Ana Beirut": 1611000
+      },
+      "own_price_lbp": 1165500,
+      "competitor_avg_lbp": 1432000.0,
+      "price_index": 81.4,
+      "comparability": "medium",
+      "tier": "Premium",
+      "is_outlier": true,
+      "outlier_direction": "underpriced"
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "Vegetarian Grape Leaves",
+      "prices_lbp": {
+        "Stories": 1165500,
+        "Socrate (Beirut)": 1342500,
+        "abdel Wahab": 1521500
+      },
+      "own_price_lbp": 1165500,
+      "competitor_avg_lbp": 1432000.0,
+      "price_index": 81.4,
+      "comparability": "medium",
+      "tier": "Premium",
+      "is_outlier": true,
+      "outlier_direction": "underpriced"
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "NOUILLE",
+      "prices_lbp": {
+        "Stories": 1050000,
+        "Ana Beirut": 1790000,
+        "abdel Wahab": 1521500,
+        "Diwan Beirut": 1700500
+      },
+      "own_price_lbp": 1050000,
+      "competitor_avg_lbp": 1670666.67,
+      "price_index": 62.8,
+      "comparability": "high",
+      "tier": "Value",
+      "is_outlier": true,
+      "outlier_direction": "underpriced"
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "MOUGHRABIEH",
+      "prices_lbp": {
+        "Stories": 1165500,
+        "Socrate (Beirut)": 1342500,
+        "Ana Beirut": 1790000,
+        "abdel Wahab": 1521500,
+        "Diwan Beirut": 1924250
+      },
+      "own_price_lbp": 1165500,
+      "competitor_avg_lbp": 1644562.5,
+      "price_index": 70.9,
+      "comparability": "high",
+      "tier": "Premium",
+      "is_outlier": true,
+      "outlier_direction": "underpriced"
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "KEBBEH BI SONIYE",
+      "prices_lbp": {
+        "Stories": 1165500,
+        "Socrate (Beirut)": 1253000,
+        "Ana Beirut": 1790000,
+        "abdel Wahab": 1521500,
+        "Diwan Beirut": 1700500
+      },
+      "own_price_lbp": 1165500,
+      "competitor_avg_lbp": 1566250.0,
+      "price_index": 74.4,
+      "comparability": "high",
+      "tier": "Premium",
+      "is_outlier": true,
+      "outlier_direction": "underpriced"
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "shakriyeh",
+      "prices_lbp": {
+        "Stories": 1165500,
+        "Socrate (Beirut)": 1342500,
+        "abdel Wahab": 1521500
+      },
+      "own_price_lbp": 1165500,
+      "competitor_avg_lbp": 1432000.0,
+      "price_index": 81.4,
+      "comparability": "medium",
+      "tier": "Premium",
+      "is_outlier": true,
+      "outlier_direction": "underpriced"
+    }
+  ],
+  "categories": [
+    {
+      "category": "Plat Du Jour",
+      "product_count": 17,
+      "countable_product_count": 10,
+      "avg_price_index": 76.1
+    }
+  ],
+  "data_quality_warnings": []
+}

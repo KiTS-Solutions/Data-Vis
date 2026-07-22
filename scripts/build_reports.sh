@@ -41,3 +41,23 @@ export PYTHONPATH=scripts
 "${PYTHON:-python3}" -m pricing_pipeline.analyze_pricing \
   --in processed/stories-salads-2026-07.normalized.json \
   --out processed/stories-salads-2026-07.json
+
+# Plat Du Jour — competitors Socrate (Beirut)/Ana Beirut/abdel Wahab/Diwan Beirut.
+"${PYTHON:-python3}" -m pricing_pipeline.parse_pricing \
+  --xlsx "raw-data/plat-de-jour-price-comparison.xlsx" \
+  --config sources/stories-plat-du-jour-2026-07.json \
+  --out processed/stories-plat-du-jour-2026-07.normalized.json
+"${PYTHON:-python3}" -m pricing_pipeline.analyze_pricing \
+  --in processed/stories-plat-du-jour-2026-07.normalized.json \
+  --out processed/stories-plat-du-jour-2026-07.json
+
+# Sandwiches — non-standard sheet layout (title/subtitle preamble, product
+# identity split across Item + Bread Type, derived summary columns), so it
+# uses the dedicated parse_sandwiches parser instead of parse_pricing.
+"${PYTHON:-python3}" -m pricing_pipeline.parse_sandwiches \
+  --xlsx "raw-data/Sandwich_Price_Comparison_2026.xlsx" \
+  --config sources/stories-sandwiches-2026-07.json \
+  --out processed/stories-sandwiches-2026-07.normalized.json
+"${PYTHON:-python3}" -m pricing_pipeline.analyze_pricing \
+  --in processed/stories-sandwiches-2026-07.normalized.json \
+  --out processed/stories-sandwiches-2026-07.json

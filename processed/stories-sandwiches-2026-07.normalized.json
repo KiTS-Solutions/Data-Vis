@@ -1,0 +1,243 @@
+{
+  "meta": {
+    "client": "Stories",
+    "report_date": "2026-07-20",
+    "currency": "LBP",
+    "fx_usd_rate": 89600,
+    "fx_rate_date": "2026-07-20",
+    "fx_source": "lira-rate.com / lbprate.com market average (parallel/market rate)",
+    "own_brand": "Stories",
+    "competitors": [
+      "Pain d'Or",
+      "Fakhani",
+      "Wooden Bakery"
+    ],
+    "generated_from": "raw-data/Sandwich_Price_Comparison_2026.xlsx"
+  },
+  "records": [
+    {
+      "category": "Sandwiches",
+      "product": "Turkey & Cheese (White)",
+      "brand": "Pain d'Or",
+      "price_lbp": 712000,
+      "price_usd": 7.95
+    },
+    {
+      "category": "Sandwiches",
+      "product": "Turkey & Cheese (White)",
+      "brand": "Fakhani",
+      "price_lbp": 480000,
+      "price_usd": 5.36
+    },
+    {
+      "category": "Sandwiches",
+      "product": "Turkey & Cheese (White)",
+      "brand": "Stories",
+      "price_lbp": 650000,
+      "price_usd": 7.25
+    },
+    {
+      "category": "Sandwiches",
+      "product": "Turkey & Cheese (White)",
+      "brand": "Wooden Bakery",
+      "price_lbp": 605000,
+      "price_usd": 6.75
+    },
+    {
+      "category": "Sandwiches",
+      "product": "Turkey & Cheese (Whole Wheat)",
+      "brand": "Pain d'Or",
+      "price_lbp": 725000,
+      "price_usd": 8.09
+    },
+    {
+      "category": "Sandwiches",
+      "product": "Turkey & Cheese (Whole Wheat)",
+      "brand": "Fakhani",
+      "price_lbp": 480000,
+      "price_usd": 5.36
+    },
+    {
+      "category": "Sandwiches",
+      "product": "Turkey & Cheese (Whole Wheat)",
+      "brand": "Stories",
+      "price_lbp": 700000,
+      "price_usd": 7.81
+    },
+    {
+      "category": "Sandwiches",
+      "product": "Turkey & Cheese (Whole Wheat)",
+      "brand": "Wooden Bakery",
+      "price_lbp": 630000,
+      "price_usd": 7.03
+    },
+    {
+      "category": "Sandwiches",
+      "product": "Halloum (White)",
+      "brand": "Pain d'Or",
+      "price_lbp": 534000,
+      "price_usd": 5.96
+    },
+    {
+      "category": "Sandwiches",
+      "product": "Halloum (White)",
+      "brand": "Fakhani",
+      "price_lbp": 250000,
+      "price_usd": 2.79
+    },
+    {
+      "category": "Sandwiches",
+      "product": "Halloum (White)",
+      "brand": "Stories",
+      "price_lbp": 550000,
+      "price_usd": 6.14
+    },
+    {
+      "category": "Sandwiches",
+      "product": "Halloum (White)",
+      "brand": "Wooden Bakery",
+      "price_lbp": 470000,
+      "price_usd": 5.25
+    },
+    {
+      "category": "Sandwiches",
+      "product": "Halloum (Whole Wheat)",
+      "brand": "Pain d'Or",
+      "price_lbp": 547000,
+      "price_usd": 6.1
+    },
+    {
+      "category": "Sandwiches",
+      "product": "Halloum (Whole Wheat)",
+      "brand": "Fakhani",
+      "price_lbp": 250000,
+      "price_usd": 2.79
+    },
+    {
+      "category": "Sandwiches",
+      "product": "Halloum (Whole Wheat)",
+      "brand": "Stories",
+      "price_lbp": 600000,
+      "price_usd": 6.7
+    },
+    {
+      "category": "Sandwiches",
+      "product": "Halloum (Whole Wheat)",
+      "brand": "Wooden Bakery",
+      "price_lbp": 495000,
+      "price_usd": 5.52
+    },
+    {
+      "category": "Sandwiches",
+      "product": "Tuna (White)",
+      "brand": "Pain d'Or",
+      "price_lbp": 623000,
+      "price_usd": 6.95
+    },
+    {
+      "category": "Sandwiches",
+      "product": "Tuna (White)",
+      "brand": "Fakhani",
+      "price_lbp": 325000,
+      "price_usd": 3.63
+    },
+    {
+      "category": "Sandwiches",
+      "product": "Tuna (White)",
+      "brand": "Stories",
+      "price_lbp": 600000,
+      "price_usd": 6.7
+    },
+    {
+      "category": "Sandwiches",
+      "product": "Tuna (White)",
+      "brand": "Wooden Bakery",
+      "price_lbp": 675000,
+      "price_usd": 7.53
+    },
+    {
+      "category": "Sandwiches",
+      "product": "Tuna (Whole Wheat)",
+      "brand": "Pain d'Or",
+      "price_lbp": 636000,
+      "price_usd": 7.1
+    },
+    {
+      "category": "Sandwiches",
+      "product": "Tuna (Whole Wheat)",
+      "brand": "Fakhani",
+      "price_lbp": 325000,
+      "price_usd": 3.63
+    },
+    {
+      "category": "Sandwiches",
+      "product": "Tuna (Whole Wheat)",
+      "brand": "Stories",
+      "price_lbp": 650000,
+      "price_usd": 7.25
+    },
+    {
+      "category": "Sandwiches",
+      "product": "Tuna (Whole Wheat)",
+      "brand": "Wooden Bakery",
+      "price_lbp": 695000,
+      "price_usd": 7.76
+    },
+    {
+      "category": "Sandwiches",
+      "product": "Labneh (White)",
+      "brand": "Pain d'Or",
+      "price_lbp": 356000,
+      "price_usd": 3.97
+    },
+    {
+      "category": "Sandwiches",
+      "product": "Labneh (White)",
+      "brand": "Fakhani",
+      "price_lbp": 200000,
+      "price_usd": 2.23
+    },
+    {
+      "category": "Sandwiches",
+      "product": "Labneh (White)",
+      "brand": "Stories",
+      "price_lbp": 500000,
+      "price_usd": 5.58
+    },
+    {
+      "category": "Sandwiches",
+      "product": "Labneh (White)",
+      "brand": "Wooden Bakery",
+      "price_lbp": 340000,
+      "price_usd": 3.79
+    },
+    {
+      "category": "Sandwiches",
+      "product": "Labneh (Whole Wheat)",
+      "brand": "Pain d'Or",
+      "price_lbp": 369000,
+      "price_usd": 4.12
+    },
+    {
+      "category": "Sandwiches",
+      "product": "Labneh (Whole Wheat)",
+      "brand": "Fakhani",
+      "price_lbp": 200000,
+      "price_usd": 2.23
+    },
+    {
+      "category": "Sandwiches",
+      "product": "Labneh (Whole Wheat)",
+      "brand": "Stories",
+      "price_lbp": 550000,
+      "price_usd": 6.14
+    },
+    {
+      "category": "Sandwiches",
+      "product": "Labneh (Whole Wheat)",
+      "brand": "Wooden Bakery",
+      "price_lbp": 360000,
+      "price_usd": 4.02
+    }
+  ]
+}

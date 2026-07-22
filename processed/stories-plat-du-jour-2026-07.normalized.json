@@ -1,0 +1,370 @@
+{
+  "meta": {
+    "client": "Stories",
+    "report_date": "2026-07-22",
+    "currency": "LBP",
+    "fx_usd_rate": 89600,
+    "fx_rate_date": "2026-07-20",
+    "fx_source": "lira-rate.com / lbprate.com market average (parallel/market rate)",
+    "own_brand": "Stories",
+    "competitors": [
+      "Socrate (Beirut)",
+      "Ana Beirut",
+      "abdel Wahab",
+      "Diwan Beirut"
+    ],
+    "generated_from": "raw-data/plat-de-jour-price-comparison.xlsx"
+  },
+  "records": [
+    {
+      "category": "Plat Du Jour",
+      "product": "B.B.Q Chicken",
+      "brand": "Stories",
+      "price_lbp": 1050000,
+      "price_usd": 11.72
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "Butter Chicken",
+      "brand": "Stories",
+      "price_lbp": 1050000,
+      "price_usd": 11.72
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "Butter Chicken",
+      "brand": "Socrate (Beirut)",
+      "price_lbp": 1342500,
+      "price_usd": 14.98
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "Chicken Alfredo Pasta",
+      "brand": "Stories",
+      "price_lbp": 1165500,
+      "price_usd": 13.01
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "Chicken Alfredo Pasta",
+      "brand": "Socrate (Beirut)",
+      "price_lbp": 1342500,
+      "price_usd": 14.98
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "Chicken Stroganoff",
+      "brand": "Stories",
+      "price_lbp": 1165500,
+      "price_usd": 13.01
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "Chicken Stroganoff",
+      "brand": "Socrate (Beirut)",
+      "price_lbp": 1253000,
+      "price_usd": 13.98
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "Chicken Stroganoff",
+      "brand": "abdel Wahab",
+      "price_lbp": 1521500,
+      "price_usd": 16.98
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "Freekeh With Chicken",
+      "brand": "Stories",
+      "price_lbp": 1165500,
+      "price_usd": 13.01
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "Freekeh With Chicken",
+      "brand": "Socrate (Beirut)",
+      "price_lbp": 1342500,
+      "price_usd": 14.98
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "Kibbeh B Laban",
+      "brand": "Stories",
+      "price_lbp": 1165500,
+      "price_usd": 13.01
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "Kibbeh B Laban",
+      "brand": "Socrate (Beirut)",
+      "price_lbp": 1253000,
+      "price_usd": 13.98
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "Lasagna",
+      "brand": "Stories",
+      "price_lbp": 1165500,
+      "price_usd": 13.01
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "Lasagna",
+      "brand": "Socrate (Beirut)",
+      "price_lbp": 1253000,
+      "price_usd": 13.98
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "Oriental Rice",
+      "brand": "Stories",
+      "price_lbp": 1165500,
+      "price_usd": 13.01
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "Oriental Rice",
+      "brand": "Socrate (Beirut)",
+      "price_lbp": 1342500,
+      "price_usd": 14.98
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "Oriental Rice",
+      "brand": "abdel Wahab",
+      "price_lbp": 1521500,
+      "price_usd": 16.98
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "Potato Souffle",
+      "brand": "Stories",
+      "price_lbp": 1050000,
+      "price_usd": 11.72
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "Potato Souffle",
+      "brand": "abdel Wahab",
+      "price_lbp": 1432000,
+      "price_usd": 15.98
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "Potato Souffle",
+      "brand": "Diwan Beirut",
+      "price_lbp": 1700500,
+      "price_usd": 18.98
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "Roasted Chicken",
+      "brand": "Stories",
+      "price_lbp": 1165500,
+      "price_usd": 13.01
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "Roasted Chicken",
+      "brand": "Socrate (Beirut)",
+      "price_lbp": 1253000,
+      "price_usd": 13.98
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "Shish Barak",
+      "brand": "Stories",
+      "price_lbp": 1165500,
+      "price_usd": 13.01
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "Shish Barak",
+      "brand": "Socrate (Beirut)",
+      "price_lbp": 1074000,
+      "price_usd": 11.99
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "Shish Barak",
+      "brand": "Ana Beirut",
+      "price_lbp": 1790000,
+      "price_usd": 19.98
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "Shish Barak",
+      "brand": "abdel Wahab",
+      "price_lbp": 1521500,
+      "price_usd": 16.98
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "Shish Barak",
+      "brand": "Diwan Beirut",
+      "price_lbp": 1700500,
+      "price_usd": 18.98
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "Spaghetti Bolognese",
+      "brand": "Stories",
+      "price_lbp": 1165500,
+      "price_usd": 13.01
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "Spaghetti Bolognese",
+      "brand": "Socrate (Beirut)",
+      "price_lbp": 1253000,
+      "price_usd": 13.98
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "Spaghetti Bolognese",
+      "brand": "Ana Beirut",
+      "price_lbp": 1611000,
+      "price_usd": 17.98
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "Vegetarian Grape Leaves",
+      "brand": "Stories",
+      "price_lbp": 1165500,
+      "price_usd": 13.01
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "Vegetarian Grape Leaves",
+      "brand": "Socrate (Beirut)",
+      "price_lbp": 1342500,
+      "price_usd": 14.98
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "Vegetarian Grape Leaves",
+      "brand": "abdel Wahab",
+      "price_lbp": 1521500,
+      "price_usd": 16.98
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "NOUILLE",
+      "brand": "Stories",
+      "price_lbp": 1050000,
+      "price_usd": 11.72
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "NOUILLE",
+      "brand": "Ana Beirut",
+      "price_lbp": 1790000,
+      "price_usd": 19.98
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "NOUILLE",
+      "brand": "abdel Wahab",
+      "price_lbp": 1521500,
+      "price_usd": 16.98
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "NOUILLE",
+      "brand": "Diwan Beirut",
+      "price_lbp": 1700500,
+      "price_usd": 18.98
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "MOUGHRABIEH",
+      "brand": "Stories",
+      "price_lbp": 1165500,
+      "price_usd": 13.01
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "MOUGHRABIEH",
+      "brand": "Socrate (Beirut)",
+      "price_lbp": 1342500,
+      "price_usd": 14.98
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "MOUGHRABIEH",
+      "brand": "Ana Beirut",
+      "price_lbp": 1790000,
+      "price_usd": 19.98
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "MOUGHRABIEH",
+      "brand": "abdel Wahab",
+      "price_lbp": 1521500,
+      "price_usd": 16.98
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "MOUGHRABIEH",
+      "brand": "Diwan Beirut",
+      "price_lbp": 1924250,
+      "price_usd": 21.48
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "KEBBEH BI SONIYE",
+      "brand": "Stories",
+      "price_lbp": 1165500,
+      "price_usd": 13.01
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "KEBBEH BI SONIYE",
+      "brand": "Socrate (Beirut)",
+      "price_lbp": 1253000,
+      "price_usd": 13.98
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "KEBBEH BI SONIYE",
+      "brand": "Ana Beirut",
+      "price_lbp": 1790000,
+      "price_usd": 19.98
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "KEBBEH BI SONIYE",
+      "brand": "abdel Wahab",
+      "price_lbp": 1521500,
+      "price_usd": 16.98
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "KEBBEH BI SONIYE",
+      "brand": "Diwan Beirut",
+      "price_lbp": 1700500,
+      "price_usd": 18.98
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "shakriyeh",
+      "brand": "Stories",
+      "price_lbp": 1165500,
+      "price_usd": 13.01
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "shakriyeh",
+      "brand": "Socrate (Beirut)",
+      "price_lbp": 1342500,
+      "price_usd": 14.98
+    },
+    {
+      "category": "Plat Du Jour",
+      "product": "shakriyeh",
+      "brand": "abdel Wahab",
+      "price_lbp": 1521500,
+      "price_usd": 16.98
+    }
+  ]
+}

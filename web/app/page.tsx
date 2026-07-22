@@ -18,12 +18,10 @@ const PENDING_CATEGORIES = [
   "Milkshakes",
   "Protein Shakes",
   "Shakes",
-  "Sandwiches",
   "Pizza",
   "Wraps",
   "Gluten Free",
   "Luxury Toppings",
-  "Plat Du Jour",
 ];
 
 // "Main Menu" isn't a real menu category — split it into the same groupings
@@ -45,6 +43,8 @@ export default function Home() {
   const frozenYogurtReport = loadReport("stories-frozen-yogurt-2026-07");
   const nonDairyReport = loadReport("stories-non-dairy-2026-07");
   const saladsReport = loadReport("stories-salads-2026-07");
+  const platDuJourReport = loadReport("stories-plat-du-jour-2026-07");
+  const sandwichesReport = loadReport("stories-sandwiches-2026-07");
 
   const drinksReport = filterReportByCategories(mainReport, DRINKS_CATEGORIES);
   const bakeryReport = filterReportByCategories(mainReport, BAKERY_CATEGORIES);
@@ -55,6 +55,8 @@ export default function Home() {
     computeReportScorecard(frozenYogurtReport, "Frozen Yogurt Bar"),
     computeReportScorecard(nonDairyReport, "Non-Dairy Menu"),
     computeReportScorecard(saladsReport, "Salads"),
+    computeReportScorecard(platDuJourReport, "Plat Du Jour"),
+    computeReportScorecard(sandwichesReport, "Sandwiches"),
   ];
 
   return (
@@ -102,6 +104,8 @@ export default function Home() {
         <ReportSection title="Frozen Yogurt Bar" report={frozenYogurtReport} />
         <ReportSection title="Non-Dairy Menu" report={nonDairyReport} />
         <ReportSection title="Salads" report={saladsReport} />
+        <ReportSection title="Plat Du Jour" report={platDuJourReport} />
+        <ReportSection title="Sandwiches" report={sandwichesReport} />
 
         <Section title="Categories In Progress" last>
           <Explain>

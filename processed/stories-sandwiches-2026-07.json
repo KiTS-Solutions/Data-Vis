@@ -1,0 +1,164 @@
+{
+  "meta": {
+    "client": "Stories",
+    "report_date": "2026-07-20",
+    "currency": "LBP",
+    "fx_usd_rate": 89600,
+    "fx_rate_date": "2026-07-20",
+    "fx_source": "lira-rate.com / lbprate.com market average (parallel/market rate)",
+    "own_brand": "Stories",
+    "competitors": [
+      "Pain d'Or",
+      "Fakhani",
+      "Wooden Bakery"
+    ],
+    "generated_from": "raw-data/Sandwich_Price_Comparison_2026.xlsx"
+  },
+  "products": [
+    {
+      "category": "Sandwiches",
+      "product": "Turkey & Cheese (White)",
+      "prices_lbp": {
+        "Pain d'Or": 712000,
+        "Fakhani": 480000,
+        "Stories": 650000,
+        "Wooden Bakery": 605000
+      },
+      "own_price_lbp": 650000,
+      "competitor_avg_lbp": 599000.0,
+      "price_index": 108.5,
+      "comparability": "high",
+      "tier": "Premium",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Sandwiches",
+      "product": "Turkey & Cheese (Whole Wheat)",
+      "prices_lbp": {
+        "Pain d'Or": 725000,
+        "Fakhani": 480000,
+        "Stories": 700000,
+        "Wooden Bakery": 630000
+      },
+      "own_price_lbp": 700000,
+      "competitor_avg_lbp": 611666.67,
+      "price_index": 114.4,
+      "comparability": "high",
+      "tier": "Premium",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Sandwiches",
+      "product": "Halloum (White)",
+      "prices_lbp": {
+        "Pain d'Or": 534000,
+        "Fakhani": 250000,
+        "Stories": 550000,
+        "Wooden Bakery": 470000
+      },
+      "own_price_lbp": 550000,
+      "competitor_avg_lbp": 418000.0,
+      "price_index": 131.6,
+      "comparability": "high",
+      "tier": "Value",
+      "is_outlier": true,
+      "outlier_direction": "overpriced"
+    },
+    {
+      "category": "Sandwiches",
+      "product": "Halloum (Whole Wheat)",
+      "prices_lbp": {
+        "Pain d'Or": 547000,
+        "Fakhani": 250000,
+        "Stories": 600000,
+        "Wooden Bakery": 495000
+      },
+      "own_price_lbp": 600000,
+      "competitor_avg_lbp": 430666.67,
+      "price_index": 139.3,
+      "comparability": "high",
+      "tier": "Core",
+      "is_outlier": true,
+      "outlier_direction": "overpriced"
+    },
+    {
+      "category": "Sandwiches",
+      "product": "Tuna (White)",
+      "prices_lbp": {
+        "Pain d'Or": 623000,
+        "Fakhani": 325000,
+        "Stories": 600000,
+        "Wooden Bakery": 675000
+      },
+      "own_price_lbp": 600000,
+      "competitor_avg_lbp": 541000.0,
+      "price_index": 110.9,
+      "comparability": "high",
+      "tier": "Core",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Sandwiches",
+      "product": "Tuna (Whole Wheat)",
+      "prices_lbp": {
+        "Pain d'Or": 636000,
+        "Fakhani": 325000,
+        "Stories": 650000,
+        "Wooden Bakery": 695000
+      },
+      "own_price_lbp": 650000,
+      "competitor_avg_lbp": 552000.0,
+      "price_index": 117.8,
+      "comparability": "high",
+      "tier": "Premium",
+      "is_outlier": true,
+      "outlier_direction": "overpriced"
+    },
+    {
+      "category": "Sandwiches",
+      "product": "Labneh (White)",
+      "prices_lbp": {
+        "Pain d'Or": 356000,
+        "Fakhani": 200000,
+        "Stories": 500000,
+        "Wooden Bakery": 340000
+      },
+      "own_price_lbp": 500000,
+      "competitor_avg_lbp": 298666.67,
+      "price_index": 167.4,
+      "comparability": "high",
+      "tier": "Value",
+      "is_outlier": true,
+      "outlier_direction": "overpriced"
+    },
+    {
+      "category": "Sandwiches",
+      "product": "Labneh (Whole Wheat)",
+      "prices_lbp": {
+        "Pain d'Or": 369000,
+        "Fakhani": 200000,
+        "Stories": 550000,
+        "Wooden Bakery": 360000
+      },
+      "own_price_lbp": 550000,
+      "competitor_avg_lbp": 309666.67,
+      "price_index": 177.6,
+      "comparability": "high",
+      "tier": "Value",
+      "is_outlier": true,
+      "outlier_direction": "overpriced"
+    }
+  ],
+  "categories": [
+    {
+      "category": "Sandwiches",
+      "product_count": 8,
+      "countable_product_count": 8,
+      "avg_price_index": 133.4
+    }
+  ],
+  "data_quality_warnings": []
+}
