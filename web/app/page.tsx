@@ -6,6 +6,7 @@ import { computeReportScorecard } from "@/lib/analytics/scorecard";
 import { ExecutiveSummary } from "@/components/ExecutiveSummary";
 import { ReportSection } from "@/components/ReportSection";
 import { CategoriesInProgress } from "@/components/CategoriesInProgress";
+import { Explain } from "@/components/Explain";
 import { PresenterModeToggle } from "@/components/PresenterModeToggle";
 import { ContextBar } from "@/components/ContextBar";
 import { Methodology } from "@/components/Methodology";
@@ -47,10 +48,12 @@ export default function Home() {
         <div className="mx-auto mt-10 max-w-6xl">
           <p className="text-xs uppercase tracking-widest text-ocean-muted">Pricing Strategy Advisory</p>
           <h1 className="mt-2 font-display text-4xl text-ocean sm:text-5xl">Stories Pricing Benchmark</h1>
-          <p className="mt-3 max-w-2xl text-sm text-ocean-muted">
-            A full-menu competitive price positioning analysis for {mainReport.meta.client}, broken out by
-            category group — each benchmarked against its own set of competitors.
-          </p>
+          <Explain>
+            <p className="mt-3 max-w-2xl text-sm text-ocean-muted">
+              A full-menu competitive price positioning analysis for {mainReport.meta.client}, broken out by
+              category group — each benchmarked against its own set of competitors.
+            </p>
+          </Explain>
         </div>
       </div>
 
@@ -62,7 +65,9 @@ export default function Home() {
         </Section>
 
         <Section title="Methodology & Data Sources">
-          <Methodology meta={mainReport.meta} warnings={mainReport.data_quality_warnings} />
+          <Explain>
+            <Methodology meta={mainReport.meta} warnings={mainReport.data_quality_warnings} />
+          </Explain>
         </Section>
 
         <ReportSection title="Main Menu" report={mainReport} />
@@ -70,10 +75,12 @@ export default function Home() {
         <ReportSection title="Non-Dairy Menu" report={nonDairyReport} />
 
         <Section title="Categories In Progress" last>
-          <p className="mb-5 max-w-2xl text-sm text-ocean-muted">
-            These categories are moving to their own dedicated competitor comparison — shown here once{" "}
-            {mainReport.meta.client} provides that data.
-          </p>
+          <Explain>
+            <p className="mb-5 max-w-2xl text-sm text-ocean-muted">
+              These categories are moving to their own dedicated competitor comparison — shown here once{" "}
+              {mainReport.meta.client} provides that data.
+            </p>
+          </Explain>
           <CategoriesInProgress categories={PENDING_CATEGORIES} />
         </Section>
       </main>
