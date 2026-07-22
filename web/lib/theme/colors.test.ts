@@ -3,7 +3,7 @@ import { BRAND_COLORS, COMPETITOR_COLORS, SEMANTIC_COLORS, CONTEXT_COLOR, CHART_
 
 describe("theme colors", () => {
   it("assigns Stories its brand green", () => {
-    expect(BRAND_COLORS.stories).toBe("#1f4d3d");
+    expect(BRAND_COLORS.stories).toBe("#156644");
   });
 
   it("assigns each of the four competitors a distinct brand accent color", () => {

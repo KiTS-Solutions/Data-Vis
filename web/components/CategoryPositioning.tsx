@@ -22,7 +22,7 @@ function formatDeviation(v: number): string {
   return `${v > 0 ? "+" : ""}${v}`;
 }
 
-const INK = { light: "#1f4d3d", dark: "#e7f3ee" };
+const INK = { light: "#1c1917", dark: "#f5f3ef" };
 const NEUTRAL_BAR = { light: "#94a3b8", dark: "#7c9187" };
 
 export function CategoryPositioning({ rows }: { rows: CategoryPositioningRow[] }) {

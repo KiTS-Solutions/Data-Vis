@@ -16,6 +16,8 @@ import { Section } from "@/components/Section";
 import { PresenterModeProvider } from "@/lib/presenter/PresenterModeContext";
 import { ThemeProvider } from "@/lib/theme/ThemeContext";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { Reveal } from "@/components/motion/Reveal";
+import { AccentUnderline } from "@/components/motion/AccentUnderline";
 
 const PENDING_CATEGORIES = [
   "Milkshakes",
@@ -68,36 +70,41 @@ export default function Home() {
     <PresenterModeProvider>
       {/* Cover */}
       <div className="border-b border-ocean/10 bg-page-bg px-6 pb-10 pt-8">
-        <div className="mx-auto flex max-w-6xl items-start justify-between gap-4">
-          <div className="flex items-center gap-2 sm:gap-3">
+        <div className="mx-auto flex max-w-6xl flex-wrap items-start justify-between gap-x-4 gap-y-3">
+          <div className="flex shrink-0 items-center gap-2 sm:gap-3">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={withBasePath("/ruya-logo.jpg")} alt="Ru'ya 360" className="h-7 w-auto sm:h-9" />
+            <img src={withBasePath("/stories-logo.png")} alt="Stories" className="h-7 w-auto sm:h-9" />
             <span className="h-6 w-px bg-ocean/15 aria-hidden:true" aria-hidden="true" />
+            <span className="text-[10px] uppercase tracking-wide text-ocean-muted">Prepared by</span>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={withBasePath("/stories-logo.png")} alt="Stories" className="h-6 w-auto sm:h-7" />
+            <img src={withBasePath("/ruya-logo.jpg")} alt="Ru'ya 360" className="h-5 w-auto sm:h-6" />
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex shrink-0 items-center gap-2">
             <ThemeToggle />
             <PresenterModeToggle />
           </div>
         </div>
         <div className="mx-auto mt-10 max-w-6xl">
-          <p className="text-xs uppercase tracking-widest text-ocean-muted">Pricing Strategy Advisory</p>
-          <h1 className="mt-2 font-display text-4xl text-ocean sm:text-5xl">Stories Pricing Benchmark</h1>
-          <span className="mt-2 block h-1 w-16 rounded-full bg-lime-dust" aria-hidden="true" />
-          <Explain>
-            <p className="mt-3 max-w-2xl text-sm text-ocean-muted">
-              A full-menu competitive price positioning analysis for {mainReport.meta.client}, broken out by
-              category group — each benchmarked against its own set of competitors.
-            </p>
-          </Explain>
+          <Reveal>
+            <p className="text-xs font-semibold uppercase tracking-widest text-brand">Pricing Strategy Advisory</p>
+            <h1 className="mt-2 font-display text-4xl text-ocean sm:text-5xl">Stories Pricing Benchmark</h1>
+            <AccentUnderline className="mt-2" />
+            <Explain>
+              <p className="mt-3 max-w-2xl text-sm text-ocean-muted">
+                A full-menu competitive price positioning analysis for {mainReport.meta.client}, broken out by
+                category group — each benchmarked against its own set of competitors.
+              </p>
+            </Explain>
+          </Reveal>
         </div>
       </div>
 
-      <ContextBar meta={mainReport.meta} />
+      <Reveal delay={0.1}>
+        <ContextBar meta={mainReport.meta} />
+      </Reveal>
 
       <main className="mx-auto max-w-6xl px-6">
-        <Section title="Executive Summary" first>
+        <Section title="Executive Summary" first watermark>
           <ExecutiveSummary scorecards={scorecards} fxRate={mainReport.meta.fx_usd_rate} />
         </Section>
 

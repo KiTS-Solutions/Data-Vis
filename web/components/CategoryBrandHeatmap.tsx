@@ -8,7 +8,7 @@ import { useTheme } from "@/lib/theme/ThemeContext";
 const BIN_STYLES: Record<string, { bg: string; text: string }> = {
   "strong-below": { bg: "#6d28d9", text: "#ffffff" },
   below: { bg: "#ddd6fe", text: "#3b1f7a" },
-  "at-par": { bg: "#f1f5f9", text: "#1f4d3d" },
+  "at-par": { bg: "#f1f5f9", text: "#1c1917" },
   above: { bg: "#fecaca", text: "#7a1717" },
   "strong-above": { bg: "#b91c1c", text: "#ffffff" },
   "no-data": { bg: "#ffffff", text: "#94a3b8" },
@@ -22,11 +22,11 @@ const NO_PEER_STYLE = { bg: "#eef2f4", text: "#52707c" };
 // unchanged. The three near-white light-mode bins (below, at-par, above,
 // no-data) would look like a bright cutout on a dark page, so those get
 // dark-appropriate equivalents — each contrast-checked (text vs. its own
-// bg): below 9.6:1, at-par 7.1:1, above 8.7:1, no-data 5.3:1.
+// bg): below 9.6:1, at-par 7.72:1, above 8.7:1, no-data 5.3:1.
 const DARK_BIN_STYLES: Record<string, { bg: string; text: string }> = {
   "strong-below": { bg: "#6d28d9", text: "#ffffff" },
   below: { bg: "#2f2145", text: "#d8c9fa" },
-  "at-par": { bg: "#1c2a23", text: "#9fb9ac" },
+  "at-par": { bg: "#1c2a23", text: "#c2b9ae" },
   above: { bg: "#3a1e1e", text: "#f3b4b4" },
   "strong-above": { bg: "#b91c1c", text: "#ffffff" },
   "no-data": { bg: "#0f1a16", text: "#7c9187" },

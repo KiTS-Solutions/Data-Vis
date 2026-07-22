@@ -19,7 +19,7 @@ import { themedBrandColors, themedChartColors, themedContextColor } from "@/lib/
 import { useTheme } from "@/lib/theme/ThemeContext";
 import { formatDualCurrency } from "@/lib/format/currency";
 
-const INK = { light: "#1f4d3d", dark: "#e7f3ee" };
+const INK = { light: "#1c1917", dark: "#f5f3ef" };
 const OWN_BRAND_STROKE = { light: "#1a1a1a", dark: "#f4f9f6" };
 
 interface PricePoint {

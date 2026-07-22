@@ -1,17 +1,18 @@
 import type { Theme } from "./ThemeContext";
 
 export const BRAND_COLORS = {
-  stories: "#1f4d3d", // Stories Green (rebrand from Ru'ya Ocean teal)
+  stories: "#156644", // Stories Green, sampled directly from the client's logo (public/stories-logo.png)
   accent: "#d9b382", // warm tan — Stories secondary accent, sparing UI use only
 } as const;
 
-// Dark-mode brand green — the light value (#1f4d3d) is a deep, low-chroma
-// green that fails WCAG AA (1.85:1) against the dark page surfaces; this is
-// the same OKLCH hue (167.8°) lightened+boosted to L=0.74/C=0.12, which
-// clears 6.85:1 against --color-surface-2 (#1c2a23). accent is unchanged —
-// already 9.09:1 against the dark page background, no dark variant needed.
+// Dark-mode brand green — the light value (#156644) is a deep, low-chroma
+// green that fails WCAG AA against the dark page surfaces; this is the same
+// OKLCH hue (160.1°) lightened+boosted to L=0.74/C×1.15, which clears 6.80:1
+// against --color-surface-2 (#1c2a23) and 8.10:1 against page-bg (#0f1a16).
+// accent is unchanged — already 9.09:1 against the dark page background, no
+// dark variant needed.
 export const DARK_BRAND_COLORS = {
-  stories: "#4fc39c",
+  stories: "#68c093",
   accent: "#d9b382",
 } as const;
 

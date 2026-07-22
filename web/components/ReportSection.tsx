@@ -31,7 +31,7 @@ export function ReportSection({
   const heatmapRows = buildCategoryBrandHeatmap(report.products, allBrands, report.meta.own_brand, report.categories);
 
   return (
-    <section aria-label={title} className="border-b border-ocean/10 pb-12 pt-12">
+    <section aria-label={title} className="border-b border-brand/15 pb-12 pt-12">
       <h2 className="mb-6 font-display text-2xl text-ocean">{title}</h2>
 
       <Section title="Competitive Landscape at a Glance" level={3}>

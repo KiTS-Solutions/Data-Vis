@@ -7,23 +7,36 @@
 @custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
 
 @theme {
-  --color-ocean: #1f4d3d;
-  /* Stories brand green (rebrand from Ru'ya Ocean teal). Solid (not alpha)
-     muted text token — validated at 7.67:1 against white, clears WCAG AA's
-     4.5:1 for normal text. Using text-ocean/40|50|60|70 directly on
-     readable copy was a repeat contrast failure on the old palette (an
-     independent review measured as low as 2.34:1) — always use this for
-     de-emphasized TEXT. Alpha variants of ocean (bg-ocean/5, border-ocean/10,
-     etc.) are still fine for decorative backgrounds/borders, just never for
-     text. Token name kept as "ocean" to avoid touching every component.
+  --color-ocean: #1c1917;
+  /* General ink token (not brand green — see --color-brand below for that).
+     Stories' own logo is a black wordmark + a separate green icon mark, so
+     the report's body/heading text reads as near-black ink, matching how
+     the client's own mark actually uses color, with green reserved for
+     brand accents. Warm near-black (not pure #000) to sit well against the
+     lime-dust/tan accent. Solid (not alpha) muted text token below —
+     validated at 7.63:1 against white, clears WCAG AA's 4.5:1 for normal
+     text. Using text-ocean/40|50|60|70 directly on readable copy was a
+     repeat contrast failure on an earlier palette (an independent review
+     measured as low as 2.34:1) — always use ocean-muted for de-emphasized
+     TEXT. Alpha variants of ocean (bg-ocean/5, border-ocean/10, etc.) are
+     still fine for decorative backgrounds/borders, just never for text.
+     Token name kept as "ocean" to avoid touching every component.
      THEME-AWARE: this token's value is overridden for dark mode below —
      every text-ocean/border-ocean/bg-ocean/ring-ocean utility (~115 uses)
      re-themes automatically with no component changes needed. The one
      exception is a handful of OPAQUE brand-surface fills (Context Bar,
      Premium/High-comparability chips) that must stay deep green in both
      themes — those use --color-brand-surface instead, which never swaps. */
-  --color-ocean-muted: #2e5c47;
-  --color-brand-surface: #1f4d3d;
+  --color-ocean-muted: #57534e;
+  --color-brand-surface: #156644;
+  /* Stories Green, sampled directly from the client's own logo asset
+     (public/stories-logo.png) — not an approximation. Used for opaque
+     brand-surface fills (Context Bar, chips) and, as --color-brand below,
+     for green TEXT/border accents in the small set of spots meant to read
+     as "this is Stories" (report kicker, title underline) — deliberately
+     not used as the general ink color, matching the client's own black-
+     wordmark-plus-green-icon usage. */
+  --color-brand: #156644;
   --color-lime-dust: #d9b382;
   --color-sky-aqua: #66c4dd;
   --color-deep-turquoise: #2b96af;
@@ -38,17 +51,30 @@
 
   --font-display: var(--font-clash-display), sans-serif;
   --font-body: var(--font-montserrat), sans-serif;
+
+  /* Motion tokens — confident, non-bouncy deceleration (no spring overshoot)
+     to keep every animation reading as "business grade," not playful. Same
+     curve used across Framer Motion and GSAP calls so entrances/hovers/
+     count-ups feel like one system. See lib/motion/tokens.ts for the JS-side
+     copies (CSS custom properties aren't readable by Framer Motion/GSAP). */
+  --ease-professional: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-micro: 150ms;
+  --duration-reveal: 500ms;
+  --duration-count: 1400ms;
 }
 
 /* Dark theme overrides — validated per-token against these exact surfaces
    (#0f1a16 page / #1c2a23 card), not an automatic lightening of the light
-   values (e.g. ink #e7f3ee clears 15.6:1 on page-bg, 14.4:1 on surface-2;
-   ocean-muted #9fb9ac clears 8.5:1 / 7.8:1). Chart/data colors (competitor
-   series, heatmap bins, semantic red/violet) are separately re-validated in
-   lib/theme/colors.ts — a structural ink swap here doesn't touch those. */
+   values (e.g. ink #f5f3ef clears 16.06:1 on page-bg, 13.49:1 on surface-2;
+   ocean-muted #c2b9ae clears 9.19:1 / 7.72:1; brand #68c093 — same OKLCH
+   hue as --color-brand's #156644, lightened to L=0.74/C boosted — clears
+   8.1:1 / 6.8:1). Chart/data colors (competitor series, heatmap bins,
+   semantic red/violet) are separately re-validated in lib/theme/colors.ts —
+   a structural ink swap here doesn't touch those. */
 :root[data-theme="dark"] {
-  --color-ocean: #e7f3ee;
-  --color-ocean-muted: #9fb9ac;
+  --color-ocean: #f5f3ef;
+  --color-ocean-muted: #c2b9ae;
+  --color-brand: #68c093;
   --color-page-bg: #0f1a16;
   --color-surface-2: #1c2a23;
 }
@@ -56,4 +82,28 @@
 body {
   @apply bg-page-bg text-ocean;
   font-family: var(--font-body);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Scroll-triggered reveals (Reveal/RevealGroup/RevealItem) never receive a
+   real IntersectionObserver hit during print/PDF rendering — there's no
+   scrolling — so anything below the first viewport would print invisible
+   (opacity: 0) despite being present in the DOM. Force every animated
+   element to its final, fully-visible state for print. `!important` is
+   required: Framer Motion/GSAP set these as plain inline styles, and only an
+   `!important` stylesheet rule outranks an inline style in CSS specificity. */
+@media print {
+  * {
+    opacity: 1 !important;
+    transform: none !important;
+  }
 }
