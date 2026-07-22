@@ -59,13 +59,13 @@ export default function Home() {
     <PresenterModeProvider>
       {/* Cover */}
       <div className="border-b border-ocean/10 bg-white px-6 pb-10 pt-8">
-        <div className="mx-auto flex max-w-6xl items-start justify-between">
-          <div className="flex items-center gap-3">
+        <div className="mx-auto flex max-w-6xl items-start justify-between gap-4">
+          <div className="flex items-center gap-2 sm:gap-3">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={withBasePath("/ruya-logo.jpg")} alt="Ru'ya 360" className="h-9 w-auto" />
-            <span className="h-6 w-px bg-ocean/15" aria-hidden="true" />
+            <img src={withBasePath("/ruya-logo.jpg")} alt="Ru'ya 360" className="h-7 w-auto sm:h-9" />
+            <span className="h-6 w-px bg-ocean/15 aria-hidden:true" aria-hidden="true" />
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={withBasePath("/stories-logo.png")} alt="Stories" className="h-7 w-auto" />
+            <img src={withBasePath("/stories-logo.png")} alt="Stories" className="h-6 w-auto sm:h-7" />
           </div>
           <PresenterModeToggle />
         </div>
