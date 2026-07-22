@@ -17,6 +17,7 @@ import { PresenterModeProvider } from "@/lib/presenter/PresenterModeContext";
 const PENDING_CATEGORIES = [
   "Milkshakes",
   "Protein Shakes",
+  "Shakes",
   "Sandwiches",
   "Pizza",
   "Wraps",
@@ -28,14 +29,16 @@ const PENDING_CATEGORIES = [
 // "Main Menu" isn't a real menu category — split it into the same groupings
 // the client's own source spreadsheet uses (adjacent category-header blocks
 // in raw-data/Product Pricing Comparison March 2026 (1).xlsx): a beverage
-// block, a Croissants+Pastries block, and Shakes on its own.
+// block and a Croissants+Pastries block. Shakes is excluded — the source
+// data has zero Stories prices in that category (only a Joe & the Juice
+// competitor price), so it isn't a real Stories-vs-competitor comparison;
+// moved to Categories In Progress until Stories' own shake prices exist.
 const DRINKS_CATEGORIES = [
   "Black Coffee", "Brewed Coffee", "Mixed Hot Beverages", "Blended Drinks",
   "Mixed Cold Beverages", "TEA", "Signature", "Soft Drinks & Juices",
   "Retail Coffee Beans", "Shots", "Add - Ons",
 ];
 const BAKERY_CATEGORIES = ["Croissants", "Pastries"];
-const SHAKES_CATEGORIES = ["Shakes"];
 
 export default function Home() {
   const mainReport = loadReport("stories-pricing-2026-03");
@@ -45,12 +48,10 @@ export default function Home() {
 
   const drinksReport = filterReportByCategories(mainReport, DRINKS_CATEGORIES);
   const bakeryReport = filterReportByCategories(mainReport, BAKERY_CATEGORIES);
-  const shakesReport = filterReportByCategories(mainReport, SHAKES_CATEGORIES);
 
   const scorecards = [
     computeReportScorecard(drinksReport, "Drinks"),
     computeReportScorecard(bakeryReport, "Bakery"),
-    computeReportScorecard(shakesReport, "Shakes"),
     computeReportScorecard(frozenYogurtReport, "Frozen Yogurt Bar"),
     computeReportScorecard(nonDairyReport, "Non-Dairy Menu"),
     computeReportScorecard(saladsReport, "Salads"),
@@ -98,7 +99,6 @@ export default function Home() {
 
         <ReportSection title="Drinks" report={drinksReport} />
         <ReportSection title="Bakery" report={bakeryReport} />
-        <ReportSection title="Shakes" report={shakesReport} />
         <ReportSection title="Frozen Yogurt Bar" report={frozenYogurtReport} />
         <ReportSection title="Non-Dairy Menu" report={nonDairyReport} />
         <ReportSection title="Salads" report={saladsReport} />
