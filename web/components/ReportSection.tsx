@@ -16,7 +16,7 @@ export function ReportSection({ title, report }: { title: string; report: Pricin
   const findings = groupOutlierFindings(report.products);
   const priceMapRows = buildCategoryPriceMap(report.products, report.meta.own_brand);
   const allBrands = [report.meta.own_brand, ...report.meta.competitors];
-  const heatmapRows = buildCategoryBrandHeatmap(priceMapRows, allBrands);
+  const heatmapRows = buildCategoryBrandHeatmap(report.products, allBrands, report.meta.own_brand, report.categories);
 
   return (
     <section aria-label={title} className="border-b border-ocean/10 pb-12 pt-12">

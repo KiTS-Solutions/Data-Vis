@@ -15,7 +15,7 @@ const NO_PEER_STYLE = { bg: "#eef2f4", text: "#52707c" };
 function cellTitle(cell: HeatmapCell, category: string): string {
   if (cell.status === "priced") return `${cell.brand} — ${category}: index ${cell.indexValue}`;
   if (cell.status === "no-peer") {
-    return `${cell.brand} — ${category}: priced (~${Math.round((cell.avgPriceLbp ?? 0) / 1000)}k LBP avg) but no competitor sells in this category, so no index can be computed`;
+    return `${cell.brand} — ${category}: priced (~${Math.round((cell.avgPriceLbp ?? 0) / 1000)}k LBP avg) but not enough other brands price the same items here (need 2+ per item), so no reliable index can be computed`;
   }
   return `${cell.brand} — ${category}: no priced item in this category`;
 }

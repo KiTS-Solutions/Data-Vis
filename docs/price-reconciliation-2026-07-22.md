@@ -1,7 +1,48 @@
 # Price Reconciliation: Official Menu Prices vs. Comparison Spreadsheets
 
 **Date:** 2026-07-22
-**Status:** §1's 33 items are confirmed real mismatches, held pending a management answer before applying (per user instruction, kept ready to apply quickly once cleared). §2 (originally flagged as a systematic mismatch) turned out to be a false positive — corrected below, no action needed.
+**Status:** APPLIED 2026-07-22. Management confirmed the official POS file (`raw-data/officially provided Menu Stories prices.xlsx`) is authoritative. All 34 corrections below were applied directly to the two raw source Excel files (`Product Pricing Comparison March 2026 (1).xlsx` and `Frozen Yogurt Pricing Comparison (1).xlsx`), matched on **category + exact product name** (not name alone — an earlier draft of this correction incorrectly matched "Chocolate Chips" by name only and corrupted an unrelated Add-Ons item; caught and fixed before saving). One item from §1 (Quinoa Salad) needed no correction — the new dedicated Salads source file already has the official 800,000 price. §2 (systematic mismatch) was a false positive, already resolved — no action needed.
+
+### What was corrected (34 items, both source files)
+
+| Category | Product | Old Price | New (Official) Price |
+|---|---|---|---|
+| Gluten Free | Almond Croissant | 750,000 | 400,000 |
+| Gluten Free | Carrot Cake | 550,000 | 500,000 |
+| Gluten Free | Cheese Croissant | 600,000 | 400,000 |
+| Gluten Free | Thyme Croissant | 600,000 | 350,000 |
+| Luxury Toppings | Chocolate Crunch | 170,000 | 250,000 |
+| Luxury Toppings | Chocolate Quella | 170,000 | 250,000 |
+| Luxury Toppings | Chocolate Quella Crunch | 170,000 | 250,000 |
+| Luxury Toppings | Nutella | 150,000 | 250,000 |
+| Luxury Toppings | Pistachio Crunch | 170,000 | 250,000 |
+| Luxury Toppings | Variegato Wafer Pistachio | 170,000 | 250,000 |
+| Mixed Cold Beverages | Iced Spanish Latte MEDIUM | 500,000 | 550,000 |
+| Pastries | Brownies Cake | 250,000 | 350,000 |
+| Plat Du Jour | Freekeh With Chicken | 1,650,500 | 1,165,500 |
+| Plat Du Jour | Lasagna | 1,650,500 | 1,165,500 |
+| Plat Du Jour | Oriental Rice | 1,650,500 | 1,165,500 |
+| Plat Du Jour | Shish Barak | 1,650,500 | 1,165,500 |
+| Plat Du Jour | Spaghetti Bolognese | 1,650,500 | 1,165,500 |
+| Plat Du Jour | Vegetarian Grape Leaves | 1,650,500 | 1,165,500 |
+| Toppings (both files) | Blueberries | 120,000 | 200,000 |
+| Toppings (both files) | Brownies | 100,000 | 200,000 |
+| Toppings (both files) | Chocolate Chips | 120,000 | 200,000 |
+| Toppings (both files) | Granolla | 100,000 | 150,000 |
+| Toppings (both files) | Gummy Bears | 100,000 | 150,000 |
+| Toppings (both files) | Honey | 120,000 | 200,000 |
+| Toppings (both files) | Lotus Biscuits | 100,000 | 150,000 |
+| Toppings (both files) | Mango | 120,000 | 200,000 |
+| Toppings (both files) | Marshmallow | 100,000 | 150,000 |
+| Toppings (both files) | Mixed Nuts | 100,000 | 150,000 |
+| Toppings (both files) | Oats | 100,000 | 150,000 |
+| Toppings (both files) | Oreo | 100,000 | 150,000 |
+| Toppings (both files) | Pineapple | 120,000 | 200,000 |
+| Toppings (both files) | Sprinkles | 100,000 | 150,000 |
+| Toppings (both files) | Strawberry | 120,000 | 200,000 |
+| Toppings (both files) | Wafer Roll | 100,000 | 150,000 |
+
+Gluten Free, Luxury Toppings, and Plat Du Jour are still in `dropped_categories` (awaiting their own competitor data, per the table-decomposition spec), so these corrections aren't visible on the live dashboard yet — they'll take effect automatically once those sections ship, since the raw source is now correct. Mixed Cold Beverages, Pastries, and Toppings (via Frozen Yogurt Bar) are live now and reflect the corrected prices immediately.
 
 ## Method
 

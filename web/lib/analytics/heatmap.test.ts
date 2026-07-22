@@ -1,66 +1,114 @@
 import { describe, it, expect } from "vitest";
 import { buildCategoryBrandHeatmap, heatmapBin } from "./heatmap";
-import type { CategoryPriceMapRow } from "./positioningMap";
+import type { CategoryRollup, ProductAnalytics } from "../data/types";
+
+function product(overrides: Partial<ProductAnalytics>): ProductAnalytics {
+  return {
+    category: "Hot",
+    product: "Item",
+    prices_lbp: {},
+    own_price_lbp: null,
+    competitor_avg_lbp: null,
+    price_index: null,
+    comparability: "low",
+    tier: null,
+    is_outlier: false,
+    outlier_direction: null,
+    ...overrides,
+  };
+}
 
 describe("buildCategoryBrandHeatmap", () => {
-  it("computes each brand's index relative to every OTHER brand's average", () => {
-    const rows: CategoryPriceMapRow[] = [
-      {
-        category: "Hot",
-        brands: [
-          { brand: "Stories", avgPriceLbp: 300000, productCount: 2 },
-          { brand: "Espresso Lab", avgPriceLbp: 400000, productCount: 1 },
-          { brand: "Starbucks", avgPriceLbp: 400000, productCount: 1 },
-        ],
-        competitorMinLbp: 400000,
-        competitorMaxLbp: 400000,
-      },
+  it("reads the own brand's index directly from the category rollup, matching Category Positioning byte-for-byte", () => {
+    const products = [
+      product({
+        product: "A",
+        prices_lbp: { Stories: 300000, "Espresso Lab": 380000, Starbucks: 420000 },
+      }),
+    ];
+    const categories: CategoryRollup[] = [
+      { category: "Hot", product_count: 1, countable_product_count: 1, avg_price_index: 87.5 },
     ];
 
-    const heatmap = buildCategoryBrandHeatmap(rows, ["Stories", "Espresso Lab", "Starbucks"]);
-    const hot = heatmap[0];
+    const heatmap = buildCategoryBrandHeatmap(products, ["Stories", "Espresso Lab", "Starbucks"], "Stories", categories);
+    const storiesCell = heatmap[0].cells.find((c) => c.brand === "Stories");
 
-    // Stories: 300000 / avg(400000,400000)=400000 * 100 = 75
-    const storiesCell = hot.cells.find((c) => c.brand === "Stories");
-    expect(storiesCell?.indexValue).toBe(75);
+    // Must be the exact rollup value, not recomputed from per-product
+    // fields — recomputing in JS with Math.round can differ from Python's
+    // round() by 0.1 at boundary cases, which would defeat this fix.
+    expect(storiesCell?.indexValue).toBe(87.5);
     expect(storiesCell?.status).toBe("priced");
-    // Espresso Lab: 400000 / avg(300000,400000)=350000 * 100 = 114.3
-    expect(hot.cells.find((c) => c.brand === "Espresso Lab")?.indexValue).toBe(114.3);
+  });
+
+  it("marks the own brand as no-peer when the rollup has no countable index, even though it has a price", () => {
+    const products = [product({ category: "Hot", product: "A", prices_lbp: { Stories: 300000 } })];
+    const categories: CategoryRollup[] = [
+      { category: "Hot", product_count: 1, countable_product_count: 0, avg_price_index: null },
+    ];
+
+    const heatmap = buildCategoryBrandHeatmap(products, ["Stories"], "Stories", categories);
+    const storiesCell = heatmap[0].cells.find((c) => c.brand === "Stories");
+    expect(storiesCell?.indexValue).toBeNull();
+    expect(storiesCell?.status).toBe("no-peer");
+    expect(storiesCell?.avgPriceLbp).toBe(300000);
+  });
+
+  it("generalizes the same per-item formula to a non-own brand, using every OTHER priced brand as peers", () => {
+    const products = [
+      product({
+        product: "A",
+        prices_lbp: { Stories: 300000, "Espresso Lab": 400000, Starbucks: 400000 },
+      }),
+    ];
+
+    const heatmap = buildCategoryBrandHeatmap(products, ["Stories", "Espresso Lab", "Starbucks"], "Stories", []);
+    // Espresso Lab: 400000 / avg(Stories=300000, Starbucks=400000)=350000 * 100 = 114.3
+    const espressoCell = heatmap[0].cells.find((c) => c.brand === "Espresso Lab");
+    expect(espressoCell?.indexValue).toBe(114.3);
+    expect(espressoCell?.status).toBe("priced");
+  });
+
+  it("excludes items with fewer than 2 other brands priced from a non-own brand's index average", () => {
+    const products = [
+      product({
+        product: "A",
+        prices_lbp: { Stories: 300000, "Espresso Lab": 400000, Starbucks: 400000 }, // 2 peers for Espresso Lab
+      }),
+      product({
+        product: "B",
+        prices_lbp: { "Espresso Lab": 500000 }, // 0 peers for Espresso Lab — excluded
+      }),
+    ];
+
+    const heatmap = buildCategoryBrandHeatmap(products, ["Stories", "Espresso Lab", "Starbucks"], "Stories", []);
+    const espressoCell = heatmap[0].cells.find((c) => c.brand === "Espresso Lab");
+    // Only item A counts (2 peers); item B (0 peers) is excluded, average price still includes both.
+    expect(espressoCell?.indexValue).toBe(114.3);
+    expect(espressoCell?.avgPriceLbp).toBe(450000); // (400000 + 500000) / 2
+    expect(espressoCell?.productCount).toBe(2);
   });
 
   it("marks a brand with no price data in that category as not-priced", () => {
-    const rows: CategoryPriceMapRow[] = [
-      {
-        category: "Hot",
-        brands: [{ brand: "Stories", avgPriceLbp: 300000, productCount: 1 }],
-        competitorMinLbp: null,
-        competitorMaxLbp: null,
-      },
-    ];
+    const products = [product({ product: "A", prices_lbp: { Stories: 300000 } })];
 
-    const heatmap = buildCategoryBrandHeatmap(rows, ["Stories", "Espresso Lab"]);
+    const heatmap = buildCategoryBrandHeatmap(products, ["Stories", "Espresso Lab"], "Stories", []);
     const cell = heatmap[0].cells.find((c) => c.brand === "Espresso Lab");
     expect(cell?.indexValue).toBeNull();
     expect(cell?.avgPriceLbp).toBeNull();
     expect(cell?.status).toBe("not-priced");
   });
 
-  it("marks a brand that HAS a price but no peer to compare against as no-peer, not not-priced", () => {
-    const rows: CategoryPriceMapRow[] = [
-      {
-        category: "Frozen Yogurt",
-        brands: [{ brand: "Stories", avgPriceLbp: 250000, productCount: 42 }],
-        competitorMinLbp: null,
-        competitorMaxLbp: null,
-      },
+  it("marks a brand that HAS a price but no comparable peer per item as no-peer, not not-priced", () => {
+    const products = [
+      product({ category: "Frozen Yogurt", product: "A", prices_lbp: { Stories: 250000 } }),
     ];
 
-    const heatmap = buildCategoryBrandHeatmap(rows, ["Stories", "Espresso Lab"]);
+    const heatmap = buildCategoryBrandHeatmap(products, ["Stories", "Espresso Lab"], "Stories", []);
     const storiesCell = heatmap[0].cells.find((c) => c.brand === "Stories");
     expect(storiesCell?.status).toBe("no-peer");
     expect(storiesCell?.indexValue).toBeNull();
-    // The real price must still be surfaced — this is the case the review
-    // flagged: a bare dash made the client's own priced category look empty.
+    // The real price must still be surfaced — a bare dash made the client's
+    // own priced category look empty.
     expect(storiesCell?.avgPriceLbp).toBe(250000);
   });
 });

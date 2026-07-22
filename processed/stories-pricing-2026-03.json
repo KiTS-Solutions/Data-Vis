@@ -2285,7 +2285,7 @@
       "competitor_avg_lbp": 559050.0,
       "price_index": 89.4,
       "comparability": "high",
-      "tier": "Premium",
+      "tier": "Core",
       "is_outlier": false,
       "outlier_direction": null
     },
@@ -2462,18 +2462,18 @@
       "category": "Mixed Cold Beverages",
       "product": "Iced Spanish Latte MEDIUM",
       "prices_lbp": {
-        "Stories": 500000,
+        "Stories": 550000,
         "Espresso Lab": 700000,
         "Dunkin Donuts": 450000,
         "Joe & the Juice": 626500
       },
-      "own_price_lbp": 500000,
+      "own_price_lbp": 550000,
       "competitor_avg_lbp": 592166.67,
-      "price_index": 84.4,
+      "price_index": 92.9,
       "comparability": "high",
       "tier": "Premium",
-      "is_outlier": true,
-      "outlier_direction": "underpriced"
+      "is_outlier": false,
+      "outlier_direction": null
     },
     {
       "category": "Mixed Cold Beverages",
@@ -2602,7 +2602,7 @@
       "competitor_avg_lbp": 602450.0,
       "price_index": 83.0,
       "comparability": "medium",
-      "tier": "Premium",
+      "tier": "Core",
       "is_outlier": true,
       "outlier_direction": "underpriced"
     },
@@ -2721,7 +2721,7 @@
       "competitor_avg_lbp": 576666.67,
       "price_index": 86.7,
       "comparability": "high",
-      "tier": "Premium",
+      "tier": "Core",
       "is_outlier": false,
       "outlier_direction": null
     },
@@ -2768,7 +2768,7 @@
       "competitor_avg_lbp": 500000.0,
       "price_index": 100.0,
       "comparability": "low",
-      "tier": "Premium",
+      "tier": "Core",
       "is_outlier": false,
       "outlier_direction": null
     },
@@ -2812,7 +2812,7 @@
       "competitor_avg_lbp": 500000.0,
       "price_index": 100.0,
       "comparability": "low",
-      "tier": "Premium",
+      "tier": "Core",
       "is_outlier": false,
       "outlier_direction": null
     },
@@ -2887,7 +2887,7 @@
       "competitor_avg_lbp": 590583.33,
       "price_index": 84.7,
       "comparability": "high",
-      "tier": "Premium",
+      "tier": "Core",
       "is_outlier": true,
       "outlier_direction": "underpriced"
     },
@@ -3038,7 +3038,7 @@
       "competitor_avg_lbp": 533733.33,
       "price_index": 93.7,
       "comparability": "high",
-      "tier": "Premium",
+      "tier": "Core",
       "is_outlier": false,
       "outlier_direction": null
     },
@@ -3139,7 +3139,7 @@
       "competitor_avg_lbp": null,
       "price_index": null,
       "comparability": "low",
-      "tier": "Premium",
+      "tier": "Core",
       "is_outlier": false,
       "outlier_direction": null
     },
@@ -5313,12 +5313,12 @@
       "category": "Pastries",
       "product": "BROWNIES CAKE",
       "prices_lbp": {
-        "Stories": 250000,
+        "Stories": 350000,
         "Joe & the Juice": 492000
       },
-      "own_price_lbp": 250000,
+      "own_price_lbp": 350000,
       "competitor_avg_lbp": 492000.0,
-      "price_index": 50.8,
+      "price_index": 71.1,
       "comparability": "low",
       "tier": "Value",
       "is_outlier": false,
@@ -5961,7 +5961,7 @@
       "category": "Mixed Cold Beverages",
       "product_count": 79,
       "countable_product_count": 15,
-      "avg_price_index": 89.2
+      "avg_price_index": 89.7
     },
     {
       "category": "TEA",
