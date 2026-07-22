@@ -38,6 +38,7 @@ export function DataExplorer({
   fxRate: number;
   ownBrand: string;
 }) {
+  const [isOpen, setIsOpen] = useState(false);
   const [query, setQuery] = useState("");
   const [filters, setFilters] = useState(DEFAULT_EXPLORER_FILTERS);
   const [sortColumn, setSortColumn] = useState<SortColumn>("category");
@@ -76,6 +77,15 @@ export function DataExplorer({
 
   return (
     <section aria-label="Full Data Explorer">
+      <button
+        type="button"
+        onClick={() => setIsOpen((v) => !v)}
+        className="mb-3 rounded-full border border-ocean/20 px-4 py-1.5 text-sm text-ocean"
+      >
+        {isOpen ? "Hide Table" : "Show Table"} <span className="text-ocean-muted">({products.length} items)</span>
+      </button>
+      {isOpen && (
+      <>
       <div className="mb-3 flex flex-wrap items-center gap-3">
         <input
           type="search"
@@ -234,6 +244,8 @@ export function DataExplorer({
             Next
           </button>
         </div>
+      )}
+      </>
       )}
     </section>
   );

@@ -21,6 +21,14 @@ function product(category: string, name: string, overrides: Partial<ProductAnaly
 }
 
 describe("DataExplorer", () => {
+  it("hides the table behind a 'Show Table' toggle by default", () => {
+    render(
+      <DataExplorer products={[product("Black Coffee", "Americano MEDIUM")]} fxRate={89600} ownBrand="Stories" />
+    );
+    expect(screen.queryByText("Americano MEDIUM")).not.toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /Show Table/ })).toBeInTheDocument();
+  });
+
   it("filters the visible rows as the user types in the search box", async () => {
     const user = userEvent.setup();
     render(
@@ -30,6 +38,7 @@ describe("DataExplorer", () => {
         ownBrand="Stories"
       />
     );
+    await user.click(screen.getByRole("button", { name: /Show Table/ }));
 
     expect(screen.getByText("Croissant")).toBeInTheDocument();
 
@@ -44,6 +53,7 @@ describe("DataExplorer", () => {
     render(
       <DataExplorer products={[product("Black Coffee", "Americano MEDIUM")]} fxRate={89600} ownBrand="Stories" />
     );
+    await user.click(screen.getByRole("button", { name: /Show Table/ }));
 
     expect(screen.queryByText("All brand prices for this item")).not.toBeInTheDocument();
 
@@ -57,6 +67,7 @@ describe("DataExplorer", () => {
     const user = userEvent.setup();
     const manyProducts = Array.from({ length: 30 }, (_, i) => product("Hot", `Item ${String(i).padStart(2, "0")}`));
     render(<DataExplorer products={manyProducts} fxRate={89600} ownBrand="Stories" />);
+    await user.click(screen.getByRole("button", { name: /Show Table/ }));
 
     expect(screen.getByText("Item 00")).toBeInTheDocument();
     expect(screen.queryByText("Item 26")).not.toBeInTheDocument();
@@ -68,7 +79,8 @@ describe("DataExplorer", () => {
     expect(screen.queryByText("Item 00")).not.toBeInTheDocument();
   });
 
-  it("visually flags a low-comparability index as unreliable instead of showing it at full weight", () => {
+  it("visually flags a low-comparability index as unreliable instead of showing it at full weight", async () => {
+    const user = userEvent.setup();
     render(
       <DataExplorer
         products={[product("Hot", "Almond Milk LARGE", { comparability: "low", price_index: 233 })]}
@@ -76,6 +88,7 @@ describe("DataExplorer", () => {
         ownBrand="Stories"
       />
     );
+    await user.click(screen.getByRole("button", { name: /Show Table/ }));
 
     expect(screen.getByText("233*")).toBeInTheDocument();
   });

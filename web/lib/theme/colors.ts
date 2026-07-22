@@ -1,6 +1,6 @@
 export const BRAND_COLORS = {
   stories: "#1f4d3d", // Stories Green (rebrand from Ru'ya Ocean teal)
-  accent: "#e7e569", // Lime Dust — sparing UI accent only
+  accent: "#d9b382", // warm tan — Stories secondary accent, sparing UI use only
 } as const;
 
 export const COMPETITOR_COLORS: Record<string, string> = {

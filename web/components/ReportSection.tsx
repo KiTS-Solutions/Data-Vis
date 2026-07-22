@@ -59,9 +59,7 @@ export function ReportSection({ title, report }: { title: string; report: Pricin
         <CategoryPriceMap rows={priceMapRows} fxRate={report.meta.fx_usd_rate} ownBrand={report.meta.own_brand} />
       </Section>
 
-      <FindingsRecommendations findings={findings} fxRate={report.meta.fx_usd_rate} />
-
-      <Section title="Full Data Explorer" level={3} last>
+      <Section title="Full Data Explorer" level={3}>
         <Explain>
           <p className="mb-5 max-w-2xl text-sm text-ocean-muted">
             Every priced line item, with search, filters, and sortable columns. Click a row to see every brand&apos;s
@@ -70,6 +68,8 @@ export function ReportSection({ title, report }: { title: string; report: Pricin
         </Explain>
         <DataExplorer products={report.products} fxRate={report.meta.fx_usd_rate} ownBrand={report.meta.own_brand} />
       </Section>
+
+      <FindingsRecommendations findings={findings} fxRate={report.meta.fx_usd_rate} />
     </section>
   );
 }

@@ -25,7 +25,7 @@ export function FindingsRecommendations({
   const totalOutliers = findings.overpriced.length + findings.underpriced.length;
 
   return (
-    <section aria-label="Findings and Recommendations" className="space-y-8 border-b border-ocean/10 pb-12 pt-12">
+    <section aria-label="Findings and Recommendations" className="space-y-8 pb-14 pt-12">
       <h2 className="font-display text-xl text-ocean">Findings &amp; Recommendations</h2>
       <p className="text-sm text-ocean-muted">
         {totalOutliers} item{totalOutliers === 1 ? "" : "s"} deviate 15% or more from the competitive average
