@@ -64,14 +64,8 @@ export default function Home() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={withBasePath("/ruya-logo.jpg")} alt="Ru'ya 360" className="h-9 w-auto" />
             <span className="h-6 w-px bg-ocean/15" aria-hidden="true" />
-            <span
-              className="flex h-9 w-9 items-center justify-center rounded-full text-sm font-display text-white"
-              style={{ backgroundColor: "#1f4d3d" }}
-              aria-hidden="true"
-            >
-              S
-            </span>
-            <span className="font-display text-lg text-ocean">Stories</span>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={withBasePath("/stories-logo.png")} alt="Stories" className="h-7 w-auto" />
           </div>
           <PresenterModeToggle />
         </div>
