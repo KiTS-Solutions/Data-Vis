@@ -24,6 +24,7 @@
         "Cremino": 513000,
         "Fro - U": 801000
       },
+      "portion_notes": {},
       "own_price_lbp": 590000,
       "competitor_avg_lbp": 687000.0,
       "price_index": 85.9,
@@ -41,6 +42,7 @@
         "Cremino": 585000,
         "Fro - U": 981000
       },
+      "portion_notes": {},
       "own_price_lbp": 650000,
       "competitor_avg_lbp": 822000.0,
       "price_index": 79.1,
@@ -58,6 +60,7 @@
         "Cremino": 900000,
         "Fro - U": 1251000
       },
+      "portion_notes": {},
       "own_price_lbp": 850000,
       "competitor_avg_lbp": 1107000.0,
       "price_index": 76.8,
@@ -74,6 +77,7 @@
         "Pinkberry": 450000,
         "Cremino": 360000
       },
+      "portion_notes": {},
       "own_price_lbp": 500000,
       "competitor_avg_lbp": 405000.0,
       "price_index": 123.5,
@@ -89,6 +93,7 @@
         "Stories": 550000,
         "Pinkberry": 630000
       },
+      "portion_notes": {},
       "own_price_lbp": 550000,
       "competitor_avg_lbp": 630000.0,
       "price_index": 87.3,
@@ -105,6 +110,7 @@
         "Pinkberry": 900000,
         "Cremino": 585000
       },
+      "portion_notes": {},
       "own_price_lbp": 750000,
       "competitor_avg_lbp": 742500.0,
       "price_index": 101.0,
@@ -120,6 +126,7 @@
         "Stories": 590000,
         "Cremino": 513000
       },
+      "portion_notes": {},
       "own_price_lbp": 590000,
       "competitor_avg_lbp": 513000.0,
       "price_index": 115.0,
@@ -135,6 +142,7 @@
         "Stories": 650000,
         "Cremino": 585000
       },
+      "portion_notes": {},
       "own_price_lbp": 650000,
       "competitor_avg_lbp": 585000.0,
       "price_index": 111.1,
@@ -150,6 +158,7 @@
         "Stories": 850000,
         "Cremino": 900000
       },
+      "portion_notes": {},
       "own_price_lbp": 850000,
       "competitor_avg_lbp": 900000.0,
       "price_index": 94.4,
@@ -165,6 +174,7 @@
         "Stories": 500000,
         "Cremino": 360000
       },
+      "portion_notes": {},
       "own_price_lbp": 500000,
       "competitor_avg_lbp": 360000.0,
       "price_index": 138.9,
@@ -179,6 +189,7 @@
       "prices_lbp": {
         "Stories": 550000
       },
+      "portion_notes": {},
       "own_price_lbp": 550000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -194,6 +205,7 @@
         "Stories": 750000,
         "Cremino": 585000
       },
+      "portion_notes": {},
       "own_price_lbp": 750000,
       "competitor_avg_lbp": 585000.0,
       "price_index": 128.2,
@@ -210,6 +222,7 @@
         "Pinkberry": 747000,
         "Fro - U": 801000
       },
+      "portion_notes": {},
       "own_price_lbp": 590000,
       "competitor_avg_lbp": 774000.0,
       "price_index": 76.2,
@@ -226,6 +239,7 @@
         "Pinkberry": 900000,
         "Fro - U": 981000
       },
+      "portion_notes": {},
       "own_price_lbp": 650000,
       "competitor_avg_lbp": 940500.0,
       "price_index": 69.1,
@@ -242,6 +256,7 @@
         "Pinkberry": 1170000,
         "Fro - U": 1251000
       },
+      "portion_notes": {},
       "own_price_lbp": 850000,
       "competitor_avg_lbp": 1210500.0,
       "price_index": 70.2,
@@ -257,6 +272,7 @@
         "Stories": 500000,
         "Pinkberry": 450000
       },
+      "portion_notes": {},
       "own_price_lbp": 500000,
       "competitor_avg_lbp": 450000.0,
       "price_index": 111.1,
@@ -272,6 +288,7 @@
         "Stories": 550000,
         "Pinkberry": 630000
       },
+      "portion_notes": {},
       "own_price_lbp": 550000,
       "competitor_avg_lbp": 630000.0,
       "price_index": 87.3,
@@ -287,6 +304,7 @@
         "Stories": 750000,
         "Pinkberry": 900000
       },
+      "portion_notes": {},
       "own_price_lbp": 750000,
       "competitor_avg_lbp": 900000.0,
       "price_index": 83.3,
@@ -302,6 +320,7 @@
         "Stories": 590000,
         "Pinkberry": 747000
       },
+      "portion_notes": {},
       "own_price_lbp": 590000,
       "competitor_avg_lbp": 747000.0,
       "price_index": 79.0,
@@ -317,6 +336,7 @@
         "Stories": 650000,
         "Pinkberry": 900000
       },
+      "portion_notes": {},
       "own_price_lbp": 650000,
       "competitor_avg_lbp": 900000.0,
       "price_index": 72.2,
@@ -332,6 +352,7 @@
         "Stories": 850000,
         "Pinkberry": 1170000
       },
+      "portion_notes": {},
       "own_price_lbp": 850000,
       "competitor_avg_lbp": 1170000.0,
       "price_index": 72.6,
@@ -347,6 +368,7 @@
         "Stories": 500000,
         "Pinkberry": 450000
       },
+      "portion_notes": {},
       "own_price_lbp": 500000,
       "competitor_avg_lbp": 450000.0,
       "price_index": 111.1,
@@ -362,6 +384,7 @@
         "Stories": 550000,
         "Pinkberry": 630000
       },
+      "portion_notes": {},
       "own_price_lbp": 550000,
       "competitor_avg_lbp": 630000.0,
       "price_index": 87.3,
@@ -377,6 +400,7 @@
         "Stories": 750000,
         "Pinkberry": 900000
       },
+      "portion_notes": {},
       "own_price_lbp": 750000,
       "competitor_avg_lbp": 900000.0,
       "price_index": 83.3,
@@ -391,6 +415,7 @@
       "prices_lbp": {
         "Stories": 590000
       },
+      "portion_notes": {},
       "own_price_lbp": 590000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -405,6 +430,7 @@
       "prices_lbp": {
         "Stories": 650000
       },
+      "portion_notes": {},
       "own_price_lbp": 650000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -419,6 +445,7 @@
       "prices_lbp": {
         "Stories": 850000
       },
+      "portion_notes": {},
       "own_price_lbp": 850000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -433,6 +460,7 @@
       "prices_lbp": {
         "Stories": 500000
       },
+      "portion_notes": {},
       "own_price_lbp": 500000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -447,6 +475,7 @@
       "prices_lbp": {
         "Stories": 550000
       },
+      "portion_notes": {},
       "own_price_lbp": 550000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -461,6 +490,7 @@
       "prices_lbp": {
         "Stories": 750000
       },
+      "portion_notes": {},
       "own_price_lbp": 750000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -475,6 +505,7 @@
       "prices_lbp": {
         "Stories": 590000
       },
+      "portion_notes": {},
       "own_price_lbp": 590000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -489,6 +520,7 @@
       "prices_lbp": {
         "Stories": 650000
       },
+      "portion_notes": {},
       "own_price_lbp": 650000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -503,6 +535,7 @@
       "prices_lbp": {
         "Stories": 850000
       },
+      "portion_notes": {},
       "own_price_lbp": 850000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -517,6 +550,7 @@
       "prices_lbp": {
         "Stories": 500000
       },
+      "portion_notes": {},
       "own_price_lbp": 500000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -531,6 +565,7 @@
       "prices_lbp": {
         "Stories": 550000
       },
+      "portion_notes": {},
       "own_price_lbp": 550000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -545,6 +580,7 @@
       "prices_lbp": {
         "Stories": 750000
       },
+      "portion_notes": {},
       "own_price_lbp": 750000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -559,6 +595,7 @@
       "prices_lbp": {
         "Pinkberry": 747000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 747000.0,
       "price_index": null,
@@ -573,6 +610,7 @@
       "prices_lbp": {
         "Pinkberry": 900000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 900000.0,
       "price_index": null,
@@ -587,6 +625,7 @@
       "prices_lbp": {
         "Pinkberry": 1170000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 1170000.0,
       "price_index": null,
@@ -601,6 +640,7 @@
       "prices_lbp": {
         "Pinkberry": 450000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 450000.0,
       "price_index": null,
@@ -615,6 +655,7 @@
       "prices_lbp": {
         "Pinkberry": 630000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 630000.0,
       "price_index": null,
@@ -629,6 +670,7 @@
       "prices_lbp": {
         "Pinkberry": 900000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 900000.0,
       "price_index": null,
@@ -643,6 +685,7 @@
       "prices_lbp": {
         "Pinkberry": 747000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 747000.0,
       "price_index": null,
@@ -657,6 +700,7 @@
       "prices_lbp": {
         "Pinkberry": 900000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 900000.0,
       "price_index": null,
@@ -671,6 +715,7 @@
       "prices_lbp": {
         "Pinkberry": 1170000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 1170000.0,
       "price_index": null,
@@ -685,6 +730,7 @@
       "prices_lbp": {
         "Pinkberry": 450000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 450000.0,
       "price_index": null,
@@ -699,6 +745,7 @@
       "prices_lbp": {
         "Pinkberry": 630000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 630000.0,
       "price_index": null,
@@ -713,6 +760,7 @@
       "prices_lbp": {
         "Pinkberry": 900000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 900000.0,
       "price_index": null,
@@ -727,6 +775,7 @@
       "prices_lbp": {
         "Pinkberry": 747000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 747000.0,
       "price_index": null,
@@ -741,6 +790,7 @@
       "prices_lbp": {
         "Pinkberry": 900000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 900000.0,
       "price_index": null,
@@ -755,6 +805,7 @@
       "prices_lbp": {
         "Pinkberry": 1170000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 1170000.0,
       "price_index": null,
@@ -769,6 +820,7 @@
       "prices_lbp": {
         "Pinkberry": 450000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 450000.0,
       "price_index": null,
@@ -783,6 +835,7 @@
       "prices_lbp": {
         "Pinkberry": 630000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 630000.0,
       "price_index": null,
@@ -797,6 +850,7 @@
       "prices_lbp": {
         "Pinkberry": 900000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 900000.0,
       "price_index": null,
@@ -811,6 +865,7 @@
       "prices_lbp": {
         "Fro - U": 801000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 801000.0,
       "price_index": null,
@@ -825,6 +880,7 @@
       "prices_lbp": {
         "Fro - U": 981000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 981000.0,
       "price_index": null,
@@ -839,6 +895,7 @@
       "prices_lbp": {
         "Fro - U": 1252000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 1252000.0,
       "price_index": null,
@@ -853,6 +910,7 @@
       "prices_lbp": {
         "Fro - U": 801000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 801000.0,
       "price_index": null,
@@ -867,6 +925,7 @@
       "prices_lbp": {
         "Fro - U": 981000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 981000.0,
       "price_index": null,
@@ -881,6 +940,7 @@
       "prices_lbp": {
         "Fro - U": 1251000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 1251000.0,
       "price_index": null,
@@ -895,6 +955,7 @@
       "prices_lbp": {
         "Fro - U": 801000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 801000.0,
       "price_index": null,
@@ -909,6 +970,7 @@
       "prices_lbp": {
         "Fro - U": 981000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 981000.0,
       "price_index": null,
@@ -923,6 +985,7 @@
       "prices_lbp": {
         "Fro - U": 1251000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 1251000.0,
       "price_index": null,
@@ -937,6 +1000,7 @@
       "prices_lbp": {
         "Pinkberry": 1665000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 1665000.0,
       "price_index": null,
@@ -953,6 +1017,7 @@
         "Pinkberry": 90000,
         "Fro - U": 153000
       },
+      "portion_notes": {},
       "own_price_lbp": 200000,
       "competitor_avg_lbp": 121500.0,
       "price_index": 164.6,
@@ -969,6 +1034,7 @@
         "Pinkberry": 90000,
         "Fro - U": 90000
       },
+      "portion_notes": {},
       "own_price_lbp": 200000,
       "competitor_avg_lbp": 90000.0,
       "price_index": 222.2,
@@ -985,6 +1051,7 @@
         "Pinkberry": 90000,
         "Fro - U": 90000
       },
+      "portion_notes": {},
       "own_price_lbp": 200000,
       "competitor_avg_lbp": 90000.0,
       "price_index": 222.2,
@@ -999,6 +1066,7 @@
       "prices_lbp": {
         "Stories": 150000
       },
+      "portion_notes": {},
       "own_price_lbp": 150000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -1015,6 +1083,7 @@
         "Pinkberry": 90000,
         "Fro - U": 90000
       },
+      "portion_notes": {},
       "own_price_lbp": 150000,
       "competitor_avg_lbp": 90000.0,
       "price_index": 166.7,
@@ -1030,6 +1099,7 @@
         "Stories": 200000,
         "Pinkberry": 90000
       },
+      "portion_notes": {},
       "own_price_lbp": 200000,
       "competitor_avg_lbp": 90000.0,
       "price_index": 222.2,
@@ -1044,6 +1114,7 @@
       "prices_lbp": {
         "Stories": 150000
       },
+      "portion_notes": {},
       "own_price_lbp": 150000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -1059,6 +1130,7 @@
         "Stories": 200000,
         "Fro - U": 153000
       },
+      "portion_notes": {},
       "own_price_lbp": 200000,
       "competitor_avg_lbp": 153000.0,
       "price_index": 130.7,
@@ -1075,6 +1147,7 @@
         "Pinkberry": 90000,
         "Fro - U": 90000
       },
+      "portion_notes": {},
       "own_price_lbp": 150000,
       "competitor_avg_lbp": 90000.0,
       "price_index": 166.7,
@@ -1089,6 +1162,7 @@
       "prices_lbp": {
         "Stories": 150000
       },
+      "portion_notes": {},
       "own_price_lbp": 150000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -1103,6 +1177,7 @@
       "prices_lbp": {
         "Stories": 150000
       },
+      "portion_notes": {},
       "own_price_lbp": 150000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -1117,6 +1192,7 @@
       "prices_lbp": {
         "Stories": 150000
       },
+      "portion_notes": {},
       "own_price_lbp": 150000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -1133,6 +1209,7 @@
         "Pinkberry": 90000,
         "Fro - U": 153000
       },
+      "portion_notes": {},
       "own_price_lbp": 200000,
       "competitor_avg_lbp": 121500.0,
       "price_index": 164.6,
@@ -1149,6 +1226,7 @@
         "Pinkberry": 90000,
         "Fro - U": 90000
       },
+      "portion_notes": {},
       "own_price_lbp": 150000,
       "competitor_avg_lbp": 90000.0,
       "price_index": 166.7,
@@ -1165,6 +1243,7 @@
         "Pinkberry": 90000,
         "Fro - U": 90000
       },
+      "portion_notes": {},
       "own_price_lbp": 200000,
       "competitor_avg_lbp": 90000.0,
       "price_index": 222.2,
@@ -1180,6 +1259,7 @@
         "Stories": 150000,
         "Pinkberry": 90000
       },
+      "portion_notes": {},
       "own_price_lbp": 150000,
       "competitor_avg_lbp": 90000.0,
       "price_index": 166.7,
@@ -1195,6 +1275,7 @@
         "Stories": 170000,
         "Pinkberry": 153000
       },
+      "portion_notes": {},
       "own_price_lbp": 170000,
       "competitor_avg_lbp": 153000.0,
       "price_index": 111.1,
@@ -1209,6 +1290,7 @@
       "prices_lbp": {
         "Stories": 170000
       },
+      "portion_notes": {},
       "own_price_lbp": 170000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -1223,6 +1305,7 @@
       "prices_lbp": {
         "Stories": 170000
       },
+      "portion_notes": {},
       "own_price_lbp": 170000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -1237,6 +1320,7 @@
       "prices_lbp": {
         "Stories": 170000
       },
+      "portion_notes": {},
       "own_price_lbp": 170000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -1251,6 +1335,7 @@
       "prices_lbp": {
         "Stories": 170000
       },
+      "portion_notes": {},
       "own_price_lbp": 170000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -1265,6 +1350,7 @@
       "prices_lbp": {
         "Stories": 170000
       },
+      "portion_notes": {},
       "own_price_lbp": 170000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -1281,6 +1367,7 @@
         "Pinkberry": 153000,
         "Fro - U": 90000
       },
+      "portion_notes": {},
       "own_price_lbp": 150000,
       "competitor_avg_lbp": 121500.0,
       "price_index": 123.5,
@@ -1297,6 +1384,7 @@
         "Pinkberry": 153000,
         "Fro - U": 153000
       },
+      "portion_notes": {},
       "own_price_lbp": 170000,
       "competitor_avg_lbp": 153000.0,
       "price_index": 111.1,
@@ -1311,6 +1399,7 @@
       "prices_lbp": {
         "Pinkberry": 90000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 90000.0,
       "price_index": null,
@@ -1325,6 +1414,7 @@
       "prices_lbp": {
         "Stories": 170000
       },
+      "portion_notes": {},
       "own_price_lbp": 170000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -1339,6 +1429,7 @@
       "prices_lbp": {
         "Stories": 150000
       },
+      "portion_notes": {},
       "own_price_lbp": 150000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -1353,6 +1444,7 @@
       "prices_lbp": {
         "Stories": 170000
       },
+      "portion_notes": {},
       "own_price_lbp": 170000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -1367,6 +1459,7 @@
       "prices_lbp": {
         "Fro - U": 153000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 153000.0,
       "price_index": null,
@@ -1381,6 +1474,7 @@
       "prices_lbp": {
         "Fro - U": 153000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 153000.0,
       "price_index": null,
@@ -1395,6 +1489,7 @@
       "prices_lbp": {
         "Fro - U": 153000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 153000.0,
       "price_index": null,
@@ -1409,6 +1504,7 @@
       "prices_lbp": {
         "Fro - U": 153000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 153000.0,
       "price_index": null,
@@ -1424,6 +1520,7 @@
         "Pinkberry": 90000,
         "Fro - U": 153000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 121500.0,
       "price_index": null,
@@ -1438,6 +1535,7 @@
       "prices_lbp": {
         "Fro - U": 90000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 90000.0,
       "price_index": null,
@@ -1452,6 +1550,7 @@
       "prices_lbp": {
         "Fro - U": 90000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 90000.0,
       "price_index": null,
@@ -1466,6 +1565,7 @@
       "prices_lbp": {
         "Fro - U": 90000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 90000.0,
       "price_index": null,
@@ -1480,6 +1580,7 @@
       "prices_lbp": {
         "Fro - U": 90000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 90000.0,
       "price_index": null,
@@ -1494,6 +1595,7 @@
       "prices_lbp": {
         "Fro - U": 90000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 90000.0,
       "price_index": null,
@@ -1509,6 +1611,7 @@
         "Pinkberry": 90000,
         "Fro - U": 90000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 90000.0,
       "price_index": null,
@@ -1523,6 +1626,7 @@
       "prices_lbp": {
         "Fro - U": 90000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 90000.0,
       "price_index": null,
@@ -1537,6 +1641,7 @@
       "prices_lbp": {
         "Fro - U": 90000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 90000.0,
       "price_index": null,
@@ -1551,6 +1656,7 @@
       "prices_lbp": {
         "Fro - U": 90000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 90000.0,
       "price_index": null,
@@ -1565,6 +1671,7 @@
       "prices_lbp": {
         "Fro - U": 90000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 90000.0,
       "price_index": null,
@@ -1579,6 +1686,7 @@
       "prices_lbp": {
         "Fro - U": 90000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 90000.0,
       "price_index": null,
@@ -1593,6 +1701,7 @@
       "prices_lbp": {
         "Fro - U": 90000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 90000.0,
       "price_index": null,
@@ -1607,6 +1716,7 @@
       "prices_lbp": {
         "Fro - U": 90000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 90000.0,
       "price_index": null,
@@ -1621,6 +1731,7 @@
       "prices_lbp": {
         "Fro - U": 90000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 90000.0,
       "price_index": null,
@@ -1635,6 +1746,7 @@
       "prices_lbp": {
         "Fro - U": 90000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 90000.0,
       "price_index": null,
@@ -1650,6 +1762,7 @@
         "Pinkberry": 90000,
         "Fro - U": 90000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 90000.0,
       "price_index": null,
@@ -1664,6 +1777,7 @@
       "prices_lbp": {
         "Fro - U": 90000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 90000.0,
       "price_index": null,
@@ -1679,6 +1793,7 @@
         "Pinkberry": 90000,
         "Fro - U": 90000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 90000.0,
       "price_index": null,
@@ -1694,6 +1809,7 @@
         "Pinkberry": 90000,
         "Fro - U": 90000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 90000.0,
       "price_index": null,
@@ -1708,6 +1824,7 @@
       "prices_lbp": {
         "Fro - U": 90000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 90000.0,
       "price_index": null,
@@ -1722,6 +1839,7 @@
       "prices_lbp": {
         "Fro - U": 90000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 90000.0,
       "price_index": null,
@@ -1736,6 +1854,7 @@
       "prices_lbp": {
         "Fro - U": 90000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 90000.0,
       "price_index": null,
@@ -1750,6 +1869,7 @@
       "prices_lbp": {
         "Fro - U": 90000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 90000.0,
       "price_index": null,
@@ -1764,6 +1884,7 @@
       "prices_lbp": {
         "Fro - U": 90000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 90000.0,
       "price_index": null,
@@ -1778,6 +1899,7 @@
       "prices_lbp": {
         "Fro - U": 90000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 90000.0,
       "price_index": null,
@@ -1792,6 +1914,7 @@
       "prices_lbp": {
         "Fro - U": 90000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 90000.0,
       "price_index": null,
@@ -1807,6 +1930,7 @@
         "Pinkberry": 90000,
         "Fro - U": 90000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 90000.0,
       "price_index": null,
@@ -1821,6 +1945,7 @@
       "prices_lbp": {
         "Fro - U": 90000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 90000.0,
       "price_index": null,
@@ -1836,6 +1961,7 @@
         "Pinkberry": 90000,
         "Fro - U": 90000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 90000.0,
       "price_index": null,
@@ -1850,6 +1976,7 @@
       "prices_lbp": {
         "Fro - U": 90000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 90000.0,
       "price_index": null,
@@ -1864,6 +1991,7 @@
       "prices_lbp": {
         "Fro - U": 90000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 90000.0,
       "price_index": null,
@@ -1878,6 +2006,7 @@
       "prices_lbp": {
         "Fro - U": 90000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 90000.0,
       "price_index": null,
@@ -1892,6 +2021,7 @@
       "prices_lbp": {
         "Fro - U": 90000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 90000.0,
       "price_index": null,
@@ -1906,6 +2036,7 @@
       "prices_lbp": {
         "Fro - U": 90000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 90000.0,
       "price_index": null,
@@ -1920,6 +2051,7 @@
       "prices_lbp": {
         "Pinkberry": 153000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 153000.0,
       "price_index": null,
@@ -1934,6 +2066,7 @@
       "prices_lbp": {
         "Pinkberry": 153000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 153000.0,
       "price_index": null,
@@ -1948,6 +2081,7 @@
       "prices_lbp": {
         "Pinkberry": 153000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 153000.0,
       "price_index": null,
@@ -1962,6 +2096,7 @@
       "prices_lbp": {
         "Pinkberry": 90000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 90000.0,
       "price_index": null,
@@ -1976,6 +2111,7 @@
       "prices_lbp": {
         "Pinkberry": 90000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 90000.0,
       "price_index": null,
@@ -1990,6 +2126,7 @@
       "prices_lbp": {
         "Pinkberry": 90000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 90000.0,
       "price_index": null,
@@ -2004,6 +2141,7 @@
       "prices_lbp": {
         "Pinkberry": 90000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 90000.0,
       "price_index": null,
@@ -2018,6 +2156,7 @@
       "prices_lbp": {
         "Pinkberry": 90000
       },
+      "portion_notes": {},
       "own_price_lbp": null,
       "competitor_avg_lbp": 90000.0,
       "price_index": null,

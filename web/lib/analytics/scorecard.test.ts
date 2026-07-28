@@ -7,6 +7,7 @@ function product(overrides: Partial<ProductAnalytics>): ProductAnalytics {
     category: "Test",
     product: "Item",
     prices_lbp: {},
+    portion_notes: {},
     own_price_lbp: null,
     competitor_avg_lbp: null,
     price_index: null,

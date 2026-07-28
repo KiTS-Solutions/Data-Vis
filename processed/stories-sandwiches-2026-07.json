@@ -24,6 +24,7 @@
         "Stories": 650000,
         "Wooden Bakery": 605000
       },
+      "portion_notes": {},
       "own_price_lbp": 650000,
       "competitor_avg_lbp": 599000.0,
       "price_index": 108.5,
@@ -41,6 +42,7 @@
         "Stories": 700000,
         "Wooden Bakery": 630000
       },
+      "portion_notes": {},
       "own_price_lbp": 700000,
       "competitor_avg_lbp": 611666.67,
       "price_index": 114.4,
@@ -58,6 +60,7 @@
         "Stories": 550000,
         "Wooden Bakery": 470000
       },
+      "portion_notes": {},
       "own_price_lbp": 550000,
       "competitor_avg_lbp": 418000.0,
       "price_index": 131.6,
@@ -75,6 +78,7 @@
         "Stories": 600000,
         "Wooden Bakery": 495000
       },
+      "portion_notes": {},
       "own_price_lbp": 600000,
       "competitor_avg_lbp": 430666.67,
       "price_index": 139.3,
@@ -92,6 +96,7 @@
         "Stories": 600000,
         "Wooden Bakery": 675000
       },
+      "portion_notes": {},
       "own_price_lbp": 600000,
       "competitor_avg_lbp": 541000.0,
       "price_index": 110.9,
@@ -109,6 +114,7 @@
         "Stories": 650000,
         "Wooden Bakery": 695000
       },
+      "portion_notes": {},
       "own_price_lbp": 650000,
       "competitor_avg_lbp": 552000.0,
       "price_index": 117.8,
@@ -126,6 +132,7 @@
         "Stories": 500000,
         "Wooden Bakery": 340000
       },
+      "portion_notes": {},
       "own_price_lbp": 500000,
       "competitor_avg_lbp": 298666.67,
       "price_index": 167.4,
@@ -143,6 +150,7 @@
         "Stories": 550000,
         "Wooden Bakery": 360000
       },
+      "portion_notes": {},
       "own_price_lbp": 550000,
       "competitor_avg_lbp": 309666.67,
       "price_index": 177.6,

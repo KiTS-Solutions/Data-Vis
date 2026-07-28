@@ -40,9 +40,18 @@ def parse_workbook(xlsx_path: str, config: dict) -> dict:
     # Extract the FULL actual set of brand columns from the file, then
     # translate any header text an alias covers (e.g. "Esp. Lab" -> "Espresso
     # Lab") to the canonical brand name before validating against config.
+    # Brand columns are not always contiguous — some sheets interleave an
+    # unlabeled per-product portion-note column ahead of a brand's price
+    # column, so only actual header cells (skipping the blank ones) count.
+    # dropped_brands are present in the sheet (kept there as reference
+    # information the client wants on file) but deliberately excluded from
+    # the report — e.g. a competitor superseded by a newly-added one.
     brand_aliases = {_clean(k): _clean(v) for k, v in config.get("brand_aliases", {}).items()}
-    raw_brand_columns = [_clean(h) for h in header[1:average_col_index]]
-    brand_columns = [brand_aliases.get(b, b) for b in raw_brand_columns]
+    dropped_brands = {_clean(b) for b in config.get("dropped_brands", [])}
+    all_col_indices = [i for i in range(1, average_col_index) if _clean(header[i]) is not None]
+    all_translated = [brand_aliases.get(_clean(header[i]), _clean(header[i])) for i in all_col_indices]
+    brand_col_indices = [i for i, b in zip(all_col_indices, all_translated) if b not in dropped_brands]
+    brand_columns = [b for b in all_translated if b not in dropped_brands]
 
     # Validate that header brands match config brands (bidirectional check)
     expected_brands = {_clean(config["own_brand"]), *[_clean(c) for c in config["competitors"]]}
@@ -76,16 +85,28 @@ def parse_workbook(xlsx_path: str, config: dict) -> dict:
         if current_category in dropped_categories:
             continue
 
-        for i, brand in enumerate(brand_columns):
-            price = row[1 + i]
+        for idx, brand in zip(brand_col_indices, brand_columns):
+            price = row[idx]
             if not isinstance(price, (int, float)):
                 continue
+
+            # An unlabeled column immediately to the left of a brand's price
+            # column (present on some sheets, e.g. Salads) carries that
+            # brand's specific portion size for this product — text like
+            # "380 g." — rather than a price.
+            portion_note = None
+            if _clean(header[idx - 1]) is None:
+                note_value = _clean(row[idx - 1])
+                if note_value not in (None, "-"):
+                    portion_note = note_value
+
             records.append({
                 "category": current_category,
                 "product": product,
                 "brand": brand,
                 "price_lbp": price,
                 "price_usd": round(price / fx_rate, 2),
+                "portion_note": portion_note,
             })
 
     meta = {

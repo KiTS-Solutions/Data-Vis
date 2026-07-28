@@ -210,6 +210,11 @@ export function DataExplorer({
                               <p className="text-xs text-ocean-muted">{brand}</p>
                               <p style={{ color: brand === ownBrand ? brandColors.stories : undefined }}>
                                 {formatDualCurrency(price, fxRate)}
+                                {p.portion_notes[brand] && (
+                                  <span className="ml-1 text-xs font-normal text-ocean-muted">
+                                    ({p.portion_notes[brand]})
+                                  </span>
+                                )}
                               </p>
                             </div>
                           ))}

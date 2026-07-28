@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "client": "Stories",
+    "generated_from": "raw-data/Salads_Pricing_Comparison.xlsx"
+  },
+  "sizes": [
+    "PRICED_G",
+    "ALSO_AVAILABLE_G"
+  ],
+  "rows": [
+    {
+      "brand": "Stories",
+      "PRICED_G": null,
+      "ALSO_AVAILABLE_G": null
+    },
+    {
+      "brand": "Wooden Bakery",
+      "PRICED_G": 200,
+      "ALSO_AVAILABLE_G": null
+    },
+    {
+      "brand": "Zaatar w Zeit",
+      "PRICED_G": 200,
+      "ALSO_AVAILABLE_G": 400
+    },
+    {
+      "brand": "Casper & Gambini",
+      "PRICED_G": 400,
+      "ALSO_AVAILABLE_G": null
+    },
+    {
+      "brand": "Pain D’or",
+      "PRICED_G": "500-600",
+      "ALSO_AVAILABLE_G": null
+    }
+  ]
+}

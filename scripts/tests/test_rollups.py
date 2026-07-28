@@ -37,6 +37,25 @@ def test_build_category_rollups_excludes_low_comparability():
     assert hot["avg_price_index"] == 94.8
 
 
+def test_build_product_analytics_attaches_portion_notes_when_present():
+    records = [
+        {"category": "Salads", "product": "TUNA PASTA SALAD", "brand": "Stories", "price_lbp": 850000, "portion_note": "440 g."},
+        {"category": "Salads", "product": "TUNA PASTA SALAD", "brand": "Wooden Bakery", "price_lbp": 716800, "portion_note": "550 g."},
+        {"category": "Salads", "product": "TUNA PASTA SALAD", "brand": "The Koozspace", "price_lbp": 1075200, "portion_note": None},
+    ]
+    products = build_product_analytics(records, "Stories", ["Wooden Bakery", "The Koozspace"])
+
+    tuna = next(p for p in products if p["product"] == "TUNA PASTA SALAD")
+    assert tuna["portion_notes"] == {"Stories": "440 g.", "Wooden Bakery": "550 g."}
+
+
+def test_build_product_analytics_portion_notes_empty_when_absent():
+    products = build_product_analytics(_records(), "Stories", ["Espresso Lab", "Dunkin Donuts", "Joe & the Juice", "Starbucks"])
+
+    americano = next(p for p in products if p["product"] == "Americano MEDIUM")
+    assert americano["portion_notes"] == {}
+
+
 def test_build_category_rollups_excludes_low_comparability_even_with_real_price_index():
     """Test that low-comparability products are excluded from rollups even when price_index is not None.
 

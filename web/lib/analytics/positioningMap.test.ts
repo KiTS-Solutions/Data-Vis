@@ -7,6 +7,7 @@ function product(category: string, prices: Record<string, number>): ProductAnaly
     category,
     product: "Item",
     prices_lbp: prices,
+    portion_notes: {},
     own_price_lbp: prices["Stories"] ?? null,
     competitor_avg_lbp: null,
     price_index: null,

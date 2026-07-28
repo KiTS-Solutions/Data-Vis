@@ -49,6 +49,15 @@ export PYTHONPATH=scripts
   --in processed/stories-salads-2026-07.normalized.json \
   --out processed/stories-salads-2026-07.json
 
+# Portion-size (grams) comparison side-table on the same Salads sheet — not
+# a price, feeds a disclosure table rather than the price analytics. Wooden
+# Bakery and Zaatar w Zeit are priced at 200g vs. the 400g standard the
+# other brands use.
+"${PYTHON:-python3}" -m pricing_pipeline.parse_portion_sizes \
+  --xlsx "raw-data/Salads_Pricing_Comparison.xlsx" \
+  --config sources/stories-salads-2026-07.json \
+  --out processed/stories-salads-portion-sizes-2026-07.json
+
 # Plat Du Jour — competitors Socrate (Beirut)/Ana Beirut/abdel Wahab/Diwan Beirut.
 "${PYTHON:-python3}" -m pricing_pipeline.parse_pricing \
   --xlsx "raw-data/plat-de-jour-price-comparison.xlsx" \

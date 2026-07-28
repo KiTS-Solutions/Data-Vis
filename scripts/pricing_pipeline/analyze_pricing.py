@@ -26,6 +26,20 @@ def group_records_by_product(records: list) -> dict:
     return grouped
 
 
+def group_portion_notes_by_product(records: list) -> dict:
+    """Per-brand, per-product portion-size annotations (e.g. "380 g.") from
+    sheets that record one — not every record has one, and most reports
+    have none at all."""
+    grouped = {}
+    for r in records:
+        note = r.get("portion_note")
+        if not note:
+            continue
+        key = (r["category"], r["product"])
+        grouped.setdefault(key, {})[r["brand"]] = note
+    return grouped
+
+
 def compute_competitor_average(prices: dict, own_brand: str, competitors: list):
     values = [prices[c] for c in competitors if prices.get(c) is not None]
     if not values:
@@ -49,6 +63,7 @@ def comparability_flag(num_competitors_priced: int) -> str:
 
 def build_product_analytics(records: list, own_brand: str, competitors: list) -> list:
     grouped = group_records_by_product(records)
+    portion_notes = group_portion_notes_by_product(records)
     products = []
     for (category, product), prices in grouped.items():
         own_price = prices.get(own_brand)
@@ -58,6 +73,7 @@ def build_product_analytics(records: list, own_brand: str, competitors: list) ->
             "category": category,
             "product": product,
             "prices_lbp": prices,
+            "portion_notes": portion_notes.get((category, product), {}),
             "own_price_lbp": own_price,
             "competitor_avg_lbp": round(competitor_avg, 2) if competitor_avg is not None else None,
             "price_index": compute_price_index(own_price, competitor_avg),

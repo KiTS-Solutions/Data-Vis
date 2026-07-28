@@ -15,8 +15,8 @@ function report(): PricingReport {
       competitors: ["Espresso Lab"],
     },
     products: [
-      { category: "Croissants", product: "Cheese Croissant", prices_lbp: {}, own_price_lbp: 400000, competitor_avg_lbp: null, price_index: null, comparability: "low", tier: null, is_outlier: false, outlier_direction: null },
-      { category: "Black Coffee", product: "Americano", prices_lbp: {}, own_price_lbp: 300000, competitor_avg_lbp: null, price_index: null, comparability: "low", tier: null, is_outlier: false, outlier_direction: null },
+      { category: "Croissants", product: "Cheese Croissant", prices_lbp: {}, portion_notes: {}, own_price_lbp: 400000, competitor_avg_lbp: null, price_index: null, comparability: "low", tier: null, is_outlier: false, outlier_direction: null },
+      { category: "Black Coffee", product: "Americano", prices_lbp: {}, portion_notes: {}, own_price_lbp: 300000, competitor_avg_lbp: null, price_index: null, comparability: "low", tier: null, is_outlier: false, outlier_direction: null },
     ],
     categories: [
       { category: "Croissants", product_count: 1, countable_product_count: 0, avg_price_index: null },

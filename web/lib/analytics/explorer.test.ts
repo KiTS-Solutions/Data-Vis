@@ -7,6 +7,7 @@ function product(category: string, name: string, overrides: Partial<ProductAnaly
     category,
     product: name,
     prices_lbp: {},
+    portion_notes: {},
     own_price_lbp: 100000,
     competitor_avg_lbp: 100000,
     price_index: 100,

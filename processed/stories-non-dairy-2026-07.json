@@ -23,6 +23,7 @@
         "Stories": 500000,
         "Dunkin Donuts": 486000
       },
+      "portion_notes": {},
       "own_price_lbp": 500000,
       "competitor_avg_lbp": 486000.0,
       "price_index": 102.9,
@@ -41,6 +42,7 @@
         "Joe & the Juice": 554900,
         "Starbucks": 550000
       },
+      "portion_notes": {},
       "own_price_lbp": 600000,
       "competitor_avg_lbp": 582725.0,
       "price_index": 103.0,
@@ -59,6 +61,7 @@
         "Joe & the Juice": 599650,
         "Starbucks": 600000
       },
+      "portion_notes": {},
       "own_price_lbp": 750000,
       "competitor_avg_lbp": 676412.5,
       "price_index": 110.9,
@@ -74,6 +77,7 @@
         "Stories": 550000,
         "Starbucks": 550000
       },
+      "portion_notes": {},
       "own_price_lbp": 550000,
       "competitor_avg_lbp": 550000.0,
       "price_index": 100.0,
@@ -91,6 +95,7 @@
         "Joe & the Juice": 608600,
         "Starbucks": 600000
       },
+      "portion_notes": {},
       "own_price_lbp": 700000,
       "competitor_avg_lbp": 669533.33,
       "price_index": 104.6,
@@ -108,6 +113,7 @@
         "Joe & the Juice": 662300,
         "Starbucks": 650000
       },
+      "portion_notes": {},
       "own_price_lbp": 800000,
       "competitor_avg_lbp": 754100.0,
       "price_index": 106.1,
@@ -124,6 +130,7 @@
         "Dunkin Donuts": 576000,
         "Starbucks": 550000
       },
+      "portion_notes": {},
       "own_price_lbp": 550000,
       "competitor_avg_lbp": 563000.0,
       "price_index": 97.7,
@@ -141,6 +148,7 @@
         "Dunkin Donuts": 666000,
         "Starbucks": 600000
       },
+      "portion_notes": {},
       "own_price_lbp": 700000,
       "competitor_avg_lbp": 688666.67,
       "price_index": 101.6,
@@ -157,6 +165,7 @@
         "Espresso Lab": 950000,
         "Starbucks": 650000
       },
+      "portion_notes": {},
       "own_price_lbp": 800000,
       "competitor_avg_lbp": 800000.0,
       "price_index": 100.0,
@@ -171,6 +180,7 @@
       "prices_lbp": {
         "Stories": 550000
       },
+      "portion_notes": {},
       "own_price_lbp": 550000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -188,6 +198,7 @@
         "Joe & the Juice": 689150,
         "Starbucks": 600000
       },
+      "portion_notes": {},
       "own_price_lbp": 650000,
       "competitor_avg_lbp": 679716.67,
       "price_index": 95.6,
@@ -206,6 +217,7 @@
         "Joe & the Juice": 733900,
         "Starbucks": 700000
       },
+      "portion_notes": {},
       "own_price_lbp": 750000,
       "competitor_avg_lbp": 702475.0,
       "price_index": 106.8,
@@ -220,6 +232,7 @@
       "prices_lbp": {
         "Stories": 550000
       },
+      "portion_notes": {},
       "own_price_lbp": 550000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -234,6 +247,7 @@
       "prices_lbp": {
         "Stories": 650000
       },
+      "portion_notes": {},
       "own_price_lbp": 650000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -248,6 +262,7 @@
       "prices_lbp": {
         "Stories": 800000
       },
+      "portion_notes": {},
       "own_price_lbp": 800000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -264,6 +279,7 @@
         "Espresso Lab": 550000,
         "Joe & the Juice": 519100
       },
+      "portion_notes": {},
       "own_price_lbp": 550000,
       "competitor_avg_lbp": 534550.0,
       "price_index": 102.9,
@@ -278,6 +294,7 @@
       "prices_lbp": {
         "Stories": 550000
       },
+      "portion_notes": {},
       "own_price_lbp": 550000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -294,6 +311,7 @@
         "Espresso Lab": 800000,
         "Joe & the Juice": 662300
       },
+      "portion_notes": {},
       "own_price_lbp": 700000,
       "competitor_avg_lbp": 731150.0,
       "price_index": 95.7,
@@ -310,6 +328,7 @@
         "Espresso Lab": 900000,
         "Joe & the Juice": 698100
       },
+      "portion_notes": {},
       "own_price_lbp": 850000,
       "competitor_avg_lbp": 799050.0,
       "price_index": 106.4,
@@ -325,6 +344,7 @@
         "Stories": 550000,
         "Starbucks": 600000
       },
+      "portion_notes": {},
       "own_price_lbp": 550000,
       "competitor_avg_lbp": 600000.0,
       "price_index": 91.7,
@@ -340,6 +360,7 @@
         "Stories": 650000,
         "Starbucks": 650000
       },
+      "portion_notes": {},
       "own_price_lbp": 650000,
       "competitor_avg_lbp": 650000.0,
       "price_index": 100.0,
@@ -355,6 +376,7 @@
         "Stories": 800000,
         "Starbucks": 700000
       },
+      "portion_notes": {},
       "own_price_lbp": 800000,
       "competitor_avg_lbp": 700000.0,
       "price_index": 114.3,
@@ -371,6 +393,7 @@
         "Dunkin Donuts": 486000,
         "Starbucks": 500000
       },
+      "portion_notes": {},
       "own_price_lbp": 500000,
       "competitor_avg_lbp": 493000.0,
       "price_index": 101.4,
@@ -389,6 +412,7 @@
         "Joe & the Juice": 554900,
         "Starbucks": 550000
       },
+      "portion_notes": {},
       "own_price_lbp": 600000,
       "competitor_avg_lbp": 582725.0,
       "price_index": 103.0,
@@ -407,6 +431,7 @@
         "Joe & the Juice": 599650,
         "Starbucks": 600000
       },
+      "portion_notes": {},
       "own_price_lbp": 750000,
       "competitor_avg_lbp": 653912.5,
       "price_index": 114.7,
@@ -421,6 +446,7 @@
       "prices_lbp": {
         "Stories": 550000
       },
+      "portion_notes": {},
       "own_price_lbp": 550000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -435,6 +461,7 @@
       "prices_lbp": {
         "Stories": 650000
       },
+      "portion_notes": {},
       "own_price_lbp": 650000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -449,6 +476,7 @@
       "prices_lbp": {
         "Stories": 800000
       },
+      "portion_notes": {},
       "own_price_lbp": 800000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -465,6 +493,7 @@
         "Dunkin Donuts": 486000,
         "Starbucks": 550000
       },
+      "portion_notes": {},
       "own_price_lbp": 550000,
       "competitor_avg_lbp": 518000.0,
       "price_index": 106.2,
@@ -482,6 +511,7 @@
         "Joe & the Juice": 554900,
         "Starbucks": 600000
       },
+      "portion_notes": {},
       "own_price_lbp": 650000,
       "competitor_avg_lbp": 576966.67,
       "price_index": 112.7,
@@ -499,6 +529,7 @@
         "Joe & the Juice": 608600,
         "Starbucks": 650000
       },
+      "portion_notes": {},
       "own_price_lbp": 800000,
       "competitor_avg_lbp": 641533.33,
       "price_index": 124.7,
@@ -513,6 +544,7 @@
       "prices_lbp": {
         "Stories": 500000
       },
+      "portion_notes": {},
       "own_price_lbp": 500000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -527,6 +559,7 @@
       "prices_lbp": {
         "Stories": 600000
       },
+      "portion_notes": {},
       "own_price_lbp": 600000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -541,6 +574,7 @@
       "prices_lbp": {
         "Stories": 700000
       },
+      "portion_notes": {},
       "own_price_lbp": 700000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -555,6 +589,7 @@
       "prices_lbp": {
         "Stories": 550000
       },
+      "portion_notes": {},
       "own_price_lbp": 550000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -569,6 +604,7 @@
       "prices_lbp": {
         "Stories": 700000
       },
+      "portion_notes": {},
       "own_price_lbp": 700000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -583,6 +619,7 @@
       "prices_lbp": {
         "Stories": 800000
       },
+      "portion_notes": {},
       "own_price_lbp": 800000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -597,6 +634,7 @@
       "prices_lbp": {
         "Stories": 550000
       },
+      "portion_notes": {},
       "own_price_lbp": 550000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -612,6 +650,7 @@
         "Stories": 700000,
         "Starbucks": 650000
       },
+      "portion_notes": {},
       "own_price_lbp": 700000,
       "competitor_avg_lbp": 650000.0,
       "price_index": 107.7,
@@ -627,6 +666,7 @@
         "Stories": 800000,
         "Starbucks": 750000
       },
+      "portion_notes": {},
       "own_price_lbp": 800000,
       "competitor_avg_lbp": 750000.0,
       "price_index": 106.7,
@@ -641,6 +681,7 @@
       "prices_lbp": {
         "Stories": 550000
       },
+      "portion_notes": {},
       "own_price_lbp": 550000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -658,6 +699,7 @@
         "Dunkin Donuts": 801000,
         "Starbucks": 650000
       },
+      "portion_notes": {},
       "own_price_lbp": 700000,
       "competitor_avg_lbp": 700333.33,
       "price_index": 100.0,
@@ -674,6 +716,7 @@
         "Espresso Lab": 750000,
         "Starbucks": 750000
       },
+      "portion_notes": {},
       "own_price_lbp": 800000,
       "competitor_avg_lbp": 750000.0,
       "price_index": 106.7,
@@ -689,6 +732,7 @@
         "Stories": 800000,
         "Dunkin Donuts": 801000
       },
+      "portion_notes": {},
       "own_price_lbp": 800000,
       "competitor_avg_lbp": 801000.0,
       "price_index": 99.9,
@@ -703,6 +747,7 @@
       "prices_lbp": {
         "Stories": 550000
       },
+      "portion_notes": {},
       "own_price_lbp": 550000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -718,6 +763,7 @@
         "Stories": 700000,
         "Starbucks": 650000
       },
+      "portion_notes": {},
       "own_price_lbp": 700000,
       "competitor_avg_lbp": 650000.0,
       "price_index": 107.7,
@@ -734,6 +780,7 @@
         "Espresso Lab": 900000,
         "Starbucks": 750000
       },
+      "portion_notes": {},
       "own_price_lbp": 800000,
       "competitor_avg_lbp": 825000.0,
       "price_index": 97.0,
@@ -748,6 +795,7 @@
       "prices_lbp": {
         "Stories": 550000
       },
+      "portion_notes": {},
       "own_price_lbp": 550000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -762,6 +810,7 @@
       "prices_lbp": {
         "Stories": 700000
       },
+      "portion_notes": {},
       "own_price_lbp": 700000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -776,6 +825,7 @@
       "prices_lbp": {
         "Stories": 800000
       },
+      "portion_notes": {},
       "own_price_lbp": 800000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -790,6 +840,7 @@
       "prices_lbp": {
         "Stories": 500000
       },
+      "portion_notes": {},
       "own_price_lbp": 500000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -806,6 +857,7 @@
         "Espresso Lab": 650000,
         "Starbucks": 550000
       },
+      "portion_notes": {},
       "own_price_lbp": 600000,
       "competitor_avg_lbp": 600000.0,
       "price_index": 100.0,
@@ -822,6 +874,7 @@
         "Espresso Lab": 750000,
         "Starbucks": 650000
       },
+      "portion_notes": {},
       "own_price_lbp": 700000,
       "competitor_avg_lbp": 700000.0,
       "price_index": 100.0,
@@ -836,6 +889,7 @@
       "prices_lbp": {
         "Stories": 550000
       },
+      "portion_notes": {},
       "own_price_lbp": 550000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -852,6 +906,7 @@
         "Espresso Lab": 600000,
         "Starbucks": 650000
       },
+      "portion_notes": {},
       "own_price_lbp": 700000,
       "competitor_avg_lbp": 625000.0,
       "price_index": 112.0,
@@ -868,6 +923,7 @@
         "Espresso Lab": 650000,
         "Starbucks": 750000
       },
+      "portion_notes": {},
       "own_price_lbp": 800000,
       "competitor_avg_lbp": 700000.0,
       "price_index": 114.3,
@@ -882,6 +938,7 @@
       "prices_lbp": {
         "Stories": 550000
       },
+      "portion_notes": {},
       "own_price_lbp": 550000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -896,6 +953,7 @@
       "prices_lbp": {
         "Stories": 700000
       },
+      "portion_notes": {},
       "own_price_lbp": 700000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -910,6 +968,7 @@
       "prices_lbp": {
         "Stories": 800000
       },
+      "portion_notes": {},
       "own_price_lbp": 800000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -924,6 +983,7 @@
       "prices_lbp": {
         "Stories": 550000
       },
+      "portion_notes": {},
       "own_price_lbp": 550000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -939,6 +999,7 @@
         "Stories": 700000,
         "Joe & the Juice": 662300
       },
+      "portion_notes": {},
       "own_price_lbp": 700000,
       "competitor_avg_lbp": 662300.0,
       "price_index": 105.7,
@@ -954,6 +1015,7 @@
         "Stories": 800000,
         "Joe & the Juice": 698100
       },
+      "portion_notes": {},
       "own_price_lbp": 800000,
       "competitor_avg_lbp": 698100.0,
       "price_index": 114.6,
@@ -969,6 +1031,7 @@
         "Stories": 600000,
         "Joe & the Juice": 733900
       },
+      "portion_notes": {},
       "own_price_lbp": 600000,
       "competitor_avg_lbp": 733900.0,
       "price_index": 81.8,
@@ -986,6 +1049,7 @@
         "Dunkin Donuts": 576000,
         "Joe & the Juice": 778650
       },
+      "portion_notes": {},
       "own_price_lbp": 750000,
       "competitor_avg_lbp": 734883.33,
       "price_index": 102.1,
@@ -1001,6 +1065,7 @@
         "Stories": 500000,
         "Dunkin Donuts": 486000
       },
+      "portion_notes": {},
       "own_price_lbp": 500000,
       "competitor_avg_lbp": 486000.0,
       "price_index": 102.9,
@@ -1019,6 +1084,7 @@
         "Joe & the Juice": 554900,
         "Starbucks": 500000
       },
+      "portion_notes": {},
       "own_price_lbp": 650000,
       "competitor_avg_lbp": 606475.0,
       "price_index": 107.2,
@@ -1037,6 +1103,7 @@
         "Joe & the Juice": 599650,
         "Starbucks": 600000
       },
+      "portion_notes": {},
       "own_price_lbp": 700000,
       "competitor_avg_lbp": 690162.5,
       "price_index": 101.4,
@@ -1053,6 +1120,7 @@
         "Joe & the Juice": 733900,
         "Starbucks": 550000
       },
+      "portion_notes": {},
       "own_price_lbp": 550000,
       "competitor_avg_lbp": 641950.0,
       "price_index": 85.7,
@@ -1070,6 +1138,7 @@
         "Joe & the Juice": 778650,
         "Starbucks": 650000
       },
+      "portion_notes": {},
       "own_price_lbp": 750000,
       "competitor_avg_lbp": 698216.67,
       "price_index": 107.4,
@@ -1084,6 +1153,7 @@
       "prices_lbp": {
         "Stories": 550000
       },
+      "portion_notes": {},
       "own_price_lbp": 550000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -1098,6 +1168,7 @@
       "prices_lbp": {
         "Stories": 700000
       },
+      "portion_notes": {},
       "own_price_lbp": 700000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -1112,6 +1183,7 @@
       "prices_lbp": {
         "Stories": 800000
       },
+      "portion_notes": {},
       "own_price_lbp": 800000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -1126,6 +1198,7 @@
       "prices_lbp": {
         "Stories": 550000
       },
+      "portion_notes": {},
       "own_price_lbp": 550000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -1140,6 +1213,7 @@
       "prices_lbp": {
         "Stories": 700000
       },
+      "portion_notes": {},
       "own_price_lbp": 700000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -1154,6 +1228,7 @@
       "prices_lbp": {
         "Stories": 800000
       },
+      "portion_notes": {},
       "own_price_lbp": 800000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -1168,6 +1243,7 @@
       "prices_lbp": {
         "Stories": 550000
       },
+      "portion_notes": {},
       "own_price_lbp": 550000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -1184,6 +1260,7 @@
         "Espresso Lab": 800000,
         "Joe & the Juice": 662300
       },
+      "portion_notes": {},
       "own_price_lbp": 700000,
       "competitor_avg_lbp": 731150.0,
       "price_index": 95.7,
@@ -1200,6 +1277,7 @@
         "Espresso Lab": 900000,
         "Joe & the Juice": 698100
       },
+      "portion_notes": {},
       "own_price_lbp": 800000,
       "competitor_avg_lbp": 799050.0,
       "price_index": 100.1,
@@ -1215,6 +1293,7 @@
         "Stories": 550000,
         "Dunkin Donuts": 666000
       },
+      "portion_notes": {},
       "own_price_lbp": 550000,
       "competitor_avg_lbp": 666000.0,
       "price_index": 82.6,
@@ -1232,6 +1311,7 @@
         "Dunkin Donuts": 756000,
         "Starbucks": 550000
       },
+      "portion_notes": {},
       "own_price_lbp": 700000,
       "competitor_avg_lbp": 702000.0,
       "price_index": 99.7,
@@ -1249,6 +1329,7 @@
         "Dunkin Donuts": 846000,
         "Starbucks": 650000
       },
+      "portion_notes": {},
       "own_price_lbp": 800000,
       "competitor_avg_lbp": 798666.67,
       "price_index": 100.2,
@@ -1263,6 +1344,7 @@
       "prices_lbp": {
         "Stories": 550000
       },
+      "portion_notes": {},
       "own_price_lbp": 550000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -1277,6 +1359,7 @@
       "prices_lbp": {
         "Stories": 700000
       },
+      "portion_notes": {},
       "own_price_lbp": 700000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -1291,6 +1374,7 @@
       "prices_lbp": {
         "Stories": 850000
       },
+      "portion_notes": {},
       "own_price_lbp": 850000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -1305,6 +1389,7 @@
       "prices_lbp": {
         "Stories": 550000
       },
+      "portion_notes": {},
       "own_price_lbp": 550000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -1320,6 +1405,7 @@
         "Stories": 700000,
         "Joe & the Juice": 608600
       },
+      "portion_notes": {},
       "own_price_lbp": 700000,
       "competitor_avg_lbp": 608600.0,
       "price_index": 115.0,
@@ -1335,6 +1421,7 @@
         "Stories": 800000,
         "Joe & the Juice": 662300
       },
+      "portion_notes": {},
       "own_price_lbp": 800000,
       "competitor_avg_lbp": 662300.0,
       "price_index": 120.8,
@@ -1349,6 +1436,7 @@
       "prices_lbp": {
         "Stories": 550000
       },
+      "portion_notes": {},
       "own_price_lbp": 550000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -1363,6 +1451,7 @@
       "prices_lbp": {
         "Stories": 700000
       },
+      "portion_notes": {},
       "own_price_lbp": 700000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -1377,6 +1466,7 @@
       "prices_lbp": {
         "Stories": 800000
       },
+      "portion_notes": {},
       "own_price_lbp": 800000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -1391,6 +1481,7 @@
       "prices_lbp": {
         "Stories": 400000
       },
+      "portion_notes": {},
       "own_price_lbp": 400000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -1405,6 +1496,7 @@
       "prices_lbp": {
         "Stories": 500000
       },
+      "portion_notes": {},
       "own_price_lbp": 500000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -1419,6 +1511,7 @@
       "prices_lbp": {
         "Stories": 600000
       },
+      "portion_notes": {},
       "own_price_lbp": 600000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -1434,6 +1527,7 @@
         "Stories": 550000,
         "Starbucks": 550000
       },
+      "portion_notes": {},
       "own_price_lbp": 550000,
       "competitor_avg_lbp": 550000.0,
       "price_index": 100.0,
@@ -1450,6 +1544,7 @@
         "Espresso Lab": 650000,
         "Starbucks": 600000
       },
+      "portion_notes": {},
       "own_price_lbp": 700000,
       "competitor_avg_lbp": 625000.0,
       "price_index": 112.0,
@@ -1466,6 +1561,7 @@
         "Espresso Lab": 750000,
         "Starbucks": 650000
       },
+      "portion_notes": {},
       "own_price_lbp": 800000,
       "competitor_avg_lbp": 700000.0,
       "price_index": 114.3,
@@ -1480,6 +1576,7 @@
       "prices_lbp": {
         "Stories": 750000
       },
+      "portion_notes": {},
       "own_price_lbp": 750000,
       "competitor_avg_lbp": null,
       "price_index": null,

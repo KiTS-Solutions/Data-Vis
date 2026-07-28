@@ -220,6 +220,80 @@ def test_parse_workbook_applies_brand_aliases(tmp_path):
     assert cappuccino_stories[0]["price_lbp"] == 600000
 
 
+def test_parse_workbook_skips_unlabeled_portion_note_columns(tmp_path):
+    """Reproduces the real Salads sheet: an unlabeled per-product portion-note
+    column (e.g. "380 g.") sits ahead of most brands' price columns, but not
+    every brand has one (the last competitor here has none) — brand columns
+    must be located by their actual header index, not assumed contiguous."""
+    wb = openpyxl.Workbook()
+    ws = wb.active
+    ws.append(["Products Competitors", None, "Stories", None, "Wooden Bakery", None, "Zaatar w Zeit",
+               "The Koozspace", "Average", "Difference"])
+    ws.append(["SALADS", None, None, None, None, None, None, None, None, None])
+    ws.append(["ASIAN SALAD", "380 g.", 750000, "-", "-", None, "-", "-", 750000, 0])
+    ws.append(["TUNA PASTA SALAD", "440 g.", 850000, "550 g.", 716800, "200 g.", 806400, 1075200, 862100, -12100])
+    path = tmp_path / "sample_gapped_columns.xlsx"
+    wb.save(path)
+
+    config = _config()
+    config["competitors"] = ["Wooden Bakery", "Zaatar w Zeit", "The Koozspace"]
+
+    result = parse_workbook(str(path), config)
+
+    tuna = {r["brand"]: r["price_lbp"] for r in result["records"] if r["product"] == "TUNA PASTA SALAD"}
+    assert tuna == {"Stories": 850000, "Wooden Bakery": 716800, "Zaatar w Zeit": 806400, "The Koozspace": 1075200}
+
+
+def test_parse_workbook_captures_per_product_portion_notes(tmp_path):
+    """The unlabeled column ahead of a brand's price column carries that
+    brand's specific portion size for the product (e.g. "380 g."), not a
+    price — it should be captured as portion_note, not read as a value."""
+    wb = openpyxl.Workbook()
+    ws = wb.active
+    ws.append(["Products Competitors", None, "Stories", None, "Wooden Bakery", "The Koozspace",
+               "Average", "Difference"])
+    ws.append(["SALADS", None, None, None, None, None, None, None])
+    ws.append(["ASIAN SALAD", "380 g.", 750000, "-", "-", "-", 750000, 0])
+    ws.append(["TUNA PASTA SALAD", "440 g.", 850000, "550 g.", 716800, 1075200, 862100, -12100])
+    path = tmp_path / "sample_portion_notes.xlsx"
+    wb.save(path)
+
+    config = _config()
+    config["competitors"] = ["Wooden Bakery", "The Koozspace"]
+
+    result = parse_workbook(str(path), config)
+
+    tuna_stories = next(r for r in result["records"] if r["product"] == "TUNA PASTA SALAD" and r["brand"] == "Stories")
+    assert tuna_stories["portion_note"] == "440 g."
+
+    tuna_wb = next(r for r in result["records"] if r["product"] == "TUNA PASTA SALAD" and r["brand"] == "Wooden Bakery")
+    assert tuna_wb["portion_note"] == "550 g."
+
+    tuna_koozspace = next(r for r in result["records"] if r["product"] == "TUNA PASTA SALAD" and r["brand"] == "The Koozspace")
+    assert tuna_koozspace["portion_note"] is None
+
+    # ASIAN SALAD has "-" (no price) for Wooden Bakery, so no record at all is created for it.
+    assert not any(r["product"] == "ASIAN SALAD" and r["brand"] == "Wooden Bakery" for r in result["records"])
+
+
+def test_parse_workbook_dropped_brands_excluded_from_records_and_validation(tmp_path):
+    """A brand column can be present in the sheet (kept there as reference
+    the client wants on file) without being in config.competitors, as long
+    as it's explicitly named in dropped_brands — otherwise this would raise
+    the "extra brand in header" validation error."""
+    xlsx_path = _build_workbook(tmp_path)
+    config = _config()
+    config["competitors"] = ["Espresso Lab", "Dunkin Donuts", "Joe & the Juice"]  # Starbucks dropped
+    config["dropped_brands"] = ["Starbucks"]
+
+    result = parse_workbook(xlsx_path, config)
+
+    macchiato = [r for r in result["records"] if r["product"] == "Double Espresso Macchiato"]
+    assert {r["brand"] for r in macchiato} == {"Stories"}
+    americano = [r for r in result["records"] if r["product"] == "Americano MEDIUM"]
+    assert {r["brand"] for r in americano} == {"Stories", "Espresso Lab", "Joe & the Juice"}
+
+
 def test_parse_workbook_applies_category_aliases(tmp_path):
     wb = openpyxl.Workbook()
     ws = wb.active

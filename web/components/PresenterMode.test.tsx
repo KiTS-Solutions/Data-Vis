@@ -13,6 +13,7 @@ const findings: FindingsGroups = {
       category: "Hot",
       product: "Latte",
       prices_lbp: {},
+      portion_notes: {},
       own_price_lbp: 400000,
       competitor_avg_lbp: 300000,
       price_index: 133,

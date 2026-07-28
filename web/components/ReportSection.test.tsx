@@ -28,6 +28,7 @@ function buildReport(): PricingReport {
         category: "Frozen Yogurt",
         product: "Original Yogurt SMALL",
         prices_lbp: { Stories: 500000, Pinkberry: 450000 },
+        portion_notes: {},
         own_price_lbp: 500000,
         competitor_avg_lbp: 450000,
         price_index: 111.1,

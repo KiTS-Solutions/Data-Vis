@@ -2,6 +2,7 @@ export interface ProductAnalytics {
   category: string;
   product: string;
   prices_lbp: Record<string, number>;
+  portion_notes: Record<string, string>;
   own_price_lbp: number | null;
   competitor_avg_lbp: number | null;
   price_index: number | null;

@@ -1,4 +1,4 @@
-import { loadReport, loadCupSizeTable } from "@/lib/data/loadReport";
+import { loadReport, loadCupSizeTable, loadPortionSizeTable } from "@/lib/data/loadReport";
 import { filterReportByCategories } from "@/lib/data/filterReport";
 import { withBasePath } from "@/lib/basePath";
 import { formatReportPeriod } from "@/lib/format/date";
@@ -8,6 +8,7 @@ import { ExecutiveSummary } from "@/components/ExecutiveSummary";
 import { ReportSection } from "@/components/ReportSection";
 import { CategoriesInProgress } from "@/components/CategoriesInProgress";
 import { CupSizeComparison } from "@/components/CupSizeComparison";
+import { PortionSizeComparison } from "@/components/PortionSizeComparison";
 import { Explain } from "@/components/Explain";
 import { PresenterModeToggle } from "@/components/PresenterModeToggle";
 import { ContextBar } from "@/components/ContextBar";
@@ -51,6 +52,7 @@ export default function Home() {
   const platDuJourReport = loadReport("stories-plat-du-jour-2026-07");
   const sandwichesReport = loadReport("stories-sandwiches-2026-07");
   const cupSizeTable = loadCupSizeTable("stories-frozen-yogurt-cup-sizes-2026-07");
+  const portionSizeTable = loadPortionSizeTable("stories-salads-portion-sizes-2026-07");
 
   const drinksReport = filterReportByCategories(mainReport, DRINKS_CATEGORIES);
   const bakeryReport = filterReportByCategories(mainReport, BAKERY_CATEGORIES);
@@ -132,7 +134,26 @@ export default function Home() {
           }
         />
         <ReportSection title="Non-Dairy Menu" report={nonDairyReport} />
-        <ReportSection title="Salads" report={saladsReport} />
+        <ReportSection
+          title="Salads"
+          report={saladsReport}
+          extra={
+            <Section title="Portion Size Comparison" level={3}>
+              <Explain>
+                <p className="mb-5 max-w-2xl text-sm text-ocean-muted">
+                  Wooden Bakery and Zaatar w Zeit prices in this comparison are based on a{" "}
+                  <strong>200g portion</strong> — half the <strong>400g</strong> standard portion used for{" "}
+                  {saladsReport.meta.own_brand} and Casper &amp; Gambini. Pain D&apos;or runs the other way: its
+                  prices are based on a larger <strong>500–600g portion</strong>, roughly 25–50% more product than
+                  the 400g standard. Wooden Bakery only sells salads at 200g; Zaatar w Zeit also offers a 400g
+                  full-size option not used in this comparison. Adjust for portion size before comparing sticker
+                  price directly.
+                </p>
+              </Explain>
+              <PortionSizeComparison table={portionSizeTable} ownBrand={saladsReport.meta.own_brand} />
+            </Section>
+          }
+        />
         <ReportSection title="Plat Du Jour" report={platDuJourReport} />
         <ReportSection title="Sandwiches" report={sandwichesReport} />
 

@@ -10,6 +10,7 @@ function product(category: string, name: string, overrides: Partial<ProductAnaly
     category,
     product: name,
     prices_lbp: { Stories: 300000, "Espresso Lab": 320000 },
+    portion_notes: {},
     own_price_lbp: 300000,
     competitor_avg_lbp: 300000,
     price_index: 100,
@@ -82,6 +83,29 @@ describe("DataExplorer", () => {
 
     expect(screen.getByText("Item 26")).toBeInTheDocument();
     expect(screen.queryByText("Item 00")).not.toBeInTheDocument();
+  });
+
+  it("shows a brand's portion-size note as a footnote next to its price when present", async () => {
+    const user = userEvent.setup();
+    renderWithTheme(
+      <DataExplorer
+        products={[
+          product("Salads", "Tuna Pasta Salad", {
+            prices_lbp: { Stories: 850000, "Wooden Bakery": 716800 },
+            portion_notes: { "Wooden Bakery": "550 g." },
+          }),
+        ]}
+        fxRate={89600}
+        ownBrand="Stories"
+      />
+    );
+    await user.click(screen.getByRole("button", { name: /Show Table/ }));
+    await user.click(screen.getByText("Tuna Pasta Salad"));
+
+    const wbRow = screen.getByText("Wooden Bakery").closest("div");
+    expect(wbRow).toHaveTextContent("(550 g.)");
+    const storiesRow = screen.getByText("Stories").closest("div");
+    expect(storiesRow).not.toHaveTextContent("g.)");
   });
 
   it("visually flags a low-comparability index as unreliable instead of showing it at full weight", async () => {

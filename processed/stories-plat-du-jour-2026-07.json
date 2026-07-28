@@ -22,6 +22,7 @@
       "prices_lbp": {
         "Stories": 1050000
       },
+      "portion_notes": {},
       "own_price_lbp": 1050000,
       "competitor_avg_lbp": null,
       "price_index": null,
@@ -37,6 +38,7 @@
         "Stories": 1050000,
         "Socrate (Beirut)": 1342500
       },
+      "portion_notes": {},
       "own_price_lbp": 1050000,
       "competitor_avg_lbp": 1342500.0,
       "price_index": 78.2,
@@ -52,6 +54,7 @@
         "Stories": 1165500,
         "Socrate (Beirut)": 1342500
       },
+      "portion_notes": {},
       "own_price_lbp": 1165500,
       "competitor_avg_lbp": 1342500.0,
       "price_index": 86.8,
@@ -68,6 +71,7 @@
         "Socrate (Beirut)": 1253000,
         "abdel Wahab": 1521500
       },
+      "portion_notes": {},
       "own_price_lbp": 1165500,
       "competitor_avg_lbp": 1387250.0,
       "price_index": 84.0,
@@ -83,6 +87,7 @@
         "Stories": 1165500,
         "Socrate (Beirut)": 1342500
       },
+      "portion_notes": {},
       "own_price_lbp": 1165500,
       "competitor_avg_lbp": 1342500.0,
       "price_index": 86.8,
@@ -98,6 +103,7 @@
         "Stories": 1165500,
         "Socrate (Beirut)": 1253000
       },
+      "portion_notes": {},
       "own_price_lbp": 1165500,
       "competitor_avg_lbp": 1253000.0,
       "price_index": 93.0,
@@ -113,6 +119,7 @@
         "Stories": 1165500,
         "Socrate (Beirut)": 1253000
       },
+      "portion_notes": {},
       "own_price_lbp": 1165500,
       "competitor_avg_lbp": 1253000.0,
       "price_index": 93.0,
@@ -129,6 +136,7 @@
         "Socrate (Beirut)": 1342500,
         "abdel Wahab": 1521500
       },
+      "portion_notes": {},
       "own_price_lbp": 1165500,
       "competitor_avg_lbp": 1432000.0,
       "price_index": 81.4,
@@ -145,6 +153,7 @@
         "abdel Wahab": 1432000,
         "Diwan Beirut": 1700500
       },
+      "portion_notes": {},
       "own_price_lbp": 1050000,
       "competitor_avg_lbp": 1566250.0,
       "price_index": 67.0,
@@ -160,6 +169,7 @@
         "Stories": 1165500,
         "Socrate (Beirut)": 1253000
       },
+      "portion_notes": {},
       "own_price_lbp": 1165500,
       "competitor_avg_lbp": 1253000.0,
       "price_index": 93.0,
@@ -178,6 +188,7 @@
         "abdel Wahab": 1521500,
         "Diwan Beirut": 1700500
       },
+      "portion_notes": {},
       "own_price_lbp": 1165500,
       "competitor_avg_lbp": 1521500.0,
       "price_index": 76.6,
@@ -194,6 +205,7 @@
         "Socrate (Beirut)": 1253000,
         "Ana Beirut": 1611000
       },
+      "portion_notes": {},
       "own_price_lbp": 1165500,
       "competitor_avg_lbp": 1432000.0,
       "price_index": 81.4,
@@ -210,6 +222,7 @@
         "Socrate (Beirut)": 1342500,
         "abdel Wahab": 1521500
       },
+      "portion_notes": {},
       "own_price_lbp": 1165500,
       "competitor_avg_lbp": 1432000.0,
       "price_index": 81.4,
@@ -227,6 +240,7 @@
         "abdel Wahab": 1521500,
         "Diwan Beirut": 1700500
       },
+      "portion_notes": {},
       "own_price_lbp": 1050000,
       "competitor_avg_lbp": 1670666.67,
       "price_index": 62.8,
@@ -245,6 +259,7 @@
         "abdel Wahab": 1521500,
         "Diwan Beirut": 1924250
       },
+      "portion_notes": {},
       "own_price_lbp": 1165500,
       "competitor_avg_lbp": 1644562.5,
       "price_index": 70.9,
@@ -263,6 +278,7 @@
         "abdel Wahab": 1521500,
         "Diwan Beirut": 1700500
       },
+      "portion_notes": {},
       "own_price_lbp": 1165500,
       "competitor_avg_lbp": 1566250.0,
       "price_index": 74.4,
@@ -279,6 +295,7 @@
         "Socrate (Beirut)": 1342500,
         "abdel Wahab": 1521500
       },
+      "portion_notes": {},
       "own_price_lbp": 1165500,
       "competitor_avg_lbp": 1432000.0,
       "price_index": 81.4,
