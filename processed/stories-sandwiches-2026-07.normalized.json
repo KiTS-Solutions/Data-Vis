@@ -239,5 +239,6 @@
       "price_lbp": 360000,
       "price_usd": 4.02
     }
-  ]
+  ],
+  "unparseable_prices": []
 }

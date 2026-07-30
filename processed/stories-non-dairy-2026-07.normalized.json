@@ -874,7 +874,7 @@
     },
     {
       "category": "Blended Drinks",
-      "product": "Chocolate Cream Frap",
+      "product": "Chocolate Cream Frap SMALL",
       "brand": "Stories",
       "price_lbp": 550000,
       "price_usd": 6.15,
@@ -882,7 +882,7 @@
     },
     {
       "category": "Blended Drinks",
-      "product": "Chocolate Cream Frap",
+      "product": "Chocolate Cream Frap MEDIUM",
       "brand": "Stories",
       "price_lbp": 700000,
       "price_usd": 7.82,
@@ -890,7 +890,7 @@
     },
     {
       "category": "Blended Drinks",
-      "product": "Chocolate Cream Frap",
+      "product": "Chocolate Cream Frap MEDIUM",
       "brand": "Dunkin Donuts",
       "price_lbp": 801000,
       "price_usd": 8.95,
@@ -898,7 +898,7 @@
     },
     {
       "category": "Blended Drinks",
-      "product": "Chocolate Cream Frap",
+      "product": "Chocolate Cream Frap LARGE",
       "brand": "Stories",
       "price_lbp": 800000,
       "price_usd": 8.94,
@@ -1719,6 +1719,14 @@
       "price_lbp": 750000,
       "price_usd": 8.38,
       "portion_note": null
+    }
+  ],
+  "unparseable_prices": [
+    {
+      "category": "Blended Drinks",
+      "product": "White Mocha Cream Frap MEDIUM",
+      "brand": "Espresso Lab",
+      "raw_value": "8000,00"
     }
   ]
 }

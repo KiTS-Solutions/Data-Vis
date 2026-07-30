@@ -384,5 +384,6 @@
       "price_usd": 12.0,
       "portion_note": "500 g."
     }
-  ]
+  ],
+  "unparseable_prices": []
 }

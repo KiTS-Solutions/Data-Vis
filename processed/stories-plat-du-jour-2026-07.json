@@ -166,15 +166,15 @@
       "category": "Plat Du Jour",
       "product": "Roasted Chicken",
       "prices_lbp": {
-        "Stories": 1165500,
+        "Stories": 1050000,
         "Socrate (Beirut)": 1253000
       },
       "portion_notes": {},
-      "own_price_lbp": 1165500,
+      "own_price_lbp": 1050000,
       "competitor_avg_lbp": 1253000.0,
-      "price_index": 93.0,
+      "price_index": 83.8,
       "comparability": "low",
-      "tier": "Premium",
+      "tier": "Value",
       "is_outlier": false,
       "outlier_direction": null
     },
@@ -313,5 +313,6 @@
       "avg_price_index": 76.1
     }
   ],
-  "data_quality_warnings": []
+  "data_quality_warnings": [],
+  "unparseable_price_warnings": []
 }

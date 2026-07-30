@@ -180,8 +180,8 @@
       "category": "Plat Du Jour",
       "product": "Roasted Chicken",
       "brand": "Stories",
-      "price_lbp": 1165500,
-      "price_usd": 13.02,
+      "price_lbp": 1050000,
+      "price_usd": 11.73,
       "portion_note": null
     },
     {
@@ -416,5 +416,6 @@
       "price_usd": 17.0,
       "portion_note": null
     }
-  ]
+  ],
+  "unparseable_prices": []
 }

@@ -28,6 +28,13 @@ export PYTHONPATH=scripts
   --config sources/stories-frozen-yogurt-2026-07.json \
   --out processed/stories-frozen-yogurt-cup-sizes-2026-07.json
 
+# Gram-weight comparison side-table on the same Frozen Yogurt sheet, directly
+# below the cup-size (ounces) table — also not a price, feeds its own chart.
+"${PYTHON:-python3}" -m pricing_pipeline.parse_gram_sizes \
+  --xlsx "raw-data/Frozen Yogurt Pricing Comparison (1).xlsx" \
+  --config sources/stories-frozen-yogurt-2026-07.json \
+  --out processed/stories-frozen-yogurt-gram-sizes-2026-07.json
+
 # Non-Dairy Menu — Mixed Hot/Cold Beverages, Blended Drinks, Signature, Protein
 # Shakes (non-dairy-alternative versions), standard 4 competitors.
 "${PYTHON:-python3}" -m pricing_pipeline.parse_pricing \

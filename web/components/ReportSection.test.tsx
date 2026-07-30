@@ -42,6 +42,7 @@ function buildReport(): PricingReport {
       { category: "Frozen Yogurt", product_count: 1, countable_product_count: 1, avg_price_index: 111.1 },
     ],
     data_quality_warnings: [],
+    unparseable_price_warnings: [],
   };
 }
 

@@ -14,5 +14,6 @@ export function filterReportByCategories(report: PricingReport, categories: stri
     products: report.products.filter((p) => categorySet.has(p.category)),
     categories: report.categories.filter((c) => categorySet.has(c.category)),
     data_quality_warnings: report.data_quality_warnings.filter((w) => categorySet.has(w.category)),
+    unparseable_price_warnings: report.unparseable_price_warnings.filter((w) => categorySet.has(w.category)),
   };
 }

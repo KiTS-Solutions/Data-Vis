@@ -52,6 +52,50 @@ def test_parse_sandwich_workbook_skips_summary_row(tmp_path):
     assert all(r["product"] != "Average Price" for r in result["records"])
 
 
+def test_parse_sandwich_workbook_skips_summary_row_with_real_numeric_prices(tmp_path):
+    """The original fixture's summary row had all-None prices, which made the
+    skip check vacuous — deleting the skip condition entirely still passed.
+    This mirrors the real sheet's row 13 (real per-brand averages in the
+    price columns) so the skip is actually exercised."""
+    wb = openpyxl.Workbook()
+    ws = wb.active
+    ws.title = "Price Comparison"
+    ws.append(["SANDWICH PRICE COMPARISON REPORT"])
+    ws.append(["Date: 20 July 2026 | Currency: Lebanese Pound (LBP)"])
+    ws.append([None])
+    ws.append(["Item", "Bread Type", "Pain d'Or (LBP)", "Fakhani (LBP)", "Stories (LBP)",
+               "Wooden Bakery (LBP)", "Min Price", "Max Price", "Average Price", "Lowest Bakery"])
+    ws.append(["Turkey & Cheese", "White", 712000, 480000, 650000, 605000, None, None, None, None])
+    ws.append(["Average Price", "All Sandwich Types", 562750, 313750, 600000, 533750, None, None, None, "Fakhani"])
+    wb.create_sheet("Bakery Insights")
+    path = tmp_path / "sandwiches_summary.xlsx"
+    wb.save(path)
+
+    result = parse_sandwich_workbook(str(path), _config())
+
+    assert {r["product"] for r in result["records"]} == {"Turkey & Cheese (White)"}
+    assert all("Average Price" not in r["product"] for r in result["records"])
+
+
+def test_parse_sandwich_workbook_blank_bread_type_uses_item_name_only(tmp_path):
+    wb = openpyxl.Workbook()
+    ws = wb.active
+    ws.title = "Price Comparison"
+    ws.append(["SANDWICH PRICE COMPARISON REPORT"])
+    ws.append(["Date: 20 July 2026 | Currency: Lebanese Pound (LBP)"])
+    ws.append([None])
+    ws.append(["Item", "Bread Type", "Pain d'Or (LBP)", "Fakhani (LBP)", "Stories (LBP)",
+               "Wooden Bakery (LBP)", "Min Price", "Max Price", "Average Price", "Lowest Bakery"])
+    ws.append(["Club Sandwich", None, 700000, 500000, 650000, 600000, None, None, None, None])
+    wb.create_sheet("Bakery Insights")
+    path = tmp_path / "sandwiches_blank_bread.xlsx"
+    wb.save(path)
+
+    result = parse_sandwich_workbook(str(path), _config())
+
+    assert {r["product"] for r in result["records"]} == {"Club Sandwich"}
+
+
 def test_parse_sandwich_workbook_config_mismatch_raises_error(tmp_path):
     xlsx_path = _build_workbook(tmp_path)
     config = _config()

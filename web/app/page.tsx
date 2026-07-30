@@ -1,14 +1,14 @@
-import { loadReport, loadCupSizeTable, loadPortionSizeTable } from "@/lib/data/loadReport";
+import { loadReport, loadCupSizeTable, loadGramSizeTable, loadPortionSizeTable } from "@/lib/data/loadReport";
 import { filterReportByCategories } from "@/lib/data/filterReport";
 import { withBasePath } from "@/lib/basePath";
 import { formatReportPeriod } from "@/lib/format/date";
-import { cleanDisplayFileName } from "@/lib/format/filename";
 import { computeReportScorecard } from "@/lib/analytics/scorecard";
 import { formatPortionRange } from "@/lib/format/portion";
 import { ExecutiveSummary } from "@/components/ExecutiveSummary";
 import { ReportSection } from "@/components/ReportSection";
 import { CategoriesInProgress } from "@/components/CategoriesInProgress";
 import { CupSizeComparison } from "@/components/CupSizeComparison";
+import { GramSizeComparison } from "@/components/GramSizeComparison";
 import { PortionSizeComparison } from "@/components/PortionSizeComparison";
 import { Explain } from "@/components/Explain";
 import { PresenterModeToggle } from "@/components/PresenterModeToggle";
@@ -23,12 +23,10 @@ import { AccentUnderline } from "@/components/motion/AccentUnderline";
 
 const PENDING_CATEGORIES = [
   "Milkshakes",
-  "Protein Shakes",
   "Shakes",
   "Pizza",
   "Wraps",
   "Gluten Free",
-  "Luxury Toppings",
 ];
 
 // "Main Menu" isn't a real menu category — split it into the same groupings
@@ -53,10 +51,26 @@ export default function Home() {
   const platDuJourReport = loadReport("stories-plat-du-jour-2026-07");
   const sandwichesReport = loadReport("stories-sandwiches-2026-07");
   const cupSizeTable = loadCupSizeTable("stories-frozen-yogurt-cup-sizes-2026-07");
+  const gramSizeTable = loadGramSizeTable("stories-frozen-yogurt-gram-sizes-2026-07");
   const portionSizeTable = loadPortionSizeTable("stories-salads-portion-sizes-2026-07");
 
   const drinksReport = filterReportByCategories(mainReport, DRINKS_CATEGORIES);
   const bakeryReport = filterReportByCategories(mainReport, BAKERY_CATEGORIES);
+
+  const REPORTS_FOR_WARNINGS = [
+    { label: "Main Menu", report: mainReport },
+    { label: "Frozen Yogurt Bar", report: frozenYogurtReport },
+    { label: "Non-Dairy Menu", report: nonDairyReport },
+    { label: "Salads", report: saladsReport },
+    { label: "Plat Du Jour", report: platDuJourReport },
+    { label: "Sandwiches", report: sandwichesReport },
+  ];
+  const dataQualityWarnings = REPORTS_FOR_WARNINGS.flatMap(({ label, report }) =>
+    report.data_quality_warnings.map((w) => ({ ...w, source: label }))
+  );
+  const unparseablePriceWarnings = REPORTS_FOR_WARNINGS.flatMap(({ label, report }) =>
+    report.unparseable_price_warnings.map((w) => ({ ...w, source: label }))
+  );
 
   const portionRowByBrand = new Map(portionSizeTable.rows.map((row) => [row.brand, row]));
   const ownPortionRow = portionRowByBrand.get(saladsReport.meta.own_brand);
@@ -116,7 +130,11 @@ export default function Home() {
 
         <Section title="Methodology & Data Sources">
           <Explain>
-            <Methodology meta={mainReport.meta} warnings={mainReport.data_quality_warnings} />
+            <Methodology
+              meta={mainReport.meta}
+              warnings={dataQualityWarnings}
+              unparseablePriceWarnings={unparseablePriceWarnings}
+            />
           </Explain>
         </Section>
 
@@ -126,15 +144,26 @@ export default function Home() {
           title="Frozen Yogurt Bar"
           report={frozenYogurtReport}
           extra={
-            <Section title="Cup Size Comparison (oz)" level={3}>
-              <Explain>
-                <p className="mb-5 max-w-2xl text-sm text-ocean-muted">
-                  Serving size in ounces per cup tier, {frozenYogurtReport.meta.client} vs. each competitor —
-                  a physical-portion comparison, separate from price.
-                </p>
-              </Explain>
-              <CupSizeComparison table={cupSizeTable} ownBrand={frozenYogurtReport.meta.own_brand} />
-            </Section>
+            <>
+              <Section title="Cup Size Comparison (oz)" level={3}>
+                <Explain>
+                  <p className="mb-5 max-w-2xl text-sm text-ocean-muted">
+                    Serving size in ounces per cup tier, {frozenYogurtReport.meta.client} vs. each competitor —
+                    a physical-portion comparison, separate from price.
+                  </p>
+                </Explain>
+                <CupSizeComparison table={cupSizeTable} ownBrand={frozenYogurtReport.meta.own_brand} />
+              </Section>
+              <Section title="Portion Weight Comparison (g)" level={3}>
+                <Explain>
+                  <p className="mb-5 max-w-2xl text-sm text-ocean-muted">
+                    Serving weight in grams per cup tier, {frozenYogurtReport.meta.client} vs. each competitor —
+                    the same comparison as above, by weight rather than volume.
+                  </p>
+                </Explain>
+                <GramSizeComparison table={gramSizeTable} ownBrand={frozenYogurtReport.meta.own_brand} />
+              </Section>
+            </>
           }
         />
         <ReportSection title="Non-Dairy Menu" report={nonDairyReport} />
@@ -154,8 +183,8 @@ export default function Home() {
                   <strong>Urban Fresh</strong> (
                   <strong>{formatPortionRange(portionRowByBrand.get("Urban Fresh")!)}</strong>) both run larger
                   than the {saladsReport.meta.own_brand} range of{" "}
-                  <strong>{ownPortionRow ? formatPortionRange(ownPortionRow) : "—"}</strong> on equivalent items,
-                  while <strong>Wooden Bakery</strong> is the most variable at{" "}
+                  <strong>{ownPortionRow ? formatPortionRange(ownPortionRow) : "—"}</strong>, while{" "}
+                  <strong>Wooden Bakery</strong> is the most variable at{" "}
                   <strong>{formatPortionRange(portionRowByBrand.get("Wooden Bakery")!)}</strong>. Adjust for
                   portion size before comparing sticker price directly.
                 </p>
@@ -183,8 +212,8 @@ export default function Home() {
           <div>
             <p>Confidential — prepared for {mainReport.meta.client} by Ru&apos;ya 360. Not for external distribution.</p>
             <p className="mt-1">
-              Report period: {formatReportPeriod(mainReport.meta.report_date)} · Source:{" "}
-              {mainReport.meta.generated_from ? cleanDisplayFileName(mainReport.meta.generated_from) : "internal pricing data"}.
+              Report period: {formatReportPeriod(mainReport.meta.report_date)} · Source: {REPORTS_FOR_WARNINGS.length}{" "}
+              internal pricing comparison spreadsheets.
             </p>
           </div>
           {/* eslint-disable-next-line @next/next/no-img-element */}

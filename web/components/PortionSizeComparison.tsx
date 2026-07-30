@@ -9,7 +9,7 @@ export function PortionSizeComparison({ table, ownBrand }: { table: PortionSizeT
           <thead>
             <tr>
               <th className="p-1 text-left font-normal text-ocean-muted">Brand</th>
-              <th className="p-1 text-center font-normal text-ocean-muted">Items Priced</th>
+              <th className="p-1 text-center font-normal text-ocean-muted">Items Disclosed</th>
               <th className="p-1 text-center font-normal text-ocean-muted">Portion Size</th>
             </tr>
           </thead>

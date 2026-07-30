@@ -58,6 +58,7 @@ def parse_sandwich_workbook(xlsx_path: str, config: dict) -> dict:
     category = config["category"]
     fx_rate = config["fx_usd_rate"]
     records = []
+    unparseable_prices = []
 
     for row in rows[header_row_index + 1:]:
         item = _clean(row[0])
@@ -69,6 +70,14 @@ def parse_sandwich_workbook(xlsx_path: str, config: dict) -> dict:
         for col_index, brand in brand_columns:
             price = row[col_index]
             if not isinstance(price, (int, float)):
+                cleaned_price = _clean(price)
+                if cleaned_price not in (None, "-"):
+                    unparseable_prices.append({
+                        "category": category,
+                        "product": product,
+                        "brand": brand,
+                        "raw_value": cleaned_price,
+                    })
                 continue
             records.append({
                 "category": category,
@@ -90,7 +99,7 @@ def parse_sandwich_workbook(xlsx_path: str, config: dict) -> dict:
         "generated_from": xlsx_path,
     }
 
-    return {"meta": meta, "records": records}
+    return {"meta": meta, "records": records, "unparseable_prices": unparseable_prices}
 
 
 import argparse

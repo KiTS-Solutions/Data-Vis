@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import type { PricingReport } from "./types";
 import type { CupSizeTable } from "./cupSizeTypes";
+import type { GramSizeTable } from "./gramSizeTypes";
 import type { PortionSizeTable } from "./portionSizeTypes";
 
 const PROCESSED_DIR = path.join(process.cwd(), "..", "processed");
@@ -23,6 +24,12 @@ export function loadCupSizeTable(slug: string): CupSizeTable {
   const filePath = path.join(PROCESSED_DIR, `${slug}.json`);
   const raw = fs.readFileSync(filePath, "utf-8");
   return JSON.parse(raw) as CupSizeTable;
+}
+
+export function loadGramSizeTable(slug: string): GramSizeTable {
+  const filePath = path.join(PROCESSED_DIR, `${slug}.json`);
+  const raw = fs.readFileSync(filePath, "utf-8");
+  return JSON.parse(raw) as GramSizeTable;
 }
 
 export function loadPortionSizeTable(slug: string): PortionSizeTable {

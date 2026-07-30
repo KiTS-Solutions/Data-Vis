@@ -18,7 +18,7 @@ describe("PortionSizeComparison", () => {
   it("renders a row per brand with items-priced and portion-size columns", () => {
     render(<PortionSizeComparison table={table} ownBrand="Stories" />);
     expect(screen.getByTestId("portion-size-comparison")).toBeInTheDocument();
-    expect(screen.getByText("Items Priced")).toBeInTheDocument();
+    expect(screen.getByText("Items Disclosed")).toBeInTheDocument();
     expect(screen.getByText("Portion Size")).toBeInTheDocument();
     expect(screen.getByText("Stories")).toBeInTheDocument();
     expect(screen.getByText("Wooden Bakery")).toBeInTheDocument();

@@ -25,6 +25,10 @@ function report(): PricingReport {
     data_quality_warnings: [
       { category: "Croissants", product: "Cheese Croissant", brand: "Stories", conflicting_prices_lbp: [1, 2] },
     ],
+    unparseable_price_warnings: [
+      { category: "Croissants", product: "Cheese Croissant", brand: "Espresso Lab", raw_value: "8000,00" },
+      { category: "Black Coffee", product: "Americano", brand: "Espresso Lab", raw_value: "n/a" },
+    ],
   };
 }
 
@@ -34,6 +38,8 @@ describe("filterReportByCategories", () => {
     expect(filtered.products.map((p) => p.product)).toEqual(["Cheese Croissant"]);
     expect(filtered.categories.map((c) => c.category)).toEqual(["Croissants"]);
     expect(filtered.data_quality_warnings).toHaveLength(1);
+    expect(filtered.unparseable_price_warnings).toHaveLength(1);
+    expect(filtered.unparseable_price_warnings[0].product).toBe("Cheese Croissant");
   });
 
   it("leaves meta untouched", () => {

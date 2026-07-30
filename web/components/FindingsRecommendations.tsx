@@ -109,7 +109,7 @@ function FindingsList({
       )}
       {remaining > 0 && (
         <p className="mt-2 text-xs text-ocean-muted">
-          +{remaining} more — filter &quot;Outliers only&quot; in the Full Data Explorer below to see the rest.
+          +{remaining} more — filter &quot;Outliers only&quot; in the Full Data Explorer above to see the rest.
         </p>
       )}
     </div>

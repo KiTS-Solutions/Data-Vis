@@ -90,6 +90,50 @@ def test_run_analysis_reports_conflicts_in_output(tmp_path):
     assert result["data_quality_warnings"][0]["conflicting_prices_lbp"] == [500000, 400000]
 
 
+def test_run_analysis_defaults_unparseable_price_warnings_to_empty_when_absent(tmp_path):
+    """normalized.json produced before this field existed has no
+    'unparseable_prices' key at all — run_analysis must not crash on it."""
+    normalized = {
+        "meta": {"client": "Stories", "own_brand": "Stories", "competitors": ["Espresso Lab"]},
+        "records": [
+            {"category": "Hot", "product": "Americano", "brand": "Stories", "price_lbp": 350000},
+        ],
+    }
+    normalized_path = tmp_path / "normalized.json"
+    normalized_path.write_text(json.dumps(normalized))
+    output_path = tmp_path / "out" / "analytics.json"
+
+    result = run_analysis(str(normalized_path), str(output_path))
+
+    assert result["unparseable_price_warnings"] == []
+
+
+def test_run_analysis_passes_through_unparseable_price_warnings(tmp_path):
+    normalized = {
+        "meta": {"client": "Stories", "own_brand": "Stories", "competitors": ["Espresso Lab"]},
+        "records": [
+            {"category": "Blended Drinks", "product": "White Mocha Cream Frap MEDIUM", "brand": "Stories", "price_lbp": 700000},
+        ],
+        "unparseable_prices": [
+            {
+                "category": "Blended Drinks",
+                "product": "White Mocha Cream Frap MEDIUM",
+                "brand": "Espresso Lab",
+                "raw_value": "8000,00",
+            }
+        ],
+    }
+    normalized_path = tmp_path / "normalized.json"
+    normalized_path.write_text(json.dumps(normalized))
+    output_path = tmp_path / "out" / "analytics.json"
+
+    result = run_analysis(str(normalized_path), str(output_path))
+
+    assert result["unparseable_price_warnings"] == normalized["unparseable_prices"]
+    written = json.loads(output_path.read_text())
+    assert written["unparseable_price_warnings"] == normalized["unparseable_prices"]
+
+
 def test_run_analysis_writes_full_analytics_json(tmp_path):
     normalized = {
         "meta": {

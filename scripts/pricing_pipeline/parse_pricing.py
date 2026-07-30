@@ -77,6 +77,7 @@ def parse_workbook(xlsx_path: str, config: dict) -> dict:
 
     fx_rate = config["fx_usd_rate"]
     records = []
+    unparseable_prices = []
     current_category = None
 
     for row in rows[1:]:
@@ -94,6 +95,19 @@ def parse_workbook(xlsx_path: str, config: dict) -> dict:
         for idx, brand in zip(brand_col_indices, brand_columns):
             price = row[idx]
             if not isinstance(price, (int, float)):
+                # "-" and blank cells are the sheet's normal way of saying
+                # "no price here" — anything else non-numeric (e.g. a comma-
+                # decimal typo like "8000,00") is a real data-quality problem
+                # that was previously dropped with no trace. Disclose it
+                # instead of guessing at the intended value.
+                cleaned_price = _clean(price)
+                if cleaned_price not in (None, "-"):
+                    unparseable_prices.append({
+                        "category": current_category,
+                        "product": product,
+                        "brand": brand,
+                        "raw_value": cleaned_price,
+                    })
                 continue
 
             # An unlabeled column immediately to the left of a brand's price
@@ -127,7 +141,7 @@ def parse_workbook(xlsx_path: str, config: dict) -> dict:
         "generated_from": xlsx_path,
     }
 
-    return {"meta": meta, "records": records}
+    return {"meta": meta, "records": records, "unparseable_prices": unparseable_prices}
 
 
 import argparse

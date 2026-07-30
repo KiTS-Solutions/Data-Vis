@@ -168,8 +168,15 @@ def run_analysis(normalized_json_path: str, output_path: str) -> dict:
     flag_outliers(products)
     categories = build_category_rollups(products)
     data_quality_warnings = find_duplicate_brand_conflicts(normalized["records"])
+    unparseable_price_warnings = normalized.get("unparseable_prices", [])
 
-    result = {"meta": meta, "products": products, "categories": categories, "data_quality_warnings": data_quality_warnings}
+    result = {
+        "meta": meta,
+        "products": products,
+        "categories": categories,
+        "data_quality_warnings": data_quality_warnings,
+        "unparseable_price_warnings": unparseable_price_warnings,
+    }
 
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     with open(output_path, "w", encoding="utf-8") as f:
@@ -192,6 +199,12 @@ def main(argv=None):
         print(
             f"WARNING: duplicate row for {w['category']} / {w['product']} / {w['brand']} "
             f"has conflicting prices {w['conflicting_prices_lbp']} — kept the last one.",
+            file=sys.stderr,
+        )
+    for w in result["unparseable_price_warnings"]:
+        print(
+            f"WARNING: {w['category']} / {w['product']} / {w['brand']} has an unparseable price "
+            f"value {w['raw_value']!r} — dropped, not counted as a price.",
             file=sys.stderr,
         )
 

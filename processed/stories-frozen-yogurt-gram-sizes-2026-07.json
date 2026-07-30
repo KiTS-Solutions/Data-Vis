@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "client": "Stories",
+    "generated_from": "raw-data/Frozen Yogurt Pricing Comparison (1).xlsx"
+  },
+  "sizes": [
+    "S",
+    "M",
+    "L",
+    "FAMILY"
+  ],
+  "rows": [
+    {
+      "brand": "Pinkberry",
+      "S": 140,
+      "M": 230,
+      "L": 370,
+      "FAMILY": 707
+    },
+    {
+      "brand": "Fro - U",
+      "S": 100,
+      "M": 150,
+      "L": 220,
+      "FAMILY": null
+    },
+    {
+      "brand": "Cremino",
+      "S": 170,
+      "M": null,
+      "L": 244,
+      "FAMILY": null
+    },
+    {
+      "brand": "Stories",
+      "S": 355,
+      "M": 473,
+      "L": 591,
+      "FAMILY": null
+    }
+  ]
+}

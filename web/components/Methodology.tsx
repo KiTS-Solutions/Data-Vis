@@ -1,6 +1,5 @@
-import type { DataQualityWarning, ReportMeta } from "@/lib/data/types";
+import type { DataQualityWarning, ReportMeta, UnparseablePriceWarning } from "@/lib/data/types";
 import { formatLbp } from "@/lib/format/currency";
-import { cleanDisplayFileName } from "@/lib/format/filename";
 import { formatReportPeriod, formatFullDate } from "@/lib/format/date";
 
 const DEFINITIONS: Array<{ term: string; definition: string }> = [
@@ -26,28 +25,42 @@ const DEFINITIONS: Array<{ term: string; definition: string }> = [
   },
 ];
 
+type SourcedWarning = DataQualityWarning & { source: string };
+type SourcedUnparseableWarning = UnparseablePriceWarning & { source: string };
+
+function fxDateSentence(fxRateDate: string, reportDate: string, reportPeriod: string): string {
+  if (fxRateDate > reportDate) {
+    return `Note the FX rate date falls after the report period (${reportPeriod}) — it reflects a later refresh of the exchange rate than when prices were originally collected.`;
+  }
+  if (fxRateDate < reportDate) {
+    return `Note the FX rate date falls before the report period (${reportPeriod}) — it reflects the rate as of when this analysis was compiled, ahead of the report's publication.`;
+  }
+  return `The FX rate date falls within the report period (${reportPeriod}).`;
+}
+
 export function Methodology({
   meta,
   warnings,
+  unparseablePriceWarnings = [],
 }: {
   meta: ReportMeta;
-  warnings: DataQualityWarning[];
+  warnings: SourcedWarning[];
+  unparseablePriceWarnings?: SourcedUnparseableWarning[];
 }) {
   return (
     <div className="space-y-6 text-sm">
       <div>
         <h3 className="mb-2 font-display text-base text-ocean">Where this data comes from</h3>
         <p className="text-ocean-muted">
-          Every price in this report is taken directly from {meta.client}&apos;s pricing spreadsheet
-          {meta.generated_from ? ` (${cleanDisplayFileName(meta.generated_from)})` : ""} — no prices were
-          estimated, interpolated, or invented. The Price Index, Comparability, Tier, and Outlier fields below
-          are calculated from those raw prices using the fixed formulas defined here; they are not separate data
-          sources. The one exception is the USD equivalent shown alongside LBP prices, which uses an external
-          exchange rate — {meta.fx_usd_rate.toLocaleString("en-US")} LBP/USD as of {formatFullDate(meta.fx_rate_date)}, sourced
-          from {meta.fx_source} — since the spreadsheet itself contains no currency conversion. Note the FX rate
-          date is later than the report period ({formatReportPeriod(meta.report_date)}); it reflects the rate at
-          publication time, not at the time prices were originally collected. The Lebanese Lira has been broadly
-          stable against the dollar since, so the effect on USD figures is minimal.
+          Every price in this report is taken directly from {meta.client}&apos;s own pricing spreadsheets — no
+          prices were estimated, interpolated, or invented. The Price Index, Comparability, Tier, and Outlier
+          fields below are calculated from those raw prices using the fixed formulas defined here; they are not
+          separate data sources. The one exception is the USD equivalent shown alongside LBP prices, which uses
+          an external exchange rate — {meta.fx_usd_rate.toLocaleString("en-US")} LBP/USD as of{" "}
+          {formatFullDate(meta.fx_rate_date)}, sourced from {meta.fx_source} — since the spreadsheets themselves
+          contain no currency conversion. {fxDateSentence(meta.fx_rate_date, meta.report_date, formatReportPeriod(meta.report_date))}{" "}
+          The Lebanese Lira has been broadly stable against the dollar throughout, so the effect on USD figures is
+          minimal.
         </p>
       </div>
 
@@ -63,24 +76,51 @@ export function Methodology({
         </dl>
       </div>
 
-      {warnings.length > 0 && (
+      {(warnings.length > 0 || unparseablePriceWarnings.length > 0) && (
         <div>
           <h3 className="mb-2 font-display text-base text-ocean">Data quality notes</h3>
-          <p className="mb-2 text-ocean-muted">
-            The source spreadsheet had {warnings.length} row{warnings.length === 1 ? "" : "s"} with a duplicate
-            product entry carrying conflicting prices for the same brand. The most recent value in the sheet was
-            kept; the earlier value is disclosed here rather than silently discarded.
-          </p>
-          <ul className="space-y-1 text-ocean-muted">
-            {warnings.map((w, i) => (
-              <li key={i}>
-                <strong className="text-ocean">
-                  {w.product} ({w.category})
-                </strong>{" "}
-                — {w.brand}: conflicting prices {w.conflicting_prices_lbp.map((p) => formatLbp(p)).join(" vs. ")}
-              </li>
-            ))}
-          </ul>
+
+          {warnings.length > 0 && (
+            <>
+              <p className="mb-2 text-ocean-muted">
+                The source data had {warnings.length} row{warnings.length === 1 ? "" : "s"} with a duplicate
+                product entry carrying conflicting prices for the same brand. The most recent value in the sheet
+                was kept; the earlier value is disclosed here rather than silently discarded.
+              </p>
+              <ul className="space-y-1 text-ocean-muted">
+                {warnings.map((w, i) => (
+                  <li key={i}>
+                    <strong className="text-ocean">
+                      {w.product} ({w.category})
+                    </strong>{" "}
+                    — {w.source}, {w.brand}: conflicting prices{" "}
+                    {w.conflicting_prices_lbp.map((p) => formatLbp(p)).join(" vs. ")}
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
+
+          {unparseablePriceWarnings.length > 0 && (
+            <>
+              <p className={`mb-2 text-ocean-muted ${warnings.length > 0 ? "mt-4" : ""}`}>
+                The source data also had {unparseablePriceWarnings.length} price cell
+                {unparseablePriceWarnings.length === 1 ? "" : "s"} that couldn&apos;t be read as a number. The
+                raw value is shown as-is below rather than guessed at, and is excluded from every calculation on
+                this page.
+              </p>
+              <ul className="space-y-1 text-ocean-muted">
+                {unparseablePriceWarnings.map((w, i) => (
+                  <li key={i}>
+                    <strong className="text-ocean">
+                      {w.product} ({w.category})
+                    </strong>{" "}
+                    — {w.source}, {w.brand}: raw value &quot;{w.raw_value}&quot;
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
         </div>
       )}
     </div>

@@ -727,15 +727,45 @@
     },
     {
       "category": "Blended Drinks",
-      "product": "Chocolate Cream Frap",
+      "product": "Chocolate Cream Frap SMALL",
       "prices_lbp": {
-        "Stories": 800000,
+        "Stories": 550000
+      },
+      "portion_notes": {},
+      "own_price_lbp": 550000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
+      "comparability": "low",
+      "tier": "Value",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Blended Drinks",
+      "product": "Chocolate Cream Frap MEDIUM",
+      "prices_lbp": {
+        "Stories": 700000,
         "Dunkin Donuts": 801000
       },
       "portion_notes": {},
-      "own_price_lbp": 800000,
+      "own_price_lbp": 700000,
       "competitor_avg_lbp": 801000.0,
-      "price_index": 99.9,
+      "price_index": 87.4,
+      "comparability": "low",
+      "tier": "Core",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Blended Drinks",
+      "product": "Chocolate Cream Frap LARGE",
+      "prices_lbp": {
+        "Stories": 800000
+      },
+      "portion_notes": {},
+      "own_price_lbp": 800000,
+      "competitor_avg_lbp": null,
+      "price_index": null,
       "comparability": "low",
       "tier": "Premium",
       "is_outlier": false,
@@ -1595,7 +1625,7 @@
     },
     {
       "category": "Blended Drinks",
-      "product_count": 33,
+      "product_count": 35,
       "countable_product_count": 8,
       "avg_price_index": 104.0
     },
@@ -1618,24 +1648,13 @@
       "avg_price_index": null
     }
   ],
-  "data_quality_warnings": [
+  "data_quality_warnings": [],
+  "unparseable_price_warnings": [
     {
       "category": "Blended Drinks",
-      "product": "Chocolate Cream Frap",
-      "brand": "Stories",
-      "conflicting_prices_lbp": [
-        550000,
-        700000
-      ]
-    },
-    {
-      "category": "Blended Drinks",
-      "product": "Chocolate Cream Frap",
-      "brand": "Stories",
-      "conflicting_prices_lbp": [
-        700000,
-        800000
-      ]
+      "product": "White Mocha Cream Frap MEDIUM",
+      "brand": "Espresso Lab",
+      "raw_value": "8000,00"
     }
   ]
 }

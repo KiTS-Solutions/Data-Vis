@@ -34,6 +34,7 @@ function report(products: ProductAnalytics[]): PricingReport {
     products,
     categories: [],
     data_quality_warnings: [],
+    unparseable_price_warnings: [],
   };
 }
 

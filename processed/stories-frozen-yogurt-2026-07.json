@@ -2423,5 +2423,6 @@
       "avg_price_index": 186.5
     }
   ],
-  "data_quality_warnings": []
+  "data_quality_warnings": [],
+  "unparseable_price_warnings": []
 }

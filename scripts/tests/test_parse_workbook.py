@@ -316,6 +316,43 @@ def test_parse_workbook_applies_category_aliases(tmp_path):
     assert any(r["product"] == "Crab Salad" for r in result["records"])
 
 
+def test_parse_workbook_captures_unparseable_price_instead_of_silently_dropping(tmp_path):
+    """A malformed price cell (e.g. a comma-decimal typo) is neither a real
+    number nor one of the sheet's two recognized "no price" sentinels (blank,
+    "-") — it must be disclosed as an unparseable_prices entry rather than
+    vanishing with no trace, the way a genuine "-" correctly does."""
+    wb = openpyxl.Workbook()
+    ws = wb.active
+    ws.append(["Products Competitors", "Stories ", "Espresso Lab", "Dunkin Donuts",
+               "Joe & the Juice", "Starbucks ", "Average", "Difference"])
+    ws.append(["Blended Drinks", None, None, None, None, None, None, None])
+    ws.append(["White Mocha Cream Frap MEDIUM", 700000, "8000,00", "-", "-", 650000, 776666, -76666])
+    path = tmp_path / "sample_malformed.xlsx"
+    wb.save(path)
+
+    result = parse_workbook(str(path), _config())
+
+    assert result["unparseable_prices"] == [{
+        "category": "Blended Drinks",
+        "product": "White Mocha Cream Frap MEDIUM",
+        "brand": "Espresso Lab",
+        "raw_value": "8000,00",
+    }]
+    # The malformed cell must not become a price record either.
+    assert not any(
+        r["product"] == "White Mocha Cream Frap MEDIUM" and r["brand"] == "Espresso Lab"
+        for r in result["records"]
+    )
+    # The genuine "-" (Dunkin Donuts) must NOT be reported as unparseable.
+    assert all(w["brand"] != "Dunkin Donuts" for w in result["unparseable_prices"])
+
+
+def test_parse_workbook_without_malformed_prices_has_empty_unparseable_list(tmp_path):
+    xlsx_path = _build_workbook(tmp_path)
+    result = parse_workbook(xlsx_path, _config())
+    assert result["unparseable_prices"] == []
+
+
 def test_parse_workbook_reads_a_product_priced_only_by_a_far_right_brand_column(tmp_path):
     """Reproduces a real bug found on the 2026-07-30 Salads refresh: a
     5th brand's price column sits past column 7 (once every brand has its

@@ -38,9 +38,17 @@ export interface DataQualityWarning {
   conflicting_prices_lbp: number[];
 }
 
+export interface UnparseablePriceWarning {
+  category: string;
+  product: string;
+  brand: string;
+  raw_value: string;
+}
+
 export interface PricingReport {
   meta: ReportMeta;
   products: ProductAnalytics[];
   categories: CategoryRollup[];
   data_quality_warnings: DataQualityWarning[];
+  unparseable_price_warnings: UnparseablePriceWarning[];
 }
