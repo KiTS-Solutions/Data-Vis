@@ -11,4 +11,10 @@ describe("cleanDisplayFileName", () => {
   it("leaves a file name with no duplicate suffix unchanged", () => {
     expect(cleanDisplayFileName("raw-data/Pricing.xlsx")).toBe("raw-data/Pricing.xlsx");
   });
+
+  it("strips repeated stacked duplicate suffixes from multiple re-downloads", () => {
+    expect(
+      cleanDisplayFileName("raw-data/Product Pricing Comparison March 2026 (1) (2) (1).xlsx")
+    ).toBe("raw-data/Product Pricing Comparison March 2026.xlsx");
+  });
 });

@@ -1,6 +1,12 @@
-def is_category_header_row(row: tuple) -> bool:
+def is_category_header_row(row: tuple, brand_span_end: int = 8) -> bool:
+    """A category header row has a product/category name in column 0 and
+    nothing in any brand or portion-note column. brand_span_end must cover
+    every brand column (up to but excluding the Average column) — a fixed
+    window here previously missed products priced only by a brand sitting
+    past column 7 (e.g. a 5th competitor), silently misreading them as
+    category headers and dropping them entirely."""
     product = row[0]
-    rest = row[1:8]
+    rest = row[1:brand_span_end]
     return product is not None and all(v is None for v in rest)
 
 
@@ -78,7 +84,7 @@ def parse_workbook(xlsx_path: str, config: dict) -> dict:
         if product is None:
             continue
 
-        if is_category_header_row(row):
+        if is_category_header_row(row, average_col_index):
             current_category = category_aliases.get(product, product)
             continue
 

@@ -1,17 +1,21 @@
 {
   "client": "Stories",
-  "report_date": "2026-07-22",
+  "report_date": "2026-07-30",
   "currency": "LBP",
   "fx_usd_rate": 89500,
   "fx_rate_date": "2026-07-20",
   "fx_source": "lira-rate.com / lbprate.com market average (parallel/market rate)",
   "own_brand": "Stories",
-  "competitors": ["Wooden Bakery", "Zaatar w Zeit", "Casper & Gambini", "Pain D’or"],
+  "competitors": [
+    "Wooden Bakery",
+    "Zaatar w Zeit",
+    "Urban Fresh",
+    "Pain D’or"
+  ],
   "category_aliases": {
     "COMPETITOR ITEMS NOT ON STORIES MENU (gap analysis - Stories left blank)": "SALADS"
   },
-  "portion_size_brand_aliases": {
-    "paind’or": "Pain D’or"
-  },
-  "dropped_brands": ["The Koozspace"]
+  "dropped_brands": [
+    "The Koozspace"
+  ]
 }

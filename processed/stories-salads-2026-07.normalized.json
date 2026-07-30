@@ -1,7 +1,7 @@
 {
   "meta": {
     "client": "Stories",
-    "report_date": "2026-07-22",
+    "report_date": "2026-07-30",
     "currency": "LBP",
     "fx_usd_rate": 89500,
     "fx_rate_date": "2026-07-20",
@@ -10,10 +10,10 @@
     "competitors": [
       "Wooden Bakery",
       "Zaatar w Zeit",
-      "Casper & Gambini",
+      "Urban Fresh",
       "Pain D’or"
     ],
-    "generated_from": "raw-data/Salads_Pricing_Comparison.xlsx"
+    "generated_from": "raw-data/Salads_Pricing_Comparison-v4.xlsx"
   },
   "records": [
     {
@@ -34,14 +34,6 @@
     },
     {
       "category": "SALADS",
-      "product": "ASIAN SALAD (GRAB&GO)",
-      "brand": "Casper & Gambini",
-      "price_lbp": 851200,
-      "price_usd": 9.51,
-      "portion_note": null
-    },
-    {
-      "category": "SALADS",
       "product": "GREEK SALAD (GRAB&GO)",
       "brand": "Stories",
       "price_lbp": 750000,
@@ -51,10 +43,18 @@
     {
       "category": "SALADS",
       "product": "GREEK SALAD (GRAB&GO)",
+      "brand": "Urban Fresh",
+      "price_lbp": 805500,
+      "price_usd": 9.0,
+      "portion_note": "400 g."
+    },
+    {
+      "category": "SALADS",
+      "product": "GREEK SALAD (GRAB&GO)",
       "brand": "Pain D’or",
       "price_lbp": 895000,
       "price_usd": 10.0,
-      "portion_note": "500-600g."
+      "portion_note": "500 g."
     },
     {
       "category": "SALADS",
@@ -70,7 +70,7 @@
       "brand": "Pain D’or",
       "price_lbp": 1074000,
       "price_usd": 12.0,
-      "portion_note": "500-600g."
+      "portion_note": "500 g."
     },
     {
       "category": "SALADS",
@@ -92,9 +92,17 @@
       "category": "SALADS",
       "product": "TUNA PASTA SALAD (GRAB&GO)",
       "brand": "Zaatar w Zeit",
-      "price_lbp": 806400,
-      "price_usd": 9.01,
-      "portion_note": "200 g."
+      "price_lbp": 1342500,
+      "price_usd": 15.0,
+      "portion_note": "360 g."
+    },
+    {
+      "category": "SALADS",
+      "product": "TUNA PASTA SALAD (GRAB&GO)",
+      "brand": "Urban Fresh",
+      "price_lbp": 895000,
+      "price_usd": 10.0,
+      "portion_note": "460 g."
     },
     {
       "category": "SALADS",
@@ -102,7 +110,7 @@
       "brand": "Pain D’or",
       "price_lbp": 1074000,
       "price_usd": 12.0,
-      "portion_note": "500-600g."
+      "portion_note": "600 g."
     },
     {
       "category": "SALADS",
@@ -124,17 +132,9 @@
       "category": "SALADS",
       "product": "CAESAR SALAD (GRAB&GO)",
       "brand": "Zaatar w Zeit",
-      "price_lbp": 358400,
-      "price_usd": 4.0,
-      "portion_note": "200 g."
-    },
-    {
-      "category": "SALADS",
-      "product": "CAESAR SALAD (GRAB&GO)",
-      "brand": "Casper & Gambini",
-      "price_lbp": 716800,
-      "price_usd": 8.01,
-      "portion_note": null
+      "price_lbp": 626500,
+      "price_usd": 7.0,
+      "portion_note": "360 g."
     },
     {
       "category": "SALADS",
@@ -156,9 +156,17 @@
       "category": "SALADS",
       "product": "CHICKEN CAESAR SALAD (GRAB&GO)",
       "brand": "Zaatar w Zeit",
-      "price_lbp": 627200,
-      "price_usd": 7.01,
-      "portion_note": "200 g."
+      "price_lbp": 1074000,
+      "price_usd": 12.0,
+      "portion_note": "360 g."
+    },
+    {
+      "category": "SALADS",
+      "product": "CHICKEN CAESAR SALAD (GRAB&GO)",
+      "brand": "Urban Fresh",
+      "price_lbp": 895000,
+      "price_usd": 10.0,
+      "portion_note": "380 g."
     },
     {
       "category": "SALADS",
@@ -166,7 +174,7 @@
       "brand": "Pain D’or",
       "price_lbp": 1074000,
       "price_usd": 12.0,
-      "portion_note": "500-600g."
+      "portion_note": "450 g."
     },
     {
       "category": "SALADS",
@@ -186,14 +194,6 @@
     },
     {
       "category": "SALADS",
-      "product": "MEXICAN FIESTA SALAD (GRAB&GO)",
-      "brand": "Casper & Gambini",
-      "price_lbp": 806400,
-      "price_usd": 9.01,
-      "portion_note": null
-    },
-    {
-      "category": "SALADS",
       "product": "PASTA PESTO SALAD (GRAB&GO)",
       "brand": "Stories",
       "price_lbp": 900000,
@@ -210,35 +210,35 @@
     },
     {
       "category": "SALADS",
-      "product": "ASIAN SESAME CHICKEN",
-      "brand": "Casper & Gambini",
-      "price_lbp": 940800,
-      "price_usd": 10.51,
-      "portion_note": null
+      "product": "urban salad",
+      "brand": "Urban Fresh",
+      "price_lbp": 984500,
+      "price_usd": 11.0,
+      "portion_note": "450 g."
     },
     {
       "category": "SALADS",
       "product": "BALSAMIC CHICKEN",
       "brand": "Zaatar w Zeit",
-      "price_lbp": 716800,
-      "price_usd": 8.01,
-      "portion_note": "200 g."
+      "price_lbp": 1253000,
+      "price_usd": 14.0,
+      "portion_note": "360 g."
     },
     {
       "category": "SALADS",
       "product": "CHICKEN AVOCADO",
       "brand": "Zaatar w Zeit",
-      "price_lbp": 806400,
-      "price_usd": 9.01,
-      "portion_note": "200 g."
+      "price_lbp": 1253000,
+      "price_usd": 14.0,
+      "portion_note": "360 g."
     },
     {
       "category": "SALADS",
       "product": "CHICKEN KALE",
       "brand": "Zaatar w Zeit",
-      "price_lbp": 716800,
-      "price_usd": 8.01,
-      "portion_note": "200 g."
+      "price_lbp": 1253000,
+      "price_usd": 14.0,
+      "portion_note": "360 g."
     },
     {
       "category": "SALADS",
@@ -254,23 +254,7 @@
       "brand": "Pain D’or",
       "price_lbp": 1074000,
       "price_usd": 12.0,
-      "portion_note": "500-600g."
-    },
-    {
-      "category": "SALADS",
-      "product": "GARDEN",
-      "brand": "Casper & Gambini",
-      "price_lbp": 761600,
-      "price_usd": 8.51,
-      "portion_note": null
-    },
-    {
-      "category": "SALADS",
-      "product": "GOAT CHEESE SALAD",
-      "brand": "Casper & Gambini",
-      "price_lbp": 851200,
-      "price_usd": 9.51,
-      "portion_note": null
+      "portion_note": "600 g."
     },
     {
       "category": "SALADS",
@@ -282,27 +266,19 @@
     },
     {
       "category": "SALADS",
-      "product": "GRILLED FRESH SALMON",
-      "brand": "Casper & Gambini",
-      "price_lbp": 1075200,
-      "price_usd": 12.01,
-      "portion_note": null
-    },
-    {
-      "category": "SALADS",
       "product": "HALLOUMI GARDEN",
       "brand": "Zaatar w Zeit",
-      "price_lbp": 716800,
-      "price_usd": 8.01,
-      "portion_note": "200 g."
+      "price_lbp": 1163500,
+      "price_usd": 13.0,
+      "portion_note": "360 g."
     },
     {
       "category": "SALADS",
       "product": "KALE & QUINOA FETA",
       "brand": "Zaatar w Zeit",
-      "price_lbp": 716800,
-      "price_usd": 8.01,
-      "portion_note": "200 g."
+      "price_lbp": 984500,
+      "price_usd": 11.0,
+      "portion_note": "360 g."
     },
     {
       "category": "SALADS",
@@ -324,57 +300,41 @@
       "category": "SALADS",
       "product": "LEBANESE ORIENTAL",
       "brand": "Zaatar w Zeit",
-      "price_lbp": 448000,
-      "price_usd": 5.01,
-      "portion_note": "200 g."
-    },
-    {
-      "category": "SALADS",
-      "product": "LIGHT CRAB",
-      "brand": "Casper & Gambini",
-      "price_lbp": 896000,
-      "price_usd": 10.01,
-      "portion_note": null
+      "price_lbp": 716000,
+      "price_usd": 8.0,
+      "portion_note": "360 g."
     },
     {
       "category": "SALADS",
       "product": "PASTA CHICKEN",
       "brand": "Zaatar w Zeit",
-      "price_lbp": 806400,
-      "price_usd": 9.01,
-      "portion_note": "200 g."
-    },
-    {
-      "category": "SALADS",
-      "product": "QUINOA & KALE",
-      "brand": "Casper & Gambini",
-      "price_lbp": 896000,
-      "price_usd": 10.01,
-      "portion_note": null
+      "price_lbp": 1342500,
+      "price_usd": 15.0,
+      "portion_note": "360 g."
     },
     {
       "category": "SALADS",
       "product": "QUINOA HALLOUMI",
       "brand": "Zaatar w Zeit",
-      "price_lbp": 716800,
-      "price_usd": 8.01,
-      "portion_note": "200 g."
+      "price_lbp": 1163500,
+      "price_usd": 13.0,
+      "portion_note": "360 g."
     },
     {
       "category": "SALADS",
       "product": "QUINOA TABBOULEH",
       "brand": "Zaatar w Zeit",
-      "price_lbp": 448000,
-      "price_usd": 5.01,
-      "portion_note": "200 g."
+      "price_lbp": 716000,
+      "price_usd": 8.0,
+      "portion_note": "360 g."
     },
     {
       "category": "SALADS",
       "product": "SHAWARMA FUSION",
       "brand": "Zaatar w Zeit",
-      "price_lbp": 716800,
-      "price_usd": 8.01,
-      "portion_note": null
+      "price_lbp": 1163500,
+      "price_usd": 13.0,
+      "portion_note": "360 g."
     },
     {
       "category": "SALADS",
@@ -386,27 +346,43 @@
     },
     {
       "category": "SALADS",
-      "product": "TUNA POTATO",
-      "brand": "Casper & Gambini",
-      "price_lbp": 851200,
-      "price_usd": 9.51,
-      "portion_note": null
-    },
-    {
-      "category": "SALADS",
       "product": "Z FATTOUSH",
       "brand": "Zaatar w Zeit",
-      "price_lbp": 448000,
-      "price_usd": 5.01,
-      "portion_note": "200 g."
+      "price_lbp": 716000,
+      "price_usd": 8.0,
+      "portion_note": "360 g."
     },
     {
       "category": "SALADS",
       "product": "ZOOZA",
       "brand": "Zaatar w Zeit",
-      "price_lbp": 806400,
-      "price_usd": 9.01,
-      "portion_note": "200 g."
+      "price_lbp": 1253000,
+      "price_usd": 14.0,
+      "portion_note": "360 g."
+    },
+    {
+      "category": "SALADS",
+      "product": "grilled veggie salad",
+      "brand": "Pain D’or",
+      "price_lbp": 1074000,
+      "price_usd": 12.0,
+      "portion_note": "550 g."
+    },
+    {
+      "category": "SALADS",
+      "product": "light slim line salad",
+      "brand": "Pain D’or",
+      "price_lbp": 1074000,
+      "price_usd": 12.0,
+      "portion_note": "450 g."
+    },
+    {
+      "category": "SALADS",
+      "product": "shrimp salad",
+      "brand": "Urban Fresh",
+      "price_lbp": 1074000,
+      "price_usd": 12.0,
+      "portion_note": "500 g."
     }
   ]
 }

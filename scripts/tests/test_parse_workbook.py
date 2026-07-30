@@ -314,3 +314,33 @@ def test_parse_workbook_applies_category_aliases(tmp_path):
     categories = {r["category"] for r in result["records"]}
     assert categories == {"SALADS"}
     assert any(r["product"] == "Crab Salad" for r in result["records"])
+
+
+def test_parse_workbook_reads_a_product_priced_only_by_a_far_right_brand_column(tmp_path):
+    """Reproduces a real bug found on the 2026-07-30 Salads refresh: a
+    5th brand's price column sits past column 7 (once every brand has its
+    own unlabeled portion-note column ahead of it), and a gap-analysis
+    product priced by ONLY that far brand has nothing at all in columns
+    1-7. is_category_header_row must check every real brand column (up to
+    the Average column), not a fixed 7-column window — with the fixed
+    window this product was silently misread as a category header and its
+    price was dropped from the report entirely."""
+    wb = openpyxl.Workbook()
+    ws = wb.active
+    ws.append(["Products Competitors", None, "Stories", None, "Wooden Bakery", None, "Zaatar w Zeit",
+               None, "Urban Fresh", "Average", "Difference"])
+    ws.append(["SALADS", None, None, None, None, None, None, None, None, None, None])
+    ws.append(["Grilled Veggie Salad", None, None, None, None, None, None, "550 g.", 1074000, 1074000, None])
+    path = tmp_path / "sample_far_right_brand_only.xlsx"
+    wb.save(path)
+
+    config = _config()
+    config["competitors"] = ["Wooden Bakery", "Zaatar w Zeit", "Urban Fresh"]
+
+    result = parse_workbook(str(path), config)
+
+    veggie_salad = [r for r in result["records"] if r["product"] == "Grilled Veggie Salad"]
+    assert len(veggie_salad) == 1
+    assert veggie_salad[0]["brand"] == "Urban Fresh"
+    assert veggie_salad[0]["price_lbp"] == 1074000
+    assert veggie_salad[0]["category"] == "SALADS"

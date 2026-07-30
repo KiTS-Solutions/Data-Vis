@@ -1,91 +1,82 @@
 """
-Parses the portion-size (grams) comparison side-table on the Salads sheet
-(a 3-column block located by its "PORTION SIZE (g)" header, wherever the
-main priced-product table happens to end — that boundary has already
-shifted once as competitor columns were added) — a per-brand record of
-what portion size the listed price is based on, and what alternate size
-(if any) the brand also sells. Output feeds a dedicated disclosure table
-on the dashboard, not the price analytics pipeline.
+Derives a per-brand portion-size (grams) disclosure for the Salads report.
+
+The source sheet used to carry a dedicated 3-column "PORTION SIZE (g)" side
+table with one row per brand (a hand-curated policy summary). That table was
+dropped from the sheet in the 2026-07-30 refresh. What remains is the
+per-product, per-brand portion note already captured on each priced row
+(e.g. "440 g." next to a competitor's price) and already extracted into
+`portion_note` on each normalized record by parse_pricing. This module
+aggregates those per-product notes into a per-brand min/max range instead,
+reading the already-normalized JSON rather than the raw sheet — no reason to
+re-parse the workbook for data parse_pricing already extracted.
 """
 
-import openpyxl
+import re
 
-SIZE_COLUMNS = {"PRICED PORTION (G)": "PRICED_G", "ALSO AVAILABLE (G)": "ALSO_AVAILABLE_G"}
-
-
-def _clean(value):
-    if isinstance(value, str):
-        stripped = value.strip()
-        return stripped if stripped else None
-    return value
+_GRAM_RE = re.compile(r"(\d+(?:\.\d+)?)")
 
 
-def _clean_grams(value):
-    value = _clean(value)
-    if value is None or value == "-":
+def _parse_grams(note):
+    if note is None:
         return None
-    return value
+    match = _GRAM_RE.search(note)
+    if not match:
+        return None
+    value = float(match.group(1))
+    return int(value) if value.is_integer() else value
 
 
-def parse_portion_size_table(xlsx_path: str, config: dict) -> dict:
-    wb = openpyxl.load_workbook(xlsx_path, data_only=True)
-    ws = wb.active
-    full_rows = list(ws.iter_rows(min_row=1, max_row=ws.max_row, values_only=True))
+def build_portion_summary(records: list, own_brand: str, competitors: list) -> dict:
+    brands = [own_brand, *competitors]
+    grams_by_brand = {brand: [] for brand in brands}
 
-    header_row_index = None
-    header_col_index = None
-    for i, row in enumerate(full_rows):
-        for j, cell in enumerate(row):
-            if _clean(cell) == "PORTION SIZE (g)":
-                header_row_index, header_col_index = i, j
-                break
-        if header_col_index is not None:
-            break
-    if header_col_index is None:
-        raise ValueError("Could not locate the 'PORTION SIZE (g)' header anywhere in the sheet.")
-
-    rows = [row[header_col_index:header_col_index + 3] for row in full_rows]
-    header = rows[header_row_index]
-    column_keys = [None]  # column 0 is the brand name, not a size
-    for cell in header[1:]:
-        cleaned = _clean(cell)
-        column_keys.append(SIZE_COLUMNS.get(cleaned))
-
-    brand_aliases = {_clean(k): _clean(v) for k, v in config.get("portion_size_brand_aliases", {}).items()}
-    dropped_brands = {_clean(b) for b in config.get("dropped_brands", [])}
-
-    result_rows = []
-    for row in rows[header_row_index + 1:]:
-        raw_brand = _clean(row[0])
-        if raw_brand is None:
-            break
-        brand = brand_aliases.get(raw_brand, raw_brand)
-        if brand in dropped_brands:
+    for record in records:
+        grams = _parse_grams(record.get("portion_note"))
+        if grams is None:
             continue
-        sizes = {}
-        for col_index, key in enumerate(column_keys):
-            if key is None:
-                continue
-            sizes[key] = _clean_grams(row[col_index])
-        result_rows.append({"brand": brand, **sizes})
+        brand = record["brand"]
+        if brand in grams_by_brand:
+            grams_by_brand[brand].append(grams)
 
-    return {
-        "meta": {"client": config["client"], "generated_from": xlsx_path},
-        "sizes": ["PRICED_G", "ALSO_AVAILABLE_G"],
-        "rows": result_rows,
-    }
+    rows = []
+    for brand in brands:
+        values = grams_by_brand[brand]
+        if not values:
+            rows.append({
+                "brand": brand,
+                "items_with_portion_data": 0,
+                "min_g": None,
+                "max_g": None,
+                "consistent": False,
+            })
+            continue
+        rows.append({
+            "brand": brand,
+            "items_with_portion_data": len(values),
+            "min_g": min(values),
+            "max_g": max(values),
+            "consistent": min(values) == max(values),
+        })
+
+    return {"rows": rows}
 
 
 import argparse
 import json
 import os
 
-from pricing_pipeline.config import load_source_config
 
+def run_pipeline(normalized_json_path: str, output_path: str) -> dict:
+    with open(normalized_json_path, "r", encoding="utf-8") as f:
+        normalized = json.load(f)
 
-def run_pipeline(xlsx_path: str, config_path: str, output_path: str) -> dict:
-    config = load_source_config(config_path)
-    result = parse_portion_size_table(xlsx_path, config)
+    meta = normalized["meta"]
+    summary = build_portion_summary(normalized["records"], meta["own_brand"], meta["competitors"])
+    result = {
+        "meta": {"client": meta["client"], "generated_from": normalized_json_path},
+        **summary,
+    }
 
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     with open(output_path, "w", encoding="utf-8") as f:
@@ -95,16 +86,17 @@ def run_pipeline(xlsx_path: str, config_path: str, output_path: str) -> dict:
 
 
 def _build_arg_parser():
-    parser = argparse.ArgumentParser(description="Parse the Salads portion-size comparison table into JSON.")
-    parser.add_argument("--xlsx", required=True, help="Path to the raw Excel file")
-    parser.add_argument("--config", required=True, help="Path to the source config JSON")
-    parser.add_argument("--out", required=True, help="Path to write the JSON")
+    parser = argparse.ArgumentParser(
+        description="Derive a per-brand portion-size (grams) summary from normalized pricing records."
+    )
+    parser.add_argument("--in", dest="input_path", required=True, help="Path to the normalized JSON")
+    parser.add_argument("--out", required=True, help="Path to write the portion-size summary JSON")
     return parser
 
 
 def main(argv=None):
     args = _build_arg_parser().parse_args(argv)
-    run_pipeline(args.xlsx, args.config, args.out)
+    run_pipeline(args.input_path, args.out)
 
 
 if __name__ == "__main__":

@@ -1,7 +1,7 @@
 {
   "meta": {
     "client": "Stories",
-    "report_date": "2026-07-22",
+    "report_date": "2026-07-30",
     "currency": "LBP",
     "fx_usd_rate": 89500,
     "fx_rate_date": "2026-07-20",
@@ -10,10 +10,10 @@
     "competitors": [
       "Wooden Bakery",
       "Zaatar w Zeit",
-      "Casper & Gambini",
+      "Urban Fresh",
       "Pain D’or"
     ],
-    "generated_from": "raw-data/Salads_Pricing_Comparison.xlsx"
+    "generated_from": "raw-data/Salads_Pricing_Comparison-v4.xlsx"
   },
   "products": [
     {
@@ -35,15 +35,14 @@
       "category": "SALADS",
       "product": "ASIAN SALAD (GRAB&GO)",
       "prices_lbp": {
-        "Stories": 750000,
-        "Casper & Gambini": 851200
+        "Stories": 750000
       },
       "portion_notes": {
         "Stories": "380 g."
       },
       "own_price_lbp": 750000,
-      "competitor_avg_lbp": 851200.0,
-      "price_index": 88.1,
+      "competitor_avg_lbp": null,
+      "price_index": null,
       "comparability": "low",
       "tier": "Value",
       "is_outlier": false,
@@ -54,15 +53,17 @@
       "product": "GREEK SALAD (GRAB&GO)",
       "prices_lbp": {
         "Stories": 750000,
+        "Urban Fresh": 805500,
         "Pain D’or": 895000
       },
       "portion_notes": {
-        "Pain D’or": "500-600g."
+        "Urban Fresh": "400 g.",
+        "Pain D’or": "500 g."
       },
       "own_price_lbp": 750000,
-      "competitor_avg_lbp": 895000.0,
-      "price_index": 83.8,
-      "comparability": "low",
+      "competitor_avg_lbp": 850250.0,
+      "price_index": 88.2,
+      "comparability": "medium",
       "tier": "Value",
       "is_outlier": false,
       "outlier_direction": null
@@ -76,7 +77,7 @@
       },
       "portion_notes": {
         "Stories": "320 g.",
-        "Pain D’or": "500-600g."
+        "Pain D’or": "500 g."
       },
       "own_price_lbp": 800000,
       "competitor_avg_lbp": 1074000.0,
@@ -92,22 +93,24 @@
       "prices_lbp": {
         "Stories": 850000,
         "Wooden Bakery": 716800,
-        "Zaatar w Zeit": 806400,
+        "Zaatar w Zeit": 1342500,
+        "Urban Fresh": 895000,
         "Pain D’or": 1074000
       },
       "portion_notes": {
         "Stories": "440 g.",
         "Wooden Bakery": "550 g.",
-        "Zaatar w Zeit": "200 g.",
-        "Pain D’or": "500-600g."
+        "Zaatar w Zeit": "360 g.",
+        "Urban Fresh": "460 g.",
+        "Pain D’or": "600 g."
       },
       "own_price_lbp": 850000,
-      "competitor_avg_lbp": 865733.33,
-      "price_index": 98.2,
+      "competitor_avg_lbp": 1007075.0,
+      "price_index": 84.4,
       "comparability": "high",
       "tier": "Core",
-      "is_outlier": false,
-      "outlier_direction": null
+      "is_outlier": true,
+      "outlier_direction": "underpriced"
     },
     {
       "category": "SALADS",
@@ -115,17 +118,16 @@
       "prices_lbp": {
         "Stories": 750000,
         "Wooden Bakery": 537600,
-        "Zaatar w Zeit": 358400,
-        "Casper & Gambini": 716800
+        "Zaatar w Zeit": 626500
       },
       "portion_notes": {
         "Wooden Bakery": "235 g.",
-        "Zaatar w Zeit": "200 g."
+        "Zaatar w Zeit": "360 g."
       },
       "own_price_lbp": 750000,
-      "competitor_avg_lbp": 537600.0,
-      "price_index": 139.5,
-      "comparability": "high",
+      "competitor_avg_lbp": 582050.0,
+      "price_index": 128.9,
+      "comparability": "medium",
       "tier": "Value",
       "is_outlier": true,
       "outlier_direction": "overpriced"
@@ -136,18 +138,20 @@
       "prices_lbp": {
         "Stories": 900000,
         "Wooden Bakery": 806400,
-        "Zaatar w Zeit": 627200,
+        "Zaatar w Zeit": 1074000,
+        "Urban Fresh": 895000,
         "Pain D’or": 1074000
       },
       "portion_notes": {
         "Stories": "360 g.",
         "Wooden Bakery": "345 g.",
-        "Zaatar w Zeit": "200 g.",
-        "Pain D’or": "500-600g."
+        "Zaatar w Zeit": "360 g.",
+        "Urban Fresh": "380 g.",
+        "Pain D’or": "450 g."
       },
       "own_price_lbp": 900000,
-      "competitor_avg_lbp": 835866.67,
-      "price_index": 107.7,
+      "competitor_avg_lbp": 962350.0,
+      "price_index": 93.5,
       "comparability": "high",
       "tier": "Premium",
       "is_outlier": false,
@@ -174,15 +178,14 @@
       "category": "SALADS",
       "product": "MEXICAN FIESTA SALAD (GRAB&GO)",
       "prices_lbp": {
-        "Stories": 900000,
-        "Casper & Gambini": 806400
+        "Stories": 900000
       },
       "portion_notes": {
         "Stories": "450 g."
       },
       "own_price_lbp": 900000,
-      "competitor_avg_lbp": 806400.0,
-      "price_index": 111.6,
+      "competitor_avg_lbp": null,
+      "price_index": null,
       "comparability": "low",
       "tier": "Premium",
       "is_outlier": false,
@@ -209,13 +212,15 @@
     },
     {
       "category": "SALADS",
-      "product": "ASIAN SESAME CHICKEN",
+      "product": "urban salad",
       "prices_lbp": {
-        "Casper & Gambini": 940800
+        "Urban Fresh": 984500
       },
-      "portion_notes": {},
+      "portion_notes": {
+        "Urban Fresh": "450 g."
+      },
       "own_price_lbp": null,
-      "competitor_avg_lbp": 940800.0,
+      "competitor_avg_lbp": 984500.0,
       "price_index": null,
       "comparability": "low",
       "tier": null,
@@ -226,13 +231,13 @@
       "category": "SALADS",
       "product": "BALSAMIC CHICKEN",
       "prices_lbp": {
-        "Zaatar w Zeit": 716800
+        "Zaatar w Zeit": 1253000
       },
       "portion_notes": {
-        "Zaatar w Zeit": "200 g."
+        "Zaatar w Zeit": "360 g."
       },
       "own_price_lbp": null,
-      "competitor_avg_lbp": 716800.0,
+      "competitor_avg_lbp": 1253000.0,
       "price_index": null,
       "comparability": "low",
       "tier": null,
@@ -243,13 +248,13 @@
       "category": "SALADS",
       "product": "CHICKEN AVOCADO",
       "prices_lbp": {
-        "Zaatar w Zeit": 806400
+        "Zaatar w Zeit": 1253000
       },
       "portion_notes": {
-        "Zaatar w Zeit": "200 g."
+        "Zaatar w Zeit": "360 g."
       },
       "own_price_lbp": null,
-      "competitor_avg_lbp": 806400.0,
+      "competitor_avg_lbp": 1253000.0,
       "price_index": null,
       "comparability": "low",
       "tier": null,
@@ -260,13 +265,13 @@
       "category": "SALADS",
       "product": "CHICKEN KALE",
       "prices_lbp": {
-        "Zaatar w Zeit": 716800
+        "Zaatar w Zeit": 1253000
       },
       "portion_notes": {
-        "Zaatar w Zeit": "200 g."
+        "Zaatar w Zeit": "360 g."
       },
       "own_price_lbp": null,
-      "competitor_avg_lbp": 716800.0,
+      "competitor_avg_lbp": 1253000.0,
       "price_index": null,
       "comparability": "low",
       "tier": null,
@@ -297,40 +302,10 @@
         "Pain D’or": 1074000
       },
       "portion_notes": {
-        "Pain D’or": "500-600g."
+        "Pain D’or": "600 g."
       },
       "own_price_lbp": null,
       "competitor_avg_lbp": 1074000.0,
-      "price_index": null,
-      "comparability": "low",
-      "tier": null,
-      "is_outlier": false,
-      "outlier_direction": null
-    },
-    {
-      "category": "SALADS",
-      "product": "GARDEN",
-      "prices_lbp": {
-        "Casper & Gambini": 761600
-      },
-      "portion_notes": {},
-      "own_price_lbp": null,
-      "competitor_avg_lbp": 761600.0,
-      "price_index": null,
-      "comparability": "low",
-      "tier": null,
-      "is_outlier": false,
-      "outlier_direction": null
-    },
-    {
-      "category": "SALADS",
-      "product": "GOAT CHEESE SALAD",
-      "prices_lbp": {
-        "Casper & Gambini": 851200
-      },
-      "portion_notes": {},
-      "own_price_lbp": null,
-      "competitor_avg_lbp": 851200.0,
       "price_index": null,
       "comparability": "low",
       "tier": null,
@@ -356,30 +331,15 @@
     },
     {
       "category": "SALADS",
-      "product": "GRILLED FRESH SALMON",
-      "prices_lbp": {
-        "Casper & Gambini": 1075200
-      },
-      "portion_notes": {},
-      "own_price_lbp": null,
-      "competitor_avg_lbp": 1075200.0,
-      "price_index": null,
-      "comparability": "low",
-      "tier": null,
-      "is_outlier": false,
-      "outlier_direction": null
-    },
-    {
-      "category": "SALADS",
       "product": "HALLOUMI GARDEN",
       "prices_lbp": {
-        "Zaatar w Zeit": 716800
+        "Zaatar w Zeit": 1163500
       },
       "portion_notes": {
-        "Zaatar w Zeit": "200 g."
+        "Zaatar w Zeit": "360 g."
       },
       "own_price_lbp": null,
-      "competitor_avg_lbp": 716800.0,
+      "competitor_avg_lbp": 1163500.0,
       "price_index": null,
       "comparability": "low",
       "tier": null,
@@ -390,13 +350,13 @@
       "category": "SALADS",
       "product": "KALE & QUINOA FETA",
       "prices_lbp": {
-        "Zaatar w Zeit": 716800
+        "Zaatar w Zeit": 984500
       },
       "portion_notes": {
-        "Zaatar w Zeit": "200 g."
+        "Zaatar w Zeit": "360 g."
       },
       "own_price_lbp": null,
-      "competitor_avg_lbp": 716800.0,
+      "competitor_avg_lbp": 984500.0,
       "price_index": null,
       "comparability": "low",
       "tier": null,
@@ -441,28 +401,13 @@
       "category": "SALADS",
       "product": "LEBANESE ORIENTAL",
       "prices_lbp": {
-        "Zaatar w Zeit": 448000
+        "Zaatar w Zeit": 716000
       },
       "portion_notes": {
-        "Zaatar w Zeit": "200 g."
+        "Zaatar w Zeit": "360 g."
       },
       "own_price_lbp": null,
-      "competitor_avg_lbp": 448000.0,
-      "price_index": null,
-      "comparability": "low",
-      "tier": null,
-      "is_outlier": false,
-      "outlier_direction": null
-    },
-    {
-      "category": "SALADS",
-      "product": "LIGHT CRAB",
-      "prices_lbp": {
-        "Casper & Gambini": 896000
-      },
-      "portion_notes": {},
-      "own_price_lbp": null,
-      "competitor_avg_lbp": 896000.0,
+      "competitor_avg_lbp": 716000.0,
       "price_index": null,
       "comparability": "low",
       "tier": null,
@@ -473,28 +418,13 @@
       "category": "SALADS",
       "product": "PASTA CHICKEN",
       "prices_lbp": {
-        "Zaatar w Zeit": 806400
+        "Zaatar w Zeit": 1342500
       },
       "portion_notes": {
-        "Zaatar w Zeit": "200 g."
+        "Zaatar w Zeit": "360 g."
       },
       "own_price_lbp": null,
-      "competitor_avg_lbp": 806400.0,
-      "price_index": null,
-      "comparability": "low",
-      "tier": null,
-      "is_outlier": false,
-      "outlier_direction": null
-    },
-    {
-      "category": "SALADS",
-      "product": "QUINOA & KALE",
-      "prices_lbp": {
-        "Casper & Gambini": 896000
-      },
-      "portion_notes": {},
-      "own_price_lbp": null,
-      "competitor_avg_lbp": 896000.0,
+      "competitor_avg_lbp": 1342500.0,
       "price_index": null,
       "comparability": "low",
       "tier": null,
@@ -505,13 +435,13 @@
       "category": "SALADS",
       "product": "QUINOA HALLOUMI",
       "prices_lbp": {
-        "Zaatar w Zeit": 716800
+        "Zaatar w Zeit": 1163500
       },
       "portion_notes": {
-        "Zaatar w Zeit": "200 g."
+        "Zaatar w Zeit": "360 g."
       },
       "own_price_lbp": null,
-      "competitor_avg_lbp": 716800.0,
+      "competitor_avg_lbp": 1163500.0,
       "price_index": null,
       "comparability": "low",
       "tier": null,
@@ -522,13 +452,13 @@
       "category": "SALADS",
       "product": "QUINOA TABBOULEH",
       "prices_lbp": {
-        "Zaatar w Zeit": 448000
+        "Zaatar w Zeit": 716000
       },
       "portion_notes": {
-        "Zaatar w Zeit": "200 g."
+        "Zaatar w Zeit": "360 g."
       },
       "own_price_lbp": null,
-      "competitor_avg_lbp": 448000.0,
+      "competitor_avg_lbp": 716000.0,
       "price_index": null,
       "comparability": "low",
       "tier": null,
@@ -539,11 +469,13 @@
       "category": "SALADS",
       "product": "SHAWARMA FUSION",
       "prices_lbp": {
-        "Zaatar w Zeit": 716800
+        "Zaatar w Zeit": 1163500
       },
-      "portion_notes": {},
+      "portion_notes": {
+        "Zaatar w Zeit": "360 g."
+      },
       "own_price_lbp": null,
-      "competitor_avg_lbp": 716800.0,
+      "competitor_avg_lbp": 1163500.0,
       "price_index": null,
       "comparability": "low",
       "tier": null,
@@ -569,30 +501,15 @@
     },
     {
       "category": "SALADS",
-      "product": "TUNA POTATO",
-      "prices_lbp": {
-        "Casper & Gambini": 851200
-      },
-      "portion_notes": {},
-      "own_price_lbp": null,
-      "competitor_avg_lbp": 851200.0,
-      "price_index": null,
-      "comparability": "low",
-      "tier": null,
-      "is_outlier": false,
-      "outlier_direction": null
-    },
-    {
-      "category": "SALADS",
       "product": "Z FATTOUSH",
       "prices_lbp": {
-        "Zaatar w Zeit": 448000
+        "Zaatar w Zeit": 716000
       },
       "portion_notes": {
-        "Zaatar w Zeit": "200 g."
+        "Zaatar w Zeit": "360 g."
       },
       "own_price_lbp": null,
-      "competitor_avg_lbp": 448000.0,
+      "competitor_avg_lbp": 716000.0,
       "price_index": null,
       "comparability": "low",
       "tier": null,
@@ -603,13 +520,64 @@
       "category": "SALADS",
       "product": "ZOOZA",
       "prices_lbp": {
-        "Zaatar w Zeit": 806400
+        "Zaatar w Zeit": 1253000
       },
       "portion_notes": {
-        "Zaatar w Zeit": "200 g."
+        "Zaatar w Zeit": "360 g."
       },
       "own_price_lbp": null,
-      "competitor_avg_lbp": 806400.0,
+      "competitor_avg_lbp": 1253000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "SALADS",
+      "product": "grilled veggie salad",
+      "prices_lbp": {
+        "Pain D’or": 1074000
+      },
+      "portion_notes": {
+        "Pain D’or": "550 g."
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 1074000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "SALADS",
+      "product": "light slim line salad",
+      "prices_lbp": {
+        "Pain D’or": 1074000
+      },
+      "portion_notes": {
+        "Pain D’or": "450 g."
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 1074000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "SALADS",
+      "product": "shrimp salad",
+      "prices_lbp": {
+        "Urban Fresh": 1074000
+      },
+      "portion_notes": {
+        "Urban Fresh": "500 g."
+      },
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 1074000.0,
       "price_index": null,
       "comparability": "low",
       "tier": null,
@@ -620,9 +588,9 @@
   "categories": [
     {
       "category": "SALADS",
-      "product_count": 35,
-      "countable_product_count": 3,
-      "avg_price_index": 115.1
+      "product_count": 32,
+      "countable_product_count": 4,
+      "avg_price_index": 98.8
     }
   ],
   "data_quality_warnings": []

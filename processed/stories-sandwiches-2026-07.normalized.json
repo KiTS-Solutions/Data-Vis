@@ -1,7 +1,7 @@
 {
   "meta": {
     "client": "Stories",
-    "report_date": "2026-07-20",
+    "report_date": "2026-07-30",
     "currency": "LBP",
     "fx_usd_rate": 89500,
     "fx_rate_date": "2026-07-20",
@@ -12,7 +12,7 @@
       "Fakhani",
       "Wooden Bakery"
     ],
-    "generated_from": "raw-data/Sandwich_Price_Comparison_2026.xlsx"
+    "generated_from": "raw-data/Sandwich_Price_Comparison_2026 (2).xlsx"
   },
   "records": [
     {

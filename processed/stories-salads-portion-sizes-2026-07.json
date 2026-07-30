@@ -1,37 +1,43 @@
 {
   "meta": {
     "client": "Stories",
-    "generated_from": "raw-data/Salads_Pricing_Comparison.xlsx"
+    "generated_from": "processed/stories-salads-2026-07.normalized.json"
   },
-  "sizes": [
-    "PRICED_G",
-    "ALSO_AVAILABLE_G"
-  ],
   "rows": [
     {
       "brand": "Stories",
-      "PRICED_G": null,
-      "ALSO_AVAILABLE_G": null
+      "items_with_portion_data": 7,
+      "min_g": 320,
+      "max_g": 450,
+      "consistent": false
     },
     {
       "brand": "Wooden Bakery",
-      "PRICED_G": 200,
-      "ALSO_AVAILABLE_G": null
+      "items_with_portion_data": 9,
+      "min_g": 235,
+      "max_g": 580,
+      "consistent": false
     },
     {
       "brand": "Zaatar w Zeit",
-      "PRICED_G": 200,
-      "ALSO_AVAILABLE_G": 400
+      "items_with_portion_data": 15,
+      "min_g": 360,
+      "max_g": 360,
+      "consistent": true
     },
     {
-      "brand": "Casper & Gambini",
-      "PRICED_G": 400,
-      "ALSO_AVAILABLE_G": null
+      "brand": "Urban Fresh",
+      "items_with_portion_data": 5,
+      "min_g": 380,
+      "max_g": 500,
+      "consistent": false
     },
     {
       "brand": "Pain D’or",
-      "PRICED_G": "500-600",
-      "ALSO_AVAILABLE_G": null
+      "items_with_portion_data": 7,
+      "min_g": 450,
+      "max_g": 600,
+      "consistent": false
     }
   ]
 }

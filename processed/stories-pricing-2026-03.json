@@ -1,7 +1,7 @@
 {
   "meta": {
     "client": "Stories",
-    "report_date": "2026-07-22",
+    "report_date": "2026-07-30",
     "currency": "LBP",
     "fx_usd_rate": 89500,
     "fx_rate_date": "2026-07-20",
@@ -13,7 +13,7 @@
       "Joe & the Juice",
       "Starbucks"
     ],
-    "generated_from": "raw-data/Product Pricing Comparison March 2026 (1).xlsx"
+    "generated_from": "raw-data/Product Pricing Comparison March 2026 (1) (2) (1).xlsx"
   },
   "products": [
     {
@@ -507,13 +507,14 @@
       "prices_lbp": {
         "Stories": 450000,
         "Espresso Lab": 600000,
+        "Dunkin Donuts": 540000,
         "Joe & the Juice": 581750
       },
       "portion_notes": {},
       "own_price_lbp": 450000,
-      "competitor_avg_lbp": 590875.0,
-      "price_index": 76.2,
-      "comparability": "medium",
+      "competitor_avg_lbp": 573916.67,
+      "price_index": 78.4,
+      "comparability": "high",
       "tier": "Core",
       "is_outlier": true,
       "outlier_direction": "underpriced"
@@ -2439,7 +2440,7 @@
       "competitor_avg_lbp": 559050.0,
       "price_index": 89.4,
       "comparability": "high",
-      "tier": "Core",
+      "tier": "Premium",
       "is_outlier": false,
       "outlier_direction": null
     },
@@ -2628,19 +2629,19 @@
       "category": "Mixed Cold Beverages",
       "product": "Iced Spanish Latte MEDIUM",
       "prices_lbp": {
-        "Stories": 550000,
+        "Stories": 500000,
         "Espresso Lab": 700000,
         "Dunkin Donuts": 450000,
         "Joe & the Juice": 626500
       },
       "portion_notes": {},
-      "own_price_lbp": 550000,
+      "own_price_lbp": 500000,
       "competitor_avg_lbp": 592166.67,
-      "price_index": 92.9,
+      "price_index": 84.4,
       "comparability": "high",
       "tier": "Premium",
-      "is_outlier": false,
-      "outlier_direction": null
+      "is_outlier": true,
+      "outlier_direction": "underpriced"
     },
     {
       "category": "Mixed Cold Beverages",
@@ -2778,7 +2779,7 @@
       "competitor_avg_lbp": 602450.0,
       "price_index": 83.0,
       "comparability": "medium",
-      "tier": "Core",
+      "tier": "Premium",
       "is_outlier": true,
       "outlier_direction": "underpriced"
     },
@@ -2905,7 +2906,7 @@
       "competitor_avg_lbp": 576666.67,
       "price_index": 86.7,
       "comparability": "high",
-      "tier": "Core",
+      "tier": "Premium",
       "is_outlier": false,
       "outlier_direction": null
     },
@@ -2955,7 +2956,7 @@
       "competitor_avg_lbp": 500000.0,
       "price_index": 100.0,
       "comparability": "low",
-      "tier": "Core",
+      "tier": "Premium",
       "is_outlier": false,
       "outlier_direction": null
     },
@@ -3002,7 +3003,7 @@
       "competitor_avg_lbp": 500000.0,
       "price_index": 100.0,
       "comparability": "low",
-      "tier": "Core",
+      "tier": "Premium",
       "is_outlier": false,
       "outlier_direction": null
     },
@@ -3082,7 +3083,7 @@
       "competitor_avg_lbp": 590583.33,
       "price_index": 84.7,
       "comparability": "high",
-      "tier": "Core",
+      "tier": "Premium",
       "is_outlier": true,
       "outlier_direction": "underpriced"
     },
@@ -3243,7 +3244,7 @@
       "competitor_avg_lbp": 533733.33,
       "price_index": 93.7,
       "comparability": "high",
-      "tier": "Core",
+      "tier": "Premium",
       "is_outlier": false,
       "outlier_direction": null
     },
@@ -3351,7 +3352,7 @@
       "competitor_avg_lbp": null,
       "price_index": null,
       "comparability": "low",
-      "tier": "Core",
+      "tier": "Premium",
       "is_outlier": false,
       "outlier_direction": null
     },
@@ -3551,6 +3552,87 @@
       "outlier_direction": null
     },
     {
+      "category": "Mixed Cold Beverages",
+      "product": "Iced Tea SMALL",
+      "prices_lbp": {
+        "Stories": 400000,
+        "Dunkin Donuts": 315000,
+        "Starbucks": 350000
+      },
+      "portion_notes": {},
+      "own_price_lbp": 400000,
+      "competitor_avg_lbp": 332500.0,
+      "price_index": 120.3,
+      "comparability": "medium",
+      "tier": "Value",
+      "is_outlier": true,
+      "outlier_direction": "overpriced"
+    },
+    {
+      "category": "Mixed Cold Beverages",
+      "product": "Iced Tea MEDIUM",
+      "prices_lbp": {
+        "Stories": 450000,
+        "Dunkin Donuts": 450000,
+        "Starbucks": 400000
+      },
+      "portion_notes": {},
+      "own_price_lbp": 450000,
+      "competitor_avg_lbp": 425000.0,
+      "price_index": 105.9,
+      "comparability": "medium",
+      "tier": "Core",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Cold Beverages",
+      "product": "Iced Tea LARGE",
+      "prices_lbp": {
+        "Stories": 500000,
+        "Dunkin Donuts": 630000,
+        "Starbucks": 450000
+      },
+      "portion_notes": {},
+      "own_price_lbp": 500000,
+      "competitor_avg_lbp": 540000.0,
+      "price_index": 92.6,
+      "comparability": "medium",
+      "tier": "Premium",
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Cold Beverages",
+      "product": "Iced Chai Tea Latte MEDIUM",
+      "prices_lbp": {
+        "Espresso Lab": 600000
+      },
+      "portion_notes": {},
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 600000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Mixed Cold Beverages",
+      "product": "Iced Chai Tea Latte LARGE",
+      "prices_lbp": {
+        "Espresso Lab": 650000
+      },
+      "portion_notes": {},
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 650000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
       "category": "TEA",
       "product": "Organic Black Tea MEDIUM",
       "prices_lbp": {
@@ -3593,7 +3675,7 @@
       "competitor_avg_lbp": 358000.0,
       "price_index": 97.8,
       "comparability": "low",
-      "tier": "Value",
+      "tier": null,
       "is_outlier": false,
       "outlier_direction": null
     },
@@ -3674,36 +3756,6 @@
     },
     {
       "category": "TEA",
-      "product": "Iced Chai Tea Latte MEDIUM",
-      "prices_lbp": {
-        "Espresso Lab": 600000
-      },
-      "portion_notes": {},
-      "own_price_lbp": null,
-      "competitor_avg_lbp": 600000.0,
-      "price_index": null,
-      "comparability": "low",
-      "tier": null,
-      "is_outlier": false,
-      "outlier_direction": null
-    },
-    {
-      "category": "TEA",
-      "product": "Iced Chai Tea Latte LARGE",
-      "prices_lbp": {
-        "Espresso Lab": 650000
-      },
-      "portion_notes": {},
-      "own_price_lbp": null,
-      "competitor_avg_lbp": 650000.0,
-      "price_index": null,
-      "comparability": "low",
-      "tier": null,
-      "is_outlier": false,
-      "outlier_direction": null
-    },
-    {
-      "category": "TEA",
       "product": "Herbal Tea",
       "prices_lbp": {
         "Stories": 350000,
@@ -3714,7 +3766,7 @@
       "competitor_avg_lbp": 450000.0,
       "price_index": 77.8,
       "comparability": "low",
-      "tier": "Value",
+      "tier": null,
       "is_outlier": false,
       "outlier_direction": null
     },
@@ -3730,7 +3782,7 @@
       "competitor_avg_lbp": 450000.0,
       "price_index": 77.8,
       "comparability": "low",
-      "tier": "Value",
+      "tier": null,
       "is_outlier": false,
       "outlier_direction": null
     },
@@ -3746,57 +3798,6 @@
       "price_index": null,
       "comparability": "low",
       "tier": null,
-      "is_outlier": false,
-      "outlier_direction": null
-    },
-    {
-      "category": "TEA",
-      "product": "Iced Tea SMALL",
-      "prices_lbp": {
-        "Stories": 400000,
-        "Dunkin Donuts": 315000,
-        "Starbucks": 350000
-      },
-      "portion_notes": {},
-      "own_price_lbp": 400000,
-      "competitor_avg_lbp": 332500.0,
-      "price_index": 120.3,
-      "comparability": "medium",
-      "tier": "Core",
-      "is_outlier": true,
-      "outlier_direction": "overpriced"
-    },
-    {
-      "category": "TEA",
-      "product": "Iced Tea MEDIUM",
-      "prices_lbp": {
-        "Stories": 450000,
-        "Dunkin Donuts": 450000,
-        "Starbucks": 400000
-      },
-      "portion_notes": {},
-      "own_price_lbp": 450000,
-      "competitor_avg_lbp": 425000.0,
-      "price_index": 105.9,
-      "comparability": "medium",
-      "tier": "Core",
-      "is_outlier": false,
-      "outlier_direction": null
-    },
-    {
-      "category": "TEA",
-      "product": "Iced Tea LARGE",
-      "prices_lbp": {
-        "Stories": 500000,
-        "Dunkin Donuts": 630000,
-        "Starbucks": 450000
-      },
-      "portion_notes": {},
-      "own_price_lbp": 500000,
-      "competitor_avg_lbp": 540000.0,
-      "price_index": 92.6,
-      "comparability": "medium",
-      "tier": "Premium",
       "is_outlier": false,
       "outlier_direction": null
     },
@@ -5453,6 +5454,21 @@
     },
     {
       "category": "Croissants",
+      "product": "ZAATAR CROISSANT",
+      "prices_lbp": {
+        "Espresso Lab": 300000
+      },
+      "portion_notes": {},
+      "own_price_lbp": null,
+      "competitor_avg_lbp": 300000.0,
+      "price_index": null,
+      "comparability": "low",
+      "tier": null,
+      "is_outlier": false,
+      "outlier_direction": null
+    },
+    {
+      "category": "Croissants",
       "product": "ALMOND CROISSANT",
       "prices_lbp": {
         "Stories": 400000,
@@ -5677,13 +5693,13 @@
       "category": "Pastries",
       "product": "BROWNIES CAKE",
       "prices_lbp": {
-        "Stories": 350000,
+        "Stories": 250000,
         "Joe & the Juice": 492000
       },
       "portion_notes": {},
-      "own_price_lbp": 350000,
+      "own_price_lbp": 250000,
       "competitor_avg_lbp": 492000.0,
-      "price_index": 71.1,
+      "price_index": 50.8,
       "comparability": "low",
       "tier": "Value",
       "is_outlier": false,
@@ -5863,11 +5879,11 @@
       "category": "Pastries",
       "product": "STRAWBERRY PUFF",
       "prices_lbp": {
-        "Espresso Lab": 500000
+        "Espresso Lab": 600000
       },
       "portion_notes": {},
       "own_price_lbp": null,
-      "competitor_avg_lbp": 500000.0,
+      "competitor_avg_lbp": 600000.0,
       "price_index": null,
       "comparability": "low",
       "tier": null,
@@ -6357,7 +6373,7 @@
       "category": "Mixed Hot Beverages",
       "product_count": 46,
       "countable_product_count": 16,
-      "avg_price_index": 93.2
+      "avg_price_index": 93.3
     },
     {
       "category": "Blended Drinks",
@@ -6367,15 +6383,15 @@
     },
     {
       "category": "Mixed Cold Beverages",
-      "product_count": 79,
-      "countable_product_count": 15,
-      "avg_price_index": 89.7
+      "product_count": 84,
+      "countable_product_count": 18,
+      "avg_price_index": 92.0
     },
     {
       "category": "TEA",
-      "product_count": 16,
-      "countable_product_count": 3,
-      "avg_price_index": 106.3
+      "product_count": 11,
+      "countable_product_count": 0,
+      "avg_price_index": null
     },
     {
       "category": "Signature",
@@ -6415,7 +6431,7 @@
     },
     {
       "category": "Croissants",
-      "product_count": 10,
+      "product_count": 11,
       "countable_product_count": 2,
       "avg_price_index": 110.5
     },

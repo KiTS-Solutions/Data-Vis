@@ -4,6 +4,7 @@ import { withBasePath } from "@/lib/basePath";
 import { formatReportPeriod } from "@/lib/format/date";
 import { cleanDisplayFileName } from "@/lib/format/filename";
 import { computeReportScorecard } from "@/lib/analytics/scorecard";
+import { formatPortionRange } from "@/lib/format/portion";
 import { ExecutiveSummary } from "@/components/ExecutiveSummary";
 import { ReportSection } from "@/components/ReportSection";
 import { CategoriesInProgress } from "@/components/CategoriesInProgress";
@@ -56,6 +57,9 @@ export default function Home() {
 
   const drinksReport = filterReportByCategories(mainReport, DRINKS_CATEGORIES);
   const bakeryReport = filterReportByCategories(mainReport, BAKERY_CATEGORIES);
+
+  const portionRowByBrand = new Map(portionSizeTable.rows.map((row) => [row.brand, row]));
+  const ownPortionRow = portionRowByBrand.get(saladsReport.meta.own_brand);
 
   const scorecards = [
     computeReportScorecard(drinksReport, "Drinks"),
@@ -141,13 +145,19 @@ export default function Home() {
             <Section title="Portion Size Comparison" level={3}>
               <Explain>
                 <p className="mb-5 max-w-2xl text-sm text-ocean-muted">
-                  Wooden Bakery and Zaatar w Zeit prices in this comparison are based on a{" "}
-                  <strong>200g portion</strong> — half the <strong>400g</strong> standard portion used for{" "}
-                  {saladsReport.meta.own_brand} and Casper &amp; Gambini. Pain D&apos;or runs the other way: its
-                  prices are based on a larger <strong>500–600g portion</strong>, roughly 25–50% more product than
-                  the 400g standard. Wooden Bakery only sells salads at 200g; Zaatar w Zeit also offers a 400g
-                  full-size option not used in this comparison. Adjust for portion size before comparing sticker
-                  price directly.
+                  Portion size is disclosed per product rather than as a single brand-wide policy — most
+                  competitors vary it by item. <strong>Zaatar w Zeit</strong> is the most consistent, pricing
+                  every comparable item at{" "}
+                  <strong>{formatPortionRange(portionRowByBrand.get("Zaatar w Zeit")!)}</strong>.{" "}
+                  <strong>Pain D&apos;or</strong> (
+                  <strong>{formatPortionRange(portionRowByBrand.get("Pain D’or")!)}</strong>) and{" "}
+                  <strong>Urban Fresh</strong> (
+                  <strong>{formatPortionRange(portionRowByBrand.get("Urban Fresh")!)}</strong>) both run larger
+                  than the {saladsReport.meta.own_brand} range of{" "}
+                  <strong>{ownPortionRow ? formatPortionRange(ownPortionRow) : "—"}</strong> on equivalent items,
+                  while <strong>Wooden Bakery</strong> is the most variable at{" "}
+                  <strong>{formatPortionRange(portionRowByBrand.get("Wooden Bakery")!)}</strong>. Adjust for
+                  portion size before comparing sticker price directly.
                 </p>
               </Explain>
               <PortionSizeComparison table={portionSizeTable} ownBrand={saladsReport.meta.own_brand} />

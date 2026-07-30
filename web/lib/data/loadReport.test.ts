@@ -10,7 +10,7 @@ describe("loadReport", () => {
   it("loads the report with the shape produced by the Python pipeline", () => {
     const report = loadReport("stories-pricing-2026-03");
     expect(report.meta.client).toBe("Stories");
-    expect(report.products.length).toBe(408);
+    expect(report.products.length).toBe(409);
     expect(report.categories.length).toBe(14);
   });
 });

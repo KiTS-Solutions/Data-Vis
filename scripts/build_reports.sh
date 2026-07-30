@@ -5,7 +5,7 @@ export PYTHONPATH=scripts
 
 # Main Menu — master file, minus the categories in dropped_categories.
 "${PYTHON:-python3}" -m pricing_pipeline.parse_pricing \
-  --xlsx "raw-data/Product Pricing Comparison March 2026 (1).xlsx" \
+  --xlsx "raw-data/Product Pricing Comparison March 2026 (1) (2) (1).xlsx" \
   --config sources/stories-pricing-2026-03.json \
   --out processed/stories-pricing-2026-03.normalized.json
 "${PYTHON:-python3}" -m pricing_pipeline.analyze_pricing \
@@ -38,24 +38,24 @@ export PYTHONPATH=scripts
   --in processed/stories-non-dairy-2026-07.normalized.json \
   --out processed/stories-non-dairy-2026-07.json
 
-# Salads — competitors Wooden Bakery/Zaatar w Zeit/Casper & Gambini/The
-# Koozspace. Gap-analysis items (competitor salads not on Stories' menu)
-# folded into the same SALADS category via category_aliases.
+# Salads — competitors Wooden Bakery/Zaatar w Zeit/Urban Fresh/Pain D'or.
+# Gap-analysis items (competitor salads not on Stories' menu) folded into
+# the same SALADS category via category_aliases.
 "${PYTHON:-python3}" -m pricing_pipeline.parse_pricing \
-  --xlsx "raw-data/Salads_Pricing_Comparison.xlsx" \
+  --xlsx "raw-data/Salads_Pricing_Comparison-v4.xlsx" \
   --config sources/stories-salads-2026-07.json \
   --out processed/stories-salads-2026-07.normalized.json
 "${PYTHON:-python3}" -m pricing_pipeline.analyze_pricing \
   --in processed/stories-salads-2026-07.normalized.json \
   --out processed/stories-salads-2026-07.json
 
-# Portion-size (grams) comparison side-table on the same Salads sheet — not
-# a price, feeds a disclosure table rather than the price analytics. Wooden
-# Bakery and Zaatar w Zeit are priced at 200g vs. the 400g standard the
-# other brands use.
+# Portion-size (grams) disclosure — the sheet no longer carries a dedicated
+# brand-level summary table, so this is derived from the per-product,
+# per-brand portion notes already captured in the normalized records
+# (e.g. "440 g." next to a competitor's price) rather than parsed from the
+# raw sheet directly.
 "${PYTHON:-python3}" -m pricing_pipeline.parse_portion_sizes \
-  --xlsx "raw-data/Salads_Pricing_Comparison.xlsx" \
-  --config sources/stories-salads-2026-07.json \
+  --in processed/stories-salads-2026-07.normalized.json \
   --out processed/stories-salads-portion-sizes-2026-07.json
 
 # Plat Du Jour — competitors Socrate (Beirut)/Ana Beirut/abdel Wahab/Diwan Beirut.
@@ -71,7 +71,7 @@ export PYTHONPATH=scripts
 # identity split across Item + Bread Type, derived summary columns), so it
 # uses the dedicated parse_sandwiches parser instead of parse_pricing.
 "${PYTHON:-python3}" -m pricing_pipeline.parse_sandwiches \
-  --xlsx "raw-data/Sandwich_Price_Comparison_2026.xlsx" \
+  --xlsx "raw-data/Sandwich_Price_Comparison_2026 (2).xlsx" \
   --config sources/stories-sandwiches-2026-07.json \
   --out processed/stories-sandwiches-2026-07.normalized.json
 "${PYTHON:-python3}" -m pricing_pipeline.analyze_pricing \

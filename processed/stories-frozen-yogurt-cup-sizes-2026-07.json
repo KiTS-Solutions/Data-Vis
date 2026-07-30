@@ -23,15 +23,15 @@
       "brand": "Fro - U",
       "S": 3.5,
       "M": 5.3,
-      "L": 10,
+      "L": 8,
       "TO_GO": 20,
       "DINE_IN": 4.3
     },
     {
       "brand": "Cremino",
-      "S": 5.75,
+      "S": 6,
       "M": null,
-      "L": 8.25,
+      "L": 9,
       "TO_GO": null,
       "DINE_IN": null
     },
