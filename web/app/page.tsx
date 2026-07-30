@@ -22,11 +22,11 @@ import { Reveal } from "@/components/motion/Reveal";
 import { AccentUnderline } from "@/components/motion/AccentUnderline";
 
 const PENDING_CATEGORIES = [
-  "Milkshakes",
-  "Shakes",
+  //"Milkshakes",
+  //"Shakes",
   "Pizza",
   "Wraps",
-  "Gluten Free",
+  //"Gluten Free",
 ];
 
 // "Main Menu" isn't a real menu category — split it into the same groupings
