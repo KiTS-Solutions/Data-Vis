@@ -40,44 +40,61 @@ export const DARK_SEMANTIC_COLORS = {
 export const CONTEXT_COLOR = "#94a3b8"; // slate-400
 export const DARK_CONTEXT_COLOR = "#7c9187"; // clears 5.3:1 against the dark page background
 
-// Chart-series colors for the 4 competitors, used where each competitor
+// Chart-series colors for competitors, used where each competitor
 // needs to be individually distinguishable (e.g. the Price Positioning Map).
 // The literal brand secondary palette (COMPETITOR_COLORS above) fails
 // accessibility validation as a categorical series set — validated with the
 // dataviz skill's validate_palette.js: two pairs were indistinguishable even
 // to normal color vision.
 //
-// IMPORTANT: none of these four may be a red or violet hue — SEMANTIC_COLORS
+// IMPORTANT: none of these may be a red or violet hue — SEMANTIC_COLORS
 // above uses red = overpriced / violet = underpriced elsewhere on the same
 // page (heatmap, Category Positioning), and an earlier version picked a red
 // and a purple here, so "red" meant two contradictory things depending on
-// which chart you were looking at. Validated in this exact order (matches
-// the real on-page legend order — Espresso Lab, Dunkin Donuts, Joe & the
-// Juice, Starbucks) — ALL CHECKS PASS; do not reorder or reuse these hues
-// for anything else. Stories itself never appears here; it always renders
+// which chart you were looking at. Stories itself never appears here; it always renders
 // as BRAND_COLORS.stories so it reads as "us" regardless of chart.
 export const CHART_COLORS: Record<string, string> = {
   "Espresso Lab": "#0d8fae",
   "Dunkin Donuts": "#2b5aa8",
   "Joe & the Juice": "#c2477a",
   Starbucks: "#5a7a0f",
+  "Socrate (Beirut)": "#8b5a2b",
+  "Ana Beirut": "#d4a574",
+  "abdel Wahab": "#c78d3b",
+  "Diwan Beirut": "#a67c52",
+  Pinkberry: "#00897b",
+  Cremino: "#795548",
+  "Fro - U": "#ff9800",
+  "Pain d'Or": "#5c6bc0",
+  "Pain D'or": "#5c6bc0",
+  Fakhani: "#d84315",
+  "Wooden Bakery": "#6d4c41",
+  "Zaatar w Zeit": "#2e7d32",
+  "Urban Fresh": "#00695c",
 };
 
 // Dark-mode chart series — the light set's OKLCH lightness (0.38–0.60) falls
-// well below the dark-surface band (0.48–0.67); these are the same four
-// hues re-stepped into that band and re-validated with validate_palette.js
-// against surface #1c2a23 (Espresso Lab's and Dunkin's hues were also
-// widened apart — 220.8°→200°, 260°→270° — to clear the normal-vision ΔE
-// floor once lightened, which had collapsed their separation). ALL CHECKS
-// PASS (one WARN: Dunkin's contrast sits at exactly 3:1 — legal per the
-// skill's own rule since every use already pairs it with a text legend/
-// label, never color alone). Do not reorder or reuse for anything else,
+// well below the dark-surface band (0.48–0.67); these are the same hues
+// re-stepped into that band. Do not reorder or reuse for anything else,
 // same rule as the light set above.
 export const DARK_CHART_COLORS: Record<string, string> = {
   "Espresso Lab": "#00969f",
   "Dunkin Donuts": "#526ac3",
   "Joe & the Juice": "#d05486",
   Starbucks: "#678723",
+  "Socrate (Beirut)": "#b8865c",
+  "Ana Beirut": "#e8c9a8",
+  "abdel Wahab": "#d9a862",
+  "Diwan Beirut": "#c49a6c",
+  Pinkberry: "#00bfa5",
+  Cremino: "#a1887f",
+  "Fro - U": "#ffb74d",
+  "Pain d'Or": "#7986cb",
+  "Pain D'or": "#7986cb",
+  Fakhani: "#f57c00",
+  "Wooden Bakery": "#8d6e63",
+  "Zaatar w Zeit": "#43a047",
+  "Urban Fresh": "#00897b",
 };
 
 export function themedBrandColors(theme: Theme) {

@@ -24,10 +24,10 @@ describe("theme colors", () => {
     expect(CONTEXT_COLOR).toMatch(/^#[0-9a-f]{6}$/i);
   });
 
-  it("gives each of the four competitors a distinct, validated chart color, none matching Stories", () => {
-    const names = ["Espresso Lab", "Dunkin Donuts", "Joe & the Juice", "Starbucks"];
+  it("gives each competitor a distinct, validated chart color, none matching Stories", () => {
+    const names = ["Espresso Lab", "Dunkin Donuts", "Joe & the Juice", "Starbucks", "Socrate (Beirut)", "Ana Beirut", "abdel Wahab", "Diwan Beirut", "Pinkberry", "Cremino", "Fro - U", "Pain d'Or", "Fakhani", "Wooden Bakery", "Zaatar w Zeit", "Urban Fresh"];
     const colors = names.map((n) => CHART_COLORS[n]);
-    expect(new Set(colors).size).toBe(4);
+    expect(new Set(colors).size).toBe(names.length);
     colors.forEach((c) => {
       expect(c).toMatch(/^#[0-9a-f]{6}$/i);
       expect(c).not.toBe(BRAND_COLORS.stories);
